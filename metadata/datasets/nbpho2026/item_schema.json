@@ -1,0 +1,89 @@
+{
+  "$id": "science-arena/nbpho2026/canonical_item_schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "benchmark_id": {
+      "const": "nbpho2026"
+    },
+    "global_order": {
+      "maximum": 28,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "item_id": {
+      "pattern": "^nbpho2026_p(10|[1-9])_(main|i|ii|iii|iv)$",
+      "type": "string"
+    },
+    "max_score": {
+      "exclusiveMinimum": 0,
+      "type": "number"
+    },
+    "official_solution_image_paths": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "question_image_paths": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "question_text_native": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "question_text_staticized": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "rubric_type": {
+      "const": "official_explicit_grading_from_provided_solution_pdf"
+    },
+    "schema_version": {
+      "const": "science_arena_item_v1"
+    },
+    "sequence_id": {
+      "pattern": "^nbpho2026_p(10|[1-9])$",
+      "type": "string"
+    },
+    "turn_index": {
+      "maximum": 4,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "visual_dependency": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "item_id",
+    "benchmark_id",
+    "sequence_id",
+    "turn_index",
+    "global_order",
+    "question_id",
+    "parent_question",
+    "max_score",
+    "question_text_native",
+    "question_text_staticized",
+    "reference_answer",
+    "gold_solution",
+    "grading_rubric",
+    "rubric_type",
+    "visual_dependency",
+    "question_image_paths",
+    "question_image_assets",
+    "official_solution_image_paths",
+    "question_source",
+    "solution_source",
+    "input_tracks"
+  ],
+  "title": "Science Arena canonical NBPhO 2026 item",
+  "type": "object"
+}

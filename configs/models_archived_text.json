@@ -1,0 +1,29 @@
+{
+  "evaluation_protocol": "text_only_interleaved_staticized_v1",
+  "excluded_models": [
+    {
+      "model": "moonshotai/kimi-k2.6",
+      "reason": "User requested removing Kimi K2.6 from future runs after repeated 360 HTTP 500 failures."
+    },
+    {
+      "model": "moonshot/moonshotai/kimi-k2.6",
+      "reason": "User requested removing Kimi K2.6 aliases from future runs."
+    }
+  ],
+  "models": [
+    "cloudsway/gemini-3-flash-preview",
+    "google/gemini-3.5-flash",
+    "google/google/gemini-3.1-pro-preview",
+    "qiniu/openai/gpt-5.4",
+    "openai/gpt-5.5",
+    "anthropic/claude-opus-4.7",
+    "bytedance/doubao-seed-2-0-pro",
+    "qwen/qwen3.7-max",
+    "qwen/qwen3.6-plus",
+    "deepseek/deepseek-v4-pro",
+    "deepseek/deepseek-v4-flash",
+    "minimax/MiniMax-M2.7",
+    "z-ai/glm-5.1",
+    "xiaomi/mimo-v2.5-pro"
+  ]
+}

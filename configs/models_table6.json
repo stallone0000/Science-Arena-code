@@ -1,0 +1,618 @@
+{
+  "attempt_policy": "exactly one initial wire request plus at most six retries (seven total)",
+  "classification_policy": "vision iff unseen synthetic nonce+shape probe passes and at least 2/3 direct official physics/chemistry/graph probes pass; no-image control is diagnostic",
+  "created_at": "2026-08-28T11:25:11.795593+00:00",
+  "image_policy": "vision routes receive cumulative mechanically rendered official question PNGs as direct data:image blocks; generated descriptions are forbidden in their solver payloads",
+  "models": [
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/cloudsway__gemini-3-flash-preview.json",
+      "capability_summary": {
+        "gate_path_present": true,
+        "input_mode": "vision",
+        "negative_control_passed": false,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": true,
+        "official_numeric_graph_passed": true,
+        "official_science_pass_count": 3,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": true,
+        "route": "cloudsway/gemini-3-flash-preview",
+        "strong_pixel_proof": true,
+        "synthetic_unseen_nonce_passed": true,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:1206-1210",
+        "input_cny_per_million": 2.52,
+        "output_cny_per_million": 15.12,
+        "rpm": 100000,
+        "tpm": 200000000
+      },
+      "confirmed_text_only": false,
+      "display_name": "Gemini 3 Flash",
+      "generation_options": {
+        "thinking_level": "high"
+      },
+      "input_mode": "vision",
+      "input_mode_decision_status": "frozen_fresh_unseen_nonce_plus_official_science_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "cloudsway/gemini-3-flash-preview",
+      "table6_order": 1,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/bytedance__doubao-seed-2-0-pro.json",
+      "capability_summary": {
+        "gate_path_present": true,
+        "input_mode": "vision",
+        "negative_control_passed": true,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": false,
+        "official_numeric_graph_passed": true,
+        "official_science_pass_count": 2,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": true,
+        "route": "bytedance/doubao-seed-2-0-pro",
+        "strong_pixel_proof": true,
+        "synthetic_unseen_nonce_passed": true,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:581-585",
+        "input_cny_per_million": 3.2,
+        "output_cny_per_million": 16.0,
+        "rpm": 100000,
+        "tpm": 100000000
+      },
+      "confirmed_text_only": false,
+      "display_name": "Doubao Seed 2.0 Pro",
+      "generation_options": {
+        "reasoning_effort": "high",
+        "thinking": {
+          "type": "enabled"
+        }
+      },
+      "input_mode": "vision",
+      "input_mode_decision_status": "frozen_fresh_unseen_nonce_plus_official_science_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "bytedance/doubao-seed-2-0-pro",
+      "table6_order": 2,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/google__google__gemini-3.1-pro-preview.json",
+      "capability_summary": {
+        "gate_path_present": true,
+        "input_mode": "vision",
+        "negative_control_passed": true,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": true,
+        "official_numeric_graph_passed": true,
+        "official_science_pass_count": 3,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": true,
+        "route": "google/google/gemini-3.1-pro-preview",
+        "strong_pixel_proof": true,
+        "synthetic_unseen_nonce_passed": true,
+        "text_ready": true,
+        "text_ready_basis": "correct_unseen_image_nonce_response_also_proves_instruction_text_processing"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:1076-1080",
+        "input_cny_per_million": 10.22,
+        "output_cny_per_million": 61.32,
+        "rpm": 100000,
+        "tpm": 200000000
+      },
+      "confirmed_text_only": false,
+      "display_name": "Gemini 3.1 Pro",
+      "generation_options": {
+        "thinking_level": "high"
+      },
+      "input_mode": "vision",
+      "input_mode_decision_status": "frozen_fresh_unseen_nonce_plus_official_science_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "google/google/gemini-3.1-pro-preview",
+      "table6_order": 3,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/qiniu__openai__gpt-5.4.json",
+      "capability_summary": {
+        "gate_path_present": true,
+        "input_mode": "vision",
+        "negative_control_passed": true,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": false,
+        "official_numeric_graph_passed": true,
+        "official_science_pass_count": 2,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": true,
+        "route": "qiniu/openai/gpt-5.4",
+        "strong_pixel_proof": true,
+        "synthetic_unseen_nonce_passed": true,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:916-920",
+        "input_cny_per_million": 18.25,
+        "output_cny_per_million": 109.5,
+        "rpm": 30000,
+        "tpm": 12000000
+      },
+      "confirmed_text_only": false,
+      "display_name": "GPT-5.4",
+      "generation_options": {
+        "reasoning_effort": "xhigh"
+      },
+      "input_mode": "vision",
+      "input_mode_decision_status": "frozen_fresh_unseen_nonce_plus_official_science_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "qiniu/openai/gpt-5.4",
+      "table6_order": 4,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_completion_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/z-ai__glm-5.1.json",
+      "capability_summary": {
+        "gate_path_present": false,
+        "input_mode": "text_staticized",
+        "negative_control_passed": null,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": false,
+        "official_numeric_graph_passed": false,
+        "official_science_pass_count": 0,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": false,
+        "route": "z-ai/glm-5.1",
+        "strong_pixel_proof": false,
+        "synthetic_unseen_nonce_passed": false,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:726-730",
+        "input_cny_per_million": 6.0,
+        "output_cny_per_million": 24.0,
+        "rpm": 100000,
+        "tpm": 1000000000
+      },
+      "confirmed_text_only": true,
+      "display_name": "GLM-5.1",
+      "generation_options": {
+        "thinking": {
+          "type": "enabled"
+        }
+      },
+      "input_mode": "text_staticized",
+      "input_mode_decision_status": "frozen_fresh_no_strong_visible_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "z-ai/glm-5.1",
+      "table6_order": 5,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/qwen__qwen3.6-plus.json",
+      "capability_summary": {
+        "gate_path_present": true,
+        "input_mode": "vision",
+        "negative_control_passed": true,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": true,
+        "official_numeric_graph_passed": true,
+        "official_science_pass_count": 3,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": true,
+        "route": "qwen/qwen3.6-plus",
+        "strong_pixel_proof": true,
+        "synthetic_unseen_nonce_passed": true,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:751-755",
+        "input_cny_per_million": 1.3,
+        "output_cny_per_million": 7.8,
+        "rpm": 600000,
+        "tpm": 200000000
+      },
+      "confirmed_text_only": false,
+      "display_name": "Qwen3.6-Plus",
+      "generation_options": {
+        "enable_thinking": true,
+        "thinking_budget": 16384
+      },
+      "input_mode": "vision",
+      "input_mode_decision_status": "frozen_fresh_unseen_nonce_plus_official_science_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "qwen/qwen3.6-plus",
+      "table6_order": 6,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/minimax__MiniMax-M2.7.json",
+      "capability_summary": {
+        "gate_path_present": false,
+        "input_mode": "text_staticized",
+        "negative_control_passed": null,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": false,
+        "official_numeric_graph_passed": false,
+        "official_science_pass_count": 0,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": false,
+        "route": "minimax/MiniMax-M2.7",
+        "strong_pixel_proof": false,
+        "synthetic_unseen_nonce_passed": false,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:771-775",
+        "input_cny_per_million": 1.68,
+        "output_cny_per_million": 6.72,
+        "rpm": 500000,
+        "tpm": 200000000
+      },
+      "confirmed_text_only": true,
+      "display_name": "MiniMax M2.7",
+      "generation_options": {},
+      "input_mode": "text_staticized",
+      "input_mode_decision_status": "frozen_fresh_no_strong_visible_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "minimax/MiniMax-M2.7",
+      "table6_order": 7,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/anthropic__claude-opus-4.7.json",
+      "capability_summary": {
+        "gate_path_present": true,
+        "input_mode": "vision",
+        "negative_control_passed": true,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": true,
+        "official_numeric_graph_passed": true,
+        "official_science_pass_count": 3,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": true,
+        "route": "anthropic/claude-opus-4.7",
+        "strong_pixel_proof": true,
+        "synthetic_unseen_nonce_passed": true,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:706-710",
+        "input_cny_per_million": 28.7,
+        "output_cny_per_million": 143.5,
+        "rpm": 10000,
+        "tpm": 10000000
+      },
+      "confirmed_text_only": false,
+      "display_name": "Claude Opus 4.7",
+      "generation_options": {
+        "effort": "max",
+        "thinking": {
+          "type": "adaptive"
+        }
+      },
+      "input_mode": "vision",
+      "input_mode_decision_status": "frozen_fresh_unseen_nonce_plus_official_science_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "anthropic/claude-opus-4.7",
+      "table6_order": 8,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/xiaomi__mimo-v2.5-pro.json",
+      "capability_summary": {
+        "gate_path_present": false,
+        "input_mode": "text_staticized",
+        "negative_control_passed": null,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": false,
+        "official_numeric_graph_passed": false,
+        "official_science_pass_count": 0,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": false,
+        "route": "xiaomi/mimo-v2.5-pro",
+        "strong_pixel_proof": false,
+        "synthetic_unseen_nonce_passed": false,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:621-625",
+        "input_cny_per_million": 3.045,
+        "output_cny_per_million": 6.09,
+        "rpm": 10000,
+        "tpm": 10000000
+      },
+      "confirmed_text_only": true,
+      "display_name": "MiMo v2.5 Pro",
+      "effective_max_output_tokens": 10000,
+      "generation_options": {},
+      "input_mode": "text_staticized",
+      "input_mode_decision_status": "frozen_fresh_no_strong_visible_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "xiaomi/mimo-v2.5-pro",
+      "table6_order": 9,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "responses",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/openai__gpt-5.5.json",
+      "capability_summary": {
+        "gate_path_present": true,
+        "input_mode": "vision",
+        "negative_control_passed": true,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": true,
+        "official_numeric_graph_passed": true,
+        "official_science_pass_count": 3,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": true,
+        "route": "openai/gpt-5.5",
+        "strong_pixel_proof": true,
+        "synthetic_unseen_nonce_passed": true,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:656-660",
+        "input_cny_per_million": 35.0,
+        "output_cny_per_million": 210.0,
+        "rpm": 100000,
+        "tpm": 1000000000
+      },
+      "confirmed_text_only": false,
+      "display_name": "GPT-5.5",
+      "generation_options": {
+        "reasoning_effort": "xhigh"
+      },
+      "input_mode": "vision",
+      "input_mode_decision_status": "frozen_fresh_unseen_nonce_plus_official_science_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "openai/gpt-5.5",
+      "table6_order": 10,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_output_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/deepseek__deepseek-v4-pro.json",
+      "capability_summary": {
+        "gate_path_present": false,
+        "input_mode": "text_staticized",
+        "negative_control_passed": null,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": false,
+        "official_numeric_graph_passed": false,
+        "official_science_pass_count": 0,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": false,
+        "route": "deepseek/deepseek-v4-pro",
+        "strong_pixel_proof": false,
+        "synthetic_unseen_nonce_passed": false,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:661-665",
+        "input_cny_per_million": 4.5,
+        "output_cny_per_million": 13.5,
+        "rpm": 1000000,
+        "tpm": 1000000000
+      },
+      "confirmed_text_only": true,
+      "display_name": "DeepSeek V4 Pro",
+      "generation_options": {
+        "thinking": {
+          "type": "enabled"
+        }
+      },
+      "input_mode": "text_staticized",
+      "input_mode_decision_status": "frozen_fresh_no_strong_visible_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "deepseek/deepseek-v4-pro",
+      "table6_order": 11,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/deepseek__deepseek-v4-flash.json",
+      "capability_summary": {
+        "gate_path_present": false,
+        "input_mode": "text_staticized",
+        "negative_control_passed": null,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": false,
+        "official_numeric_graph_passed": false,
+        "official_science_pass_count": 0,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": false,
+        "route": "deepseek/deepseek-v4-flash",
+        "strong_pixel_proof": false,
+        "synthetic_unseen_nonce_passed": false,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:666-670",
+        "input_cny_per_million": 3.0,
+        "output_cny_per_million": 9.0,
+        "rpm": 100000,
+        "tpm": 1000000000
+      },
+      "confirmed_text_only": true,
+      "display_name": "DeepSeek V4 Flash",
+      "generation_options": {
+        "thinking": {
+          "type": "enabled"
+        }
+      },
+      "input_mode": "text_staticized",
+      "input_mode_decision_status": "frozen_fresh_no_strong_visible_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "deepseek/deepseek-v4-flash",
+      "table6_order": 12,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "calibrated_production_judge": true,
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/google__gemini-3.5-flash.json",
+      "capability_summary": {
+        "gate_path_present": true,
+        "input_mode": "vision",
+        "negative_control_passed": false,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": true,
+        "official_numeric_graph_passed": true,
+        "official_science_pass_count": 3,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": true,
+        "route": "google/gemini-3.5-flash",
+        "strong_pixel_proof": true,
+        "synthetic_unseen_nonce_passed": true,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:491-495",
+        "input_cny_per_million": 7.14,
+        "output_cny_per_million": 42.84,
+        "rpm": 100000,
+        "tpm": 100000000
+      },
+      "confirmed_text_only": false,
+      "display_name": "Gemini 3.5 Flash",
+      "generation_options": {
+        "thinking_level": "high"
+      },
+      "input_mode": "vision",
+      "input_mode_decision_status": "frozen_fresh_unseen_nonce_plus_official_science_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "judge_max_completion_tokens": 65536,
+      "judge_options": {
+        "thinking_level": "high"
+      },
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "google/gemini-3.5-flash",
+      "table6_order": 13,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    },
+    {
+      "api_mode": "chat_completions",
+      "capability_proof_path": "experiments/2026_reval/capabilities/table6_frozen_20260828/qwen__qwen3.7-max.json",
+      "capability_summary": {
+        "gate_path_present": false,
+        "input_mode": "text_staticized",
+        "negative_control_passed": null,
+        "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+        "official_chemistry_passed": false,
+        "official_numeric_graph_passed": false,
+        "official_science_pass_count": 0,
+        "official_science_probe_count": 3,
+        "p1_physics_passed": false,
+        "route": "qwen/qwen3.7-max",
+        "strong_pixel_proof": false,
+        "synthetic_unseen_nonce_passed": false,
+        "text_ready": true,
+        "text_ready_basis": "standalone_nonce_text_probe"
+      },
+      "catalog": {
+        "evidence_lines": "360-model.md:486-490",
+        "input_cny_per_million": 7.2,
+        "output_cny_per_million": 21.6,
+        "rpm": 100000,
+        "tpm": 100000000
+      },
+      "confirmed_text_only": true,
+      "display_name": "Qwen3.7-Max",
+      "generation_options": {
+        "enable_thinking": true,
+        "thinking_budget": 16384
+      },
+      "input_mode": "text_staticized",
+      "input_mode_decision_status": "frozen_fresh_no_strong_visible_pixel_proof_20260828",
+      "input_mode_frozen": true,
+      "max_attempts": 7,
+      "max_completion_tokens": 65536,
+      "requested_max_output_tokens": 65536,
+      "route": "qwen/qwen3.7-max",
+      "table6_order": 14,
+      "timeout_seconds": 1800,
+      "token_parameter": "max_tokens"
+    }
+  ],
+  "protocol": "fresh_capability_aware_mixed_input_interleaved_question_only_v2",
+  "schema_version": "science_arena_table6_models_frozen_20260828_v1",
+  "text_policy": "text_staticized routes receive one shared question-only, visually audited staticization and no image blocks; solution/rubric assets remain isolated until judging",
+  "text_staticized_route_count": 6,
+  "timeout_seconds": 1800,
+  "vision_route_count": 8
+}

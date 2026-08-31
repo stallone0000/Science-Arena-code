@@ -1,0 +1,117 @@
+{
+  "artifacts": {
+    "builder_validator": {
+      "path": "experiments/2026_reval/analysis/expert_feedback_export_20260830/build_validate_expert_feedback_export_20260830.py",
+      "sha256": "11861f5281b359a0946e1df19c741b6a2d9fe04347798fae23d9ce2af726d190"
+    },
+    "jsonl": {
+      "bytes": 1566054,
+      "path": "experiments/2026_reval/analysis/expert_feedback_export_20260830/expert_feedback_with_archived_judges_20260830.jsonl",
+      "sha256": "a3df5f489388da0935c215624ccd9926487904025f0e4825262613fd1cd07774"
+    },
+    "schema": {
+      "bytes": 2253,
+      "path": "experiments/2026_reval/analysis/expert_feedback_export_20260830/expert_feedback_with_archived_judges_20260830.schema.json",
+      "sha256": "1820b31309034104b48f97b66a27d0a92ecf2a1503cb1ee5bb03893cd998f23c"
+    }
+  },
+  "audited_lineage": {
+    "expert_exporter": {
+      "path": "audits/cr_rebuttal_local_supplements_20260829/export_validate_expert_feedback_base_20260829.py",
+      "sha256": "e99d7c1c8b218b6fc5bc3fb6d285b4043fa6ae8e89e3d67ba3b76e2570243cbc"
+    },
+    "judge_replay": {
+      "path": "audits/cr_rebuttal_local_supplements_20260829/replay_archived_two_gemini_calibration_20260829.py",
+      "sha256": "d490b15f58a7973ca35a6142b2fbd5e061123a2e61536caf07166b63a9411bd5"
+    },
+    "judge_runs": [
+      {
+        "exam": "icho2025",
+        "expected_rows": 325,
+        "joined_numeric_rows": 325,
+        "judge_id": "gemini_3_1_pro_preview",
+        "run_id": "gemini_3_1_pro_preview__icho2025",
+        "stored_rows": 325
+      },
+      {
+        "exam": "ipho2025",
+        "expected_rows": 200,
+        "joined_numeric_rows": 200,
+        "judge_id": "gemini_3_1_pro_preview",
+        "run_id": "gemini_3_1_pro_preview__ipho2025",
+        "stored_rows": 200
+      },
+      {
+        "exam": "icho2025",
+        "expected_rows": 325,
+        "joined_numeric_rows": 325,
+        "judge_id": "gemini_3_5_flash",
+        "run_id": "gemini_3_5_flash__icho2025",
+        "stored_rows": 325
+      },
+      {
+        "exam": "ipho2025",
+        "expected_rows": 200,
+        "joined_numeric_rows": 200,
+        "judge_id": "gemini_3_5_flash",
+        "run_id": "gemini_3_5_flash__ipho2025",
+        "stored_rows": 200
+      }
+    ]
+  },
+  "counts": {
+    "archived_judge_rows": 1050,
+    "by_contest": {
+      "icho2025": 325,
+      "ipho2025": 200
+    },
+    "comments": {
+      "explicit_null": 115,
+      "nonempty_verbatim": 410
+    },
+    "judge_normalized_status": {
+      "excluded_expert_score_outside_archived_judge_row_max": 2,
+      "usable": 1048
+    },
+    "judge_score_disagreements_preserved": 186,
+    "source_discrepancy_rows": 1,
+    "unique_rows": 525
+  },
+  "execution": "offline_deterministic_no_api_calls",
+  "fixed_audit_date": "2026-08-30",
+  "limitations": [
+    "The export does not add human-reviewed rich error, ability, credit, evidence, or uncertainty labels.",
+    "IChO per-row expert maxima are absent; archived judge maxima are kept in a separately labeled field.",
+    "The two archived judges are from the Gemini family; this artifact does not establish cross-family judge validity.",
+    "One archived IChO source discrepancy remains unresolved and explicitly represented."
+  ],
+  "max_score_policy": {
+    "icho2025": "Expert per-row maximum is unavailable and remains null. The exact-consensus maximum from the two archived judge artifacts is stored separately and is not labeled expert-authored.",
+    "ipho2025": "Expert per-row maximum is preserved from expert ground truth.",
+    "known_conflict": "gpt-5 / ICHO-2-2.3c has expert score 10 but archived judge-row max 6 in both judge runs; the discrepancy is preserved without adjudication."
+  },
+  "schema_version": "science_arena_expert_feedback_with_archived_judges_manifest_v1",
+  "scope": "Five archived model answers each on IPhO 2025 and IChO 2025; two archived Gemini judges.",
+  "semantic_annotation_policy": {
+    "ability_tags": null,
+    "credit_status": null,
+    "error_tags": null,
+    "evidence_spans": null,
+    "model_generated_annotations": false,
+    "status": "not_provided_in_archived_source",
+    "uncertainty_label": null
+  },
+  "source_discrepancy_record_ids": [
+    "icho2025::gpt-5::ICHO-2-2.3c"
+  ],
+  "status": "PASS",
+  "validation_contract": [
+    "525 unique expert rows",
+    "410 byte-preserved nonempty comments and 115 explicit null comments",
+    "exactly two distinct archived judges and 1,050 judge rows",
+    "judge score/max/delta recomputation and raw-row canonical SHA verification",
+    "all referenced source paths exist and hashes match",
+    "186 nonidentical two-judge scores preserved rather than collapsed",
+    "all unavailable rich error/ability/credit/evidence/uncertainty fields remain null"
+  ]
+}

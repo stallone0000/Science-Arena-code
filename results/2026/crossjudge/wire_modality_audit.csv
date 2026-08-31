@@ -1,0 +1,7 @@
+attempt_files,authenticated_request_reconstructions,data_url_proof_matches,expected_image_instances,global_image_order_matches,initial_request_case_groups,initial_request_groups_identical_across_three_repeats,judge_input_mode,judge_route,observed_image_instances,protocol_recovery_attempts,source_png_hash_matches,wire_contract,zero_image_attempts,zero_image_request_sha_matches
+297,297,1575,1575,297,91,91,vision,google/gemini-3.5-flash,1575,0,1575,direct_original_official_png,0,0
+404,404,2314,2314,404,91,91,vision,google/google/gemini-3.1-pro-preview,2314,2,2314,direct_original_official_png,0,0
+321,321,1826,1826,321,91,91,vision,anthropic/claude-opus-4.7,1826,0,1826,direct_original_official_png,0,0
+274,274,1495,1495,274,91,91,vision,openai/gpt-5.5,1495,0,1495,direct_original_official_png,0,0
+281,281,0,0,281,91,91,text_staticized,qwen/qwen3.7-max,0,0,0,zero_image_text_staticized,281,281
+284,284,0,0,284,91,91,text_staticized,deepseek/deepseek-v4-pro,0,0,0,zero_image_text_staticized,284,284

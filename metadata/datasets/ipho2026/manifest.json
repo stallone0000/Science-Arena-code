@@ -1,0 +1,250 @@
+{
+  "artifacts": {
+    "contexts": {
+      "path": "experiments/2026_reval/datasets/ipho2026/contexts.json",
+      "sha256": "04ee19471eb954bae343279778a7d63d62c424daa217eed9275ea6535bf0541c"
+    },
+    "item_schema": {
+      "path": "experiments/2026_reval/datasets/ipho2026/item_schema.json",
+      "sha256": "f0a38e45d496aa086e36d76249b8b837da6a310944a9f17ce533fcaa8e7806fb"
+    },
+    "items": {
+      "path": "experiments/2026_reval/datasets/ipho2026/items.jsonl",
+      "sha256": "71136e697013de9cf401d1779ca1fb4addae7549869cc04f882453736ddacc2d"
+    },
+    "question_images_manifest": {
+      "path": "experiments/2026_reval/datasets/ipho2026/question_images_manifest.json",
+      "sha256": "6645caf9ccb90bb421702dbc4446498dcb68fed0b7456588e530a5b4bb34bf71"
+    }
+  },
+  "benchmark_id": "ipho2026",
+  "canonicalized_at": "2026-08-28",
+  "competition": "LVI International Physics Olympiad",
+  "constraints": {
+    "evaluation_api_calls_made": false,
+    "external_api_calls_made": false,
+    "keys_or_secrets_accessed": false,
+    "model_calls_made": false
+  },
+  "content_counts": {
+    "major_questions": 3,
+    "question_paper_key_tables": 2,
+    "question_paper_labeled_figures": 12,
+    "subquestions": 23,
+    "subquestions_with_derived_nonofficial_rubric": 23,
+    "subquestions_with_granular_official_rubric": 0,
+    "subquestions_with_human_visual_staticization": 23,
+    "subquestions_with_provided_solution": 23,
+    "subquestions_with_stable_question_image_paths": 23,
+    "total_points": 30.0
+  },
+  "conversion": {
+    "draft_overwritten": false,
+    "field_mappings": {
+      "derived_rubric": "grading_rubric",
+      "id": "item_id",
+      "official_answer_normalized": "reference_answer",
+      "official_solution_summary": "gold_solution",
+      "question_text": "question_text_native",
+      "visual_dependency.assets": "question_image_assets and visual_dependency_metadata.assets",
+      "visual_dependency.required": "visual_dependency"
+    },
+    "schema_conflicts_and_minimal_resolutions": [
+      {
+        "conflict": "The draft correctly stores official_rubric=null, while the legacy runner required a nonempty field named official_rubric.",
+        "resolution": "Use grading_rubric as the preferred runner field, keep official_rubric null, and require rubric_type=derived_from_solution_not_official."
+      },
+      {
+        "conflict": "Legacy runner fields called official_answer and official_solution could overstate the provenance of the provided, unconfirmed solution PDFs.",
+        "resolution": "Use reference_answer and gold_solution as preferred fields and fix all three official-named fields to null in the canonical schema."
+      },
+      {
+        "conflict": "The draft stores visual_dependency as an audit object, while the runner uses a top-level boolean.",
+        "resolution": "Flatten required to visual_dependency, expose question_image_paths and question_image_assets for the runner, and preserve the full object as visual_dependency_metadata."
+      },
+      {
+        "conflict": "Two nonvisual draft items use the equivalent policy label block_multimodal_if_declared_path_missing.",
+        "resolution": "Normalize every canonical native-vision item to block_no_fallback and preserve the draft label as draft_missing_asset_policy."
+      }
+    ],
+    "source_item_schema": "ipho2026_item_draft_v1",
+    "target_item_schema": "science_arena_item_v1",
+    "tooling": {
+      "builder": {
+        "path": "experiments/2026_reval/build_ipho2026_canonical.py",
+        "sha256": "38b20f8235f35fc8d28bb0f9a5e495f07b744a30d972f89b44ab9052ca7447b0"
+      },
+      "validator": {
+        "path": "experiments/2026_reval/validate_ipho2026_canonical.py",
+        "sha256": "5a9a55e2cb3a56fd5b525c6bccf782f9bfd75b086bf646c606c80872c7d29069"
+      }
+    },
+    "validation_report": "experiments/2026_reval/datasets/ipho2026/validation.json"
+  },
+  "dataset_id": "ipho2026",
+  "discipline": "physics",
+  "documents": [
+    {
+      "bytes": 2402128,
+      "official_label_in_pdf": true,
+      "path": "new-test/IPhO 2026/theoretical-exam.pdf",
+      "pdf_pages": 14,
+      "printed_pages": "1-14",
+      "role": "question_paper",
+      "sha256": "25f555e5e2ff07b9720cb47347981f3d8951d8f9ce44e1e1e3bc04fd5842f729",
+      "title_metadata": "Theoretical Exam -- English (Official)"
+    },
+    {
+      "bytes": 247936,
+      "official_label_in_pdf": false,
+      "path": "new-test/IPhO 2026/IPhO_2026_Solution-1.pdf",
+      "pdf_pages": 4,
+      "printed_pages": "1-4",
+      "producer_metadata": "iLovePDF",
+      "role": "provided_solution_t1",
+      "sha256": "9e6855ade0068a9451f3476d6781fece4a222d3b5a412f894f5bf28778f7ef6f"
+    },
+    {
+      "bytes": 283252,
+      "official_label_in_pdf": false,
+      "path": "new-test/IPhO 2026/IPhO_2026_Solution-2.pdf",
+      "pdf_pages": 5,
+      "printed_pages": "5-9",
+      "producer_metadata": "iLovePDF",
+      "role": "provided_solution_t2",
+      "sha256": "2256104b843dcaa7031ab3d14a9f32eea6f6be6714a3f284ee028c752b73493f"
+    },
+    {
+      "bytes": 273124,
+      "official_label_in_pdf": false,
+      "path": "new-test/IPhO 2026/IPhO_2026_Solution-3.pdf",
+      "pdf_pages": 2,
+      "printed_pages": "10-11",
+      "producer_metadata": "iLovePDF",
+      "role": "provided_solution_t3",
+      "sha256": "3ef1952f8a7466beb809764b2b0dcdd8191f71fd42ad4f71a96c0b53ab5bcb01"
+    }
+  ],
+  "draft_provenance": {
+    "draft_directory_mutated": false,
+    "source_artifacts": [
+      {
+        "path": "experiments/2026_reval/datasets_draft/ipho2026/manifest.json",
+        "sha256": "0b02da7678422ca005c01bf513c7211a4b6e7fab3ac6e207385e129d48bb9116"
+      },
+      {
+        "path": "experiments/2026_reval/datasets_draft/ipho2026/contexts.json",
+        "sha256": "5985638a8beca0bdde6ea4e75fd6e38abf9b547297eac584a04a89a08ec0ba5a"
+      },
+      {
+        "path": "experiments/2026_reval/datasets_draft/ipho2026/items.jsonl",
+        "sha256": "75aea3418a9195bd83493d7275968afbe192a382b1fad797c1a70aee00243080"
+      },
+      {
+        "path": "experiments/2026_reval/datasets_draft/ipho2026/item_schema.json",
+        "sha256": "e3255851a1b78a85c768db1735d59e066a3879ce4f6a3fa3cc31658ca292b6be"
+      },
+      {
+        "path": "experiments/2026_reval/datasets_draft/ipho2026/item_enrichments.json",
+        "sha256": "f21c379181742a7c9a87ade86a39c95e94f87996b2c66a9580fbf0036dc14008"
+      },
+      {
+        "path": "experiments/2026_reval/datasets_draft/ipho2026/question_images_manifest.json",
+        "sha256": "4b45e4e84ca9b1c19afae12885d57c166db7ff2068aeb0080762c43bee652073"
+      },
+      {
+        "path": "experiments/2026_reval/datasets_draft/ipho2026/validation.json",
+        "sha256": "1b587dbae8604de33b1192fdadd554c3179c5a5980bcf5708d02137053327d85"
+      }
+    ],
+    "source_directory": "experiments/2026_reval/datasets_draft/ipho2026"
+  },
+  "evaluation_readiness": {
+    "derived_rubric_evaluation": "ready_for_derived_rubric_eval",
+    "official_scoring": "blocked_for_official_scoring"
+  },
+  "exam_component": "theoretical",
+  "exam_date": "2026-07-08",
+  "input_tracks": {
+    "native_vision": {
+      "description_fallback": false,
+      "image_field": "question_image_paths",
+      "image_kind": "direct full-page official-question PNG",
+      "missing_asset_policy": "block_no_fallback",
+      "question_field": "question_text_native"
+    },
+    "text_staticized": {
+      "human_visual_audited": true,
+      "image_payload": false,
+      "question_field": "question_text_staticized",
+      "question_only": true,
+      "solution_leakage_check": "passed_for_all_23_items"
+    }
+  },
+  "item_order": [
+    "ipho2026_t1_a1",
+    "ipho2026_t1_b1",
+    "ipho2026_t1_b2",
+    "ipho2026_t1_c1",
+    "ipho2026_t1_c2",
+    "ipho2026_t2_a1",
+    "ipho2026_t2_b1",
+    "ipho2026_t2_b2",
+    "ipho2026_t2_b3",
+    "ipho2026_t2_c1",
+    "ipho2026_t2_c2",
+    "ipho2026_t2_c3",
+    "ipho2026_t2_c4",
+    "ipho2026_t3_a1",
+    "ipho2026_t3_a2",
+    "ipho2026_t3_a3",
+    "ipho2026_t3_b1",
+    "ipho2026_t3_b2",
+    "ipho2026_t3_c1",
+    "ipho2026_t3_c2",
+    "ipho2026_t3_c3",
+    "ipho2026_t3_c4",
+    "ipho2026_t3_c5"
+  ],
+  "language": "en",
+  "rubric_policy": {
+    "claim_boundary": "Scores are derived-rubric scores, not reproduced official IPhO marks.",
+    "grading_field": "grading_rubric",
+    "official_answer_and_solution_fields_are_null_for_every_item": true,
+    "official_rubric_field_is_null_for_every_item": true,
+    "official_rubrics_present": 0,
+    "rubric_type": "derived_from_solution_not_official"
+  },
+  "schema_version": "science_arena_dataset_manifest_v1",
+  "score_reconciliation": [
+    {
+      "issue": "The solution section heading incorrectly says T1-B [2.5 pts]; the question paper and B1+B2 establish 3.5 pts.",
+      "provided_solution_subquestion_sum": 10.0,
+      "question": "T1",
+      "question_paper_total": 10.0,
+      "subquestion_sum": 10.0
+    },
+    {
+      "issue": null,
+      "provided_solution_subquestion_sum": 10.0,
+      "question": "T2",
+      "question_paper_total": 10.0,
+      "subquestion_sum": 10.0
+    },
+    {
+      "issue": "The solution labels T3-A1 as T1-A1; content mapping is otherwise unambiguous.",
+      "provided_solution_subquestion_sum": 10.0,
+      "question": "T3",
+      "question_paper_total": 10.0,
+      "subquestion_sum": 10.0
+    }
+  ],
+  "sequence_order": [
+    "ipho2026_t1",
+    "ipho2026_t2",
+    "ipho2026_t3"
+  ],
+  "status": "ready_for_derived_rubric_eval",
+  "status_reason": "All 23 subquestions have human-audited staticization, stable official-question image paths, and rubrics explicitly derived from the provided solutions. Official IPhO scoring remains blocked because no official granular marking scheme is present and solution provenance/final-version status requires confirmation.",
+  "year": 2026
+}

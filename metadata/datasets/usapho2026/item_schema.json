@@ -1,0 +1,109 @@
+{
+  "$id": "science-arena/usapho2026/canonical_item_schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "adjudicated_reference_answer": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "benchmark_id": {
+      "const": "usapho2026"
+    },
+    "global_order": {
+      "maximum": 34,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "item_id": {
+      "pattern": "^usapho2026_(a|b)[1-3]_[a-z0-9_]+$",
+      "type": "string"
+    },
+    "max_score": {
+      "exclusiveMinimum": 0,
+      "type": "number"
+    },
+    "official_answer": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "official_solution_image_paths": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "provided_solution_answer_normalized": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "question_image_paths": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "question_text_native": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "question_text_staticized": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "reference_answer": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "rubric_type": {
+      "const": "derived_from_solution_not_official"
+    },
+    "schema_version": {
+      "const": "science_arena_item_v1"
+    },
+    "sequence_id": {
+      "pattern": "^usapho2026_(a|b)[1-3]$",
+      "type": "string"
+    },
+    "turn_index": {
+      "maximum": 9,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "visual_dependency": {
+      "const": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "item_id",
+    "benchmark_id",
+    "sequence_id",
+    "turn_index",
+    "global_order",
+    "question_id",
+    "parent_question",
+    "max_score",
+    "question_text_native",
+    "question_text_staticized",
+    "reference_answer",
+    "adjudicated_reference_answer",
+    "reference_answer_status",
+    "official_answer",
+    "provided_solution_answer_normalized",
+    "gold_solution",
+    "grading_rubric",
+    "rubric_type",
+    "visual_dependency",
+    "question_image_paths",
+    "question_image_assets",
+    "official_solution_image_paths",
+    "question_source",
+    "solution_source",
+    "input_tracks"
+  ],
+  "title": "Science Arena canonical USAPhO 2026 item",
+  "type": "object"
+}

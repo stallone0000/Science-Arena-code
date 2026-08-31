@@ -1,0 +1,260 @@
+{
+  "artifacts": {
+    "exporter_validator": {
+      "path": "audits/cr_rebuttal_local_supplements_20260829/export_validate_expert_feedback_base_20260829.py",
+      "sha256": "e99d7c1c8b218b6fc5bc3fb6d285b4043fa6ae8e89e3d67ba3b76e2570243cbc"
+    },
+    "jsonl": {
+      "bytes": 755152,
+      "path": "audits/cr_rebuttal_local_supplements_20260829/expert_feedback_base_20260829.jsonl",
+      "sha256": "1fc337441cd882beff8b925ec34044906d32170dd054ebbf680ae59d9be20f56"
+    },
+    "schema": {
+      "path": "audits/cr_rebuttal_local_supplements_20260829/expert_feedback_base_20260829.schema.json",
+      "sha256": "ac40610ffd7185a40fa7465596049566ecd853f6c1ee6be32126582b2bc513c8"
+    }
+  },
+  "counts": {
+    "by_exam": {
+      "icho2025": {
+        "comments": 325,
+        "missing_comments": 0,
+        "rows": 325
+      },
+      "ipho2025": {
+        "comments": 85,
+        "missing_comments": 115,
+        "rows": 200
+      }
+    },
+    "by_exam_and_model": {
+      "icho2025::deepseek-v3.1": {
+        "comments": 65,
+        "missing_comments": 0,
+        "rows": 65
+      },
+      "icho2025::gemini-2.5-pro": {
+        "comments": 65,
+        "missing_comments": 0,
+        "rows": 65
+      },
+      "icho2025::glm-4.5": {
+        "comments": 65,
+        "missing_comments": 0,
+        "rows": 65
+      },
+      "icho2025::gpt-5": {
+        "comments": 65,
+        "missing_comments": 0,
+        "rows": 65
+      },
+      "icho2025::qwen3-235b-a22b": {
+        "comments": 65,
+        "missing_comments": 0,
+        "rows": 65
+      },
+      "ipho2025::deepseek-v3.1": {
+        "comments": 5,
+        "missing_comments": 35,
+        "rows": 40
+      },
+      "ipho2025::gemini-2.5-pro": {
+        "comments": 40,
+        "missing_comments": 0,
+        "rows": 40
+      },
+      "ipho2025::glm-4.5": {
+        "comments": 0,
+        "missing_comments": 40,
+        "rows": 40
+      },
+      "ipho2025::gpt-5": {
+        "comments": 40,
+        "missing_comments": 0,
+        "rows": 40
+      },
+      "ipho2025::qwen3-235b-a22b": {
+        "comments": 0,
+        "missing_comments": 40,
+        "rows": 40
+      }
+    },
+    "comments": 410,
+    "missing_comments": 115,
+    "total": 525
+  },
+  "expected_counts": {
+    "by_exam": {
+      "icho2025": {
+        "comments": 325,
+        "missing_comments": 0,
+        "rows": 325
+      },
+      "ipho2025": {
+        "comments": 85,
+        "missing_comments": 115,
+        "rows": 200
+      }
+    },
+    "comments": 410,
+    "missing_comments": 115,
+    "total": 525
+  },
+  "fixed_audit_date": "2026-08-29",
+  "ground_truth_inputs": [
+    {
+      "exam": "ipho2025",
+      "expected_sha256": "0719eb5cf59843fb44d3e8125f63a95b4711425590e1b0e77c40dce1ba2406db",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/ground_truth/ipho2025_expert_ground_truth.json",
+      "sha256": "0719eb5cf59843fb44d3e8125f63a95b4711425590e1b0e77c40dce1ba2406db"
+    },
+    {
+      "exam": "icho2025",
+      "expected_sha256": "5ed62c788ec71b20f5f7b63d70d6cede6e12db3da6bb938e847c96500cb40d66",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/ground_truth/icho2025_expert_ground_truth.json",
+      "sha256": "5ed62c788ec71b20f5f7b63d70d6cede6e12db3da6bb938e847c96500cb40d66"
+    }
+  ],
+  "limitations": [
+    "The archive covers five model answers on IPhO 2025 and five on IChO 2025 only; it is not broader human calibration.",
+    "The 115 unavailable comments are absent in the archived ground truth and are not reconstructed.",
+    "No normalized error/ability tags, credit-status labels, evidence spans, uncertainty labels, discrepancy labels, or conflict adjudications are present in the archived source; all such fields remain null pending human QA.",
+    "Original binary DOCX/PDF provenance is hash-addressed, but this release validates row values against the frozen canonical ground-truth JSON rather than re-OCRing or re-parsing binary source layout.",
+    "The frozen IChO expert ground truth has raw row scores and problem-level maxima but no reliable per-row maximum; therefore IChO `max_score` is null instead of being borrowed from a judge run."
+  ],
+  "offline_api_calls": 0,
+  "original_source_inventory": [
+    {
+      "comment_row_references": 65,
+      "expected_sha256": "029d61a11b6966ca57aa74854c619bfacd16e9c732cba0590db148a72683241a",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/icho2025/original/GPT5_grading_with_judge.json",
+      "score_row_references": 65,
+      "sha256": "029d61a11b6966ca57aa74854c619bfacd16e9c732cba0590db148a72683241a"
+    },
+    {
+      "comment_row_references": 65,
+      "expected_sha256": "1d6940cf28ca4e161d4cb2109d122e91f56831e64162f20240707221aad28d14",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/icho2025/original/Qwen3-235B-2507_grading_with_judge.json",
+      "score_row_references": 65,
+      "sha256": "1d6940cf28ca4e161d4cb2109d122e91f56831e64162f20240707221aad28d14"
+    },
+    {
+      "comment_row_references": 65,
+      "expected_sha256": "61a9e2acfbc9dd7e000a19acaa3bf6dc20e1e471c97ae11402669c1d539e19ed",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/icho2025/original/glm-4.5_grading_with_judge.json",
+      "score_row_references": 65,
+      "sha256": "61a9e2acfbc9dd7e000a19acaa3bf6dc20e1e471c97ae11402669c1d539e19ed"
+    },
+    {
+      "comment_row_references": 65,
+      "expected_sha256": "11887dc315e856fe32d5825f0f8a32b28b53948478a9928c35f99280ad687564",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/icho2025/original/human_eval_deepseek-v3.1_solution_20250927-120001.json",
+      "score_row_references": 65,
+      "sha256": "11887dc315e856fe32d5825f0f8a32b28b53948478a9928c35f99280ad687564"
+    },
+    {
+      "comment_row_references": 65,
+      "expected_sha256": "d5adef5d3a0e5be6b29eeb3b1ccae029cd8d200692ca3cb43cb5426b41b027dd",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/icho2025/original/human_eval_gemini-2.5-pro_solution_20250926-203600.json",
+      "score_row_references": 65,
+      "sha256": "d5adef5d3a0e5be6b29eeb3b1ccae029cd8d200692ca3cb43cb5426b41b027dd"
+    },
+    {
+      "comment_row_references": 5,
+      "expected_sha256": "2c31f2cf96a76415cfb23dc04410e9fdb3eae38f3b177f45f9ba4fc60f37f0ed",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/ipho2025/original/deepseek-v3.1.docx",
+      "score_row_references": 40,
+      "sha256": "2c31f2cf96a76415cfb23dc04410e9fdb3eae38f3b177f45f9ba4fc60f37f0ed"
+    },
+    {
+      "comment_row_references": 40,
+      "expected_sha256": "f98a4f3d8420617fa8696c09d894f34cd809607d186c69e72b6cf49baf9ba9c9",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/ipho2025/original/gemini-2.5-pro.docx",
+      "score_row_references": 40,
+      "sha256": "f98a4f3d8420617fa8696c09d894f34cd809607d186c69e72b6cf49baf9ba9c9"
+    },
+    {
+      "comment_row_references": 17,
+      "expected_sha256": "c807295f230dd2c36f0acaabfa0a5c5e593b5eff369b48d1fbaccb366020b666",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/ipho2025/original/gpt5-S1.pdf",
+      "score_row_references": 0,
+      "sha256": "c807295f230dd2c36f0acaabfa0a5c5e593b5eff369b48d1fbaccb366020b666"
+    },
+    {
+      "comment_row_references": 12,
+      "expected_sha256": "2f4c3b41f1506b6808c04754c1e30f8d3e336fc406ca4846002ef9e0dc0e9bef",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/ipho2025/original/gpt5-S3.pdf",
+      "score_row_references": 0,
+      "sha256": "2f4c3b41f1506b6808c04754c1e30f8d3e336fc406ca4846002ef9e0dc0e9bef"
+    },
+    {
+      "comment_row_references": 11,
+      "expected_sha256": "05ca48619aa8a6be11d26e00bdd7dedd5396c90068116e3e93772cb780dd3603",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/ipho2025/original/gtp5-S2.pdf",
+      "score_row_references": 0,
+      "sha256": "05ca48619aa8a6be11d26e00bdd7dedd5396c90068116e3e93772cb780dd3603"
+    },
+    {
+      "comment_row_references": 0,
+      "expected_sha256": "45423c1303d9739b7fe5bce5eb1cbe7ba77eba6f3125fdac57ce102d106390b1",
+      "hash_matches_frozen_value": true,
+      "path": "science_arena_repro_package_20260530_lite/artifacts/expert_grading/ipho2025/original/summary.txt",
+      "score_row_references": 120,
+      "sha256": "45423c1303d9739b7fe5bce5eb1cbe7ba77eba6f3125fdac57ce102d106390b1"
+    }
+  ],
+  "release_scope": "Base expert score/comment archive only; no inferred semantic tags, credit labels, evidence spans, conflict labels, or uncertainty labels.",
+  "schema_version": "science_arena_expert_feedback_base_validation_v1",
+  "semantic_annotation_completeness": {
+    "all_semantic_fields_null": true,
+    "human_qa_completed": 0,
+    "not_provided_in_archived_source": 525
+  },
+  "status": "PASS",
+  "validation_checks": [
+    {
+      "check": "canonical ground-truth hashes equal frozen inventory hashes",
+      "status": "PASS"
+    },
+    {
+      "check": "all eleven referenced original source files exist and match frozen hashes",
+      "status": "PASS"
+    },
+    {
+      "check": "strict exact-key/type/range/provenance validation for every JSONL row",
+      "status": "PASS"
+    },
+    {
+      "check": "record identifiers are unique",
+      "status": "PASS"
+    },
+    {
+      "check": "human comments are copied only when nonempty in canonical ground truth",
+      "status": "PASS"
+    },
+    {
+      "check": "missing comments are explicit null values",
+      "status": "PASS"
+    },
+    {
+      "check": "semantic annotation fields are explicit null values",
+      "status": "PASS"
+    },
+    {
+      "check": "deterministic replay exactly matches checked-in JSONL bytes",
+      "status": "PASS_ON_CHECK"
+    }
+  ]
+}

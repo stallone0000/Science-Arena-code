@@ -1,0 +1,292 @@
+{
+  "schema_version": "science_arena_ipho_icho_three_fresh_repeat_stability_v1",
+  "scope": {
+    "replicates": [
+      "repA",
+      "repB",
+      "repC"
+    ],
+    "contests": [
+      "ipho2026",
+      "icho2026"
+    ],
+    "route_count": 1,
+    "model_route_filter": "google/gemini-3.5-flash",
+    "item_count_per_route": 91,
+    "judge_route": "google/gemini-3.5-flash",
+    "pipeline_snapshot_sha256": "6a6289be6d2fa036de0958a079303ce5096e3be3e02dc311275b11ba6a55f89b",
+    "model_manifest_sha256": "d761e8d508c6677ee3c6452123e4a3c3e8327f8dad8afde616b0277e19c54d4c",
+    "randomness": "No explicit seed or temperature; identical frozen payload/options were independently called. Variation therefore measures provider/backend stochasticity plus solver-judge interaction.",
+    "external_table6_policy": "Published Table-6 values are external comparisons only and are excluded from repeat variance.",
+    "variance_separation": "This experiment changes solver answers and re-runs the fixed judge, so score variation is end-to-end. Judge-only variance is estimated separately by cross-judge fixed-answer repeats."
+  },
+  "protocol_audit": {
+    "status": "PASS_all_three_fresh_replicates_complete_and_wire_verified",
+    "counts": {
+      "solver_terminals": 273,
+      "judge_terminals": 273,
+      "solver_api_attempt_records": 281,
+      "solver_terminals_recovered_from_inflight_attempt_sidecar": 2,
+      "abandoned_inflight_attempt_sidecars_counted_as_wire_ordinals": 1,
+      "judge_api_attempt_records": 298,
+      "vision_solver_terminals_direct_png_verified": 273,
+      "text_solver_terminals_zero_image_verified": 0,
+      "vision_judge_terminals_direct_question_and_solution_png_verified": 273,
+      "deterministic_zero_judge_terminals": 0,
+      "deterministic_quote_recovery_judge_terminals": 1,
+      "deterministic_quote_recovery_saved_responses_replayed": 7,
+      "staticization_items_hash_and_leakage_verified": 91,
+      "icho_aggregate_route_replicates_weighted_to_60_verified": 3,
+      "ipho_aggregate_route_replicates_summed_to_30_verified": 3
+    },
+    "image_asset_unique_file_count": 185,
+    "runs": [
+      {
+        "contest": "ipho2026",
+        "replicate": "repA",
+        "solver_terminal_count": 23,
+        "judge_terminal_count": 23,
+        "aggregate_sha256": "f6a5ca4768f34901dfb7cb6f955b520ee4eec46efe9533b09e9576ff40620998",
+        "source_aggregate_sha256": "f6a5ca4768f34901dfb7cb6f955b520ee4eec46efe9533b09e9576ff40620998",
+        "compact_archive_path": "experiments/2026_reval/archives/ipho_icho_repeat_responses_scores_no_cot_20260831.json.zst",
+        "compact_record_selector": {
+          "contest": "ipho2026",
+          "replicate": "A",
+          "route": "google/gemini-3.5-flash"
+        }
+      },
+      {
+        "contest": "icho2026",
+        "replicate": "repA",
+        "solver_terminal_count": 68,
+        "judge_terminal_count": 68,
+        "aggregate_sha256": "76d8aec63a98d7a17338e6a9faf92af71c25b59a3485ad7992c8f1df5e838553",
+        "source_aggregate_sha256": "76d8aec63a98d7a17338e6a9faf92af71c25b59a3485ad7992c8f1df5e838553",
+        "compact_archive_path": "experiments/2026_reval/archives/ipho_icho_repeat_responses_scores_no_cot_20260831.json.zst",
+        "compact_record_selector": {
+          "contest": "icho2026",
+          "replicate": "A",
+          "route": "google/gemini-3.5-flash"
+        }
+      },
+      {
+        "contest": "ipho2026",
+        "replicate": "repB",
+        "solver_terminal_count": 23,
+        "judge_terminal_count": 23,
+        "aggregate_sha256": "5365699f00c30e8efdcfbbdb7f1149b810e23eacfceca953ce14afe7b8c11146",
+        "source_aggregate_sha256": "5365699f00c30e8efdcfbbdb7f1149b810e23eacfceca953ce14afe7b8c11146",
+        "compact_archive_path": "experiments/2026_reval/archives/ipho_icho_repeat_responses_scores_no_cot_20260831.json.zst",
+        "compact_record_selector": {
+          "contest": "ipho2026",
+          "replicate": "B",
+          "route": "google/gemini-3.5-flash"
+        }
+      },
+      {
+        "contest": "icho2026",
+        "replicate": "repB",
+        "solver_terminal_count": 68,
+        "judge_terminal_count": 68,
+        "aggregate_sha256": "d33cccb67a70ecae0e6a601ffd1463f98bd14addf8f3c80265fc963176231517",
+        "source_aggregate_sha256": "d33cccb67a70ecae0e6a601ffd1463f98bd14addf8f3c80265fc963176231517",
+        "compact_archive_path": "experiments/2026_reval/archives/ipho_icho_repeat_responses_scores_no_cot_20260831.json.zst",
+        "compact_record_selector": {
+          "contest": "icho2026",
+          "replicate": "B",
+          "route": "google/gemini-3.5-flash"
+        }
+      },
+      {
+        "contest": "ipho2026",
+        "replicate": "repC",
+        "solver_terminal_count": 23,
+        "judge_terminal_count": 23,
+        "aggregate_sha256": "372088c276d783eda47cbeb8e7178cbe1e46bf6250b63704cb0300dd2861d283",
+        "source_aggregate_sha256": "16349aa9f55fd11192a75c2ee6da4fd7691bd23afb0346616fd9201046e760e1",
+        "compact_archive_path": "experiments/2026_reval/archives/ipho_icho_repeat_responses_scores_no_cot_20260831.json.zst",
+        "compact_record_selector": {
+          "contest": "ipho2026",
+          "replicate": "C",
+          "route": "google/gemini-3.5-flash"
+        }
+      },
+      {
+        "contest": "icho2026",
+        "replicate": "repC",
+        "solver_terminal_count": 68,
+        "judge_terminal_count": 68,
+        "aggregate_sha256": "e3da52644901aeee7ff60e2efa8618714045091ee2452990d18f3ae75f318367",
+        "source_aggregate_sha256": "e3da52644901aeee7ff60e2efa8618714045091ee2452990d18f3ae75f318367",
+        "compact_archive_path": "experiments/2026_reval/archives/ipho_icho_repeat_responses_scores_no_cot_20260831.json.zst",
+        "compact_record_selector": {
+          "contest": "icho2026",
+          "replicate": "C",
+          "route": "google/gemini-3.5-flash"
+        }
+      }
+    ],
+    "frozen_inputs": {
+      "ipho2026": {
+        "items_jsonl_sha256": "3d9256334674a913be301e809d5baa04ae9228fda6767ce3e2cc4fed54c4a205",
+        "question_png_unique_count": 11,
+        "solution_png_unique_count": 0,
+        "png_manifest_sha256": "7b735c7ca116fead00c3fc60966d28ba7a377aa8c21304b18a49d64f0b32bd6d",
+        "all_png_magic_verified": true,
+        "staticization_provenance": [
+          {
+            "workspace_relative_path": "experiments/2026_reval/staticizations/qonly_gemini31_reviewed_frozen_final_v2_20260829/provenance.json",
+            "sha256": "de37022744d91ecdb3be14518d70173b4d8c53c815551e07cd2607dc41ed7008"
+          }
+        ],
+        "staticization_provenance_manifest_sha256": "2f5b8d091f85ec26a0732a4ff259957ab94d3940746bb6ae1f0999db5691ab65"
+      },
+      "icho2026": {
+        "items_jsonl_sha256": "a0f0ef68489395e0ead74636d79f60b913d3c1ff3d9b015680d93493078f0837",
+        "question_png_unique_count": 91,
+        "solution_png_unique_count": 83,
+        "png_manifest_sha256": "6ec5ed731dce4f242c54f1d693820960f17e12093f62dbb58834443840f3cfcb",
+        "all_png_magic_verified": true,
+        "staticization_provenance": [
+          {
+            "workspace_relative_path": "experiments/2026_reval/staticizations/qonly_gemini31_reviewed_frozen_final_v2_20260829/provenance.json",
+            "sha256": "de37022744d91ecdb3be14518d70173b4d8c53c815551e07cd2607dc41ed7008"
+          }
+        ],
+        "staticization_provenance_manifest_sha256": "2f5b8d091f85ec26a0732a4ff259957ab94d3940746bb6ae1f0999db5691ab65"
+      }
+    },
+    "score_semantics": {
+      "ipho2026": "sum of 23 rubric-item scores; three problems each close to 10, report scale 30",
+      "icho2026": "within each of nine problems, raw rubric score / official raw maximum * official problem weight; official weights sum to report scale 60"
+    }
+  },
+  "repC_quote_recovery_sensitivity": [
+    {
+      "route": "google/gemini-3.5-flash",
+      "item_id": "ipho2026_t3_b1",
+      "recovered_score": 1.5,
+      "item_max_score": 1.5,
+      "repC_ipho_including_recovery_raw_over_30": 28.75,
+      "repC_ipho_counterfactual_recovered_cell_zero_raw_over_30": 27.25,
+      "repC_ipho_impact_points": 1.5,
+      "repC_ipho_impact_pp": 5.0,
+      "three_repeat_ipho_mean_including_recovery_raw_over_30": 28.75,
+      "three_repeat_ipho_mean_counterfactual_recovered_cell_zero_raw_over_30": 28.25,
+      "three_repeat_ipho_mean_impact_pp": 1.6666666666666667,
+      "three_repeat_two_contest_macro_mean_impact_pp": 0.8333333333333334,
+      "counterfactual_policy": "Conservative sensitivity only: retain every other judged cell and set this recovered cell to zero; the failed source terminal itself remains missing and unmodified."
+    }
+  ],
+  "pairwise_rank_stability": [],
+  "overall": {
+    "mean_model_macro_sample_sd_pp": 2.414103427599934,
+    "max_model_macro_sample_sd_pp": 2.414103427599934,
+    "mean_model_macro_range_pp": 4.810823753689547,
+    "max_model_macro_range_pp": 4.810823753689547,
+    "mean_exact_same_answer_fraction": 0.0,
+    "mean_end_to_end_item_score_changed_fraction": 0.21978021978021978
+  },
+  "models": [
+    {
+      "route": "google/gemini-3.5-flash",
+      "display_name": "Gemini 3.5 Flash",
+      "input_mode": "vision",
+      "ipho_repA_score": 29.75,
+      "ipho_repB_score": 27.75,
+      "ipho_repC_score": 28.75,
+      "ipho_mean_score": 28.75,
+      "ipho_sample_sd_points": 1.0,
+      "ipho_range_points": 2.0,
+      "ipho_mean_percent": 95.83333333333333,
+      "ipho_sample_sd_pp": 3.3333333333333357,
+      "ipho_range_pp": 6.666666666666671,
+      "icho_repA_score": 54.762521601557744,
+      "icho_repB_score": 52.98953309713028,
+      "icho_repC_score": 53.45063253586099,
+      "icho_mean_score": 53.734229078183006,
+      "icho_sample_sd_points": 0.9198871171620665,
+      "icho_range_points": 1.7729885044274667,
+      "icho_mean_percent": 89.55704846363835,
+      "icho_sample_sd_pp": 1.5331451952701083,
+      "icho_range_pp": 2.9549808407124374,
+      "macro_repA_percent": 95.21876800129812,
+      "macro_repB_percent": 90.40794424760857,
+      "macro_repC_percent": 92.45886044655083,
+      "macro_mean_percent": 92.69519089848585,
+      "macro_sample_sd_pp": 2.414103427599934,
+      "macro_range_pp": 4.810823753689547,
+      "exact_same_answer_fraction": 0.0,
+      "end_to_end_item_score_changed_fraction": 0.21978021978021978,
+      "competitions": {
+        "ipho2026": {
+          "raw_scores": {
+            "repA": 29.75,
+            "repB": 27.75,
+            "repC": 28.75
+          },
+          "normalized_percent": {
+            "repA": 99.16666666666667,
+            "repB": 92.5,
+            "repC": 95.83333333333334
+          },
+          "normalized_percent_stats": {
+            "mean": 95.83333333333333,
+            "sample_sd": 3.3333333333333357,
+            "min": 92.5,
+            "max": 99.16666666666667,
+            "range": 6.666666666666671
+          },
+          "external_published_table6": {
+            "score": 29.75,
+            "raw_max": 30.0,
+            "normalized_percent": 99.16666666666667,
+            "delta_fresh_mean_minus_external_pp": -3.333333333333343
+          }
+        },
+        "icho2026": {
+          "raw_scores": {
+            "repA": 54.762521601557744,
+            "repB": 52.98953309713028,
+            "repC": 53.45063253586099
+          },
+          "normalized_percent": {
+            "repA": 91.27086933592958,
+            "repB": 88.31588849521714,
+            "repC": 89.08438755976832
+          },
+          "normalized_percent_stats": {
+            "mean": 89.55704846363835,
+            "sample_sd": 1.5331451952701083,
+            "min": 88.31588849521714,
+            "max": 91.27086933592958,
+            "range": 2.9549808407124374
+          },
+          "external_published_table6": {
+            "score": 54.91496096067135,
+            "raw_max": 60.0,
+            "normalized_percent": 91.52493493445225,
+            "delta_fresh_mean_minus_external_pp": -1.9678864708138946
+          }
+        }
+      },
+      "macro_percent_stats": {
+        "mean": 92.69519089848585,
+        "sample_sd": 2.414103427599934,
+        "min": 90.40794424760857,
+        "max": 95.21876800129812,
+        "range": 4.810823753689547
+      },
+      "answer_cell_count": 91,
+      "exact_same_answer_count": 0,
+      "end_to_end_item_score_cell_count": 91,
+      "end_to_end_item_score_changed_count": 20
+    }
+  ],
+  "compact_response_score_archive": {
+    "path": "experiments/2026_reval/archives/ipho_icho_repeat_responses_scores_no_cot_20260831.json.zst",
+    "sha256": "39f753d62dd487036bcf389c57eceb9c64a30f9385e1049237be49db26d24a45",
+    "hidden_reasoning_retained": false,
+    "visible_candidate_responses_and_judge_scores_retained": true
+  }
+}

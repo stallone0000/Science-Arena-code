@@ -1,0 +1,54 @@
+{
+  "schema_version": "science_arena_source_answer_adjudication_v1",
+  "adjudication_id": "usapho2026_b2c_scattering_20260828",
+  "benchmark_id": "usapho2026",
+  "status": "frozen_curator_scientific_correction",
+  "date": "2026-08-28",
+  "affected_item_ids": [
+    "usapho2026_b2_c_i",
+    "usapho2026_b2_c_ii"
+  ],
+  "source": {
+    "path": "new-test/USAPhO 2026/2026-USAPhO-Solutions.pdf",
+    "sha256": "da401e05d009e1dbd14c231484142de03a7cbec9b1a04e7e8b131cc3d3854d64",
+    "pdf_pages": [17, 18],
+    "provenance_status": "provided_worked_solution_external_authenticity_unconfirmed"
+  },
+  "prompt_source": {
+    "path": "new-test/USAPhO 2026/2026-USAPhO-Problems.pdf",
+    "sha256": "95c2f0d278aa206d7386d868dca2a5af4f4135c12bae23a3dce6a55812cad982",
+    "pdf_page": 9,
+    "definition": "alpha is the total deflection angle, i.e. the angle between incoming and outgoing asymptotic velocity directions"
+  },
+  "provided_solution_record": {
+    "final_answer_normalized": "B(alpha)=r0 cot(alpha/2).",
+    "scope": "The provided solution presents this single final formula for the combined parts B2(c)(i)-(ii).",
+    "derivation_summary": "It sets alpha=2 arccos(1/e), uses B=r0/sqrt(e^2-1), and concludes B(alpha)=r0 cot(alpha/2).",
+    "retention_policy": "Retain unchanged as provided-solution evidence; do not silently replace it with the adjudicated reference."
+  },
+  "finding": {
+    "severity": "major_scientific_error",
+    "issues": [
+      "The printed derivation uses the angle between position-ray asymptotes, 2 arccos(1/e), rather than the prompt-defined angle between incoming and outgoing velocity directions.",
+      "The printed final result treats the orbit-dependent semilatus rectum r0 as if it were constant across the fixed-energy impact-parameter family."
+    ]
+  },
+  "adjudicated_reference": {
+    "part_c_i": "B(alpha_s)=a_C cot(alpha_s/2), where a_C=k q_alpha q_gamma/(m_gamma v_inf^2).",
+    "part_c_ii": "For the part-(b) reference trajectory e=3 and p=r0, so a_C=r0/(e^2-1)=r0/8 and B(alpha_s)=(r0/8) cot(alpha_s/2).",
+    "notation": "alpha_s denotes the prompt-defined physical velocity deflection and distinguishes it from the supplementary angle used in the source solution."
+  },
+  "derivation": [
+    "For repulsive Coulomb scattering at fixed asymptotic speed, define a_C=k q_alpha q_gamma/(m_gamma v_inf^2).",
+    "Conservation of energy and angular momentum gives e^2=1+(B/a_C)^2.",
+    "For r=p/(e cos(phi)-1), the position-ray asymptote has phi_inf=arccos(1/e), while the incoming velocity points opposite the incoming position ray.",
+    "Therefore the physical velocity deflection is alpha_s=pi-2 phi_inf=2 arcsin(1/e), which yields B=a_C cot(alpha_s/2).",
+    "The semilatus rectum obeys p=a_C(e^2-1). For the part-(b) reference trajectory, e=3 and p=r0=4 m, hence a_C=r0/8."
+  ],
+  "grading_policy": {
+    "reference_to_grade": "adjudicated_reference",
+    "provided_answer_is_full_credit": false,
+    "instruction": "Grade against the corrected prompt-consistent physical deflection relation. Preserve the provided answer in the record. A response that reproduces only B=r0 cot(alpha/2) is not fully correct under the prompt's definition; award criterion-level method credit only where justified.",
+    "provenance": "curator scientific adjudication, not an official USAPhO correction or rubric"
+  }
+}

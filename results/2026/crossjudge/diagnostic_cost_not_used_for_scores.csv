@@ -1,0 +1,2 @@
+actual_cost_cny_for_usage_known_attempts,attempt_files,attempts_with_complete_usage,cost_complete,extra_retry_attempts,failed_terminal_judgments,input_tokens,judge_input_mode,judge_route,judgments_requiring_retry,logical_judgments,maximum_attempts_for_one_judgment,output_tokens,successful_terminal_judgments
+38.90352600000003,341,341,True,,,2254277,text_staticized,deepseek/deepseek-v4-pro,,,,2130317,

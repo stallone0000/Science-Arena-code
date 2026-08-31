@@ -1,0 +1,123 @@
+{
+  "schema_version": "icho2026_canonical_manifest_v1",
+  "benchmark_id": "icho2026_theory",
+  "competition": "58th International Chemistry Olympiad",
+  "year": 2026,
+  "language": "English",
+  "source_status": "official",
+  "dataset_status": "canonical_stage1b_ready_for_formal_evaluation",
+  "item_count": 68,
+  "problem_count": 9,
+  "raw_point_total": 437,
+  "reported_scale": 60,
+  "problem_weight_total": 60,
+  "visual_dependency_item_count": 50,
+  "question_text_staticized_complete_count": 68,
+  "human_visual_audited_count": 68,
+  "question_image_assets_complete_count": 68,
+  "grading_criterion_count": 107,
+  "grading_rubric_exact_sum_count": 68,
+  "curated_rubric_item_count": 19,
+  "solver_safe_official_page_image_count": 93,
+  "solver_safe_page_images_referenced_by_items": 91,
+  "gold_only_official_solution_page_image_count": 85,
+  "gold_page_images_referenced_by_items": 83,
+  "score_conversion": "For each problem: official weight * earned raw / problem raw maximum; sum nine problem contributions for score out of 60.",
+  "multimodal_policy": "Send question_image_paths from official G0/question/answer pages. If a visual-dependent item lacks any declared image, block it; never substitute prose.",
+  "text_only_policy": "Use question_text_staticized only; every item is standalone and human visual audited.",
+  "gold_policy": "official_answer, official_solution, official_rubric, criteria, and official_solution_image_paths are judge-only and must never enter solver payloads.",
+  "known_source_issues": [
+    {
+      "policy_id": "icho2026_t4_9_fallback_and_printed_mass_typo_v2",
+      "issue": "The official page derives 7.03 mol*235.04 g mol^-1=1.65 kg, then prints 1.67 as the enrichment/burnup numerator, while its final 5.56 kg equals 1.65/(0.90*0.33), not 1.67/(0.90*0.33).",
+      "preserve_source": "Keep 1.65, printed 1.67, and final 5.56 exactly in the raw official transcription; do not silently amend the PDF.",
+      "primary_expected": {
+        "total_fissions": "4.23e24 fissions",
+        "enriched_uranium_mass": "5.56 kg"
+      },
+      "official_fallback": {
+        "source_pdf": "new-test/IChO 2026/theoretical-exam-question/exam-theory-Q4-english_5.pdf",
+        "source_page": 3,
+        "printed_rule": "If you did not get an answer for 4.4, use Delta E = 200 MeV.",
+        "accepted_consistent_results": {
+          "total_fissions": "approximately 3.92e24 fissions",
+          "enriched_uranium_mass": "approximately 5.15 kg"
+        },
+        "scoring": "A self-consistent use of the printed 200 MeV fallback is fully correct for both components."
+      },
+      "contestant_visibility": "The 1.67 typo appears only in the hidden official marking PDF and is not present in the solver question/answer pages. It therefore cannot supply a contestant-facing basis for a different full-credit answer.",
+      "incorrect_value_policy": "Do not award full credit to approximately 5.62 kg solely because it equals the hidden printed 1.67/(0.90*0.33). Apply the official mass component rule instead: 1 of 2 mass points if the relevant enrichment/burnup calculation is shown but the final value is wrong; otherwise 0.",
+      "scoring": "Retain the official 2 raw points for total fissions and 2 for enriched mass. Award full credit for either the primary 4.4-dependent path or the explicitly printed 200 MeV fallback path; otherwise retain the official 1-point relevant-calculation partial credit in each component.",
+      "requires_human_override": false
+    }
+  ],
+  "post_audit_canonical_corrections": [
+    {
+      "item": "4.3",
+      "issue": "Draft gold-page dependency included page 2 coloured scoring text from item 4.2.",
+      "resolution": "Gold transcription is restricted to the actual 4.3 solution and three printed scoring components on page 3."
+    },
+    {
+      "item": "4.9",
+      "issue": "Initial normalized criteria omitted the question's explicitly printed 200 MeV fallback path.",
+      "resolution": "Both primary 4.4-dependent values and self-consistent fallback values are full-credit paths."
+    }
+  ],
+  "validation": {
+    "dataset_validator": "experiments/2026_reval/datasets/icho2026/validate_canonical.py",
+    "dataset_report": "experiments/2026_reval/datasets/icho2026/validation_report.json",
+    "production_pipeline": "experiments/2026_reval/pipeline.py",
+    "frozen_model_manifest": "experiments/2026_reval/manifests/table6_models_frozen_20260828.json",
+    "pipeline_validation_proof": "experiments/2026_reval/runs/icho2026_validation_live/input_validation.json",
+    "pipeline_run_manifest": "experiments/2026_reval/runs/icho2026_validation_live/run_manifest.json",
+    "policy": "Both validators must pass after the final canonical rebuild; validate performs no model/API calls."
+  },
+  "problem_meta": {
+    "T1": {
+      "raw_max": 25,
+      "weight": 7,
+      "title": "A Journey through Time: The Secrets of Avicenna"
+    },
+    "T2": {
+      "raw_max": 35,
+      "weight": 6,
+      "title": "Kinetics of the Belousov-Zhabotinsky reaction"
+    },
+    "T3": {
+      "raw_max": 63,
+      "weight": 7,
+      "title": "Into Reticular Chemistry"
+    },
+    "T4": {
+      "raw_max": 22,
+      "weight": 6,
+      "title": "The Nuclear Past of Uzbekistan"
+    },
+    "T5": {
+      "raw_max": 18,
+      "weight": 6,
+      "title": "Cardiolipins"
+    },
+    "T6": {
+      "raw_max": 83,
+      "weight": 7,
+      "title": "Carbon Nanorings"
+    },
+    "T7": {
+      "raw_max": 54,
+      "weight": 7,
+      "title": "Nitrogen Fixation"
+    },
+    "T8": {
+      "raw_max": 84,
+      "weight": 7,
+      "title": "Recycling of Carbon Dioxide"
+    },
+    "T9": {
+      "raw_max": 53,
+      "weight": 7,
+      "title": "Cyclodextrin Chemistry"
+    }
+  },
+  "no_model_or_api_calls": true
+}

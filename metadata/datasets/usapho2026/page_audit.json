@@ -1,0 +1,236 @@
+{
+  "all_pages_text_and_visual_audited": true,
+  "method": "Every page read with pdftotext -layout and visually reviewed from a fresh 180-DPI PNG at original detail.",
+  "problem_pdf_pages": [
+    {
+      "notes": "Part A reference sheet: constants, approximations, contributor acknowledgement; no problem or solution.",
+      "page": 1,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Problem A1 shared statement, eye/corrective-lens schematic, and parts (a)-(d).",
+      "page": 2,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Problem A1 part (e)(i)-(ii); otherwise intentionally sparse page.",
+      "page": 3,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Problem A2 shared statement and parts (a)-(d); no figure.",
+      "page": 4,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Problem A3 Updraft and Vortex statements; no figure; visible PDF link box around A(c).",
+      "page": 5,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Part B reference sheet, duplicating the Part A reference content; no problem or solution.",
+      "page": 6,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Problem B1 statement through parts (a)-(c), cluster setup, and start of part (d).",
+      "page": 7,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Problem B1 continuation: part (d)(i)-(iii).",
+      "page": 8,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Problem B2 statement and all parts; conic equations and coordinates, no orbit drawing.",
+      "page": 9,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Problem B3 statement and all parts; equations only, no apparatus/circuit drawing.",
+      "page": 10,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    }
+  ],
+  "problem_pdf_sha256": "95c2f0d278aa206d7386d868dca2a5af4f4135c12bae23a3dce6a55812cad982",
+  "schema_version": "usapho2026_page_dual_audit_v1",
+  "solution_pdf_pages": [
+    {
+      "notes": "Reference sheet only; no solution.",
+      "page": 1,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "A1 statement/schematic and beginning of solution (a).",
+      "page": 2,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End A1(a), solution (b), and prompt (c).",
+      "page": 3,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Solutions A1(c)-(d), with (d) continuing.",
+      "page": 4,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End A1(d) and solutions A1(e)(i)-(ii).",
+      "page": 5,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "A2 statement, solution (a), and beginning of (b).",
+      "page": 6,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End A2(b), solutions (c), and most of (d).",
+      "page": 7,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Final A2(d) result; otherwise intentionally sparse.",
+      "page": 8,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "A3 statement and Updraft solutions (a)-(b).",
+      "page": 9,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "A3 Updraft solution (c) and most of Vortex solution (a).",
+      "page": 10,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End A3 Vortex (a) and solution (b).",
+      "page": 11,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "B1 statement, solutions (a), (b)(i), and prompt (b)(ii).",
+      "page": 12,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "B1 solutions (b)(ii), (c)(i)-(ii), cluster setup, and prompt (d)(i).",
+      "page": 13,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "B1 solutions (d)(i), (d)(ii)(i)-(ii), and (d)(iii).",
+      "page": 14,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "B2 statement and beginning of solution (a).",
+      "page": 15,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End B2(a), prompt and beginning of solution (b).",
+      "page": 16,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End B2(b), prompt and beginning of solution (c).",
+      "page": 17,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "B2(c) solution containing the documented scattering-angle/family error.",
+      "page": 18,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "B3 statement, solution (a), and beginning of solution (b).",
+      "page": 19,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Most of B3(b) and beginning of solution (c).",
+      "page": 20,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End B3(c), solution (d), and most of solution (e).",
+      "page": 21,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End B3(e); otherwise intentionally sparse.",
+      "page": 22,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    }
+  ],
+  "solution_pdf_sha256": "da401e05d009e1dbd14c231484142de03a7cbec9b1a04e7e8b131cc3d3854d64",
+  "status": "PASS"
+}

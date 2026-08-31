@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "adjudication_count": 1,
+    "adjudication_sha256": "4eca78981e6f9dca54b607de9731c34cdb0b446ff0dbf238fa4c0f23fb0f252b",
+    "direct_question_page_pixel_required_item_count": 34,
+    "dual_audited_page_count": 32,
+    "fresh_rerender_compared": true,
+    "intrinsic_visual_dependency_item_count": 0,
+    "item_count": 34,
+    "items_sha256": "611096bce2bc6a0bb8731050e3bcf600cbd2d0aa2f4388400ae1fd51d164e73b",
+    "official_question_figure_item_count": 6,
+    "problem_count": 6,
+    "question_image_count": 10,
+    "question_manifest_sha256": "e9abbbfa792c5769962e02383e029dfa5cf301b0fbbc3656a0f29cfa1c95f3e7",
+    "question_pdf_sha256": "95c2f0d278aa206d7386d868dca2a5af4f4135c12bae23a3dce6a55812cad982",
+    "raw_score_total": 150.0,
+    "solution_image_count": 22,
+    "solution_manifest_sha256": "505439cf5c3ad954b4b21645557f22aa17efb32cc97a8322fb5c98fe15c2e271",
+    "solution_pdf_sha256": "da401e05d009e1dbd14c231484142de03a7cbec9b1a04e7e8b131cc3d3854d64",
+    "staticization_completeness_matrix_sha256": "dd825cbe3d0a39e90ed7b6be9693c46e1756f2f006ad4e2e2c7808ac96e928e2",
+    "staticization_matrix_complete_count": 34,
+    "staticized_verified_count": 34
+  },
+  "errors": [],
+  "schema_version": "usapho2026_canonical_validation_v1",
+  "status": "PASS",
+  "warnings": []
+}

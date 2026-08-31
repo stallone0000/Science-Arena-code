@@ -1,0 +1,28 @@
+{
+  "schema_version": "icho2026_canonical_validation_v1",
+  "status": "PASS",
+  "errors": [],
+  "checks": {
+    "item_count": 68,
+    "raw_point_total": 437,
+    "problem_weight_total": 60,
+    "visual_dependency_item_count": 50,
+    "staticized_complete_count": 68,
+    "human_visual_audited_count": 68,
+    "unique_question_image_count": 93,
+    "unique_solution_image_count": 85,
+    "item_referenced_question_image_count": 91,
+    "item_referenced_solution_image_count": 83,
+    "solver_solution_path_or_gold_marker_hits": 0,
+    "all_declared_image_hashes_match": true,
+    "all_declared_source_pdf_hashes_match": true,
+    "unique_source_pdf_hashes_verified": 28,
+    "t4_9_explicit_adjudication_policy": true,
+    "production_question_image_assets_complete_count": 68,
+    "production_grading_rubric_exact_sum_count": 68,
+    "grading_criterion_count": 107,
+    "curated_rubric_item_count": 19,
+    "curated_criterion_source_provenance_complete": true,
+    "no_model_or_api_calls": true
+  }
+}

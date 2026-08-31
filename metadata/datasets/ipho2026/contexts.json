@@ -1,0 +1,415 @@
+[
+  {
+    "constants": [
+      {
+        "name": "speed of light in vacuum",
+        "symbol": "c",
+        "unit": "m s^-1",
+        "value": "2.99792458e8"
+      },
+      {
+        "name": "Planck constant",
+        "symbol": "h",
+        "unit": "eV s",
+        "value": "4.135667696...e-15"
+      },
+      {
+        "name": "reduced Planck constant",
+        "symbol": "hbar",
+        "unit": "eV s",
+        "value": "6.582119569...e-16"
+      },
+      {
+        "name": "Avogadro number",
+        "symbol": "N_A",
+        "unit": "mol^-1",
+        "value": "6.02214076e23"
+      },
+      {
+        "name": "Boltzmann constant",
+        "symbol": "k_B",
+        "unit": "eV K^-1",
+        "value": "8.617333262e-5"
+      },
+      {
+        "name": "ideal gas constant",
+        "symbol": "R",
+        "unit": "kg m^2 s^-2 mol^-1 K^-1",
+        "value": "8.31446261815324"
+      },
+      {
+        "name": "elementary charge",
+        "symbol": "e",
+        "unit": "A s",
+        "value": "1.602176634e-19"
+      },
+      {
+        "name": "universal gravitational constant",
+        "symbol": "G",
+        "unit": "m^3 kg^-1 s^-2",
+        "value": "6.67430(15)e-11"
+      },
+      {
+        "name": "Stefan-Boltzmann constant",
+        "symbol": "sigma",
+        "unit": "kg s^-3 K^-4",
+        "value": "5.670374419e-8"
+      },
+      {
+        "name": "vacuum permeability",
+        "symbol": "mu_0",
+        "unit": "kg m A^-2 s^-2",
+        "value": "1.25663706127(20)e-6"
+      },
+      {
+        "name": "vacuum permittivity",
+        "symbol": "epsilon_0",
+        "unit": "A^2 s^4 kg^-1 m^-3",
+        "value": "8.8541878188(14)e-12"
+      },
+      {
+        "name": "mass of the electron",
+        "symbol": "m_e",
+        "unit": "eV/c^2",
+        "value": "5.1099895069(16)e5"
+      },
+      {
+        "name": "mass of the proton",
+        "symbol": "m_p",
+        "unit": "eV/c^2",
+        "value": "9.3827208943(29)e8"
+      },
+      {
+        "name": "atomic mass unit",
+        "symbol": "amu",
+        "unit": "eV/c^2",
+        "value": "9.3149410372(29)e8"
+      }
+    ],
+    "context_id": "ipho2026_physical_constants",
+    "extraction_note": "Values were transcribed from the rendered table because automatic text extraction separates exponents and units.",
+    "kind": "reference_table",
+    "source": {
+      "locator": "Physical Constants",
+      "pdf_pages": [
+        3
+      ],
+      "printed_pages": [
+        3
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    }
+  },
+  {
+    "context_id": "ipho2026_t1_a",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 1a",
+        "pdf_page": 4,
+        "printed_page": 4,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "problem_context",
+    "source": {
+      "locator": "T1-A [3.0 pts]",
+      "pdf_pages": [
+        4
+      ],
+      "printed_pages": [
+        4
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "Two water reservoirs are separated by a vertical wall MN. The left reservoir receives water and the maximum allowed water-level difference is Delta h = 1.41 m. A slot of vertical size a*sqrt(2)/2 is cut in MN and sealed with a solid cubic block of side a. The block density is 3 rho_0, where rho_0 is the density of water. The fully submerged block is fixed at O and can rotate frictionlessly about an axis perpendicular to the figure through O.",
+    "title": "Hydrostatic gate"
+  },
+  {
+    "context_id": "ipho2026_t1_b",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 1b",
+        "pdf_page": 5,
+        "printed_page": 5,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "problem_context",
+    "source": {
+      "locator": "T1-B [3.5 pts]",
+      "pdf_pages": [
+        5
+      ],
+      "printed_pages": [
+        5
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "At an instant, a positron e+ is 100 a_0 from an electron e-. Their velocities are antiparallel, perpendicular to their separation, as in Fig. 1b. Each particle has angular momentum magnitude mu*hbar about the center of mass. The only interaction is electrostatic; both particles have mass m and opposite charges of equal magnitude. The isolated motion is classical and non-relativistic. The Bohr radius is a_0 = 4 pi epsilon_0 hbar^2/(m e^2). The supplied hints give the conic eccentricity epsilon = sqrt(1 + 4 L^2 E/(k^2 e^4 m)), k = 1/(4 pi epsilon_0), and a polar conic equation r = a/[1 - epsilon cos(theta)].",
+    "title": "Electron-positron pair"
+  },
+  {
+    "context_id": "ipho2026_t1_c",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 1c",
+        "pdf_page": 6,
+        "printed_page": 6,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "problem_context",
+    "source": {
+      "locator": "T1-C [3.5 pts]",
+      "pdf_pages": [
+        6
+      ],
+      "printed_pages": [
+        6
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "A photon of angular frequency omega strikes an ozone molecule O3 at rest and is absorbed, dissociating it into O2 and O. Let U_i and U_f be the ground-state energies of ozone and oxygen molecules. The isolated dynamics are classical, potential energies do not contribute to mass, and oxygen motion is non-relativistic. Photon momentum satisfies p = E/c. Fig. 1c defines theta as the angle of the outgoing O2 momentum relative to the incident photon. The supplied hint is the binomial expansion of (1+x)^r.",
+    "title": "Photodissociation of ozone"
+  },
+  {
+    "context_id": "ipho2026_t2_common",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 2a",
+        "pdf_page": 7,
+        "printed_page": 7,
+        "required": false,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      },
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_photo",
+        "label": "Fig. 2b",
+        "pdf_page": 7,
+        "printed_page": 7,
+        "required": false,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      },
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 2c",
+        "pdf_page": 8,
+        "printed_page": 8,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      },
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 2d",
+        "pdf_page": 8,
+        "printed_page": 8,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "problem_context",
+    "source": {
+      "locator": "QUESTION T2 [10 pts]",
+      "pdf_pages": [
+        7,
+        8
+      ],
+      "printed_pages": [
+        7,
+        8
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "Caustics are curves formed by intersections of infinitesimally close reflected or refracted rays; their brightest central point is the cusp. The problem studies light reflection from a half-cylinder mirror of radius R and its use as a solar cooker. Incident rays come from a distant source and are parallel to the mirror optical axis. By symmetry only one plane is considered, using the coordinate system of Fig. 2d.",
+    "title": "Cooking with sunlight?"
+  },
+  {
+    "context_id": "ipho2026_t2_a",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 2e",
+        "pdf_page": 8,
+        "printed_page": 8,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "problem_context",
+    "source": {
+      "locator": "T2-A [1.5 pts]",
+      "pdf_pages": [
+        8
+      ],
+      "printed_pages": [
+        8
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "Figure 2e relates incident-ray x-coordinate to the number N of mirror reflections, shown through N=3. As x varies over (-R,R), N takes all natural values at least 1. The maximum distance from the optical axis allowing at most N reflections is x_N.",
+    "title": "Multiple reflections"
+  },
+  {
+    "context_id": "ipho2026_t2_b",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 2f",
+        "pdf_page": 9,
+        "printed_page": 9,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "problem_context",
+    "source": {
+      "locator": "T2-B [4.0 pts]",
+      "pdf_pages": [
+        9
+      ],
+      "printed_pages": [
+        9
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "A half-hollow-cylinder mirror of radius R and a fully absorbing cylindrical container of radius a have parallel axes. The container center is R/2 from the mirror on the symmetry plane (Fig. 2f). Sunlight has constant uniform intensity and rays are parallel to the optical axis. Any ray absorbed by the cylinder reflects at most once. theta_max is the maximum mirror incidence angle among reflected rays that strike the container.",
+    "title": "Solar Cooker"
+  },
+  {
+    "context_id": "ipho2026_t2_c",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 2g",
+        "pdf_page": 10,
+        "printed_page": 10,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "problem_context",
+    "source": {
+      "locator": "T2-C [4.5 pts]",
+      "pdf_pages": [
+        10
+      ],
+      "printed_pages": [
+        10
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "In the Fig. 2g coordinate system, ray A strikes the half-cylinder mirror at angle theta and its reflected line is y = m_A x + b_A. A parallel ray B strikes at theta + Delta theta with Delta theta much smaller than theta and reflects along y = m_B x + b_B. The intersection of infinitesimally close reflected rays defines the caustic point (X_C,Y_C).",
+    "title": "Caustics and Cusp"
+  },
+  {
+    "context_id": "ipho2026_t3_common",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 3a",
+        "pdf_page": 11,
+        "printed_page": 11,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "problem_context",
+    "source": {
+      "locator": "QUESTION T3 [10 pts]",
+      "pdf_pages": [
+        11
+      ],
+      "printed_pages": [
+        11
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "A homogeneous isotropic paramagnetic torus has mean radius R, inner radius r, volume V and cross-section A. A densely wound insulated conductor has N turns and is connected to an external emf. Wire heating is negligible and r is much smaller than R, so H, B and magnetization M are approximately uniform in the torus. In the material, B = mu_0 H + mu_0 M, with the vectors parallel. Work W and heat Q are positive into the system and negative out of it.",
+    "title": "Chasing the absolute zero"
+  },
+  {
+    "context_id": "ipho2026_t3_ab",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_table",
+        "label": "IDEAL GAS / PARAMAGNETIC TORUS table",
+        "pdf_page": 12,
+        "printed_page": 12,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "reference_table",
+    "source": {
+      "locator": "T3-B [3.0 pts] comparison table",
+      "pdf_pages": [
+        12
+      ],
+      "printed_pages": [
+        12
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "For the paramagnetic torus the state functions are H, M and T; constants are K, lambda and number of moles n. The equation of state is T M V = n K H. The heat capacity at constant M is C_M = n lambda/T^2, and internal energy obeys dU = C_M dT in any process. The torus volume V is constant. If T3-A3 is unavailable, the question permits dW = alpha V mu_0 H dM with alpha numerical.",
+    "title": "Ideal gas and paramagnetic torus comparison"
+  },
+  {
+    "context_id": "ipho2026_t3_c",
+    "image_refs": [
+      {
+        "externalization_status": "in_pdf_not_externalized",
+        "kind": "question_figure",
+        "label": "Fig. 3b",
+        "pdf_page": 13,
+        "printed_page": 13,
+        "required": true,
+        "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf",
+        "visual_check": "passed"
+      }
+    ],
+    "kind": "problem_context",
+    "source": {
+      "locator": "T3-C [6.0 pts]",
+      "pdf_pages": [
+        13
+      ],
+      "printed_pages": [
+        13
+      ],
+      "source_pdf": "new-test/IPhO 2026/theoretical-exam.pdf"
+    },
+    "text": "The H-versus-T diagram in Fig. 3b shows the Carnot refrigeration cycle 1 -> 2 -> 3 -> 4 -> 1. T_h and T_c are the hot- and cold-reservoir temperatures. Q_h is the absolute heat transferred to the hot reservoir and Q_c is the absolute heat absorbed from the cold reservoir.",
+    "title": "Carnot refrigerator of the Pm-T"
+  }
+]

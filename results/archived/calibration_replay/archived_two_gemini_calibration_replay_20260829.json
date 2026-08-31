@@ -1,0 +1,3549 @@
+{
+  "archive_consistency": {
+    "aggregation_implementation_reference": {
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/science_arena_judge.py",
+      "sha256": "6548f5ef0e78386f233e129015d998ac87d1b8a3b6d631470e8c326133f7206e"
+    },
+    "contract": "all metrics and totals are recomputed directly from the four hash-frozen final judge_results.json arrays and two hash-frozen expert ground truths"
+  },
+  "artifacts": {
+    "replay_script": {
+      "path": "audits/cr_rebuttal_local_supplements_20260829/replay_archived_two_gemini_calibration_20260829.py",
+      "sha256": "d490b15f58a7973ca35a6142b2fbd5e061123a2e61536caf07166b63a9411bd5"
+    },
+    "row_csv": {
+      "bytes": 735731,
+      "data_rows": 1050,
+      "path": "audits/cr_rebuttal_local_supplements_20260829/archived_two_gemini_calibration_rows_20260829.csv",
+      "sha256": "36aa01ae8dcd85b1a8680b2f7034f833907a67b7e377a2e22d8cf27efd257d98"
+    }
+  },
+  "candidate_total_expert_agreement": {
+    "by_judge_across_exams": {
+      "gemini_3_1_pro_preview": {
+        "exam_points": {
+          "comparator_over_reference": {
+            "count": 6,
+            "rate": 0.6,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 4,
+            "rate": 0.4,
+            "tolerance": 1e-12
+          },
+          "denominator": 10,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.994225937245,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 10,
+            "intercept": 0.489968934702,
+            "r_squared": 0.988705047711,
+            "slope": 0.983202437216
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.652404263812,
+          "mean_comparator": 25.388761945361,
+          "mean_reference": 25.324177471683,
+          "mean_signed_error_comparator_minus_reference": 0.064584473679,
+          "pearson_r": 0.994336486161,
+          "root_mean_squared_error": 0.709949271686,
+          "spearman_rho_average_ties": 0.975757575758,
+          "within_threshold": {
+            "0.5": {
+              "count": 2,
+              "inclusive": true,
+              "rate": 0.2
+            },
+            "1": {
+              "count": 10,
+              "inclusive": true,
+              "rate": 1.0
+            },
+            "2": {
+              "count": 10,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "fraction_of_exam_scale": {
+          "comparator_over_reference": {
+            "count": 6,
+            "rate": 0.6,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 4,
+            "rate": 0.4,
+            "tolerance": 1e-12
+          },
+          "denominator": 10,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.986505061635,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 10,
+            "intercept": 0.068886611063,
+            "r_squared": 0.98703158642,
+            "slope": 0.882206932256
+          },
+          "maximum_absolute_error": 0.033333333333,
+          "mean_absolute_error": 0.017040071064,
+          "mean_comparator": 0.590479365756,
+          "mean_reference": 0.591236291195,
+          "mean_signed_error_comparator_minus_reference": -0.000756925439,
+          "pearson_r": 0.993494633312,
+          "root_mean_squared_error": 0.019769701625,
+          "spearman_rho_average_ties": 0.987878787879,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 3,
+                "mean_comparator_fraction": 0.448730424334,
+                "mean_reference_fraction": 0.436054383774,
+                "signed_gap": 0.01267604056
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 1,
+                "mean_comparator_fraction": 0.526666666667,
+                "mean_reference_fraction": 0.506666666667,
+                "signed_gap": 0.02
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 4,
+                "mean_comparator_fraction": 0.638817262806,
+                "mean_reference_fraction": 0.643549940156,
+                "signed_gap": -0.00473267735
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 2,
+                "mean_comparator_fraction": 0.738333333333,
+                "mean_reference_fraction": 0.761666666667,
+                "signed_gap": -0.023333333333
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              }
+            ],
+            "denominator": 10,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.023333333333,
+            "weighted_mean_absolute_bin_gap": 0.012362549775
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 2,
+              "inclusive": true,
+              "rate": 0.2
+            },
+            "0.02": {
+              "count": 7,
+              "inclusive": true,
+              "rate": 0.7
+            },
+            "0.05": {
+              "count": 10,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        }
+      },
+      "gemini_3_5_flash": {
+        "exam_points": {
+          "comparator_over_reference": {
+            "count": 1,
+            "rate": 0.1,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 9,
+            "rate": 0.9,
+            "tolerance": 1e-12
+          },
+          "denominator": 10,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.996797840365,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 10,
+            "intercept": -0.088316442397,
+            "r_squared": 0.995197307871,
+            "slope": 0.993082072283
+          },
+          "maximum_absolute_error": 0.93,
+          "mean_absolute_error": 0.449507271637,
+          "mean_comparator": 25.060670200046,
+          "mean_reference": 25.324177471683,
+          "mean_signed_error_comparator_minus_reference": -0.263507271637,
+          "pearson_r": 0.99759576376,
+          "root_mean_squared_error": 0.530662202734,
+          "spearman_rho_average_ties": 0.987878787879,
+          "within_threshold": {
+            "0.5": {
+              "count": 6,
+              "inclusive": true,
+              "rate": 0.6
+            },
+            "1": {
+              "count": 10,
+              "inclusive": true,
+              "rate": 1.0
+            },
+            "2": {
+              "count": 10,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "fraction_of_exam_scale": {
+          "comparator_over_reference": {
+            "count": 1,
+            "rate": 0.1,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 9,
+            "rate": 0.9,
+            "tolerance": 1e-12
+          },
+          "denominator": 10,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.991909396062,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 10,
+            "intercept": 0.001328540651,
+            "r_squared": 0.986355699438,
+            "slope": 0.987083006758
+          },
+          "maximum_absolute_error": 0.031,
+          "mean_absolute_error": 0.012508454527,
+          "mean_comparator": 0.584927836667,
+          "mean_reference": 0.591236291195,
+          "mean_signed_error_comparator_minus_reference": -0.006308454527,
+          "pearson_r": 0.993154418728,
+          "root_mean_squared_error": 0.016147689665,
+          "spearman_rho_average_ties": 0.987878787879,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 1,
+                "mean_comparator_fraction": 0.386447113592,
+                "mean_reference_fraction": 0.3901272009,
+                "signed_gap": -0.003680087308
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 3,
+                "mean_comparator_fraction": 0.464922631301,
+                "mean_reference_fraction": 0.474900872363,
+                "signed_gap": -0.009978241062
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 4,
+                "mean_comparator_fraction": 0.641432506461,
+                "mean_reference_fraction": 0.643549940156,
+                "signed_gap": -0.002117433695
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 2,
+                "mean_comparator_fraction": 0.751166666667,
+                "mean_reference_fraction": 0.761666666667,
+                "signed_gap": -0.0105
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              }
+            ],
+            "denominator": 10,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.0105,
+            "weighted_mean_absolute_bin_gap": 0.006308454527
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 0.5
+            },
+            "0.02": {
+              "count": 8,
+              "inclusive": true,
+              "rate": 0.8
+            },
+            "0.05": {
+              "count": 10,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        }
+      }
+    },
+    "by_run": {
+      "gemini_3_1_pro_preview__icho2025": {
+        "exam_points": {
+          "comparator_over_reference": {
+            "count": 4,
+            "rate": 0.8,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 1,
+            "rate": 0.2,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.992389232778,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": 3.025433943095,
+            "r_squared": 0.997588384101,
+            "slope": 0.911815154372
+          },
+          "maximum_absolute_error": 0.812416531586,
+          "mean_absolute_error": 0.564808527624,
+          "mean_comparator": 30.697523890723,
+          "mean_reference": 30.348354943365,
+          "mean_signed_error_comparator_minus_reference": 0.349168947358,
+          "pearson_r": 0.998793464186,
+          "root_mean_squared_error": 0.637225185264,
+          "spearman_rho_average_ties": 0.9,
+          "within_threshold": {
+            "0.5": {
+              "count": 1,
+              "inclusive": true,
+              "rate": 0.2
+            },
+            "1": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            },
+            "2": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "fraction_of_exam_scale": {
+          "comparator_over_reference": {
+            "count": 4,
+            "rate": 0.8,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 1,
+            "rate": 0.2,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.992389232778,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": 0.050423899052,
+            "r_squared": 0.997588384101,
+            "slope": 0.911815154372
+          },
+          "maximum_absolute_error": 0.013540275526,
+          "mean_absolute_error": 0.00941347546,
+          "mean_comparator": 0.511625398179,
+          "mean_reference": 0.505805915723,
+          "mean_signed_error_comparator_minus_reference": 0.005819482456,
+          "pearson_r": 0.998793464186,
+          "root_mean_squared_error": 0.010620419754,
+          "spearman_rho_average_ties": 0.9,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 3,
+                "mean_comparator_fraction": 0.448730424334,
+                "mean_reference_fraction": 0.436054383774,
+                "signed_gap": 0.01267604056
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 2,
+                "mean_comparator_fraction": 0.605967858946,
+                "mean_reference_fraction": 0.610433213646,
+                "signed_gap": -0.004465354701
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              }
+            ],
+            "denominator": 5,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.01267604056,
+            "weighted_mean_absolute_bin_gap": 0.009391766217
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 2,
+              "inclusive": true,
+              "rate": 0.4
+            },
+            "0.02": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            },
+            "0.05": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        }
+      },
+      "gemini_3_1_pro_preview__ipho2025": {
+        "exam_points": {
+          "comparator_over_reference": {
+            "count": 2,
+            "rate": 0.4,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 3,
+            "rate": 0.6,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.958602668134,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": 3.913295246801,
+            "r_squared": 0.966774783173,
+            "slope": 0.796389396709
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.74,
+          "mean_comparator": 20.08,
+          "mean_reference": 20.3,
+          "mean_signed_error_comparator_minus_reference": -0.22,
+          "pearson_r": 0.983247061106,
+          "root_mean_squared_error": 0.775886589651,
+          "spearman_rho_average_ties": 1.0,
+          "within_threshold": {
+            "0.5": {
+              "count": 1,
+              "inclusive": true,
+              "rate": 0.2
+            },
+            "1": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            },
+            "2": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "fraction_of_exam_scale": {
+          "comparator_over_reference": {
+            "count": 2,
+            "rate": 0.4,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 3,
+            "rate": 0.6,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.958602668134,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": 0.130443174893,
+            "r_squared": 0.966774783173,
+            "slope": 0.796389396709
+          },
+          "maximum_absolute_error": 0.033333333333,
+          "mean_absolute_error": 0.024666666667,
+          "mean_comparator": 0.669333333333,
+          "mean_reference": 0.676666666667,
+          "mean_signed_error_comparator_minus_reference": -0.007333333333,
+          "pearson_r": 0.983247061106,
+          "root_mean_squared_error": 0.025862886322,
+          "spearman_rho_average_ties": 1.0,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 1,
+                "mean_comparator_fraction": 0.526666666667,
+                "mean_reference_fraction": 0.506666666667,
+                "signed_gap": 0.02
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 2,
+                "mean_comparator_fraction": 0.671666666667,
+                "mean_reference_fraction": 0.676666666667,
+                "signed_gap": -0.005
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 2,
+                "mean_comparator_fraction": 0.738333333333,
+                "mean_reference_fraction": 0.761666666667,
+                "signed_gap": -0.023333333333
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              }
+            ],
+            "denominator": 5,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.023333333333,
+            "weighted_mean_absolute_bin_gap": 0.015333333333
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 0,
+              "inclusive": true,
+              "rate": 0.0
+            },
+            "0.02": {
+              "count": 2,
+              "inclusive": true,
+              "rate": 0.4
+            },
+            "0.05": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        }
+      },
+      "gemini_3_5_flash__icho2025": {
+        "exam_points": {
+          "comparator_over_reference": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 5,
+            "rate": 1.0,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.99783894399,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": -0.14884035751,
+            "r_squared": 0.998741278202,
+            "slope": 0.995117554607
+          },
+          "maximum_absolute_error": 0.638667312542,
+          "mean_absolute_error": 0.297014543274,
+          "mean_comparator": 30.051340400091,
+          "mean_reference": 30.348354943365,
+          "mean_signed_error_comparator_minus_reference": -0.297014543274,
+          "pearson_r": 0.999370440929,
+          "root_mean_squared_error": 0.353758034284,
+          "spearman_rho_average_ties": 1.0,
+          "within_threshold": {
+            "0.5": {
+              "count": 4,
+              "inclusive": true,
+              "rate": 0.8
+            },
+            "1": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            },
+            "2": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "fraction_of_exam_scale": {
+          "comparator_over_reference": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 5,
+            "rate": 1.0,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.99783894399,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": -0.002480672625,
+            "r_squared": 0.998741278202,
+            "slope": 0.995117554607
+          },
+          "maximum_absolute_error": 0.010644455209,
+          "mean_absolute_error": 0.004950242388,
+          "mean_comparator": 0.500855673335,
+          "mean_reference": 0.505805915723,
+          "mean_signed_error_comparator_minus_reference": -0.004950242388,
+          "pearson_r": 0.999370440929,
+          "root_mean_squared_error": 0.005895967238,
+          "spearman_rho_average_ties": 1.0,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 1,
+                "mean_comparator_fraction": 0.386447113592,
+                "mean_reference_fraction": 0.3901272009,
+                "signed_gap": -0.003680087308
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 2,
+                "mean_comparator_fraction": 0.453217280285,
+                "mean_reference_fraction": 0.459017975211,
+                "signed_gap": -0.005800694926
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 2,
+                "mean_comparator_fraction": 0.605698346256,
+                "mean_reference_fraction": 0.610433213646,
+                "signed_gap": -0.00473486739
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              }
+            ],
+            "denominator": 5,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.005800694926,
+            "weighted_mean_absolute_bin_gap": 0.004950242388
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 4,
+              "inclusive": true,
+              "rate": 0.8
+            },
+            "0.02": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            },
+            "0.05": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        }
+      },
+      "gemini_3_5_flash__ipho2025": {
+        "exam_points": {
+          "comparator_over_reference": {
+            "count": 1,
+            "rate": 0.2,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 4,
+            "rate": 0.8,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.975219570916,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": 0.076633912249,
+            "r_squared": 0.956815793136,
+            "slope": 0.98489488117
+          },
+          "maximum_absolute_error": 0.93,
+          "mean_absolute_error": 0.602,
+          "mean_comparator": 20.07,
+          "mean_reference": 20.3,
+          "mean_signed_error_comparator_minus_reference": -0.23,
+          "pearson_r": 0.978169613685,
+          "root_mean_squared_error": 0.6618610126,
+          "spearman_rho_average_ties": 0.9,
+          "within_threshold": {
+            "0.5": {
+              "count": 2,
+              "inclusive": true,
+              "rate": 0.4
+            },
+            "1": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            },
+            "2": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "fraction_of_exam_scale": {
+          "comparator_over_reference": {
+            "count": 1,
+            "rate": 0.2,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 4,
+            "rate": 0.8,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.975219570916,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": 0.002554463742,
+            "r_squared": 0.956815793136,
+            "slope": 0.98489488117
+          },
+          "maximum_absolute_error": 0.031,
+          "mean_absolute_error": 0.020066666667,
+          "mean_comparator": 0.669,
+          "mean_reference": 0.676666666667,
+          "mean_signed_error_comparator_minus_reference": -0.007666666667,
+          "pearson_r": 0.978169613685,
+          "root_mean_squared_error": 0.022062033753,
+          "spearman_rho_average_ties": 0.9,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 1,
+                "mean_comparator_fraction": 0.488333333333,
+                "mean_reference_fraction": 0.506666666667,
+                "signed_gap": -0.018333333333
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 2,
+                "mean_comparator_fraction": 0.677166666667,
+                "mean_reference_fraction": 0.676666666667,
+                "signed_gap": 0.0005
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 2,
+                "mean_comparator_fraction": 0.751166666667,
+                "mean_reference_fraction": 0.761666666667,
+                "signed_gap": -0.0105
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 0,
+                "mean_comparator_fraction": null,
+                "mean_reference_fraction": null,
+                "signed_gap": null
+              }
+            ],
+            "denominator": 5,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.018333333333,
+            "weighted_mean_absolute_bin_gap": 0.008066666667
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 1,
+              "inclusive": true,
+              "rate": 0.2
+            },
+            "0.02": {
+              "count": 3,
+              "inclusive": true,
+              "rate": 0.6
+            },
+            "0.05": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        }
+      }
+    },
+    "rows": [
+      {
+        "absolute_error": 0.7,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 19.4,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "deepseek-v3.1",
+        "replayed_judge_total": 20.1,
+        "row_denominator": 40,
+        "run_id": "gemini_3_1_pro_preview__ipho2025",
+        "signed_error_judge_minus_expert": 0.7
+      },
+      {
+        "absolute_error": 1.0,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 24.1,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "gemini-2.5-pro",
+        "replayed_judge_total": 23.1,
+        "row_denominator": 40,
+        "run_id": "gemini_3_1_pro_preview__ipho2025",
+        "signed_error_judge_minus_expert": -1.0
+      },
+      {
+        "absolute_error": 1.0,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 21.2,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "glm-4.5",
+        "replayed_judge_total": 20.2,
+        "row_denominator": 40,
+        "run_id": "gemini_3_1_pro_preview__ipho2025",
+        "signed_error_judge_minus_expert": -1.0
+      },
+      {
+        "absolute_error": 0.4,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 21.6,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "gpt-5",
+        "replayed_judge_total": 21.2,
+        "row_denominator": 40,
+        "run_id": "gemini_3_1_pro_preview__ipho2025",
+        "signed_error_judge_minus_expert": -0.4
+      },
+      {
+        "absolute_error": 0.6,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 15.2,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "qwen3-235b-a22b",
+        "replayed_judge_total": 15.8,
+        "row_denominator": 40,
+        "run_id": "gemini_3_1_pro_preview__ipho2025",
+        "signed_error_judge_minus_expert": 0.6
+      },
+      {
+        "absolute_error": 0.723624401914,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 26.445539575324,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "deepseek-v3.1",
+        "replayed_judge_total": 27.169163977238,
+        "row_denominator": 65,
+        "run_id": "gemini_3_1_pro_preview__icho2025",
+        "signed_error_judge_minus_expert": 0.723624401914
+      },
+      {
+        "absolute_error": 0.539098950666,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 36.713948858319,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "gemini-2.5-pro",
+        "replayed_judge_total": 36.174849907653,
+        "row_denominator": 65,
+        "run_id": "gemini_3_1_pro_preview__icho2025",
+        "signed_error_judge_minus_expert": -0.539098950666
+      },
+      {
+        "absolute_error": 0.74564636737,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 23.407632053973,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "glm-4.5",
+        "replayed_judge_total": 24.153278421344,
+        "row_denominator": 65,
+        "run_id": "gemini_3_1_pro_preview__icho2025",
+        "signed_error_judge_minus_expert": 0.74564636737
+      },
+      {
+        "absolute_error": 0.003256386582,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 36.538036779235,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "gpt-5",
+        "replayed_judge_total": 36.541293165818,
+        "row_denominator": 65,
+        "run_id": "gemini_3_1_pro_preview__icho2025",
+        "signed_error_judge_minus_expert": 0.003256386582
+      },
+      {
+        "absolute_error": 0.812416531586,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 28.636617449975,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "model_under_test": "qwen3-235b-a22b",
+        "replayed_judge_total": 29.449033981561,
+        "row_denominator": 65,
+        "run_id": "gemini_3_1_pro_preview__icho2025",
+        "signed_error_judge_minus_expert": 0.812416531586
+      },
+      {
+        "absolute_error": 0.93,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 19.4,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "deepseek-v3.1",
+        "replayed_judge_total": 20.33,
+        "row_denominator": 40,
+        "run_id": "gemini_3_5_flash__ipho2025",
+        "signed_error_judge_minus_expert": 0.93
+      },
+      {
+        "absolute_error": 0.4,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 24.1,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "gemini-2.5-pro",
+        "replayed_judge_total": 23.7,
+        "row_denominator": 40,
+        "run_id": "gemini_3_5_flash__ipho2025",
+        "signed_error_judge_minus_expert": -0.4
+      },
+      {
+        "absolute_error": 0.9,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 21.2,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "glm-4.5",
+        "replayed_judge_total": 20.3,
+        "row_denominator": 40,
+        "run_id": "gemini_3_5_flash__ipho2025",
+        "signed_error_judge_minus_expert": -0.9
+      },
+      {
+        "absolute_error": 0.23,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 21.6,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "gpt-5",
+        "replayed_judge_total": 21.37,
+        "row_denominator": 40,
+        "run_id": "gemini_3_5_flash__ipho2025",
+        "signed_error_judge_minus_expert": -0.23
+      },
+      {
+        "absolute_error": 0.55,
+        "exam": "ipho2025",
+        "exam_scale": 30.0,
+        "expert_total": 15.2,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "qwen3-235b-a22b",
+        "replayed_judge_total": 14.65,
+        "row_denominator": 40,
+        "run_id": "gemini_3_5_flash__ipho2025",
+        "signed_error_judge_minus_expert": -0.55
+      },
+      {
+        "absolute_error": 0.057416078553,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 26.445539575324,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "deepseek-v3.1",
+        "replayed_judge_total": 26.388123496771,
+        "row_denominator": 65,
+        "run_id": "gemini_3_5_flash__icho2025",
+        "signed_error_judge_minus_expert": -0.057416078553
+      },
+      {
+        "absolute_error": 0.237403392064,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 36.713948858319,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "gemini-2.5-pro",
+        "replayed_judge_total": 36.476545466256,
+        "row_denominator": 65,
+        "run_id": "gemini_3_5_flash__icho2025",
+        "signed_error_judge_minus_expert": -0.237403392064
+      },
+      {
+        "absolute_error": 0.220805238456,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 23.407632053973,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "glm-4.5",
+        "replayed_judge_total": 23.186826815517,
+        "row_denominator": 65,
+        "run_id": "gemini_3_5_flash__icho2025",
+        "signed_error_judge_minus_expert": -0.220805238456
+      },
+      {
+        "absolute_error": 0.330780694757,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 36.538036779235,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "gpt-5",
+        "replayed_judge_total": 36.207256084478,
+        "row_denominator": 65,
+        "run_id": "gemini_3_5_flash__icho2025",
+        "signed_error_judge_minus_expert": -0.330780694757
+      },
+      {
+        "absolute_error": 0.638667312542,
+        "exam": "icho2025",
+        "exam_scale": 60.0,
+        "expert_total": 28.636617449975,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "model_under_test": "qwen3-235b-a22b",
+        "replayed_judge_total": 27.997950137433,
+        "row_denominator": 65,
+        "run_id": "gemini_3_5_flash__icho2025",
+        "signed_error_judge_minus_expert": -0.638667312542
+      }
+    ]
+  },
+  "execution": {
+    "api_calls": 0,
+    "key_reads": 0,
+    "offline": true
+  },
+  "fixed_audit_date": "2026-08-29",
+  "interjudge_agreement": {
+    "candidate_total_level": {
+      "combined": {
+        "exam_points": {
+          "comparator_over_reference": {
+            "count": 5,
+            "rate": 0.5,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 5,
+            "rate": 0.5,
+            "tolerance": 1e-12
+          },
+          "denominator": 10,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.993532402456,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 10,
+            "intercept": -0.366150328372,
+            "r_squared": 0.989598705805,
+            "slope": 1.001499032648
+          },
+          "maximum_absolute_error": 1.451083844128,
+          "mean_absolute_error": 0.608430857036,
+          "mean_comparator": 25.060670200046,
+          "mean_reference": 25.388761945361,
+          "mean_signed_error_comparator_minus_reference": -0.328091745316,
+          "pearson_r": 0.994785758747,
+          "root_mean_squared_error": 0.750106541967,
+          "spearman_rho_average_ties": 0.963636363636,
+          "within_threshold": {
+            "0.5": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 0.5
+            },
+            "1": {
+              "count": 8,
+              "inclusive": true,
+              "rate": 0.8
+            },
+            "2": {
+              "count": 10,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "fraction_of_exam_scale": {
+          "comparator_over_reference": {
+            "count": 5,
+            "rate": 0.5,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 5,
+            "rate": 0.5,
+            "tolerance": 1e-12
+          },
+          "denominator": 10,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.989437277814,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 10,
+            "intercept": -0.073852757264,
+            "r_squared": 0.993592334193,
+            "slope": 1.115670812795
+          },
+          "maximum_absolute_error": 0.038333333333,
+          "mean_absolute_error": 0.013890514284,
+          "mean_comparator": 0.584927836667,
+          "mean_reference": 0.590479365756,
+          "mean_signed_error_comparator_minus_reference": -0.005551529089,
+          "pearson_r": 0.996791018315,
+          "root_mean_squared_error": 0.017439975028,
+          "spearman_rho_average_ties": 0.975757575758,
+          "within_threshold": {
+            "0.01": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 0.5
+            },
+            "0.02": {
+              "count": 8,
+              "inclusive": true,
+              "rate": 0.8
+            },
+            "0.05": {
+              "count": 10,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "judge_a_reference": "gemini_3_1_pro_preview",
+        "judge_b_comparator": "gemini_3_5_flash",
+        "shared_pair_denominator": 10
+      },
+      "icho2025": {
+        "exam_points": {
+          "comparator_over_reference": {
+            "count": 1,
+            "rate": 0.2,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 4,
+            "rate": 0.8,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.985572423501,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": -3.333823342368,
+            "r_squared": 0.994184028624,
+            "slope": 1.087552333579
+          },
+          "maximum_absolute_error": 1.451083844128,
+          "mean_absolute_error": 0.766861714073,
+          "mean_comparator": 30.051340400091,
+          "mean_reference": 30.697523890723,
+          "mean_signed_error_comparator_minus_reference": -0.646183490632,
+          "pearson_r": 0.997087773781,
+          "root_mean_squared_error": 0.877758308763,
+          "spearman_rho_average_ties": 0.9,
+          "within_threshold": {
+            "0.5": {
+              "count": 2,
+              "inclusive": true,
+              "rate": 0.4
+            },
+            "1": {
+              "count": 4,
+              "inclusive": true,
+              "rate": 0.8
+            },
+            "2": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "fraction_of_exam_scale": {
+          "comparator_over_reference": {
+            "count": 1,
+            "rate": 0.2,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 4,
+            "rate": 0.8,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.985572423501,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": -0.055563722373,
+            "r_squared": 0.994184028624,
+            "slope": 1.087552333579
+          },
+          "maximum_absolute_error": 0.024184730735,
+          "mean_absolute_error": 0.012781028568,
+          "mean_comparator": 0.500855673335,
+          "mean_reference": 0.511625398179,
+          "mean_signed_error_comparator_minus_reference": -0.010769724844,
+          "pearson_r": 0.997087773781,
+          "root_mean_squared_error": 0.014629305146,
+          "spearman_rho_average_ties": 0.9,
+          "within_threshold": {
+            "0.01": {
+              "count": 2,
+              "inclusive": true,
+              "rate": 0.4
+            },
+            "0.02": {
+              "count": 4,
+              "inclusive": true,
+              "rate": 0.8
+            },
+            "0.05": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "judge_a_reference": "gemini_3_1_pro_preview",
+        "judge_b_comparator": "gemini_3_5_flash",
+        "shared_pair_denominator": 5
+      },
+      "ipho2025": {
+        "exam_points": {
+          "comparator_over_reference": {
+            "count": 4,
+            "rate": 0.8,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 1,
+            "rate": 0.2,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.975718569143,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": -4.864928242998,
+            "r_squared": 0.997844866454,
+            "slope": 1.24177929497
+          },
+          "maximum_absolute_error": 1.15,
+          "mean_absolute_error": 0.45,
+          "mean_comparator": 20.07,
+          "mean_reference": 20.08,
+          "mean_signed_error_comparator_minus_reference": -0.01,
+          "pearson_r": 0.998921852025,
+          "root_mean_squared_error": 0.595701267415,
+          "spearman_rho_average_ties": 0.9,
+          "within_threshold": {
+            "0.5": {
+              "count": 3,
+              "inclusive": true,
+              "rate": 0.6
+            },
+            "1": {
+              "count": 4,
+              "inclusive": true,
+              "rate": 0.8
+            },
+            "2": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "fraction_of_exam_scale": {
+          "comparator_over_reference": {
+            "count": 4,
+            "rate": 0.8,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 1,
+            "rate": 0.2,
+            "tolerance": 1e-12
+          },
+          "denominator": 5,
+          "exact_agreement": {
+            "count": 0,
+            "rate": 0.0,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.975718569143,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 5,
+            "intercept": -0.162164274767,
+            "r_squared": 0.997844866454,
+            "slope": 1.24177929497
+          },
+          "maximum_absolute_error": 0.038333333333,
+          "mean_absolute_error": 0.015,
+          "mean_comparator": 0.669,
+          "mean_reference": 0.669333333333,
+          "mean_signed_error_comparator_minus_reference": -0.000333333333,
+          "pearson_r": 0.998921852025,
+          "root_mean_squared_error": 0.019856708914,
+          "spearman_rho_average_ties": 0.9,
+          "within_threshold": {
+            "0.01": {
+              "count": 3,
+              "inclusive": true,
+              "rate": 0.6
+            },
+            "0.02": {
+              "count": 4,
+              "inclusive": true,
+              "rate": 0.8
+            },
+            "0.05": {
+              "count": 5,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "judge_a_reference": "gemini_3_1_pro_preview",
+        "judge_b_comparator": "gemini_3_5_flash",
+        "shared_pair_denominator": 5
+      }
+    },
+    "item_level": {
+      "combined": {
+        "expected_keys": 525,
+        "fraction_of_archived_row_max": {
+          "comparator_over_reference": {
+            "count": 74,
+            "rate": 0.140952380952,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 112,
+            "rate": 0.213333333333,
+            "tolerance": 1e-12
+          },
+          "denominator": 525,
+          "exact_agreement": {
+            "count": 339,
+            "rate": 0.645714285714,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.900168332613,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 525,
+            "intercept": 0.110803090343,
+            "r_squared": 0.822892619562,
+            "slope": 0.802959137361
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.092776586548,
+          "mean_comparator": 0.601401792944,
+          "mean_reference": 0.610988380073,
+          "mean_signed_error_comparator_minus_reference": -0.009586587129,
+          "pearson_r": 0.907134289707,
+          "root_mean_squared_error": 0.178895174315,
+          "spearman_rho_average_ties": 0.871843435715,
+          "within_threshold": {
+            "0.01": {
+              "count": 339,
+              "inclusive": true,
+              "rate": 0.645714285714
+            },
+            "0.05": {
+              "count": 343,
+              "inclusive": true,
+              "rate": 0.653333333333
+            },
+            "0.1": {
+              "count": 358,
+              "inclusive": true,
+              "rate": 0.681904761905
+            }
+          }
+        },
+        "judge_a_reference": "gemini_3_1_pro_preview",
+        "judge_b_comparator": "gemini_3_5_flash",
+        "max_score_mismatch_count": 0,
+        "max_score_mismatches": [],
+        "missing_from_judge_a": 0,
+        "missing_from_judge_b": 0,
+        "raw_points": {
+          "comparator_over_reference": {
+            "count": 74,
+            "rate": 0.140952380952,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 112,
+            "rate": 0.213333333333,
+            "tolerance": 1e-12
+          },
+          "denominator": 525,
+          "exact_agreement": {
+            "count": 339,
+            "rate": 0.645714285714,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.970030252479,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 525,
+            "intercept": 0.070110429654,
+            "r_squared": 0.940984582836,
+            "slope": 0.965984419035
+          },
+          "maximum_absolute_error": 6.0,
+          "mean_absolute_error": 0.297523809524,
+          "mean_comparator": 1.796076190476,
+          "mean_reference": 1.786742857143,
+          "mean_signed_error_comparator_minus_reference": 0.009333333333,
+          "pearson_r": 0.97004359842,
+          "root_mean_squared_error": 0.725042921554,
+          "spearman_rho_average_ties": 0.893156013847,
+          "within_threshold": {
+            "0.1": {
+              "count": 349,
+              "inclusive": true,
+              "rate": 0.664761904762
+            },
+            "0.5": {
+              "count": 445,
+              "inclusive": true,
+              "rate": 0.847619047619
+            },
+            "1": {
+              "count": 484,
+              "inclusive": true,
+              "rate": 0.921904761905
+            }
+          }
+        },
+        "relative_to_expert_error_direction": {
+          "both_exact": 265,
+          "denominator": 525,
+          "one_exact_one_nonzero": 136,
+          "opposite_nonzero_directions": 16,
+          "same_nonzero_direction": 108
+        },
+        "shared_pair_denominator": 525
+      },
+      "icho2025": {
+        "expected_keys": 325,
+        "fraction_of_archived_row_max": {
+          "comparator_over_reference": {
+            "count": 55,
+            "rate": 0.169230769231,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 88,
+            "rate": 0.270769230769,
+            "tolerance": 1e-12
+          },
+          "denominator": 325,
+          "exact_agreement": {
+            "count": 182,
+            "rate": 0.56,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.908932606884,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 325,
+            "intercept": 0.107544940893,
+            "r_squared": 0.857324467456,
+            "slope": 0.767315837753
+          },
+          "maximum_absolute_error": 0.714285714286,
+          "mean_absolute_error": 0.108427655678,
+          "mean_comparator": 0.52140047619,
+          "mean_reference": 0.539354871795,
+          "mean_signed_error_comparator_minus_reference": -0.017954395604,
+          "pearson_r": 0.925918175357,
+          "root_mean_squared_error": 0.174281492429,
+          "spearman_rho_average_ties": 0.895186727407,
+          "within_threshold": {
+            "0.01": {
+              "count": 182,
+              "inclusive": true,
+              "rate": 0.56
+            },
+            "0.05": {
+              "count": 186,
+              "inclusive": true,
+              "rate": 0.572307692308
+            },
+            "0.1": {
+              "count": 193,
+              "inclusive": true,
+              "rate": 0.593846153846
+            }
+          }
+        },
+        "judge_a_reference": "gemini_3_1_pro_preview",
+        "judge_b_comparator": "gemini_3_5_flash",
+        "max_score_mismatch_count": 0,
+        "max_score_mismatches": [],
+        "missing_from_judge_a": 0,
+        "missing_from_judge_b": 0,
+        "raw_points": {
+          "comparator_over_reference": {
+            "count": 55,
+            "rate": 0.169230769231,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 88,
+            "rate": 0.270769230769,
+            "tolerance": 1e-12
+          },
+          "denominator": 325,
+          "exact_agreement": {
+            "count": 182,
+            "rate": 0.56,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.966224029592,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 325,
+            "intercept": 0.116282192888,
+            "r_squared": 0.933636238925,
+            "slope": 0.960792568778
+          },
+          "maximum_absolute_error": 6.0,
+          "mean_absolute_error": 0.449384615385,
+          "mean_comparator": 2.592584615385,
+          "mean_reference": 2.577353846154,
+          "mean_signed_error_comparator_minus_reference": 0.015230769231,
+          "pearson_r": 0.966248538899,
+          "root_mean_squared_error": 0.916225534882,
+          "spearman_rho_average_ties": 0.920169688145,
+          "within_threshold": {
+            "0.1": {
+              "count": 182,
+              "inclusive": true,
+              "rate": 0.56
+            },
+            "0.5": {
+              "count": 247,
+              "inclusive": true,
+              "rate": 0.76
+            },
+            "1": {
+              "count": 284,
+              "inclusive": true,
+              "rate": 0.873846153846
+            }
+          }
+        },
+        "relative_to_expert_error_direction": {
+          "both_exact": 141,
+          "denominator": 325,
+          "one_exact_one_nonzero": 112,
+          "opposite_nonzero_directions": 12,
+          "same_nonzero_direction": 60
+        },
+        "shared_pair_denominator": 325
+      },
+      "ipho2025": {
+        "expected_keys": 200,
+        "fraction_of_archived_row_max": {
+          "comparator_over_reference": {
+            "count": 19,
+            "rate": 0.095,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 24,
+            "rate": 0.12,
+            "tolerance": 1e-12
+          },
+          "denominator": 200,
+          "exact_agreement": {
+            "count": 157,
+            "rate": 0.785,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.861740402481,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 200,
+            "intercept": 0.12151484734,
+            "r_squared": 0.743267657794,
+            "slope": 0.838459026973
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.067343599211,
+          "mean_comparator": 0.731403932669,
+          "mean_reference": 0.727392831025,
+          "mean_signed_error_comparator_minus_reference": 0.004011101643,
+          "pearson_r": 0.862129722138,
+          "root_mean_squared_error": 0.186148680298,
+          "spearman_rho_average_ties": 0.859937035069,
+          "within_threshold": {
+            "0.01": {
+              "count": 157,
+              "inclusive": true,
+              "rate": 0.785
+            },
+            "0.05": {
+              "count": 157,
+              "inclusive": true,
+              "rate": 0.785
+            },
+            "0.1": {
+              "count": 165,
+              "inclusive": true,
+              "rate": 0.825
+            }
+          }
+        },
+        "judge_a_reference": "gemini_3_1_pro_preview",
+        "judge_b_comparator": "gemini_3_5_flash",
+        "max_score_mismatch_count": 0,
+        "max_score_mismatches": [],
+        "missing_from_judge_a": 0,
+        "missing_from_judge_b": 0,
+        "raw_points": {
+          "comparator_over_reference": {
+            "count": 19,
+            "rate": 0.095,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 24,
+            "rate": 0.12,
+            "tolerance": 1e-12
+          },
+          "denominator": 200,
+          "exact_agreement": {
+            "count": 157,
+            "rate": 0.785,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.944373504013,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 200,
+            "intercept": 0.034760333389,
+            "r_squared": 0.892047092335,
+            "slope": 0.930258300022
+          },
+          "maximum_absolute_error": 0.7,
+          "mean_absolute_error": 0.05075,
+          "mean_comparator": 0.50175,
+          "mean_reference": 0.502,
+          "mean_signed_error_comparator_minus_reference": -0.00025,
+          "pearson_r": 0.944482446811,
+          "root_mean_squared_error": 0.125664235167,
+          "spearman_rho_average_ties": 0.919619149924,
+          "within_threshold": {
+            "0.1": {
+              "count": 167,
+              "inclusive": true,
+              "rate": 0.835
+            },
+            "0.5": {
+              "count": 198,
+              "inclusive": true,
+              "rate": 0.99
+            },
+            "1": {
+              "count": 200,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        },
+        "relative_to_expert_error_direction": {
+          "both_exact": 124,
+          "denominator": 200,
+          "one_exact_one_nonzero": 24,
+          "opposite_nonzero_directions": 4,
+          "same_nonzero_direction": 48
+        },
+        "shared_pair_denominator": 200
+      }
+    }
+  },
+  "item_level_expert_agreement": {
+    "by_judge_across_exams": {
+      "gemini_3_1_pro_preview": {
+        "fraction_of_archived_row_max": {
+          "comparator_over_reference": {
+            "count": 69,
+            "rate": 0.131679389313,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 70,
+            "rate": 0.13358778626,
+            "tolerance": 1e-12
+          },
+          "denominator": 524,
+          "exact_agreement": {
+            "count": 385,
+            "rate": 0.734732824427,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.892433397194,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 524,
+            "intercept": 0.050285352334,
+            "r_squared": 0.796869793489,
+            "slope": 0.907808048468
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.081445558408,
+          "mean_comparator": 0.612154388432,
+          "mean_reference": 0.618929339794,
+          "mean_signed_error_comparator_minus_reference": -0.006774951362,
+          "pearson_r": 0.892675637333,
+          "root_mean_squared_error": 0.19479530116,
+          "spearman_rho_average_ties": 0.861757814493,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 130,
+                "mean_comparator_fraction": 0.000721153846,
+                "mean_reference_fraction": 0.071724941725,
+                "signed_gap": -0.071003787879
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 17,
+                "mean_comparator_fraction": 0.146929065744,
+                "mean_reference_fraction": 0.177076124567,
+                "signed_gap": -0.030147058824
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 17,
+                "mean_comparator_fraction": 0.230859010271,
+                "mean_reference_fraction": 0.287394957983,
+                "signed_gap": -0.056535947712
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 14,
+                "mean_comparator_fraction": 0.333035714286,
+                "mean_reference_fraction": 0.38244047619,
+                "signed_gap": -0.049404761905
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 13,
+                "mean_comparator_fraction": 0.407063402284,
+                "mean_reference_fraction": 0.525433634992,
+                "signed_gap": -0.118370232708
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 19,
+                "mean_comparator_fraction": 0.51996687523,
+                "mean_reference_fraction": 0.616695804196,
+                "signed_gap": -0.096728928966
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 20,
+                "mean_comparator_fraction": 0.641666666667,
+                "mean_reference_fraction": 0.671607142857,
+                "signed_gap": -0.02994047619
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 29,
+                "mean_comparator_fraction": 0.745457622837,
+                "mean_reference_fraction": 0.723475053682,
+                "signed_gap": 0.021982569155
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 29,
+                "mean_comparator_fraction": 0.83323135868,
+                "mean_reference_fraction": 0.837678013557,
+                "signed_gap": -0.004446654878
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 236,
+                "mean_comparator_fraction": 0.999168405041,
+                "mean_reference_fraction": 0.951233547526,
+                "signed_gap": 0.047934857515
+              }
+            ],
+            "denominator": 524,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.118370232708,
+            "weighted_mean_absolute_bin_gap": 0.052386099756
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 385,
+              "inclusive": true,
+              "rate": 0.734732824427
+            },
+            "0.05": {
+              "count": 388,
+              "inclusive": true,
+              "rate": 0.740458015267
+            },
+            "0.1": {
+              "count": 403,
+              "inclusive": true,
+              "rate": 0.769083969466
+            }
+          }
+        },
+        "normalized_pair_accounting": {
+          "candidate_rows": 525,
+          "excluded": 1,
+          "exclusion_reasons": {
+            "excluded_expert_score_outside_archived_judge_row_max": 1
+          },
+          "usable": 524
+        },
+        "raw_points": {
+          "comparator_over_reference": {
+            "count": 69,
+            "rate": 0.131428571429,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 71,
+            "rate": 0.135238095238,
+            "tolerance": 1e-12
+          },
+          "denominator": 525,
+          "exact_agreement": {
+            "count": 385,
+            "rate": 0.733333333333,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.970546166336,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 525,
+            "intercept": 0.052205082221,
+            "r_squared": 0.942407203955,
+            "slope": 0.952823349761
+          },
+          "maximum_absolute_error": 10.0,
+          "mean_absolute_error": 0.230819047619,
+          "mean_comparator": 1.786742857143,
+          "mean_reference": 1.820419047619,
+          "mean_signed_error_comparator_minus_reference": -0.033676190476,
+          "pearson_r": 0.970776598376,
+          "root_mean_squared_error": 0.727119299834,
+          "spearman_rho_average_ties": 0.915828189957,
+          "within_threshold": {
+            "0.1": {
+              "count": 410,
+              "inclusive": true,
+              "rate": 0.780952380952
+            },
+            "0.5": {
+              "count": 461,
+              "inclusive": true,
+              "rate": 0.878095238095
+            },
+            "1": {
+              "count": 499,
+              "inclusive": true,
+              "rate": 0.950476190476
+            }
+          }
+        }
+      },
+      "gemini_3_5_flash": {
+        "fraction_of_archived_row_max": {
+          "comparator_over_reference": {
+            "count": 100,
+            "rate": 0.190839694656,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 143,
+            "rate": 0.272900763359,
+            "tolerance": 1e-12
+          },
+          "denominator": 524,
+          "exact_agreement": {
+            "count": 281,
+            "rate": 0.536259541985,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.856593600895,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 524,
+            "intercept": 0.122458098174,
+            "r_squared": 0.743242377289,
+            "slope": 0.775680481192
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.122671203288,
+          "mean_comparator": 0.602549506289,
+          "mean_reference": 0.618929339794,
+          "mean_signed_error_comparator_minus_reference": -0.016379833505,
+          "pearson_r": 0.862115060354,
+          "root_mean_squared_error": 0.212211505895,
+          "spearman_rho_average_ties": 0.825698824718,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 92,
+                "mean_comparator_fraction": 0.000339673913,
+                "mean_reference_fraction": 0.061053146555,
+                "signed_gap": -0.060713472642
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 13,
+                "mean_comparator_fraction": 0.143137254902,
+                "mean_reference_fraction": 0.192496229261,
+                "signed_gap": -0.049358974359
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 31,
+                "mean_comparator_fraction": 0.240518084066,
+                "mean_reference_fraction": 0.137536656891,
+                "signed_gap": 0.102981427175
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 38,
+                "mean_comparator_fraction": 0.330811403509,
+                "mean_reference_fraction": 0.241374269006,
+                "signed_gap": 0.089437134503
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 15,
+                "mean_comparator_fraction": 0.422708384208,
+                "mean_reference_fraction": 0.497806267806,
+                "signed_gap": -0.075097883598
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 21,
+                "mean_comparator_fraction": 0.523857623858,
+                "mean_reference_fraction": 0.591155603656,
+                "signed_gap": -0.067297979798
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 25,
+                "mean_comparator_fraction": 0.643433333333,
+                "mean_reference_fraction": 0.677952380952,
+                "signed_gap": -0.034519047619
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 90,
+                "mean_comparator_fraction": 0.74489640483,
+                "mean_reference_fraction": 0.860114380681,
+                "signed_gap": -0.115217975851
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 31,
+                "mean_comparator_fraction": 0.8215548627,
+                "mean_reference_fraction": 0.900790322581,
+                "signed_gap": -0.079235459881
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 168,
+                "mean_comparator_fraction": 0.99928968254,
+                "mean_reference_fraction": 0.955945294785,
+                "signed_gap": 0.043344387755
+              }
+            ],
+            "denominator": 524,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.115217975851,
+            "weighted_mean_absolute_bin_gap": 0.069329804865
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 281,
+              "inclusive": true,
+              "rate": 0.536259541985
+            },
+            "0.05": {
+              "count": 290,
+              "inclusive": true,
+              "rate": 0.553435114504
+            },
+            "0.1": {
+              "count": 312,
+              "inclusive": true,
+              "rate": 0.595419847328
+            }
+          }
+        },
+        "normalized_pair_accounting": {
+          "candidate_rows": 525,
+          "excluded": 1,
+          "exclusion_reasons": {
+            "excluded_expert_score_outside_archived_judge_row_max": 1
+          },
+          "usable": 524
+        },
+        "raw_points": {
+          "comparator_over_reference": {
+            "count": 100,
+            "rate": 0.190476190476,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 144,
+            "rate": 0.274285714286,
+            "tolerance": 1e-12
+          },
+          "denominator": 525,
+          "exact_agreement": {
+            "count": 281,
+            "rate": 0.535238095238,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.959545743541,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 525,
+            "intercept": 0.088276700406,
+            "r_squared": 0.921270355344,
+            "slope": 0.938135366307
+          },
+          "maximum_absolute_error": 10.0,
+          "mean_absolute_error": 0.376457142857,
+          "mean_comparator": 1.796076190476,
+          "mean_reference": 1.820419047619,
+          "mean_signed_error_comparator_minus_reference": -0.024342857143,
+          "pearson_r": 0.95982829472,
+          "root_mean_squared_error": 0.850391058502,
+          "spearman_rho_average_ties": 0.851984426757,
+          "within_threshold": {
+            "0.1": {
+              "count": 310,
+              "inclusive": true,
+              "rate": 0.590476190476
+            },
+            "0.5": {
+              "count": 425,
+              "inclusive": true,
+              "rate": 0.809523809524
+            },
+            "1": {
+              "count": 477,
+              "inclusive": true,
+              "rate": 0.908571428571
+            }
+          }
+        }
+      }
+    },
+    "by_run": {
+      "gemini_3_1_pro_preview__icho2025": {
+        "fraction_of_archived_row_max": {
+          "comparator_over_reference": {
+            "count": 42,
+            "rate": 0.12962962963,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 36,
+            "rate": 0.111111111111,
+            "tolerance": 1e-12
+          },
+          "denominator": 324,
+          "exact_agreement": {
+            "count": 246,
+            "rate": 0.759259259259,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.908971564481,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 324,
+            "intercept": 0.037674647713,
+            "r_squared": 0.826766927276,
+            "slope": 0.932597123412
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.075210758377,
+          "mean_comparator": 0.541019547325,
+          "mean_reference": 0.539723838918,
+          "mean_signed_error_comparator_minus_reference": 0.001295708407,
+          "pearson_r": 0.909267247445,
+          "root_mean_squared_error": 0.187148549527,
+          "spearman_rho_average_ties": 0.880003704434,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 111,
+                "mean_comparator_fraction": 0.000844594595,
+                "mean_reference_fraction": 0.052252252252,
+                "signed_gap": -0.051407657658
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 7,
+                "mean_comparator_fraction": 0.1375,
+                "mean_reference_fraction": 0.110714285714,
+                "signed_gap": 0.026785714286
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 8,
+                "mean_comparator_fraction": 0.241964285714,
+                "mean_reference_fraction": 0.223214285714,
+                "signed_gap": 0.01875
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 10,
+                "mean_comparator_fraction": 0.339583333333,
+                "mean_reference_fraction": 0.402083333333,
+                "signed_gap": -0.0625
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 3,
+                "mean_comparator_fraction": 0.407638888889,
+                "mean_reference_fraction": 0.351388888889,
+                "signed_gap": 0.05625
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 14,
+                "mean_comparator_fraction": 0.517857142857,
+                "mean_reference_fraction": 0.674107142857,
+                "signed_gap": -0.15625
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 11,
+                "mean_comparator_fraction": 0.651406926407,
+                "mean_reference_fraction": 0.725541125541,
+                "signed_gap": -0.074134199134
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 15,
+                "mean_comparator_fraction": 0.738653968254,
+                "mean_reference_fraction": 0.742949206349,
+                "signed_gap": -0.004295238095
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 17,
+                "mean_comparator_fraction": 0.836490196078,
+                "mean_reference_fraction": 0.778401960784,
+                "signed_gap": 0.058088235294
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 128,
+                "mean_comparator_fraction": 0.99971875,
+                "mean_reference_fraction": 0.934681919643,
+                "signed_gap": 0.065036830357
+              }
+            ],
+            "denominator": 324,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.15625,
+            "weighted_mean_absolute_bin_gap": 0.059312095826
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 246,
+              "inclusive": true,
+              "rate": 0.759259259259
+            },
+            "0.05": {
+              "count": 249,
+              "inclusive": true,
+              "rate": 0.768518518519
+            },
+            "0.1": {
+              "count": 256,
+              "inclusive": true,
+              "rate": 0.79012345679
+            }
+          }
+        },
+        "normalized_pair_accounting": {
+          "candidate_rows": 325,
+          "excluded": 1,
+          "exclusion_reasons": {
+            "excluded_expert_score_outside_archived_judge_row_max": 1
+          },
+          "usable": 324
+        },
+        "raw_points": {
+          "comparator_over_reference": {
+            "count": 42,
+            "rate": 0.129230769231,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 37,
+            "rate": 0.113846153846,
+            "tolerance": 1e-12
+          },
+          "denominator": 325,
+          "exact_agreement": {
+            "count": 246,
+            "rate": 0.756923076923,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.966931716757,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 325,
+            "intercept": 0.081338239664,
+            "r_squared": 0.93546165596,
+            "slope": 0.949644204197
+          },
+          "maximum_absolute_error": 10.0,
+          "mean_absolute_error": 0.332553846154,
+          "mean_comparator": 2.577353846154,
+          "mean_reference": 2.628369230769,
+          "mean_signed_error_comparator_minus_reference": -0.051015384615,
+          "pearson_r": 0.967192667446,
+          "root_mean_squared_error": 0.917620333756,
+          "spearman_rho_average_ties": 0.929863404583,
+          "within_threshold": {
+            "0.1": {
+              "count": 246,
+              "inclusive": true,
+              "rate": 0.756923076923
+            },
+            "0.5": {
+              "count": 263,
+              "inclusive": true,
+              "rate": 0.809230769231
+            },
+            "1": {
+              "count": 299,
+              "inclusive": true,
+              "rate": 0.92
+            }
+          }
+        }
+      },
+      "gemini_3_1_pro_preview__ipho2025": {
+        "fraction_of_archived_row_max": {
+          "comparator_over_reference": {
+            "count": 27,
+            "rate": 0.135,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 34,
+            "rate": 0.17,
+            "tolerance": 1e-12
+          },
+          "denominator": 200,
+          "exact_agreement": {
+            "count": 139,
+            "rate": 0.695,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.831373414498,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 200,
+            "intercept": 0.092896704355,
+            "r_squared": 0.693599081618,
+            "slope": 0.849117037534
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.091545934458,
+          "mean_comparator": 0.727392831025,
+          "mean_reference": 0.747242251213,
+          "mean_signed_error_comparator_minus_reference": -0.019849420188,
+          "pearson_r": 0.832825961182,
+          "root_mean_squared_error": 0.206583226743,
+          "spearman_rho_average_ties": 0.824579250131,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 19,
+                "mean_comparator_fraction": 0.0,
+                "mean_reference_fraction": 0.185486443381,
+                "signed_gap": -0.185486443381
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 10,
+                "mean_comparator_fraction": 0.153529411765,
+                "mean_reference_fraction": 0.223529411765,
+                "signed_gap": -0.07
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 9,
+                "mean_comparator_fraction": 0.220987654321,
+                "mean_reference_fraction": 0.344444444444,
+                "signed_gap": -0.123456790123
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 4,
+                "mean_comparator_fraction": 0.316666666667,
+                "mean_reference_fraction": 0.333333333333,
+                "signed_gap": -0.016666666667
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 10,
+                "mean_comparator_fraction": 0.406890756303,
+                "mean_reference_fraction": 0.577647058824,
+                "signed_gap": -0.170756302521
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 5,
+                "mean_comparator_fraction": 0.525874125874,
+                "mean_reference_fraction": 0.455944055944,
+                "signed_gap": 0.06993006993
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 9,
+                "mean_comparator_fraction": 0.629761904762,
+                "mean_reference_fraction": 0.605687830688,
+                "signed_gap": 0.024074074074
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 14,
+                "mean_comparator_fraction": 0.752747252747,
+                "mean_reference_fraction": 0.70260989011,
+                "signed_gap": 0.050137362637
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 12,
+                "mean_comparator_fraction": 0.828614672365,
+                "mean_reference_fraction": 0.921652421652,
+                "signed_gap": -0.093037749288
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 108,
+                "mean_comparator_fraction": 0.998516144349,
+                "mean_reference_fraction": 0.970850291684,
+                "signed_gap": 0.027665852666
+              }
+            ],
+            "denominator": 200,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.185486443381,
+            "weighted_mean_absolute_bin_gap": 0.062410941999
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 139,
+              "inclusive": true,
+              "rate": 0.695
+            },
+            "0.05": {
+              "count": 139,
+              "inclusive": true,
+              "rate": 0.695
+            },
+            "0.1": {
+              "count": 147,
+              "inclusive": true,
+              "rate": 0.735
+            }
+          }
+        },
+        "normalized_pair_accounting": {
+          "candidate_rows": 200,
+          "excluded": 0,
+          "exclusion_reasons": {},
+          "usable": 200
+        },
+        "raw_points": {
+          "comparator_over_reference": {
+            "count": 27,
+            "rate": 0.135,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 34,
+            "rate": 0.17,
+            "tolerance": 1e-12
+          },
+          "denominator": 200,
+          "exact_agreement": {
+            "count": 139,
+            "rate": 0.695,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.93302959715,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 200,
+            "intercept": 0.034362582992,
+            "r_squared": 0.870864437875,
+            "slope": 0.92145303844
+          },
+          "maximum_absolute_error": 0.7,
+          "mean_absolute_error": 0.0655,
+          "mean_comparator": 0.502,
+          "mean_reference": 0.5075,
+          "mean_signed_error_comparator_minus_reference": -0.0055,
+          "pearson_r": 0.9332011776,
+          "root_mean_squared_error": 0.139821314541,
+          "spearman_rho_average_ties": 0.897172248088,
+          "within_threshold": {
+            "0.1": {
+              "count": 164,
+              "inclusive": true,
+              "rate": 0.82
+            },
+            "0.5": {
+              "count": 198,
+              "inclusive": true,
+              "rate": 0.99
+            },
+            "1": {
+              "count": 200,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        }
+      },
+      "gemini_3_5_flash__icho2025": {
+        "fraction_of_archived_row_max": {
+          "comparator_over_reference": {
+            "count": 74,
+            "rate": 0.228395061728,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 102,
+            "rate": 0.314814814815,
+            "tolerance": 1e-12
+          },
+          "denominator": 324,
+          "exact_agreement": {
+            "count": 148,
+            "rate": 0.456790123457,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.85543249923,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 324,
+            "intercept": 0.125315128512,
+            "r_squared": 0.752773021511,
+            "slope": 0.73684832822
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.138374889771,
+          "mean_comparator": 0.523009736919,
+          "mean_reference": 0.539723838918,
+          "mean_signed_error_comparator_minus_reference": -0.016714101999,
+          "pearson_r": 0.867624931356,
+          "root_mean_squared_error": 0.216101386849,
+          "spearman_rho_average_ties": 0.82601207469,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 75,
+                "mean_comparator_fraction": 0.000416666667,
+                "mean_reference_fraction": 0.053,
+                "signed_gap": -0.052583333333
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 5,
+                "mean_comparator_fraction": 0.13,
+                "mean_reference_fraction": 0.105,
+                "signed_gap": 0.025
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 22,
+                "mean_comparator_fraction": 0.251515151515,
+                "mean_reference_fraction": 0.022727272727,
+                "signed_gap": 0.228787878788
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 31,
+                "mean_comparator_fraction": 0.329166666667,
+                "mean_reference_fraction": 0.231182795699,
+                "signed_gap": 0.097983870968
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 4,
+                "mean_comparator_fraction": 0.419375,
+                "mean_reference_fraction": 0.1875,
+                "signed_gap": 0.231875
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 17,
+                "mean_comparator_fraction": 0.523529411765,
+                "mean_reference_fraction": 0.631617647059,
+                "signed_gap": -0.108088235294
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 15,
+                "mean_comparator_fraction": 0.654531746032,
+                "mean_reference_fraction": 0.642063492063,
+                "signed_gap": 0.012468253968
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 71,
+                "mean_comparator_fraction": 0.742639839034,
+                "mean_reference_fraction": 0.905468812877,
+                "signed_gap": -0.162828973843
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 22,
+                "mean_comparator_fraction": 0.815886363636,
+                "mean_reference_fraction": 0.86778030303,
+                "signed_gap": -0.051893939394
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 62,
+                "mean_comparator_fraction": 0.999419354839,
+                "mean_reference_fraction": 0.938805683564,
+                "signed_gap": 0.060613671275
+              }
+            ],
+            "denominator": 324,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.231875,
+            "weighted_mean_absolute_bin_gap": 0.097383267196
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 148,
+              "inclusive": true,
+              "rate": 0.456790123457
+            },
+            "0.05": {
+              "count": 156,
+              "inclusive": true,
+              "rate": 0.481481481481
+            },
+            "0.1": {
+              "count": 170,
+              "inclusive": true,
+              "rate": 0.524691358025
+            }
+          }
+        },
+        "normalized_pair_accounting": {
+          "candidate_rows": 325,
+          "excluded": 1,
+          "exclusion_reasons": {
+            "excluded_expert_score_outside_archived_judge_row_max": 1
+          },
+          "usable": 324
+        },
+        "raw_points": {
+          "comparator_over_reference": {
+            "count": 74,
+            "rate": 0.227692307692,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 103,
+            "rate": 0.316923076923,
+            "tolerance": 1e-12
+          },
+          "denominator": 325,
+          "exact_agreement": {
+            "count": 148,
+            "rate": 0.455384615385,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.954320928257,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 325,
+            "intercept": 0.142865561301,
+            "r_squared": 0.911344103143,
+            "slope": 0.93203003041
+          },
+          "maximum_absolute_error": 10.0,
+          "mean_absolute_error": 0.565938461538,
+          "mean_comparator": 2.592584615385,
+          "mean_reference": 2.628369230769,
+          "mean_signed_error_comparator_minus_reference": -0.035784615385,
+          "pearson_r": 0.954643442937,
+          "root_mean_squared_error": 1.075476710044,
+          "spearman_rho_average_ties": 0.881499413486,
+          "within_threshold": {
+            "0.1": {
+              "count": 149,
+              "inclusive": true,
+              "rate": 0.458461538462
+            },
+            "0.5": {
+              "count": 225,
+              "inclusive": true,
+              "rate": 0.692307692308
+            },
+            "1": {
+              "count": 277,
+              "inclusive": true,
+              "rate": 0.852307692308
+            }
+          }
+        }
+      },
+      "gemini_3_5_flash__ipho2025": {
+        "fraction_of_archived_row_max": {
+          "comparator_over_reference": {
+            "count": 26,
+            "rate": 0.13,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 41,
+            "rate": 0.205,
+            "tolerance": 1e-12
+          },
+          "denominator": 200,
+          "exact_agreement": {
+            "count": 133,
+            "rate": 0.665,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.827883612372,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 200,
+            "intercept": 0.117342314719,
+            "r_squared": 0.686840680816,
+            "slope": 0.821770472632
+          },
+          "maximum_absolute_error": 1.0,
+          "mean_absolute_error": 0.097231231187,
+          "mean_comparator": 0.731403932669,
+          "mean_reference": 0.747242251213,
+          "mean_signed_error_comparator_minus_reference": -0.015838318544,
+          "pearson_r": 0.828758517794,
+          "root_mean_squared_error": 0.205753890967,
+          "spearman_rho_average_ties": 0.825823612453,
+          "ten_bin_score_alignment": {
+            "binning_variable": "comparator_fraction_of_row_max",
+            "bins": [
+              {
+                "bin": 0,
+                "comparator_fraction_interval": "[0.0,0.1)",
+                "denominator": 17,
+                "mean_comparator_fraction": 0.0,
+                "mean_reference_fraction": 0.096581734298,
+                "signed_gap": -0.096581734298
+              },
+              {
+                "bin": 1,
+                "comparator_fraction_interval": "[0.1,0.2)",
+                "denominator": 8,
+                "mean_comparator_fraction": 0.151348039216,
+                "mean_reference_fraction": 0.247181372549,
+                "signed_gap": -0.095833333333
+              },
+              {
+                "bin": 2,
+                "comparator_fraction_interval": "[0.2,0.3)",
+                "denominator": 9,
+                "mean_comparator_fraction": 0.213636363636,
+                "mean_reference_fraction": 0.418181818182,
+                "signed_gap": -0.204545454545
+              },
+              {
+                "bin": 3,
+                "comparator_fraction_interval": "[0.3,0.4)",
+                "denominator": 7,
+                "mean_comparator_fraction": 0.338095238095,
+                "mean_reference_fraction": 0.286507936508,
+                "signed_gap": 0.051587301587
+              },
+              {
+                "bin": 4,
+                "comparator_fraction_interval": "[0.4,0.5)",
+                "denominator": 11,
+                "mean_comparator_fraction": 0.423920523921,
+                "mean_reference_fraction": 0.610644910645,
+                "signed_gap": -0.186724386724
+              },
+              {
+                "bin": 5,
+                "comparator_fraction_interval": "[0.5,0.6)",
+                "denominator": 4,
+                "mean_comparator_fraction": 0.525252525253,
+                "mean_reference_fraction": 0.419191919192,
+                "signed_gap": 0.106060606061
+              },
+              {
+                "bin": 6,
+                "comparator_fraction_interval": "[0.6,0.7)",
+                "denominator": 10,
+                "mean_comparator_fraction": 0.626785714286,
+                "mean_reference_fraction": 0.731785714286,
+                "signed_gap": -0.105
+              },
+              {
+                "bin": 7,
+                "comparator_fraction_interval": "[0.7,0.8)",
+                "denominator": 19,
+                "mean_comparator_fraction": 0.753328834908,
+                "mean_reference_fraction": 0.69063202879,
+                "signed_gap": 0.062696806118
+              },
+              {
+                "bin": 8,
+                "comparator_fraction_interval": "[0.8,0.9)",
+                "denominator": 9,
+                "mean_comparator_fraction": 0.835411193745,
+                "mean_reference_fraction": 0.981481481481,
+                "signed_gap": -0.146070287737
+              },
+              {
+                "bin": 9,
+                "comparator_fraction_interval": "[0.9,1.0]",
+                "denominator": 106,
+                "mean_comparator_fraction": 0.999213836478,
+                "mean_reference_fraction": 0.965970350404,
+                "signed_gap": 0.033243486074
+              }
+            ],
+            "denominator": 200,
+            "interpretation": "descriptive score-alignment curve; not probabilistic expected calibration error",
+            "maximum_absolute_nonempty_bin_gap": 0.204545454545,
+            "weighted_mean_absolute_bin_gap": 0.070842342298
+          },
+          "within_threshold": {
+            "0.01": {
+              "count": 133,
+              "inclusive": true,
+              "rate": 0.665
+            },
+            "0.05": {
+              "count": 134,
+              "inclusive": true,
+              "rate": 0.67
+            },
+            "0.1": {
+              "count": 142,
+              "inclusive": true,
+              "rate": 0.71
+            }
+          }
+        },
+        "normalized_pair_accounting": {
+          "candidate_rows": 200,
+          "excluded": 0,
+          "exclusion_reasons": {},
+          "usable": 200
+        },
+        "raw_points": {
+          "comparator_over_reference": {
+            "count": 26,
+            "rate": 0.13,
+            "tolerance": 1e-12
+          },
+          "comparator_under_reference": {
+            "count": 41,
+            "rate": 0.205,
+            "tolerance": 1e-12
+          },
+          "denominator": 200,
+          "exact_agreement": {
+            "count": 133,
+            "rate": 0.665,
+            "tolerance": 1e-12
+          },
+          "lin_concordance_correlation_coefficient": 0.934803526586,
+          "linear_calibration": {
+            "contract": "ordinary least squares: comparator = intercept + slope * reference",
+            "denominator": 200,
+            "intercept": 0.040132532668,
+            "r_squared": 0.874736387548,
+            "slope": 0.909591068634
+          },
+          "maximum_absolute_error": 0.5,
+          "mean_absolute_error": 0.06855,
+          "mean_comparator": 0.50175,
+          "mean_reference": 0.5075,
+          "mean_signed_error_comparator_minus_reference": -0.00575,
+          "pearson_r": 0.935273429297,
+          "root_mean_squared_error": 0.136936116492,
+          "spearman_rho_average_ties": 0.88805079383,
+          "within_threshold": {
+            "0.1": {
+              "count": 161,
+              "inclusive": true,
+              "rate": 0.805
+            },
+            "0.5": {
+              "count": 200,
+              "inclusive": true,
+              "rate": 1.0
+            },
+            "1": {
+              "count": 200,
+              "inclusive": true,
+              "rate": 1.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Both archived judges are Gemini-family models; this is not a cross-family judge robustness study.",
+    "The calibration covers only five saved candidate answers on IPhO 2025 and five on IChO 2025; candidate-total denominators are five per judge/exam.",
+    "The replay evaluates archived final merged/reparsed result arrays. It does not resend requests and cannot measure current endpoint behavior or run-to-run stochasticity.",
+    "IChO row ICHO-2-2.3c for gpt-5 has expert_score=10.0 but archived judge-row max_score=6.0. Both judge copies are retained in raw-point metrics and explicitly excluded from normalized expert/judge metrics; no score or maximum is repaired.",
+    "Candidate-total agreement can look strong even when individual rubric rows disagree; item-level and total-level denominators and metrics are therefore reported separately.",
+    "Correlation and regression on five candidate totals per judge/exam are descriptive and statistically fragile; no confidence interval or significance claim is made."
+  ],
+  "metric_contract": {
+    "exact_tolerance": 1e-12,
+    "icho_candidate_total": "sum raw rows within each problem, divide by frozen problem maximum, multiply by frozen official problem proportion, then sum (/60)",
+    "ipho_candidate_total": "sum 40 raw item scores (/30)",
+    "lin_ccc": "2*population_covariance/(population_var_x+population_var_y+(mean_x-mean_y)^2)",
+    "linear_calibration": "ordinary least squares comparator = intercept + slope*reference",
+    "normalized_item_denominator": "matched pairs with positive archived judge-row max and both scores in [0,max]",
+    "pearson": "Pearson product-moment correlation on the stated denominator",
+    "raw_item_denominator": "all matched finite raw expert/judge score pairs, including source-scale inconsistencies",
+    "rmse": "sqrt(mean((comparator-reference)^2))",
+    "signed_error": "comparator minus reference; judge minus expert for expert agreement and Gemini 3.5 Flash minus Gemini 3.1 Pro Preview for interjudge agreement",
+    "spearman": "Pearson correlation of average ranks; ties receive their average rank",
+    "ten_bin_score_alignment": "equal-width bins by comparator fraction; descriptive weighted absolute mean-bin gap, not probabilistic ECE",
+    "thresholds_are_inclusive": true
+  },
+  "normalized_pair_exclusions": [
+    {
+      "archived_judge_row_max_score": 6.0,
+      "case_id": "ICHO-2-2.3c",
+      "exam": "icho2025",
+      "expert_score": 10.0,
+      "judge_id": "gemini_3_1_pro_preview",
+      "judge_score": 0.0,
+      "model_under_test": "gpt-5",
+      "reason": "excluded_expert_score_outside_archived_judge_row_max",
+      "record_id": "calibration::gemini_3_1_pro_preview::icho2025::gpt-5::ICHO-2-2.3c"
+    },
+    {
+      "archived_judge_row_max_score": 6.0,
+      "case_id": "ICHO-2-2.3c",
+      "exam": "icho2025",
+      "expert_score": 10.0,
+      "judge_id": "gemini_3_5_flash",
+      "judge_score": 0.0,
+      "model_under_test": "gpt-5",
+      "reason": "excluded_expert_score_outside_archived_judge_row_max",
+      "record_id": "calibration::gemini_3_5_flash::icho2025::gpt-5::ICHO-2-2.3c"
+    }
+  ],
+  "row_accounting": {
+    "candidate_total_pairs": 20,
+    "distinct_expert_rows": 525,
+    "excluded_normalized_pairs": 2,
+    "expected_stored_judgments": 1050,
+    "observed_stored_judgments": 1050,
+    "per_run": [
+      {
+        "duplicate_key_count": 0,
+        "duplicate_keys": [],
+        "exam": "ipho2025",
+        "expected_judgment_rows": 200,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "missing_expected_key_count": 0,
+        "missing_expected_keys": [],
+        "missing_numeric_max_score_rows": 0,
+        "missing_numeric_score_rows": 0,
+        "normalized_pair_status_counts": {
+          "usable": 200
+        },
+        "run_id": "gemini_3_1_pro_preview__ipho2025",
+        "stored_error_rows": 0,
+        "stored_judgment_rows": 200,
+        "unexpected_key_count": 0,
+        "unexpected_keys": [],
+        "unique_judgment_keys": 200,
+        "usable_raw_pairs": 200
+      },
+      {
+        "duplicate_key_count": 0,
+        "duplicate_keys": [],
+        "exam": "icho2025",
+        "expected_judgment_rows": 325,
+        "judge_id": "gemini_3_1_pro_preview",
+        "judge_model": "google/google/gemini-3.1-pro-preview",
+        "missing_expected_key_count": 0,
+        "missing_expected_keys": [],
+        "missing_numeric_max_score_rows": 0,
+        "missing_numeric_score_rows": 0,
+        "normalized_pair_status_counts": {
+          "excluded_expert_score_outside_archived_judge_row_max": 1,
+          "usable": 324
+        },
+        "run_id": "gemini_3_1_pro_preview__icho2025",
+        "stored_error_rows": 0,
+        "stored_judgment_rows": 325,
+        "unexpected_key_count": 0,
+        "unexpected_keys": [],
+        "unique_judgment_keys": 325,
+        "usable_raw_pairs": 325
+      },
+      {
+        "duplicate_key_count": 0,
+        "duplicate_keys": [],
+        "exam": "ipho2025",
+        "expected_judgment_rows": 200,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "missing_expected_key_count": 0,
+        "missing_expected_keys": [],
+        "missing_numeric_max_score_rows": 0,
+        "missing_numeric_score_rows": 0,
+        "normalized_pair_status_counts": {
+          "usable": 200
+        },
+        "run_id": "gemini_3_5_flash__ipho2025",
+        "stored_error_rows": 0,
+        "stored_judgment_rows": 200,
+        "unexpected_key_count": 0,
+        "unexpected_keys": [],
+        "unique_judgment_keys": 200,
+        "usable_raw_pairs": 200
+      },
+      {
+        "duplicate_key_count": 0,
+        "duplicate_keys": [],
+        "exam": "icho2025",
+        "expected_judgment_rows": 325,
+        "judge_id": "gemini_3_5_flash",
+        "judge_model": "google/gemini-3.5-flash",
+        "missing_expected_key_count": 0,
+        "missing_expected_keys": [],
+        "missing_numeric_max_score_rows": 0,
+        "missing_numeric_score_rows": 0,
+        "normalized_pair_status_counts": {
+          "excluded_expert_score_outside_archived_judge_row_max": 1,
+          "usable": 324
+        },
+        "run_id": "gemini_3_5_flash__icho2025",
+        "stored_error_rows": 0,
+        "stored_judgment_rows": 325,
+        "unexpected_key_count": 0,
+        "unexpected_keys": [],
+        "unique_judgment_keys": 325,
+        "usable_raw_pairs": 325
+      }
+    ],
+    "usable_normalized_expert_judge_pairs": 1048,
+    "usable_raw_expert_judge_pairs": 1050
+  },
+  "schema_version": "science_arena_archived_two_gemini_calibration_replay_v1",
+  "scope": "Two archived Gemini-family judges on five saved model answers each for IPhO 2025 and IChO 2025.",
+  "source_inventory": [
+    {
+      "exam": "ipho2025",
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/ground_truth/ipho2025_expert_ground_truth.json",
+      "role": "expert_ground_truth",
+      "sha256": "0719eb5cf59843fb44d3e8125f63a95b4711425590e1b0e77c40dce1ba2406db"
+    },
+    {
+      "exam": "icho2025",
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/ground_truth/icho2025_expert_ground_truth.json",
+      "role": "expert_ground_truth",
+      "sha256": "5ed62c788ec71b20f5f7b63d70d6cede6e12db3da6bb938e847c96500cb40d66"
+    },
+    {
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/science_arena_judge.py",
+      "role": "archived_replay_support",
+      "sha256": "6548f5ef0e78386f233e129015d998ac87d1b8a3b6d631470e8c326133f7206e"
+    },
+    {
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/compare_to_ground_truth.py",
+      "role": "archived_replay_support",
+      "sha256": "4b053fcd3c20cf601182942fe77aa586a6f270616be8996998f331decc5769fd"
+    },
+    {
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/collect_gemini_judge_calibration_table.py",
+      "role": "archived_replay_support",
+      "sha256": "8b951371462f3e4fa35a2bc375550451ebdf26aa4b7572c942404fd0ddcb2d38"
+    },
+    {
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/runs/merged_ipho_gemini31pro_strictnotes_v2_reparsed/judge_results.json",
+      "role": "archived_run_artifact",
+      "run_id": "gemini_3_1_pro_preview__ipho2025",
+      "sha256": "388b83e342f91fab30f32e0b7f4e7f7d7f436a38c49713fe9385de27dd214357"
+    },
+    {
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/runs/fullcalib_icho_gemini31pro_strictnotes_v4_reparsed/judge_results.json",
+      "role": "archived_run_artifact",
+      "run_id": "gemini_3_1_pro_preview__icho2025",
+      "sha256": "1530eb733e14178ed6ae71793107374344181046648652a97c1457cfc972ea47"
+    },
+    {
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/runs/merged_ipho_gemini35_v6/judge_results.json",
+      "role": "archived_run_artifact",
+      "run_id": "gemini_3_5_flash__ipho2025",
+      "sha256": "af660907e73684dea6b5e81c585964a0ae58dbc4353b37f7a0edfc6f76def198"
+    },
+    {
+      "path": "science_arena_repro_package_20260530_lite/experiments/judge_pipeline_v2/runs/merged_icho_gemini35_v8_reparsed/judge_results.json",
+      "role": "archived_run_artifact",
+      "run_id": "gemini_3_5_flash__icho2025",
+      "sha256": "3adb825fc941046b5d4a2848438c502a70e0fcd7c7bc59f732abe58423101664"
+    }
+  ],
+  "status": "PASS"
+}

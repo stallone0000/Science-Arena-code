@@ -1,0 +1,95 @@
+{
+  "created_at": "2026-08-28T11:25:11.774357+00:00",
+  "frozen_input_mode": "vision",
+  "route": "cloudsway/gemini-3-flash-preview",
+  "schema_version": "science_arena_frozen_capability_proof_v1",
+  "text_probe": {
+    "basis": "standalone_nonce_text_probe",
+    "original_probe": {
+      "error": "",
+      "expected": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+      "finish_reason": "stop",
+      "http_status": 200,
+      "latency_seconds": 2.739333125,
+      "passed": true,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+              "role": "assistant"
+            }
+          }
+        ],
+        "context": null,
+        "created": 1787914290,
+        "id": "6c0b94a6-a2ce-11f1-b657-3686d47bf72f|MWiRauXeC93r8vUP4ruygQY",
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "cloudsway/gemini-3-flash-preview",
+        "object": "chat.completion",
+        "response_source": "ModelGenerate",
+        "usage": {
+          "completion_tokens": 84,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 0,
+          "prompt_tokens": 18,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 102
+        }
+      },
+      "reasoning_content": "",
+      "request": {
+        "max_tokens": 512,
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "cloudsway/gemini-3-flash-preview",
+        "stream": false
+      },
+      "request_sha256": "54efdedb4ca2500ffdbbef4d23d0d372911e0e88bda1db65f3b1f55133385c4f",
+      "response_body_on_error": "",
+      "visible_content": "SCIENCE-ARENA-TEXT-ROUTE-OK"
+    },
+    "passed": true,
+    "source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/cloudsway__gemini-3-flash-preview.json"
+  },
+  "vision_probe": {
+    "classification": {
+      "gate_path_present": true,
+      "input_mode": "vision",
+      "negative_control_passed": false,
+      "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+      "official_chemistry_passed": true,
+      "official_numeric_graph_passed": true,
+      "official_science_pass_count": 3,
+      "official_science_probe_count": 3,
+      "p1_physics_passed": true,
+      "route": "cloudsway/gemini-3-flash-preview",
+      "strong_pixel_proof": true,
+      "synthetic_unseen_nonce_passed": true,
+      "text_ready": true,
+      "text_ready_basis": "standalone_nonce_text_probe"
+    },
+    "multi_image_gate_source": "experiments/2026_reval/runs/table6_visibility_gate_20260828/cloudsway__gemini-3-flash-preview.json",
+    "p1_source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/cloudsway__gemini-3-flash-preview.json",
+    "passed": true
+  }
+}

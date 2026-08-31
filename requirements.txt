@@ -1,0 +1,8 @@
+jsonschema>=4.21
+matplotlib>=3.8
+numpy>=1.26
+openai>=1.30
+Pillow>=10.2
+PyMuPDF>=1.24
+requests>=2.31
+zstandard>=0.22

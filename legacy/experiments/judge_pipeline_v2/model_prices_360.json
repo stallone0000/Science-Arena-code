@@ -1,0 +1,2696 @@
+{
+  "qwen/qwen3.7-max": {
+    "tpm": 100000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 12.0,
+    "output_price_cny_per_1m": 36.0
+  },
+  "google/gemini-3.5-flash": {
+    "tpm": 100000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 7.14,
+    "output_price_cny_per_1m": 42.84
+  },
+  "qiniu/ccmax/claude-sonnet-4-6": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 4.32,
+    "output_price_cny_per_1m": 21.6
+  },
+  "qwen/qwen3.5-plus-2026-04-20": {
+    "tpm": 1000000000,
+    "rpm": 1000000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 4.8
+  },
+  "alibaba/qwen-image-2.0-pro": {
+    "tpm": 3000000,
+    "rpm": 3000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 500000.0
+  },
+  "bytedance/doubao-1-5-vision-pro-32k": {
+    "tpm": 24000000,
+    "rpm": 35000,
+    "input_price_cny_per_1m": 2.7,
+    "output_price_cny_per_1m": 8.1
+  },
+  "bytedance/doubao-seed-1-6-vision": {
+    "tpm": 5000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 2.4,
+    "output_price_cny_per_1m": 24.0
+  },
+  "bytedance/doubao-seed-1-6-flash": {
+    "tpm": 30000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 0.0725,
+    "output_price_cny_per_1m": 0.8083
+  },
+  "bytedance/doubao-seed-1-6": {
+    "tpm": 10000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 8.0
+  },
+  "bytedance/doubao-seedream-4-0": {
+    "tpm": 10000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 160000.0
+  },
+  "bytedance/doubao-seedream-4-5": {
+    "tpm": 10000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 226000.0
+  },
+  "bytedance/doubao-seed-1-8": {
+    "tpm": 100000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.64,
+    "output_price_cny_per_1m": 1.6
+  },
+  "bytedance/doubao-seedream-5-0-lite": {
+    "tpm": 10000000,
+    "rpm": 500,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 220000.0
+  },
+  "bytedance/doubao-seed-2-0-code": {
+    "tpm": 100000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 3.2,
+    "output_price_cny_per_1m": 16.0
+  },
+  "360zhinao-turbo-trans": {
+    "tpm": 60000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.4
+  },
+  "360zhinao-pro-trans": {
+    "tpm": 120000,
+    "rpm": 300,
+    "input_price_cny_per_1m": 1.2,
+    "output_price_cny_per_1m": 3.0
+  },
+  "bytedance/doubao-seed-2-0-pro": {
+    "tpm": 100000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 3.2,
+    "output_price_cny_per_1m": 16.0
+  },
+  "bytedance/doubao-seed-2-0-lite": {
+    "tpm": 100000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.6,
+    "output_price_cny_per_1m": 3.6
+  },
+  "bytedance/doubao-seed-2-0-mini": {
+    "tpm": 100000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.2,
+    "output_price_cny_per_1m": 2.0
+  },
+  "360zhinao-pro": {
+    "tpm": 600000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "360zhinao-deepseek-v4-flash-260509": {
+    "tpm": 10000000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 2.0
+  },
+  "360zhinao-turbo-doubao-seed-1-8": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 1.0
+  },
+  "xiaomi/mimo-v2.5-pro": {
+    "tpm": 10000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 7.0,
+    "output_price_cny_per_1m": 21.0
+  },
+  "xiaomi/mimo-v2.5": {
+    "tpm": 10000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.8,
+    "output_price_cny_per_1m": 14.0
+  },
+  "cloudsway/gemini-3.1-pro-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 10.22,
+    "output_price_cny_per_1m": 61.32
+  },
+  "360zhinao-turbo-doubao-seed-1-8-thinking-minimal": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 1.0
+  },
+  "openrouter/xiaomi/mimo-v2.5-pro": {
+    "tpm": 15000000,
+    "rpm": 15000,
+    "input_price_cny_per_1m": 7.0,
+    "output_price_cny_per_1m": 21.0
+  },
+  "openrouter/xiaomi/mimo-v2.5": {
+    "tpm": 15000000,
+    "rpm": 15000,
+    "input_price_cny_per_1m": 2.8,
+    "output_price_cny_per_1m": 14.0
+  },
+  "360zhinao-turbo-askai-zhuiwen-260428": {
+    "tpm": 60000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.4
+  },
+  "openai/gpt-5.5": {
+    "tpm": 15000000,
+    "rpm": 15000,
+    "input_price_cny_per_1m": 35.0,
+    "output_price_cny_per_1m": 210.0
+  },
+  "deepseek/deepseek-v4-pro": {
+    "tpm": 10000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 6.0
+  },
+  "deepseek/deepseek-v4-flash": {
+    "tpm": 10000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 2.0
+  },
+  "openai/gpt-image-2": {
+    "tpm": 1000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 34.0,
+    "output_price_cny_per_1m": 204.0
+  },
+  "moonshotai/kimi-k2.6": {
+    "tpm": 30000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 6.5,
+    "output_price_cny_per_1m": 27.0
+  },
+  "moonshot/moonshotai/kimi-k2.6": {
+    "tpm": 60000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 6.5,
+    "output_price_cny_per_1m": 27.0
+  },
+  "anthropic/claude-opus-4.7": {
+    "tpm": 10000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 35.0,
+    "output_price_cny_per_1m": 175.0
+  },
+  "z-ai/glm-5v-turbo": {
+    "tpm": 10000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 5.0,
+    "output_price_cny_per_1m": 22.0
+  },
+  "360zhinao-turbo-32k-agent": {
+    "tpm": 1000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.4
+  },
+  "360zhinao-lite-8k-intentcls": {
+    "tpm": 1000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 0.15,
+    "output_price_cny_per_1m": 0.3
+  },
+  "z-ai/glm-5.1": {
+    "tpm": 1000000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 6.0,
+    "output_price_cny_per_1m": 24.0
+  },
+  "volcengine/doubao-seedance-2-0-fast": {
+    "tpm": 100000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 37.0
+  },
+  "volcengine/doubao-seedance-2-0": {
+    "tpm": 100000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 46.0
+  },
+  "qwen/qwen3.6-plus": {
+    "tpm": 20000000,
+    "rpm": 600000,
+    "input_price_cny_per_1m": 1.2,
+    "output_price_cny_per_1m": 7.2
+  },
+  "minimax/MiniMax-M2.5-highspeed": {
+    "tpm": 3000000,
+    "rpm": 3000,
+    "input_price_cny_per_1m": 3.36,
+    "output_price_cny_per_1m": 13.44
+  },
+  "minimax/MiniMax-M2.7-highspeed": {
+    "tpm": 3000000,
+    "rpm": 3000,
+    "input_price_cny_per_1m": 3.36,
+    "output_price_cny_per_1m": 13.44
+  },
+  "minimax/MiniMax-M2.7": {
+    "tpm": 200000000,
+    "rpm": 500000,
+    "input_price_cny_per_1m": 1.68,
+    "output_price_cny_per_1m": 6.72
+  },
+  "z-ai/glm-5-turbo": {
+    "tpm": 30000000000,
+    "rpm": 300000,
+    "input_price_cny_per_1m": 4.25,
+    "output_price_cny_per_1m": 18.7
+  },
+  "alibaba/qwen-image-2.0": {
+    "tpm": 3000000,
+    "rpm": 3000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 200000.0
+  },
+  "qiniu/google/gemini-3-pro-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 9.636,
+    "output_price_cny_per_1m": 57.816
+  },
+  "zyun360/360-step-3.5-flash": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 0.72,
+    "output_price_cny_per_1m": 2.16
+  },
+  "ppinfra/google/gemini-3.1-flash-image-preview-edit": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 2.275,
+    "output_price_cny_per_1m": 13.65
+  },
+  "ppinfra/google/gemini-3.1-flash-image-preview": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 2.275,
+    "output_price_cny_per_1m": 13.65
+  },
+  "alibaba/qwen2.5-coder-7b-instruct": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 2.0
+  },
+  "alibaba/qwen-vl-max": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 9.0
+  },
+  "deepseek/deepseek-r1-distill-qwen-32b": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.5,
+    "output_price_cny_per_1m": 6.0
+  },
+  "openai/gpt-4o-mini": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.2,
+    "output_price_cny_per_1m": 4.6
+  },
+  "openai/gpt-4o-2024-05-13": {
+    "tpm": 1200000,
+    "rpm": 300,
+    "input_price_cny_per_1m": 34.0,
+    "output_price_cny_per_1m": 102.0
+  },
+  "openai/gpt-4-1106-preview": {
+    "tpm": 12000000,
+    "rpm": 3000,
+    "input_price_cny_per_1m": 68.0,
+    "output_price_cny_per_1m": 204.0
+  },
+  "openai/gpt-4": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 204.0,
+    "output_price_cny_per_1m": 408.0
+  },
+  "openai/gpt-3.5-turbo-16k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 21.0,
+    "output_price_cny_per_1m": 28.0
+  },
+  "openai/gpt-3.5-turbo": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 14.0,
+    "output_price_cny_per_1m": 14.0
+  },
+  "anthropic/claude-3.5-haiku": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 7.3,
+    "output_price_cny_per_1m": 36.5
+  },
+  "z-ai/glm-4.7": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "z-ai/glm-4.6v": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "z-ai/glm-4.6": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 14.0
+  },
+  "z-ai/glm-4.5v": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 12.0
+  },
+  "z-ai/glm-4.5-air": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 6.0
+  },
+  "z-ai/glm-4.5": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "qiniu/openai/gpt-5.4": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 18.25,
+    "output_price_cny_per_1m": 109.5
+  },
+  "openai/gpt-5.4": {
+    "tpm": 3000000,
+    "rpm": 3000,
+    "input_price_cny_per_1m": 17.5,
+    "output_price_cny_per_1m": 105.0
+  },
+  "volcengine/disable-thinking-doubao-seed-2-0-mini-260215": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.2,
+    "output_price_cny_per_1m": 2.0
+  },
+  "microsoft/openai/o4-mini": {
+    "tpm": 100000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 7.92,
+    "output_price_cny_per_1m": 31.68
+  },
+  "microsoft/openai/o3-mini": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 9.0,
+    "output_price_cny_per_1m": 36.0
+  },
+  "microsoft/openai/o3": {
+    "tpm": 100000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 14.4,
+    "output_price_cny_per_1m": 57.6
+  },
+  "microsoft/openai/o1": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 121.0,
+    "output_price_cny_per_1m": 481.0
+  },
+  "microsoft/openai/gpt-5.2": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 12.6,
+    "output_price_cny_per_1m": 100.8
+  },
+  "microsoft/openai/gpt-5.1": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 9.125,
+    "output_price_cny_per_1m": 73.0
+  },
+  "microsoft/openai/gpt-5-nano": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 0.365,
+    "output_price_cny_per_1m": 2.92
+  },
+  "microsoft/openai/gpt-5-mini": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 1.825,
+    "output_price_cny_per_1m": 14.6
+  },
+  "microsoft/openai/gpt-5": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 9.125,
+    "output_price_cny_per_1m": 73.0
+  },
+  "minimax/minimax/MiniMax-M2.5": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 1.68,
+    "output_price_cny_per_1m": 6.72
+  },
+  "minimax/minimax/MiniMax-M2.1": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 2.1,
+    "output_price_cny_per_1m": 8.4
+  },
+  "minimax/minimax/MiniMax-M1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.2,
+    "output_price_cny_per_1m": 16.0
+  },
+  "cloudsway/google/gemini-2.5-pro-preview": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 18.25,
+    "output_price_cny_per_1m": 109.5
+  },
+  "cloudsway/google/gemini-2.5-pro": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 9.125,
+    "output_price_cny_per_1m": 18.25
+  },
+  "cloudsway/google/gemini-2.5-flash": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.575,
+    "output_price_cny_per_1m": 5.25
+  },
+  "deepseek/deepseek/deepseek-r1": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "deepseek/deepseek/deepseek-chat": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "amazon/anthropic/claude-3.5-sonnet": {
+    "tpm": 3000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "alibaba/qwen-flash": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.15,
+    "output_price_cny_per_1m": 1.5
+  },
+  "volcengine/doubao-seed-2-0-mini-260215": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.2,
+    "output_price_cny_per_1m": 2.0
+  },
+  "volcengine/doubao-seed-2-0-mini-disable-thinking": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.2,
+    "output_price_cny_per_1m": 2.0
+  },
+  "cloudsway/google/gemini-3.1-flash-image-preview": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 3.15,
+    "output_price_cny_per_1m": 378.0
+  },
+  "ppinfra/gemini-3.1-pro-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 9.425,
+    "output_price_cny_per_1m": 56.55
+  },
+  "ppinfra/claude-sonnet-4-6": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 16.3125,
+    "output_price_cny_per_1m": 81.5625
+  },
+  "google/google/gemini-3.1-pro-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 10.22,
+    "output_price_cny_per_1m": 61.32
+  },
+  "anthropic/claude-sonnet-4-6": {
+    "tpm": 2000000000,
+    "rpm": 1000000,
+    "input_price_cny_per_1m": 18.576,
+    "output_price_cny_per_1m": 92.88
+  },
+  "qiniu/claude-sonnet-4-6": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 18.576,
+    "output_price_cny_per_1m": 92.88
+  },
+  "qiniu/gemini-3.1-pro-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 9.648,
+    "output_price_cny_per_1m": 57.888
+  },
+  "alibaba/qwen3.5-flash": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.2,
+    "output_price_cny_per_1m": 2.0
+  },
+  "alibaba/qwen3.5-plus": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 4.8
+  },
+  "alibaba/qwen3.5-35b-a3b": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.4,
+    "output_price_cny_per_1m": 3.2
+  },
+  "alibaba/qwen3.5-27b": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.6,
+    "output_price_cny_per_1m": 4.8
+  },
+  "alibaba/qwen3.5-122b-a10b": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 6.4
+  },
+  "alibaba/qwen3.5-397b-a17b": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 1.2,
+    "output_price_cny_per_1m": 7.2
+  },
+  "qiniu/kimi-k2.5": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 2.8,
+    "output_price_cny_per_1m": 14.7
+  },
+  "google/gemini-3.1-pro-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 14.6,
+    "output_price_cny_per_1m": 87.6
+  },
+  "volcengine/doubao-seed-2-0-code": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 3.2,
+    "output_price_cny_per_1m": 16.0
+  },
+  "volcengine/doubao-seed-2-0-lite": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.6,
+    "output_price_cny_per_1m": 3.6
+  },
+  "minimax/MiniMax-M2.5-lightning": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 1.68,
+    "output_price_cny_per_1m": 20.16
+  },
+  "qiniu/glm-5": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 2.4,
+    "output_price_cny_per_1m": 10.8
+  },
+  "z-ai/glm-5": {
+    "tpm": 6000000000,
+    "rpm": 600000,
+    "input_price_cny_per_1m": 2.8,
+    "output_price_cny_per_1m": 12.6
+  },
+  "ppinfra/glm-5": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 3.6,
+    "output_price_cny_per_1m": 16.2
+  },
+  "minimax/MiniMax-M2.5": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 1.68,
+    "output_price_cny_per_1m": 6.72
+  },
+  "aliyun/qwen-plus": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "aliyun/qwen-plus-latest": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "bigmodel/glm-5": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 2.8,
+    "output_price_cny_per_1m": 12.6
+  },
+  "qiniu/google/gemini-3-flash-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 2.52,
+    "output_price_cny_per_1m": 15.12
+  },
+  "cloudsway/gemini-3-flash-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 2.52,
+    "output_price_cny_per_1m": 15.12
+  },
+  "openrouter/gpt-5-image": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 76.65,
+    "output_price_cny_per_1m": 76.65
+  },
+  "openrouter/pony-alpha": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "sophnet/qwen-plus-latest": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.36,
+    "output_price_cny_per_1m": 0.9
+  },
+  "sophnet/qwen-plus": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.36,
+    "output_price_cny_per_1m": 0.9
+  },
+  "minimax/MiniMax-M2.1-lightning": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 1.68,
+    "output_price_cny_per_1m": 13.44
+  },
+  "qiniu/gpt-5.2-codex": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 12.6,
+    "output_price_cny_per_1m": 70.56
+  },
+  "ppinfra/claude-opus-4.6": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 36.5,
+    "output_price_cny_per_1m": 273.75
+  },
+  "anthropic/claude-opus-4.6": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 36.5,
+    "output_price_cny_per_1m": 273.75
+  },
+  "ppinfra/claude-haiku-4.5": {
+    "tpm": 200000000,
+    "rpm": 1000000,
+    "input_price_cny_per_1m": 7.2,
+    "output_price_cny_per_1m": 36.0
+  },
+  "cloudsway/gemini-3-pro-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 10.22,
+    "output_price_cny_per_1m": 61.32
+  },
+  "ppinfra/gemini-3-pro-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 10.22,
+    "output_price_cny_per_1m": 61.32
+  },
+  "cloudsway/gemini-3-pro-image-preview": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 9.8,
+    "output_price_cny_per_1m": 588.0
+  },
+  "cloudsway/gemini-3-pro-image-preview-edit": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 9.8,
+    "output_price_cny_per_1m": 588.0
+  },
+  "ppinfra/gpt-5.2-codex": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 8.82,
+    "output_price_cny_per_1m": 70.56
+  },
+  "openai/gpt-5.2-codex": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 12.6,
+    "output_price_cny_per_1m": 100.8
+  },
+  "360zhinao-turbo-qwen-plus": {
+    "tpm": 60000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 2.0
+  },
+  "moonshot/kimi-k2.5": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 21.0
+  },
+  "alibaba/qwen3-max-2026-01-23": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 2.5,
+    "output_price_cny_per_1m": 10.0
+  },
+  "baidu/ernie-5.0-thinking-preview": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 6.0,
+    "output_price_cny_per_1m": 24.0
+  },
+  "volcengine/doubao-seed-2-0-mini": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.2,
+    "output_price_cny_per_1m": 2.0
+  },
+  "volcengine/doubao-seed-2-0-pro": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 3.2,
+    "output_price_cny_per_1m": 16.0
+  },
+  "ppinfra/claude-opus-4.5": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 36.5,
+    "output_price_cny_per_1m": 182.5
+  },
+  "volcengine/doubao-seed-1-8-251215-original": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.64,
+    "output_price_cny_per_1m": 1.6
+  },
+  "volcengine/doubao-seed-1-8": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "ppinfra/claude-sonnet-4-5": {
+    "tpm": 300000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 15.33,
+    "output_price_cny_per_1m": 76.65
+  },
+  "huaweicloud/deepseek-v3.2": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 1.5
+  },
+  "alibaba/qwen3-vl-flash": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.0525,
+    "output_price_cny_per_1m": 0.525
+  },
+  "bigmodel/autoglm-phone": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "bigmodel/glm-4.7": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "minimax/MiniMax-M2.1": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 2.1,
+    "output_price_cny_per_1m": 8.4
+  },
+  "openrouter/xiaomi-mimo-v2-flash-free": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "volcengine/doubao-seed-1-8-251215": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.64,
+    "output_price_cny_per_1m": 1.6
+  },
+  "google/gemini-3-flash-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 2.52,
+    "output_price_cny_per_1m": 15.12
+  },
+  "zyun360/360-auto-glm-phone-9b": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 0.25,
+    "output_price_cny_per_1m": 1.0
+  },
+  "openai/gpt-5.2": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 12.6,
+    "output_price_cny_per_1m": 100.8
+  },
+  "qiniu/qwen3-235b-a22b-instruct-2507": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "sophnet/qwen3-235b-a22b-instruct-2507": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "qiniu/claude-sonnet-4-5": {
+    "tpm": 300000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 15.33,
+    "output_price_cny_per_1m": 76.65
+  },
+  "amazon/claude-sonnet-4-5": {
+    "tpm": 300000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "bigmodel/glm-4.6v": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "siliconflow/DeepSeek-OCR": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "anthropic/claude-haiku-4.5": {
+    "tpm": 200000000,
+    "rpm": 1000000,
+    "input_price_cny_per_1m": 7.2,
+    "output_price_cny_per_1m": 36.0
+  },
+  "volcengine/deepseek-v3.2": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "paratera/deepseek-v3.2": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "cmecloud/deepseek-r1": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "sophnet/deepseek-v3.2": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "qiniu/deepseek-v3.2-speciale": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "siliconflow/deepseek-v3.2": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "ppinfra/deepseek-v3.2": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "qiniu/deepseek-v3.2": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "xai/grok-4": {
+    "tpm": 600000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 22.0,
+    "output_price_cny_per_1m": 110.0
+  },
+  "ppinfra/grok-4": {
+    "tpm": 600000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 22.0,
+    "output_price_cny_per_1m": 110.0
+  },
+  "amazon/claude-opus-4.5": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 36.5,
+    "output_price_cny_per_1m": 182.5
+  },
+  "qiniu/claude-opus-4.5": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 36.5,
+    "output_price_cny_per_1m": 182.5
+  },
+  "anthropic/claude-opus-4.5": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 36.5,
+    "output_price_cny_per_1m": 182.5
+  },
+  "volcengine/doubao-seed-1-8-preview-251115": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.64,
+    "output_price_cny_per_1m": 1.6
+  },
+  "sophnet/deepseek-v3": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "volcengine/doubao-1-5-ui-tars-250428": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 3.5,
+    "output_price_cny_per_1m": 12.0
+  },
+  "google/gemini-3-pro-preview": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 10.22,
+    "output_price_cny_per_1m": 61.32
+  },
+  "openai/gpt-5.1": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 9.125,
+    "output_price_cny_per_1m": 73.0
+  },
+  "siliconflow/Qwen3-VL-8B-Instruct": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 2.0
+  },
+  "cmecloud/deepseek-v3.1": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "cmecloud/deepseek-v3": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "moonshot/kimi-k2-thinking": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "ppinfra/kimi-k2-thinking": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 8.0,
+    "output_price_cny_per_1m": 58.0
+  },
+  "qiniu/kimi-k2-thinking": {
+    "tpm": 20000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 8.0,
+    "output_price_cny_per_1m": 58.0
+  },
+  "anthropic/claude-sonnet-4-5": {
+    "tpm": 300000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 15.33,
+    "output_price_cny_per_1m": 76.65
+  },
+  "baidu/ernie-x1.1": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "sophnet/deepseek-ocr": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "volcengine/seed-tts-2.0": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 150.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "qiniu/minimax-m2": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.1,
+    "output_price_cny_per_1m": 8.4
+  },
+  "volcengine/doubao-seed-1-6-flash-disable-thinking": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.0725,
+    "output_price_cny_per_1m": 0.8083
+  },
+  "volcengine/doubao-seed-1-6-251015-thinking-medium": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 8.0
+  },
+  "volcengine/doubao-seed-1-6-251015-thinking-low": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 8.0
+  },
+  "volcengine/doubao-seed-1-6-251015-thinking-minimal": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 5.6666
+  },
+  "volcengine/doubao-seed-1-6-251015": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 8.0
+  },
+  "volcengine/doubao-seed-1-6-lite": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.3,
+    "output_price_cny_per_1m": 0.6
+  },
+  "volcengine/doubao-seed-1-6-250615-auto": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 8.0
+  },
+  "sophnet/Qwen3-Next-80B-A3B-Instruct": {
+    "tpm": 1000000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "bigmodel/glm-4.5-air": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 6.0
+  },
+  "bigmodel/glm-4.5-airx": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 12.0
+  },
+  "bigmodel/glm-4.5-x": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 8.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "volcengine/jimeng_realman_avatar_picture_omni_v15": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 1000000.0
+  },
+  "volcengine/jimeng_realman_avatar_object_detection": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "volcengine/jimeng_realman_avatar_picture_create_role_omni_v15": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "volcengine/doubao-seed-1-6-flash": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.0725,
+    "output_price_cny_per_1m": 0.8083
+  },
+  "volcengine/doubao-seed-1-6-thinking": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 5.6666
+  },
+  "volcengine/doubao-seed-1-6": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.665,
+    "output_price_cny_per_1m": 5.6666
+  },
+  "moonshot/kimi-k2-0905-preview": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "alibaba/qwen3-max": {
+    "tpm": 200000000000,
+    "rpm": 100000000,
+    "input_price_cny_per_1m": 0.875,
+    "output_price_cny_per_1m": 3.5
+  },
+  "gaga/avatar-h1-pro": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "gaga/avatar-h1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "qiniu/grok-4-fast": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 2.88,
+    "output_price_cny_per_1m": 7.2
+  },
+  "qiniu/grok-code-fast-1": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 1.44,
+    "output_price_cny_per_1m": 10.8
+  },
+  "sophnet/qwen3-235b-a22b": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "bigmodel/glm-4.6": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 14.0
+  },
+  "huaweicloud/deepseek-v3.2-exp": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 1.5
+  },
+  "qiniu/deepseek-v3.2-exp-thinking": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "qiniu/deepseek-v3.2-exp": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "anthropic/claude-opus-4.1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 112.5,
+    "output_price_cny_per_1m": 562.5
+  },
+  "amazon/claude-opus-4.1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 112.5,
+    "output_price_cny_per_1m": 562.5
+  },
+  "openrouter/qwen3-vl-235b-a22b-instruct": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.2,
+    "output_price_cny_per_1m": 11.0
+  },
+  "cloudsway/grok-4": {
+    "tpm": 600000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 22.0,
+    "output_price_cny_per_1m": 110.0
+  },
+  "openrouter/tongyi-deepresearch-30b-a3b": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.66,
+    "output_price_cny_per_1m": 3.23
+  },
+  "sophnet/deepseek-r1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "sophnet/qwen2.5-72b-instruct": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 12.0
+  },
+  "alibaba/qwen3-vl-plus": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 30.0
+  },
+  "qiniu/deepseek-v3.1-terminus": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 12.0
+  },
+  "alibaba/pre-qwen-vl-max-2025-09-11-test": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 9.0
+  },
+  "siliconflow/Qwen3-Next-80B-A3B-Instruct": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "siliconflow/Hunyuan-MT-7B": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "qiniu/qwen3-32b": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 20.0
+  },
+  "volcengine/doubao-seed-1-6-vision-250815": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 2.4,
+    "output_price_cny_per_1m": 24.0
+  },
+  "infiniai/deepseek-r1": {
+    "tpm": 1000000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "cloudsway/gpt-4o": {
+    "tpm": 600000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 18.25,
+    "output_price_cny_per_1m": 73.0
+  },
+  "cloudsway/o4-mini": {
+    "tpm": 100000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 7.92,
+    "output_price_cny_per_1m": 31.68
+  },
+  "cloudsway/o1": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 121.0,
+    "output_price_cny_per_1m": 481.0
+  },
+  "cloudsway/o3": {
+    "tpm": 100000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 14.4,
+    "output_price_cny_per_1m": 57.6
+  },
+  "huaweicloud/deepseek-v3.1": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 0.35,
+    "output_price_cny_per_1m": 1.4
+  },
+  "claudsway/gpt-5": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 9.125,
+    "output_price_cny_per_1m": 73.0
+  },
+  "qiniu/qwen3-coder-480b-a35b-instruct": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 6.0,
+    "output_price_cny_per_1m": 24.0
+  },
+  "qiniu/claude-opus-4.1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 112.5,
+    "output_price_cny_per_1m": 562.5
+  },
+  "360/huaweicloud-deepseek-r1": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "alibaba/qwen3-max-preview": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 15.0,
+    "output_price_cny_per_1m": 60.0
+  },
+  "qiniu/deepseek-v3.1": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 6.0
+  },
+  "huaweicloud/qwen3-235b-a22b": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 3.2
+  },
+  "bigmodel/glm-4.5v": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 12.0
+  },
+  "360zhinao-turbo": {
+    "tpm": 60000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 1.0
+  },
+  "qiniu/claude-sonnet-4": {
+    "tpm": 300000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "alibaba/qwen-vl-max-latest": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 9.0
+  },
+  "alibaba/qwen-vl-plus-latest": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.5,
+    "output_price_cny_per_1m": 4.5
+  },
+  "alibaba/qwen-max-latest": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.4,
+    "output_price_cny_per_1m": 9.6
+  },
+  "volcengine/deepseek-v3.1": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 12.0
+  },
+  "alibaba/qwen-max-2025-08-15": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.4,
+    "output_price_cny_per_1m": 9.6
+  },
+  "baidu/deepseek-v3.1": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 6.0
+  },
+  "360zhinao-pro-32k-thinking-vision": {
+    "tpm": 600000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 1.2,
+    "output_price_cny_per_1m": 3.0
+  },
+  "cloudsway/claude-3.7-sonnet": {
+    "tpm": 300000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 27.59,
+    "output_price_cny_per_1m": 137.97
+  },
+  "cloudsway/claude-sonnet-4": {
+    "tpm": 300000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "volcengine/doubao-seed-1-6-flash-250715": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.48,
+    "output_price_cny_per_1m": 4.8
+  },
+  "openai/gpt-5-mini": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 1.825,
+    "output_price_cny_per_1m": 14.6
+  },
+  "openai/gpt-5-nano": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 0.365,
+    "output_price_cny_per_1m": 2.92
+  },
+  "openai/gpt-5": {
+    "tpm": 12000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 9.125,
+    "output_price_cny_per_1m": 73.0
+  },
+  "360zhinao-gpt-oss-250807": {
+    "tpm": 60000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 5.0
+  },
+  "amazon/claude-sonnet-4": {
+    "tpm": 300000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "qiniu/gpt-oss-20b": {
+    "tpm": 300000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.72,
+    "output_price_cny_per_1m": 3.6
+  },
+  "qiniu/gpt-oss-120b": {
+    "tpm": 300000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.08,
+    "output_price_cny_per_1m": 5.4
+  },
+  "volcengine/doubao-seed-1-6-thinking-250715": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.6,
+    "output_price_cny_per_1m": 8.0
+  },
+  "tencent/hunyuan-a13b": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 2.0
+  },
+  "bigmodel/glm-4.5": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "alibaba/qwen3-235b-a22b-thinking-2507": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 20.0
+  },
+  "alibaba/qwen-plus-latest": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "alibaba/qwen-mt-turbo": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.95
+  },
+  "alibaba/qwen-mt-plus": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.8,
+    "output_price_cny_per_1m": 5.4
+  },
+  "topview/avatar-voice": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "qiniu/claude-3.7-sonnet": {
+    "tpm": 300000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 27.59,
+    "output_price_cny_per_1m": 137.97
+  },
+  "openai/o4-mini": {
+    "tpm": 100000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 7.92,
+    "output_price_cny_per_1m": 31.68
+  },
+  "openai/o3": {
+    "tpm": 100000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 14.4,
+    "output_price_cny_per_1m": 57.6
+  },
+  "alibaba/qwen3-coder-plus": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 10.0,
+    "output_price_cny_per_1m": 40.0
+  },
+  "volcengine/kimi-k2-250711": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "qiniu/qwen3-235b-a22b": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "360zhinao-agent-sentence-to-viral-video": {
+    "tpm": 60000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 5.0
+  },
+  "alibaba/qwen-plus-2025-07-14": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "anthropic/claude-opus-4": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 112.5,
+    "output_price_cny_per_1m": 562.5
+  },
+  "amazon/claude-opus-4": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 112.5,
+    "output_price_cny_per_1m": 562.5
+  },
+  "alibaba/qwen3-8b": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 2.0
+  },
+  "360zhinao3-o1.5": {
+    "tpm": 100000000,
+    "rpm": 2000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "moonshot/kimi-k2-0711-preview": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.5,
+    "output_price_cny_per_1m": 16.5
+  },
+  "sensetime/SenseNova-V6-Turbo": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.5,
+    "output_price_cny_per_1m": 4.5
+  },
+  "sensetime/SenseNova-V6-Reasoner": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "sensetime/SenseNova-V6-Pro": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 9.0
+  },
+  "360zhinao-search-summary": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 8.0
+  },
+  "google/gemini-2.5-flash-lite-preview-06-17": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 9.125,
+    "output_price_cny_per_1m": 18.25
+  },
+  "google/gemini-2.5-flash": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.575,
+    "output_price_cny_per_1m": 5.25
+  },
+  "google/gemini-2.5-pro": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 9.125,
+    "output_price_cny_per_1m": 18.25
+  },
+  "a2e/a2e-1.0": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "volcengine/doubao-embedding-vision": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 8.0
+  },
+  "amazon/claude-3.7-sonnet": {
+    "tpm": 300000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "microsoft/claude-3.7-sonnet": {
+    "tpm": 300000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "minimax/MiniMax-M1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.2,
+    "output_price_cny_per_1m": 16.0
+  },
+  "minimax/MiniMax-Text-01": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "baidu/ernie-x1-32k": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "baidu/ernie-x1-turbo-32k": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "volcengine/doubao-seed-1-6-250615-disable-thinking": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 5.6666
+  },
+  "huaweicloud/deepseek-v3": {
+    "tpm": 40000000,
+    "rpm": 4000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "alibaba/qwen-plus-2025-04-28": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "guizhoumobile/doubao-seed-1-6-thinking": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.3,
+    "output_price_cny_per_1m": 3.0
+  },
+  "guizhoumobile/doubao-seed-1-6-flash": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.3,
+    "output_price_cny_per_1m": 3.0
+  },
+  "guizhoumobile/deepseek-r1-distill-qwen-32b": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.5,
+    "output_price_cny_per_1m": 6.0
+  },
+  "guizhoumobile/deepseek-v3": {
+    "tpm": 1000000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "guizhoumobile/doubao-vision-pro-32k": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.7,
+    "output_price_cny_per_1m": 8.1
+  },
+  "guizhoumobile/doubao-vision-lite-32k": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.81,
+    "output_price_cny_per_1m": 2.43
+  },
+  "guizhoumobile/doubao-1-5-vision-pro-32k": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 9.0
+  },
+  "guizhoumobile/doubao-1-5-pro-256k": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 5.0,
+    "output_price_cny_per_1m": 9.0
+  },
+  "guizhoumobile/doubao-pro-32k": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "guizhoumobile/doubao-1-5-pro-32k": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.76
+  },
+  "guizhoumobile/doubao-seed-1-6": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 8.0
+  },
+  "volcengine/doubao-seed-1-6-250615": {
+    "tpm": 200000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 8.0
+  },
+  "volcengine/doubao-seed-1-6-thinking-250615": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.6,
+    "output_price_cny_per_1m": 8.0
+  },
+  "volcengine/doubao-seed-1-6-flash-250615": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.3,
+    "output_price_cny_per_1m": 3.0
+  },
+  "360zhinao-pro-qwen-plus": {
+    "tpm": 60000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "google/gemini-2.0-flash": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.77,
+    "output_price_cny_per_1m": 3.07
+  },
+  "360/tts-stream": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 150.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "baidu/deepseek-r1-250528": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "volcengine/deepseek-r1": {
+    "tpm": 1000000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "360/aliyun-deepseek-r1-0528": {
+    "tpm": 6000000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 1.6,
+    "output_price_cny_per_1m": 6.4
+  },
+  "huaweicloud/deepseek-r1": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 2.8
+  },
+  "anthropic/claude-sonnet-4": {
+    "tpm": 300000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "360gpt-o1.5-64k-r1-250320": {
+    "tpm": 6000000,
+    "rpm": 6000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "google/gemini-2.5-pro-preview": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 18.25,
+    "output_price_cny_per_1m": 109.5
+  },
+  "volcengine/doubao-1.5-thinking-vision-pro-250428": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 9.0
+  },
+  "ppinfra/deepseek-prover-v2-671b": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "alibaba/qwen3-32b": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 20.0
+  },
+  "alibaba/qwen3-30b-a3b": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 1.5,
+    "output_price_cny_per_1m": 15.0
+  },
+  "alibaba/qwen3-235b-a22b": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 20.0
+  },
+  "baidu/ernie-4.5-turbo-128k": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 3.2
+  },
+  "baidu/ernie-4.5-turbo-32k": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 3.2
+  },
+  "anthropic/claude-3.5-sonnet": {
+    "tpm": 3000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "alayanew/deepseek-r1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "coreshub/deepseek-r1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "iflytek/generalv3.5": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 30.0,
+    "output_price_cny_per_1m": 30.0
+  },
+  "iflytek/x1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "volcengine/doubao-1-5-thinking-pro-m-250415": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "volcengine/doubao-1-5-thinking-pro-250415": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "360/volceapi-deepseek-v3": {
+    "tpm": 6000000,
+    "rpm": 300,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "openai/o1-mini": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 21.0,
+    "output_price_cny_per_1m": 84.0
+  },
+  "tencent/deepseek-v3": {
+    "tpm": 1000000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "qiniu/deepseek-v3": {
+    "tpm": 1000000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 1.3,
+    "output_price_cny_per_1m": 5.2
+  },
+  "volcengine/deepseek-v3-250324": {
+    "tpm": 1000000000,
+    "rpm": 30000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "360tts": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 150.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "360gpt-o1.5-64k-r1-250319": {
+    "tpm": 6000000,
+    "rpm": 6000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "baidu/ernie-4.5-8k-preview": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "qiniu/deepseek-r1": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.4,
+    "output_price_cny_per_1m": 5.6
+  },
+  "360/deepseek-r1-Internal-only": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "alibaba/qwq-32b": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 6.0
+  },
+  "360/huaweiyun-deepseek-r1": {
+    "tpm": 30000000,
+    "rpm": 1200,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "alibaba/qwq-plus": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.6,
+    "output_price_cny_per_1m": 4.0
+  },
+  "sensetime/deepseek-r1": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "bigmodel/glm-4-plus": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "bigmodel/glm-4v-flash": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "bigmodel/glm-4-alltools": {
+    "tpm": 2000000,
+    "rpm": 20000,
+    "input_price_cny_per_1m": 3.0,
+    "output_price_cny_per_1m": 3.0
+  },
+  "bigmodel/glm-4v-plus": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 2.4,
+    "output_price_cny_per_1m": 2.4
+  },
+  "bigmodel/glm-4v": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 30.0,
+    "output_price_cny_per_1m": 30.0
+  },
+  "bigmodel/glm-4-long": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.6,
+    "output_price_cny_per_1m": 0.6
+  },
+  "bigmodel/glm-4-flashx": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.06,
+    "output_price_cny_per_1m": 0.06
+  },
+  "bigmodel/glm-4-flash": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "bigmodel/glm-4-airx": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 6.0,
+    "output_price_cny_per_1m": 6.0
+  },
+  "bigmodel/glm-4-air": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 0.6,
+    "output_price_cny_per_1m": 0.6
+  },
+  "bigmodel/glm-4-0520": {
+    "tpm": 6000000,
+    "rpm": 6000,
+    "input_price_cny_per_1m": 60.0,
+    "output_price_cny_per_1m": 60.0
+  },
+  "bigmodel/glm-4": {
+    "tpm": 600000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 60.0,
+    "output_price_cny_per_1m": 60.0
+  },
+  "stepfun/step-1v-8k": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 5.0,
+    "output_price_cny_per_1m": 20.0
+  },
+  "stepfun/step-1v-32k": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 15.0,
+    "output_price_cny_per_1m": 70.0
+  },
+  "stepfun/step-2-16k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 38.0,
+    "output_price_cny_per_1m": 120.0
+  },
+  "stepfun/step-1-flash": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "stepfun/step-1-256k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 95.0,
+    "output_price_cny_per_1m": 300.0
+  },
+  "stepfun/step-1-128k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 40.0,
+    "output_price_cny_per_1m": 200.0
+  },
+  "stepfun/step-1-32k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 12.0,
+    "output_price_cny_per_1m": 52.0
+  },
+  "stepfun/step-1-8k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 5.0,
+    "output_price_cny_per_1m": 20.0
+  },
+  "baichuan/Baichuan2-Turbo": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 8.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "baichuan/Baichuan3-Turbo-128k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 24.0,
+    "output_price_cny_per_1m": 24.0
+  },
+  "baichuan/Baichuan3-Turbo": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 12.0,
+    "output_price_cny_per_1m": 12.0
+  },
+  "baichuan/Baichuan4": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 100.0,
+    "output_price_cny_per_1m": 100.0
+  },
+  "minimax/abab5.5s-chat": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 0.8
+  },
+  "minimax/abab5.5-chat": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 7.0,
+    "output_price_cny_per_1m": 7.0
+  },
+  "minimax/abab6.5g-chat": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 0.8
+  },
+  "minimax/abab6.5t-chat": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 0.8
+  },
+  "minimax/abab6.5s-chat": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 0.8
+  },
+  "minimax/abab6.5-chat": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 10.0,
+    "output_price_cny_per_1m": 10.0
+  },
+  "sensetime/SenseChat-Turbo": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 5.0
+  },
+  "sensetime/SenseChat-128K": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 60.0,
+    "output_price_cny_per_1m": 60.0
+  },
+  "sensetime/SenseChat-32K": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 36.0,
+    "output_price_cny_per_1m": 36.0
+  },
+  "sensetime/SenseChat": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 12.0,
+    "output_price_cny_per_1m": 12.0
+  },
+  "sensetime/SenseChat-5": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 40.0,
+    "output_price_cny_per_1m": 100.0
+  },
+  "moonshot/moonshot-v1-128k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 10.0,
+    "output_price_cny_per_1m": 30.0
+  },
+  "moonshot/moonshot-v1-32k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 5.0,
+    "output_price_cny_per_1m": 20.0
+  },
+  "moonshot/moonshot-v1-8k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 10.0
+  },
+  "tencent/hunyuan-turbo-latest": {
+    "tpm": 100000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.6
+  },
+  "tencent/hunyuan-customized": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.6
+  },
+  "tencent/hunyuan-lite": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.0,
+    "output_price_cny_per_1m": 0.0
+  },
+  "tencent/hunyuan-turbo": {
+    "tpm": 100000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.6
+  },
+  "tencent/hunyuan-vision": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 18.0,
+    "output_price_cny_per_1m": 18.0
+  },
+  "tencent/hunyuan-code": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "tencent/hunyuan-functioncall": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "tencent/hunyuan-role": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "tencent/hunyuan-standard-256k": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 7.5,
+    "output_price_cny_per_1m": 30.0
+  },
+  "tencent/hunyuan-standard": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.25,
+    "output_price_cny_per_1m": 2.5
+  },
+  "alibaba/qwen-long": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 2.0
+  },
+  "alibaba/qwen-max": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.4,
+    "output_price_cny_per_1m": 10.0
+  },
+  "alibaba/qwen-turbo": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.3,
+    "output_price_cny_per_1m": 0.6
+  },
+  "alibaba/qwen-coder-plus": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 6.0
+  },
+  "alibaba/qwen-vl-plus": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.5,
+    "output_price_cny_per_1m": 4.5
+  },
+  "alibaba/qwen-plus": {
+    "tpm": 2000000000,
+    "rpm": 100000,
+    "input_price_cny_per_1m": 0.4,
+    "output_price_cny_per_1m": 1.0
+  },
+  "deepseek/deepseek-r1": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "deepseek/deepseek-chat": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "baidu/deepseek-v3": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.0,
+    "output_price_cny_per_1m": 4.0
+  },
+  "paratera/deepseek-r1": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "siliconflow/deepseek-v3": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "deepseek/deepseek-reasoner": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "anthropic/claude-3.7-sonnet": {
+    "tpm": 3000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 21.9,
+    "output_price_cny_per_1m": 109.5
+  },
+  "360zhinao2-o1.5": {
+    "tpm": 10000000,
+    "rpm": 2000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "volcengine/Doubao-1.5-lite-32k-250115": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.3,
+    "output_price_cny_per_1m": 0.6
+  },
+  "volcengine/Doubao-1.5-pro-32k-250115": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "volcengine/Doubao-1.5-vision-pro-32k-250115": {
+    "tpm": 20000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.7,
+    "output_price_cny_per_1m": 8.1
+  },
+  "volcengine/Doubao-1.5-pro-256k-250115": {
+    "tpm": 200000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 5.0,
+    "output_price_cny_per_1m": 9.0
+  },
+  "volcengine/DeepSeek-R1-Distill-Qwen-7B-250120": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 0.6,
+    "output_price_cny_per_1m": 2.4
+  },
+  "alibaba/deepseek-r1": {
+    "tpm": 600000000000,
+    "rpm": 60000000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "siliconflow/deepseek-r1": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "openai/o3-mini": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 9.0,
+    "output_price_cny_per_1m": 36.0
+  },
+  "openai/o1": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 121.0,
+    "output_price_cny_per_1m": 481.0
+  },
+  "360/deepseek-r1": {
+    "tpm": 600000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "volcengine/DeepSeek-V3-241226": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "tencent/deepseek-r1": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "360/volceapi-deepseek-r1": {
+    "tpm": 6000000,
+    "rpm": 300,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "alibaba/qwen-max-2025-01-25": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.4,
+    "output_price_cny_per_1m": 9.6
+  },
+  "volcengine/DeepSeek-R1-Distill-Qwen-32B-250120": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 1.5,
+    "output_price_cny_per_1m": 6.0
+  },
+  "volcengine/DeepSeek-R1-250120": {
+    "tpm": 1000000000,
+    "rpm": 60000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "baidu/deepseek-r1": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 8.0
+  },
+  "ppinfra/deepseek-r1": {
+    "tpm": 1000000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 4.0,
+    "output_price_cny_per_1m": 16.0
+  },
+  "360gpt-deepseekr1": {
+    "tpm": 6000000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 2.0,
+    "output_price_cny_per_1m": 5.0
+  },
+  "360zhinao2-o1": {
+    "tpm": 10000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "360gpt2-o1": {
+    "tpm": 10000000,
+    "rpm": 1000,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "360gpt-pro-32k-responsibility": {
+    "tpm": 60000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 1.2,
+    "output_price_cny_per_1m": 3.0
+  },
+  "360gpt-turbo-16k-aisearch-summary": {
+    "tpm": 60000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.4
+  },
+  "360gpt-turbo": {
+    "tpm": 6000000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 1.0
+  },
+  "360gpt-pro": {
+    "tpm": 600000,
+    "rpm": 600,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "360tts-turbo": {
+    "tpm": 2000000,
+    "rpm": 10000,
+    "input_price_cny_per_1m": 84.7,
+    "output_price_cny_per_1m": 0.0
+  },
+  "360gpt2-pro": {
+    "tpm": 60000,
+    "rpm": 60,
+    "input_price_cny_per_1m": 0.8,
+    "output_price_cny_per_1m": 2.0
+  },
+  "360gpt-pro-trans": {
+    "tpm": 120000,
+    "rpm": 300,
+    "input_price_cny_per_1m": 1.2,
+    "output_price_cny_per_1m": 3.0
+  },
+  "360gpt-turbo-32k": {
+    "tpm": 120000,
+    "rpm": 300,
+    "input_price_cny_per_1m": 0.5,
+    "output_price_cny_per_1m": 1.0
+  },
+  "360gpt-turbo-moderation": {
+    "tpm": 120000,
+    "rpm": 300,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.4
+  },
+  "360gpt-turbo-intent": {
+    "tpm": 12000000,
+    "rpm": 3000,
+    "input_price_cny_per_1m": 0.7,
+    "output_price_cny_per_1m": 1.4
+  }
+}

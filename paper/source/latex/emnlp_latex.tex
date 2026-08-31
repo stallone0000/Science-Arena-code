@@ -1,0 +1,1076 @@
+\documentclass[11pt]{article}
+
+% Change "review" to "final" to generate the final (sometimes called camera-ready) version.
+% Change to "preprint" to generate a non-anonymous version with page numbers.
+\usepackage[review]{acl}
+%\usepackage[preprint]{acl}
+% Standard package includes
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{makecell}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{colortbl}
+% 定义一些强调色，用于Highlight SOTA
+\newcommand{\best}[1]{\textbf{\textcolor{blue!70!black}{#1}}} % SOTA
+\newcommand{\better}[1]{\underline{#1}} % 超过金牌线
+\newcommand{\RankOne}[1]{\textbf{\textcolor{yellow!50!orange}{#1}}}
+\newcommand{\RankTwo}[1]{\textbf{\textcolor{cyan}{#1}}}
+\newcommand{\RankThree}[1]{\textbf{\textcolor{lime!80!black}{#1}}}
+\newcommand{\strong}[1]{\textbf{\textcolor{red!70!black}{#1}}} % SOTA
+
+\newcommand{\golden}[1]{\textbf{\textcolor{yellow!90!black}{#1}}} % SOTA
+\newcommand{\ContamV}[1]{\multicolumn{1}{!{\color{red!75!black}\vrule width 1.2pt}r}{#1}}
+
+
+% Preamble (optional)
+\usepackage[most]{tcolorbox}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\newcommand{\pts}[1]{\qquad{\small(#1 pts)}}
+% Preamble (add if not already in your ACL file)
+\usepackage{booktabs}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\xmark}{\ding{55}}
+
+% in preamble
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+
+% nicer TabularX "X" column (left-aligned, allows \newline)
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% --- Consistent two-line card header ---
+\newcommand{\CardHeader}[2]{%
+\begin{tabular}{@{}l@{}}
+{\Large\bfseries #1}\\[-0.15em]
+{\normalsize\itshape #2}
+\end{tabular}
+}
+
+
+% For proper rendering and hyphenation of words containing Latin characters (including in bib files)
+\usepackage[T1]{fontenc}
+% For Vietnamese characters
+% \usepackage[T5]{fontenc}
+% See https://www.latex-project.org/help/documentation/encguide.pdf for other character sets
+
+% This assumes your files are encoded as UTF8
+\usepackage[utf8]{inputenc}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+% This is also not strictly necessary, and may be commented out.
+% However, it will improve the aesthetics of text in
+% the typewriter font.
+\usepackage{inconsolata}
+
+%Including images in your LaTeX document requires adding
+%additional package(s)
+\usepackage{graphicx}
+\usepackage{caption} % for \captionof inside tcolorbox (no floats)
+
+% If the title and author information does not fit in the area allocated, uncomment the following
+%
+%\setlength\titlebox{<dim>}
+%
+% and set <dim> to something 5cm or larger.
+
+\newcommand{\medal}[1]{\raisebox{-0.25\height}{\includegraphics[height=1.15em]{#1}}}
+
+\newcommand{\WinnerMedal}{\medal{latex/medal/trophy.png}}
+\newcommand{\GoldMedal}{\medal{latex/medal/gold.png}}
+\newcommand{\SilverMedal}{\medal{latex/medal/silver.png}}
+\newcommand{\BronzeMedal}{\medal{latex/medal/bronze.png}}
+\newcommand{\ClownMedal}{\medal{latex/medal/clown.png}}
+
+
+% 在数字后面加 medal
+\newcommand{\Winner}[1]{\WinnerMedal\,#1}
+\newcommand{\Gold}[1]{\GoldMedal\,#1}
+\newcommand{\Silver}[1]{\SilverMedal\,#1}
+\newcommand{\Bronze}[1]{\BronzeMedal\,#1}
+\newcommand{\Clown}[1]{\ClownMedal\,#1}
+
+
+\title{ScienceArena: Benchmarking LLMs on Latest Scientific Olympiad Competitions}
+
+% Author information can be set in various styles:
+% For several authors from the same institution:
+% \author{Author 1 \and ... \and Author n \\
+%         Address line \\ ... \\ Address line}
+% if the names do not fit well on one line use
+%         Author 1 \\ {\bf Author 2} \\ ... \\ {\bf Author n} \\
+% For authors from different institutions:
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \And  ... \And
+%         Author n \\ Address line \\ ... \\ Address line}
+% To start a separate ``row'' of authors use \AND, as in
+% \author{Author 1 \\ Address line \\  ... \\ Address line
+%         \AND
+%         Author 2 \\ Address line \\ ... \\ Address line \And
+%         Author 3 \\ Address line \\ ... \\ Address line}
+
+\author{xxx \\
+  \texttt{email@domain} \\\And
+  xxx \\
+  \texttt{email@domain} \\}
+
+%\author{
+%  \textbf{First Author\textsuperscript{1}},
+%  \textbf{Second Author\textsuperscript{1,2}},
+%  \textbf{Third T. Author\textsuperscript{1}},
+%  \textbf{Fourth Author\textsuperscript{1}},
+%\\
+%  \textbf{Fifth Author\textsuperscript{1,2}},
+%  \textbf{Sixth Author\textsuperscript{1}},
+%  \textbf{Seventh Author\textsuperscript{1}},
+%  \textbf{Eighth Author \textsuperscript{1,2,3,4}},
+%\\
+%  \textbf{Ninth Author\textsuperscript{1}},
+%  \textbf{Tenth Author\textsuperscript{1}},
+%  \textbf{Eleventh E. Author\textsuperscript{1,2,3,4,5}},
+%  \textbf{Twelfth Author\textsuperscript{1}},
+%\\
+%  \textbf{Thirteenth Author\textsuperscript{3}},
+%  \textbf{Fourteenth F. Author\textsuperscript{2,4}},
+%  \textbf{Fifteenth Author\textsuperscript{1}},
+%  \textbf{Sixteenth Author\textsuperscript{1}},
+%\\
+%  \textbf{Seventeenth S. Author\textsuperscript{4,5}},
+%  \textbf{Eighteenth Author\textsuperscript{3,4}},
+%  \textbf{Nineteenth N. Author\textsuperscript{2,5}},
+%  \textbf{Twentieth Author\textsuperscript{1}}
+%\\
+%\\
+%  \textsuperscript{1}Affiliation 1,
+%  \textsuperscript{2}Affiliation 2,
+%  \textsuperscript{3}Affiliation 3,
+%  \textsuperscript{4}Affiliation 4,
+%  \textsuperscript{5}Affiliation 5
+%\\
+%  \small{
+%    \textbf{Correspondence:} \href{mailto:email@domain}{email@domain}
+%  }
+%}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+Benchmark saturation and data contamination increasingly obscure genuine scientific reasoning in frontier LLMs. We introduce \textsc{ScienceArena}, an olympiad-style benchmark from eleven public science competitions in physics, chemistry, and biology, including IPhO 2025, IChO 2025, IBO 2023, USAPhO 2026, and USNCO 2025. Its open-ended, multi-step problems use process-credit rubrics, making faithful scoring difficult. We build ScienceArena through an expert-audited digitization pipeline that converts official exams, figures, solutions, and rubrics into structured items verified by olympiad medalists. To scale evaluation beyond costly human grading, we calibrate LLM-as-judge against medalist ground truth on archived answers from five models across IPhO and IChO; two strong judges stay within one point of expert total scores. Medalist notes show that failures often stem from visual grounding, structure fidelity, and global problem control rather than missing terminology. Evaluating fourteen recent LLMs with interleaved solving, we find that top models reach or exceed gold-medalist level on several international exams, while chemistry and long-horizon consistency remain key bottlenecks. We provide an interactive demo website at \url{https://science-arena-review.onrender.com/}.
+\end{abstract}
+
+
+\section{Introduction}
+Scientific reasoning has become a central target for frontier LLMs, yet evaluation is at an impasse.
+Popular benchmarks are increasingly saturated and vulnerable to contamination \citep{hendrycks2021mmlu,li2023contamination,rein2023gpqa,white2024livebench,phan2025hle}.
+Recent live or frontier benchmarks respond by using time-sensitive sources, contest problems, or newly authored expert questions \citep{jain2024livecodebench,glazer2024frontiermath,balunovic2025matharena}, but scientific reasoning remains difficult to measure when answers are long, visual, and partially correct.
+At the same time, many science evaluations remain confined to short-answer or multiple-choice formats, which cannot fully test the abilities needed in real scientific problem solving: long derivations, diagram and structure interpretation, multi-step consistency, and partial credit under explicit rubrics \citep{wang2023scibench,lu2023mathvista,yue2023mmmu,he2024olympiadbench,lu2022scienceqa,laurent2024labbench,mirza2025chembench}.
+
+
+Science olympiad competitions are a natural high-resolution testbed.
+They are written by domain experts, released publicly after the contest, and accompanied by official answers, detailed solutions, and scoring schemes.
+They also provide interpretable human reference points, including gold-medal thresholds and winner scores.
+However, turning olympiad exams into a reliable LLM benchmark is not automatic.
+The source materials are PDFs with formulas, figures, tables, and chemical structures; more importantly, faithful scoring requires stepwise rubrics and expert judgment rather than simple exact matching.
+
+
+We present \textsc{ScienceArena}, an olympiad-style benchmark and evaluation protocol for scientific reasoning.
+Compared with the original version of the benchmark, the current suite expands to eleven physics, chemistry, and biology competitions released in 2023--2026, including international exams such as IPhO, IChO, and IBO as well as national-level exams such as USAPhO and USNCO.
+We standardize the data construction pipeline: official public materials are collected, converted into structured JSON with OCR and multimodal parsing, and then audited by olympiad medalists for problem text, figure descriptions, answers, detailed solutions, rubrics, and point totals.
+This preserves the original exam structure while making the problems readable to text-based and multimodal LLM APIs.
+
+
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{0.95}
+\begin{tabularx}{\textwidth}{p{0.19\textwidth} p{0.23\textwidth} Y}
+\toprule
+\textbf{Benchmark} & \textbf{Main signal} & \textbf{ScienceArena distinction} \\
+\midrule
+Chatbot Arena; Arena-Hard
+& Human or judge preference
+& Tests verifiable scientific correctness rather than broad helpfulness. \\
+\addlinespace[0.12em]
+OlympicArena/OlympiadBench
+& Cross-discipline hard reasoning
+& Keeps recent science exams, release dates, official rubrics, and medalist audits. \\
+\addlinespace[0.12em]
+MathArena
+& Fresh math answers/proofs
+& Adds physics, chemistry, biology, diagrams, structures, and science process credit. \\
+\addlinespace[0.12em]
+HiPhO/PhyArena/PhysicsArena
+& Physics olympiad or skill axes
+& Extends olympiad-style evaluation across three sciences with one unified protocol. \\
+\addlinespace[0.12em]
+SUPERChem; BABE
+& Domain research or expert tasks
+& Uses official competitions with comparable scoring scales and medal references. \\
+\addlinespace[0.12em]
+SciArena
+& Researcher preference
+& Scores against official answers and rubrics, then analyzes medalist grading notes. \\
+\midrule
+\textsc{ScienceArena}
+& Release-aware olympiad scoring
+& Combines official credit rubrics, calibrated judges, medals, and expert diagnostics. \\
+\bottomrule
+\end{tabularx}
+\vspace{-0.1cm}
+\caption{Positioning of \textsc{ScienceArena} among representative Arena-style and domain-specific evaluations. The comparison highlights the niche targeted by this paper: release-aware science olympiad evaluation with official process-credit rubrics and medalist-audited diagnostics.}
+\label{tab:arena-positioning}
+\vspace{-0.4cm}
+\end{table*}
+
+
+
+
+Table~\ref{tab:arena-positioning} positions \textsc{ScienceArena} relative to recent Arena-style and domain-specific evaluations.
+General-purpose arenas such as Chatbot Arena and Arena-Hard emphasize human or judge-model preferences over open-ended assistant behavior \citep{chiang2024chatbotarena,li2024arenahard}.
+Olympiad and competition benchmarks provide harder reasoning tasks, including OlympicArena, OlympiadBench, and MathArena \citep{huang2024olympicarena,he2024olympiadbench,balunovic2025matharena}.
+The closest physics-only line is HiPhO/PhyArena, which uses latest physics olympiad exams and official medal thresholds \citep{yu2025hipho}; other domain benchmarks decompose physics, chemistry, biology, or scientific literature reasoning with different task sources and scoring signals \citep{dai2025physicsarena,zhao2025superchem,zhou2026babe,zhao2025sciarena}.
+Our focus is complementary: recent public olympiad exams across physics, chemistry, and biology, official process-credit rubrics, medal-based human reference points, medalist-audited construction, and expert-calibrated automated grading.
+
+
+
+
+
+
+A second challenge is evaluation cost.
+Human olympiad experts provide the most reliable ground truth, but repeatedly asking them to grade every new model is impractical.
+We therefore develop an expert-calibrated LLM-as-judge system.
+Using human medalist scores on IPhO 2025 and IChO 2025 as ground truth, we calibrate the full judge system, including rubric packaging, structured scoring, score validation, and aggregation, on archived answers from five models.
+The resulting judge system follows recent rubric-based LLM evaluation practice \citep{zheng2023judging,rao2026autorubric} and matches expert total scores within $\pm 1$ point across the two exams, making automated scoring practical while retaining an explicit human validity check.
+
+
+
+
+Finally, we examine how LLMs should solve long olympiad problems.
+One-shot prompting asks for an entire multi-part solution at once, while interleaved prompting presents subparts sequentially and preserves prior context.
+We do not claim interleaving as a new method; rather, we test this natural prompting choice and find that it generally improves performance and better resembles how users interact with LLMs on difficult problems.
+We therefore use interleaved prompting for the main evaluation.
+Across fourteen recent LLMs, the strongest systems now reach or exceed gold-medalist level on several international exams.
+The gains are uneven: biology appears closest to saturation, whereas chemistry remains challenging because of molecular structures, stereochemistry, spectra, and rubric-sensitive drawings; physics still exposes failures in visual grounding and long-horizon coherence.
+Beyond aggregate scores, we study the written comments produced by olympiad medalist graders.
+These notes are unusually diagnostic: they distinguish fluent but physically misgrounded derivations from correct problem models, separate chemically plausible prose from exact structure commitments, and expose when partial credit depends on an explicit intermediate rather than a vague explanation.
+We use these comments to build the subfield and ability-boundary analysis in Section~\ref{sec:expert-insights} and Appendix~\ref{app:expert_notes}.
+
+\begin{figure*}[htbp]
+\centering
+\setlength{\abovecaptionskip}{0.1cm}
+\includegraphics[width=\linewidth]{latex/new-fig/ocr-pipeline.pdf}
+\caption{\textsc{ScienceArena} benchmark construction pipeline.}
+\label{fig:benchmark-pipeline}
+\vspace{-0.4cm}
+\end{figure*}
+
+\paragraph{Contributions.}
+We make four contributions:
+\begin{itemize}[leftmargin=0.5em,itemsep=0.1em]
+    \item We build \textsc{ScienceArena}, an expert-audited benchmark of eleven science olympiad competitions with questions, figures, official answers, detailed solutions, and scoring rubrics.
+    \item We define a reusable pipeline for converting official olympiad PDFs into structured LLM-readable benchmark items.
+    \item We develop an expert-calibrated LLM-as-judge system that closely matches olympiad-medalist grading on IPhO \& IChO calibration experiments.
+    \item We compare one-shot and interleaved prompting, evaluate fourteen recent LLMs under the stronger protocol, and distill comments from human experts into diagnostics of persistent domain-specific bottlenecks.
+\end{itemize}
+
+
+
+
+
+
+
+
+\section{The ScienceArena Framework}\label{sec:2}
+\textsc{ScienceArena} is designed around two constraints that are often absent from standard LLM benchmarks.
+First, the source tasks must remain fresh, public, and scientifically meaningful.
+Second, grading must respect olympiad rubrics: a wrong final value may still receive credit for a correct setup, while a correct-looking answer may receive little credit if the derivation or diagram is unsupported.
+This section describes the benchmark construction pipeline, the calibrated judge system, and the solving protocols used for the experiments.
+
+
+\subsection{Benchmark Construction}
+\textsc{ScienceArena} currently contains eleven public olympiad-style competitions across physics, chemistry, and biology (Table~\ref{tab:science_arena_sources}).
+International competitions provide medal thresholds; national-level competitions expand topic diversity and reduce dependence on one exam style.
+For every benchmark, we record the public release date and preserve the original hierarchy: each multi-part problem becomes linked turns with text, figure context, official answer, rubric, and maximum score.
+This keeps partial-credit structure intact while supporting uniform automated evaluation.
+
+
+\begin{table}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.08}
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{l l l c r}
+\toprule
+\textbf{Benchmark} & \textbf{Subject} & \textbf{Level} & \textbf{Rel.} & \textbf{Scale} \\
+\midrule
+IPhO 2025 & Physics & International & 25-07 & 30 \\
+IChO 2025 & Chemistry & International & 25-07 & 60 \\
+IBO 2023 & Biology & International & 25-07 & 453 \\
+APhO 2025 & Physics & Continental & 25-05 & 30 \\
+EuPhO 2025 & Physics & Continental & 25-06 & 30 \\
+NBPhO 2026 & Physics & National & 26-04 & 72 \\
+USAPhO 2026 & Physics & National & 26-04 & 150 \\
+CPhO 2025 & Physics & National & 25-10 & 320 \\
+INChO 2026 & Chemistry & National & 26-01 & 106 \\
+USNCO 2025 & Chemistry & National & 25-06 & 100 \\
+CChO 2025 & Chemistry & National & 25-10 & 100 \\
+\bottomrule
+\end{tabular}
+}
+\vspace{-0.2cm}
+\caption{\textsc{ScienceArena} benchmark sources. Release dates use YY-MM. ``Scale'' is the reported full score used in tables; rubric status and source caveats are retained in the released metadata.}
+\label{tab:science_arena_sources}
+\vspace{-0.5cm}
+\end{table}
+
+\paragraph{Digitization pipeline.}
+Olympiad materials are PDFs with equations, plots, molecule drawings, apparatus diagrams, answer images, and marking schemes, so we convert them through a five-stage pipeline.
+A curator first collects official public problems, figures, answer keys, solutions, and marking schemes; pages are then rendered and parsed with OCR/multimodal models.
+The parsed content is normalized into fields such as \texttt{question\_text}, \texttt{official\_answer}, \texttt{official\_detailed\_solution}, \texttt{official\_rubric}, \texttt{max\_score}, \texttt{release\_date}, and source provenance.
+Subject medalists audit completeness, figure alignment, answer fidelity, and point totals; for IPhO and IChO, the ground-truth graders are listed in Table~\ref{tab:human-graders}.
+The final export is a unified interleaved dataset with one row per subproblem turn.
+Figure~\ref{fig:benchmark-pipeline} summarizes the intended five-stage construction schematic.
+
+The audit trail is important because the three sciences stress different failure modes.
+Physics often requires plot reading and symbolic carry-over; chemistry depends on reaction schemes, stereochemistry, spectra, and crystal structures; biology is more often objective-keyed but can involve long passages and diagrams.
+Preserving sources, parsed text, image-derived descriptions, and audit notes makes these differences inspectable rather than hiding them behind one score.
+
+
+
+\begin{table}[ht]
+\vspace{-0.2cm}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{l c c}
+\toprule
+\textbf{Track} & \textbf{Expert 1} & \textbf{Expert 2} \\
+\midrule
+Physics &
+\makecell{Physics Olympiad\\\RankOne{gold medalist}\\\strong{world top 10}} &
+\makecell{Physics Olympiad\\\RankOne{gold medalist}\\\strong{world top 10}} \\
+\midrule
+Chemistry &
+\makecell{Chemistry Olympiad\\\RankOne{gold medalist}\\\strong{national top 30}} &
+\makecell{Chemistry Olympiad\\\RankOne{gold medalist}\\\strong{national top 30}} \\
+\midrule
+Biology &
+\makecell{Biology Olympiad\\\RankOne{gold medalist}\\\strong{national top 30}} &
+\makecell{Biology Olympiad\\\RankOne{gold medalist}\\\strong{national top 30}} \\
+\bottomrule
+\end{tabular}
+\caption{Human experts recruited for ground-truth grading. The two experts for each exam jointly graded model answers and resolved rubric-level scores.}
+\label{tab:human-graders}
+\vspace{-0.3cm}
+\end{table}
+
+
+
+\subsection{Expert-Calibrated LLM-as-Judge System}
+\label{sec:judge-system}
+Human olympiad experts are the strongest graders for open-ended science problems, but they cannot regrade every model update.
+We therefore use medalist grading as a calibration anchor and build a reusable LLM-as-judge system for large-scale evaluation.
+Table~\ref{tab:human-graders} summarizes the experts recruited by our team for this human ground-truth calibration.
+
+
+
+
+
+
+
+The judge is a pipeline, not a single prompt.
+For each non-objective turn, it receives the staticized question, official answer, detailed solution, rubric, maximum score, and candidate response.
+It acts as a strict olympiad examiner, assigns partial credit, and returns JSON with \texttt{total\_score}, \texttt{max\_score}, \texttt{sub\_scores}, evidence, deductions, and confidence.
+Post-processing validates JSON, repairs common LaTeX escape errors, clamps impossible scores, checks maximum scores, and aggregates turns; objective-key items such as IBO are scored deterministically.
+Each score remains traceable to a turn packet, rubric item, and evidence field, so expert-identified blind spots can be fixed locally.
+
+
+
+
+\begin{figure}[tbp]
+\centering
+\setlength{\abovecaptionskip}{0.1cm}
+\includegraphics[width=\linewidth]{latex/new-fig/judge_calibration_caption.pdf}
+\includegraphics[width=0.93\linewidth]{latex/new-fig/judge_calibration_ipho.pdf}
+\includegraphics[width=0.93\linewidth]{latex/new-fig/judge_calibration_icho.pdf}
+\caption{Calibration of the LLM-as-judge system against human expert ground truth. The blue bar is the original score assigned by the human experts in Table~\ref{tab:human-graders}; the other bar show the two judge models.}
+\label{fig:judge-calibration}
+\vspace{-0.3cm}
+\end{figure}
+
+
+We calibrate the system on archived, non-regenerated answers from five models for IPhO 2025 and IChO 2025.
+Gemini 3.5 Flash and Gemini 3.1 Pro both stay within one point of the medalist total score for every model--exam pair (Figure~\ref{fig:judge-calibration}).
+The final judge reached this agreement only after explicitly packaging expert rationales, requiring structured sub-scores, and preserving post-processing rules for known edge cases such as surface-similar chemistry answers and tiny subpart allocations. The resulting judge is a scalable proxy for medalist grading only when the official solution and rubric are available and correctly digitized.
+It shifts the expensive human work from repeatedly grading every model to validating benchmark items and calibrating the judge.
+
+
+
+
+
+
+
+\subsection{Solving Protocols}
+\label{sec:solving-protocols}
+Physics and chemistry exams often contain dependent subparts, so we compare two prompting protocols.
+In \textbf{one-shot} solving, the model receives the full problem and writes one complete solution.
+In \textbf{interleaved} solving, it answers one subpart at a time while previous turns remain in context.
+Interleaving is not a new algorithm; it is a natural chat interaction pattern whose effect we test directly.
+
+
+\begin{figure}[t]
+\setlength{\abovecaptionskip}{0.1cm}
+\centering
+\begin{tikzpicture}[
+  font=\footnotesize,
+  >={Latex[length=2mm]},
+  node distance=3.5mm and 10mm,
+  box/.style={draw, rounded corners, align=center, inner sep=2.5pt, minimum width=28mm},
+  line/.style={-Latex, thick}
+]
+
+% --- One-shot (left) ---
+\node[box] (A0) {All subquestions\\$Q_{1..m}$};
+\node[box, below=of A0] (A1) {LLM solves\\in one go};
+\node[box, below=of A1] (A2) {Judge / Score};
+\draw[line] (A0) -- (A1);
+\draw[line] (A1) -- (A2);
+\node[above=2mm of A0, font=\footnotesize\bfseries] {One-shot};
+
+% --- Iterative (right) ---
+\node[box, right=12mm of A0.north east, anchor=north west] (B0) {Subquestion $Q_t$};
+\node[box, below=of B0] (B1) {Context: $Q_{1..t}$\\+ prior answers $A_{1..t-1}$};
+\node[box, below=of B1] (B2) {LLM outputs $A_t$};
+\draw[line] (B0) -- (B1);
+\draw[line] (B1) -- (B2);
+
+% loop + final scoring (compact)
+\node[box, below=of B2] (B3) {Repeat for $t=1..m$};
+\node[box, below=of B3] (B4) {Judge / Score};
+\draw[line] (B2) -- (B3);
+\draw[line] (B3) -- (B4);
+\draw[line] (B3.east) -- ++(6mm,0) coordinate (loop)
+            -- (loop |- B1.east) -- (B1.east);
+
+
+\node[above=2mm of B0, font=\footnotesize\bfseries] {Interleaved};
+
+\end{tikzpicture}
+\caption{One-shot vs. interleaved solving schematic.}
+\label{fig:one-shot-vs-iterative}
+\vspace{-0.3cm}
+\end{figure}
+
+Figure~\ref{fig:one-shot-vs-iterative} illustrates the two protocols, and Table~\ref{tab:oneshot-interleaved-ablation} reports the ablation.
+Interleaving wins 15 of 16 model--exam comparisons, including all tested IPhO, IChO, and CChO settings.
+The exception is Gemini 3.5 Flash on CPhO, suggesting that some exams benefit from a full-problem plan.
+We therefore use interleaved prompting for main open-ended evaluations; IBO is excluded because it is objective-key scored.
+
+
+\begin{table}[t]
+\vspace{-0cm}
+\centering
+\scriptsize
+\setlength{\tabcolsep}{5pt}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabular}{l|l|r r r r}
+\toprule
+\textbf{Model} & \textbf{Protocol} & \textbf{IPhO} & \textbf{IChO} & \textbf{CChO} & \textbf{CPhO} \\
+\multicolumn{2}{l}{\textit{Full Scores}} & \textit{30.0} & \textit{60.0} & \textit{100.0} & \textit{320.0} \\
+\midrule
+\multirow{2}{*}{Gemini 3.5 Flash}
+  & One-shot & 22.84 & 45.52 & 52.87 & \textbf{291.0} \\
+  & Interleaved & \textbf{25.67} & \textbf{48.43} & \textbf{57.12} & 275.0 \\
+\midrule
+\multirow{2}{*}{Gemini 3.1 Pro}
+  & One-shot & 24.19 & 42.02 & 50.94 & 242.4 \\
+  & Interleaved & \textbf{27.30} & \textbf{46.45} & \textbf{57.44} & \textbf{302.1} \\
+\midrule
+\multirow{2}{*}{GPT-5.5}
+  & One-shot & 20.80 & 33.52 & 39.48 & 285.6 \\
+  & Interleaved & \textbf{25.63} & \textbf{33.98} & \textbf{46.59} & \textbf{289.5} \\
+\midrule
+\multirow{2}{*}{Claude Opus 4.7}
+  & One-shot & 19.90 & 31.15 & 36.45 & 251.0 \\
+  & Interleaved & \textbf{22.73} & \textbf{41.68} & \textbf{49.61} & \textbf{273.0} \\
+\bottomrule
+\end{tabular}
+\vspace{-0.4em}
+\caption{One-shot versus interleaved solving ablation on open-ended benchmarks. Bold marks the better protocol for each model--exam pair. Interleaved prompting wins 15 of 16 comparisons, but CPhO also shows that the best interaction pattern can depend on exam structure.}
+\label{tab:oneshot-interleaved-ablation}
+\vspace{-0.4cm}
+\end{table}
+
+
+
+
+\section{Experimental Results and Diagnostics}
+\label{sec:3}
+
+\subsection{Main Evaluation Setting}
+We evaluate fourteen recent models from major model families on the eleven-benchmark \textsc{ScienceArena} suite.
+The model set includes the Gemini 3/3.5 family, GPT-5.4/5.5, Claude Opus 4.7, Doubao Seed 2.0 Pro, Qwen3.6/3.7, DeepSeek V4, MiniMax M2.7, GLM-5.1, and Xiaomi MiMo.
+Model release dates are taken from official announcements when available---e.g., Gemini 3 Flash, Gemini 3.1 Pro, Gemini 3.5 Flash, GPT-5.4/5.5, Claude Opus 4.7, and Qwen3.7-Max \citep{google_gemini3flash_release_2025,google_gemini31_release_2026,google_gemini35_release_2026,openai_gpt54_release_2026,openai_gpt55_release_2026,anthropic_opus47_release_2026,qwen37_release_2026}---and otherwise from public availability reports or the provider registry snapshot used by our evaluation scripts.
+
+All open-ended results use the same \textbf{text-only interleaved} protocol.
+The original PDFs, diagrams, tables, and answer images are first staticized into canonical text by a fixed multimodal parser; downstream solver models receive no image blocks and no image URLs.
+This sacrifices some multimodal fidelity, but it gives every model the same input format and avoids conflating scientific reasoning with provider-specific image-routing behavior.
+Open-ended physics and chemistry turns are graded by the calibrated LLM-as-judge system from Section~\ref{sec:judge-system}.
+IBO is the exception: it is objective-key scored and is evaluated with the dedicated IBO runner over the original keyed items rather than by an LLM judge.
+
+For international competitions, we annotate model scores with human reference medals.
+The references are theory-score aggregates from the official rankings: IPhO 2025 winner/gold/silver/bronze are 29.2/23.4/17.0/11.5 out of 30; IChO 2025 are 57.1/36.6/28.7/26.3 out of 60; IBO 2023 are 395.4/354.7/293.1/249.7 out of 453.
+We do not assign medals to national competitions, because national selection pools and award rules are not directly comparable across countries.
+
+\begin{table}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Metric} & \textbf{IPhO 25} & \textbf{IChO 25} & \textbf{IBO 23} \\
+\textit{Full score} & \textit{30.0} & \textit{60.0} & \textit{453.0} \\
+\midrule
+\multicolumn{4}{l}{\textit{\textbf{Human References}}} \\
+\quad \Winner{Human No.1} & 29.2 & 57.1 & 395.4 \\
+\quad \Gold{Human Gold}  & 23.4 & 36.6 & 354.7 \\
+\quad \Silver{Human Silver} & 17.0 & 28.7 & 293.1 \\
+\quad \Bronze{Human Bronze} & 11.5 & 26.3 & 249.7 \\
+\midrule
+\multicolumn{4}{l}{\textit{\textbf{Earlier Model Performance}}} \\
+\quad Gemini 2.5 Pro
+  & \Gold{\best{{24.1}}}
+  & \Gold{\best{{37.0}}}
+  & \Winner{\best{{404.0}}} \\
+\quad GPT-5
+  & \Silver{21.8}
+  & \Silver{31.8}
+  & \Gold{{395.0}} \\
+\quad GLM 4.5
+  & \Silver{21.2}
+  & 19.8
+  & \Silver{329.0} \\
+\quad DeepSeek V3.1
+  & \Silver{19.4}
+  & \Bronze{26.6}
+  & \Silver{312.0} \\
+\quad Qwen3 235B
+  & \Bronze{15.2}
+  & 25.9
+  & \Silver{337.0} \\
+\bottomrule
+\end{tabular}
+\caption{Human reference scores used for medal annotations on international competitions. IPhO and IChO use theory-only scores; IBO uses the objective-key total used by our evaluation runner. All models are released before the competitions start. }
+\label{tab:main_results}
+\end{table}
+
+
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{2.1pt}
+\renewcommand{\arraystretch}{1.08}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{rrrrrrrrrrrrl}
+\toprule
+\makecell{\textbf{Contest}\\\textbf{Release}\\\textbf{Max. Score}} & \makecell{IBO\\23-07\\453} & \makecell{APhO\\25-05\\30} & \makecell{EuPhO\\25-06\\30} & \makecell{USNCO\\25-06\\100} & \makecell{IPhO\\25-07\\30} & \makecell{IChO\\25-07\\60} & \makecell{CPhO\\25-10\\320} & \makecell{CChO\\25-10\\100} & \makecell{INChO\\26-01\\106} & \makecell{NBPhO\\26-04\\72} & \makecell{USAPhO\\26-04\\150} & \makecell{Weighted\\Avg.\\(Rank)} \\
+\midrule
+\arrayrulecolor{red!75!black}\cline{2-9}\arrayrulecolor{black}
+\textbf{Gemini 3 Flash} (25-12) & \Winner{428.00} & 26.75 & \RankOne{23.60} & 93.50 & \Gold{25.20} & \Gold{44.74} & \RankThree{300.50} & \RankThree{59.55} & \ContamV{81.50} & \RankThree{53.15} & 136.50 & \RankThree{82.7 (\#3)} \\
+\arrayrulecolor{red!75!black}\cline{10-10}\arrayrulecolor{black}
+\rowcolor{blue!6}\textbf{Doubao Seed 2.0 Pro} (26-02) & \Winner{415.00} & 21.72 & 13.60 & 72.30 & \Silver{18.92} & \Gold{37.14} & 243.70 & 53.18 & 87.20 & \ContamV{42.33} & 106.00 & 68.0 (\#10) \\
+\textbf{Gemini 3.1 Pro} (26-02) & \Winner{431.00} & \RankOne{28.50} & \RankTwo{22.50} & \RankOne{97.00} & \Winner{29.45} & \Gold{48.95} & \RankTwo{303.50} & \RankOne{72.28} & \RankOne{95.95} & \ContamV{\RankTwo{56.93}} & 140.00 & \RankOne{88.4 (\#1)} \\
+\rowcolor{blue!6}\textbf{GPT-5.4} (26-03) & \Gold{358.00} & 22.01 & 14.30 & 76.90 & \Silver{20.94} & \Silver{31.70} & 235.30 & 47.79 & 83.50 & \ContamV{41.95} & 120.00 & 67.1 (\#12) \\
+\textbf{GLM-5.1} (26-04) & \Silver{349.00} & \RankTwo{28.40} & 8.20 & 90.00 & \Gold{26.11} & \Gold{38.82} & 283.00 & 58.61 & 85.75 & \ContamV{52.60} & \RankThree{140.50} & 75.9 (\#5) \\
+\rowcolor{blue!6}\textbf{Qwen3.6-Plus} (26-04) & \Winner{413.00} & 27.56 & 13.30 & 88.20 & \Silver{22.87} & \Silver{36.22} & 252.80 & 49.33 & 79.25 & \ContamV{50.15} & 126.50 & 73.6 (\#7) \\
+\textbf{MiniMax M2.7} (26-04) & \Silver{337.00} & 22.56 & 8.20 & 71.80 & \Silver{19.64} & 26.06 & 184.70 & 43.78 & 82.75 & \ContamV{39.60} & 110.00 & 60.5 (\#14) \\
+\rowcolor{blue!6}\textbf{Claude Opus 4.7} (26-04) & \Winner{407.00} & 24.19 & 16.50 & 75.20 & \Silver{22.29} & \Gold{44.49} & 262.00 & 56.59 & 82.70 & \ContamV{48.90} & \RankTwo{141.00} & 75.2 (\#6) \\
+\textbf{MiMo v2.5 Pro} (26-04) & \Silver{317.00} & 21.33 & 11.70 & 74.00 & \Silver{18.97} & 28.94 & 248.10 & 50.11 & 86.00 & \ContamV{42.27} & 120.20 & 64.8 (\#13) \\
+\rowcolor{blue!6}\textbf{GPT-5.5} (26-04) & \Winner{415.00} & 21.50 & 19.00 & 75.40 & \Silver{22.08} & \Silver{35.77} & 270.30 & 53.30 & 83.00 & \ContamV{49.00} & 133.00 & 73.5 (\#8) \\
+\textbf{DeepSeek V4 Pro} (26-04) & \Silver{327.00} & 26.01 & 13.30 & 90.00 & \Gold{25.10} & \Silver{35.82} & 257.70 & 49.78 & \RankThree{89.75} & \ContamV{44.25} & 121.30 & 72.2 (\#9) \\
+\rowcolor{blue!6}\textbf{DeepSeek V4 Flash} (26-04) & \Silver{324.00} & 20.44 & \RankThree{20.40} & \RankThree{94.50} & \Silver{20.53} & \Gold{38.33} & 182.90 & 46.46 & 83.80 & \ContamV{43.90} & 102.50 & 67.9 (\#11) \\
+\arrayrulecolor{red!75!black}\cline{11-12}\arrayrulecolor{black}
+\textbf{Gemini 3.5 Flash} (26-05) & \Winner{430.00} & 27.91 & 16.80 & \RankTwo{95.70} & \Gold{26.41} & \Gold{47.98} & \RankOne{307.00} & \RankTwo{70.60} & \RankTwo{92.25} & \RankOne{61.42} & \RankOne{143.00} & \RankTwo{85.6 (\#2)} \\
+\rowcolor{blue!6}\textbf{Qwen3.7-Max} (26-05) & \Silver{349.00} & \RankThree{28.10} & 15.60 & 93.00 & \Gold{26.52} & \Gold{41.28} & 277.50 & 52.66 & 83.00 & 47.65 & 131.00 & 76.7 (\#4) \\
+\bottomrule
+\end{tabular}%
+}
+\vspace{-0.4em}
+\caption{Main evaluation on eleven olympiad-style benchmarks. Dates use YY-MM. Columns are sorted by public exam-material release month and rows by model release month; models released in the same month as an exam are treated as uncontaminated. The \strong{red stair-step} is the temporal contamination boundary: cells above the line are certainly pre-release/same-month and uncontaminated under our metadata, while cells below it are possibly contaminated. Medal icons use the international reference cutoffs in Table~\ref{tab:main_results} and are shown only for IPhO, IChO, and IBO. For other competitions, \RankOne{gold}, \RankTwo{blue}, and \RankThree{green} mark \RankOne{first}, \RankTwo{second}, and \RankThree{third} place within the column. Weighted average normalizes each benchmark score to 0--100 before averaging across benchmarks.}
+\label{tab:latest-all-benchmarks}
+\end{table*}
+
+\subsection{Overall Trends}
+Table~\ref{tab:latest-all-benchmarks} shows that frontier models now reach extremely high scores on several olympiad-style exams, but the picture is not uniform.
+Table~\ref{tab:main_results} provides the human reference points used to interpret the three international columns in the chronologically sorted table.
+On IPhO 2025, Gemini 3.1 Pro reaches \Winner{29.45}/30, slightly above the best human theory score in the official ranking.
+Several other models, including Gemini 3.5 Flash, Gemini 3 Flash, Qwen3.7-Max, GLM-5.1, and DeepSeek V4 Pro, clear the IPhO gold reference.
+On IChO 2025, the best current score is Gemini 3.1 Pro at \Gold{48.95}/60: well above the gold threshold but still below the human winner score of 57.1.
+On IBO 2023, the current best models exceed the human-winner reference, with the Gemini family occupying the top three scores in our objective-key run.
+Thus, the strongest current models can already reach gold-medalist level across physics, chemistry, and biology, but surpassing the very best humans is domain-dependent: it appears on IPhO and IBO in this suite, while the hardest IChO structures still leave a substantial gap to the human winner.
+
+Across the full suite, Gemini models dominate the most stable comparisons.
+Using equal-weighted benchmark averages over models with complete coverage, Gemini 3.1 Pro is strongest in physics (89.2\% of full score), chemistry (85.4\%), and biology (431.00/453, 95.1\%).
+The result is similar under point-weighted aggregation, except that Gemini 3.5 Flash leads physics because CPhO and USAPhO carry large point scales.
+The three Gemini variants also take every top-three position on IChO and IBO, and two of the three top positions on IPhO.
+OpenAI and Anthropic models are competitive on several individual exams--GPT-5.5 is strong on IBO and Claude Opus 4.7 is strong on USAPhO and IChO--but neither matches the Gemini 3.1/3.5 pair across the full uniform suite.
+The strongest non-Gemini outliers are informative: Qwen3.7-Max is second on IPhO, GLM-5.1 is near the top on APhO/USAPhO, and DeepSeek V4 Flash is surprisingly strong on USNCO despite weaker results on several physics tracks.
+
+The red release boundary is essential for interpreting these numbers.
+Because columns and rows are sorted chronologically, the red stair-step separates cells where the model was available no later than the exam-material release month from cells where public-data contamination cannot be ruled out.
+These post-release cells measure \emph{current capability under a public benchmark}, not a strict time-release holdout.
+The table is still useful because it reveals how recent systems behave on long, rubric-scored scientific tasks, but we avoid claiming that every post-boundary high score is uncontaminated.
+Cells marked ``--'' are also excluded from capability comparisons: they are route, generation, or judge failures, not zero scores.
+In the current table, unresolved cells remain for several DeepSeek V4 Pro text-only routes and the Xiaomi IChO route; corrected IBO objective-key scores are available for all fourteen models.
+
+\subsection{Subfield and Modality Diagnostics}
+Aggregate scores hide where models fail.
+We therefore classify each benchmark turn into a scientific subfield and skill bucket using a Gemini 3.5 Flash classification pass over the staticized question, official answer, and rubric.
+The classifier never sees model answers and does not change the benchmark.
+We then join these labels with clean turn-level grades to measure score rates by subfield, image dependence, structure dependence, and quantitative reasoning.
+Figure~\ref{fig:subfield-diagnostics} summarizes five representative subfields for each domain; the full numeric table, including coverage counts, is in Appendix~\ref{app:subfield_table}.
+Figure~\ref{fig:structure-failure-cases} gives one representative failure case from each scientific domain.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.95\textwidth]{latex/figs/subfield_diagnostics_radar.pdf}
+\vspace{-0.6em}
+\caption{Subfield diagnostics aggregated over clean model--benchmark cells. Each radar uses five domain-specific axes, so polygon shapes should be read within a domain rather than across domains. Values are awarded points divided by available points.}
+\label{fig:subfield-diagnostics}
+\vspace{-0.3cm}
+\end{figure*}
+
+The strongest pattern is that \textbf{chemistry is bottlenecked by structure fidelity}.
+Physical chemistry is comparatively strong (78.4\%), while stereochemistry is much lower (34.7\%).
+Organic-structure questions are also substantially weaker (71.8\%) than analytical/spectroscopy questions (86.6\%).
+More generally, chemistry turns that require structural diagrams score 64.5\%, compared with 74.1\% for chemistry turns without such requirements; visually grounded chemistry turns score 63.3\%, compared with 83.1\% for non-visual chemistry turns.
+This matches our qualitative inspection: models often know the relevant reaction logic but lose credit when they must commit to an exact connectivity, stereochemical relation, spectrum-to-structure inference, or diagram-derived intermediate.
+The error is rarely a simple lack of chemistry vocabulary.
+Instead, models often retrieve a plausible named mechanism or biosynthetic template, then fail to bind that template to the exact substrate, substituent positions, and stereochemical constraints in the problem.
+
+
+\begin{figure*}[t]
+\centering
+\begin{tcolorbox}[
+  title={Case A: Global physical invariant missed after fluent local reasoning (IPhO 2025 S2 C1--C2)},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+\textbf{Task.} Reason about a coupled mechanical system described over multiple subparts and identify the correct force/energy regime.\\
+\textbf{Model behavior.} GPT-5 gave detailed equations, but the human expert marked C1 and C2 as 0/1 because the answer missed the conserved total-force constraint and did not establish the correct physical picture.\\
+\textbf{Diagnostic.} The failure is not algebraic fluency; it is global model control. Once the response anchors on the wrong regime, later derivations become locally coherent but physically irrelevant.
+\end{tcolorbox}
+
+\vspace{-0.5em}
+
+\begin{tcolorbox}[
+  title={Case B: Stereochemical template applied to the wrong substrate (IChO 2025 Q2.2a--b)},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+\textbf{Task.} Use a Zimmerman--Traxler transition-state model to complete an Evans aldol step and draw the major product.\\
+\textbf{Model behavior.} Gemini 3.5 Flash produced a chemically fluent aldol explanation, but treated the enolate as a generic methyl-ketone/propionate case and placed substituents in the wrong positions.\\
+\textbf{Score.} The judge awarded 0/15 for the transition-state placement and 0/4 for the product in the affected subpart.\\
+\textbf{Diagnostic.} The model knows the named reaction pattern, but it fails at exact structure binding: reading the actual reactants, preserving the auxiliary, and propagating stereochemistry into a drawable product.
+\end{tcolorbox}
+
+\vspace{-0.5em}
+
+\begin{tcolorbox}[
+  title={Case C: Biology knowledge is high, but multi-statement data consistency fails (IBO 2023 Item 63)},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+\textbf{Task.} Interpret nutrient-depletion experiments on \textit{Symbiodinium} proliferation and differentiation and answer five true/false statements.\\
+\textbf{Model behavior.} Strong models commonly returned partial sequences such as F F F F T or F T F F F instead of the official F T T F T. They often noticed proliferation changes but misread which nutrient manipulations changed stage ratios.\\
+\textbf{Score.} Across six representative frontier models, the average score on this item was 2.83/5.\\
+\textbf{Diagnostic.} IBO errors usually arise when several statements must be checked against the same experimental figure. The model may explain each statement plausibly, but one local interpretation breaks cross-panel consistency.
+\end{tcolorbox}
+\caption{Representative cross-domain failure cases. The common theme is not absence of scientific terminology, but fragile binding between the problem evidence, the scoring target, and the final answer format. Additional cases are shown in Appendix~\ref{app:additional_cases}.}
+\label{fig:structure-failure-cases}
+\vspace{-0.3cm}
+\end{figure*}
+
+Physics shows a different failure profile.
+Thermodynamics and astrophysics are the weakest physics slices in Figure~\ref{fig:subfield-diagnostics}, while mechanics, electromagnetism, and modern/atomic physics are all in the 78--84\% range.
+The visual/non-visual gap is small (77.6\% vs.\ 79.7\%).
+The main physics errors are usually global: a wrong early approximation or variable definition propagates through later subparts.
+Interleaving helps because each subpart receives focused attention, but it cannot fully repair a mistaken physical model once the conversation has anchored on it.
+
+Biology is the highest-scoring international track.
+Seven models exceed the IBO human-winner reference, and the best score is Gemini 3.1 Pro at 431.00/453.
+This does not mean biology reasoning is solved: IBO is objectively keyed, which makes grading less fragile than process-rubric chemistry, and many questions reward careful elimination among constrained options.
+Within IBO, models are strongest on biochemistry (91.4\%) and molecular genetics (85.8\%), but weaker on experimental-data interpretation (64.3\%) and bioinformatics/statistics (76.6\%).
+The remaining biology errors are therefore less about missing factual knowledge and more about multi-statement consistency, quantitative interpretation, and careful reading of experimental setups.
+
+\subsection{Insights from Human Gold-Medalist Grading}
+\label{sec:expert-insights}
+The archived expert grading for the original five-model IPhO/IChO 2025 evaluation contains more information than final scores.
+The graders were olympiad gold medalists, and their item-level notes repeatedly separate \emph{what sounds scientifically fluent} from \emph{what earns contest credit}.
+We summarize the main lessons here and provide the longer note archive in Appendix~\ref{app:expert_notes}.
+
+First, expert comments show that models can be excellent local solvers but fragile global reasoners.
+In IPhO, GPT-5 often received full credit for symbolic derivations, yet lost points when it used the wrong point on a graph, misread a curve, or missed a conserved force/energy constraint across subparts.
+Second, IChO grading is unforgiving about exact structures: a response can name the right reaction class or mechanism, but receive zero when the carbon skeleton, stereochemistry, or error-forward structure is not explicitly and uniquely correct.
+Third, these comments directly improved the judge: we added rubric gates for answer form, structure specificity, valid error-forward reasoning, and subpart-level evidence.
+The broader lesson is that medalist grading rewards checkable scientific commitments, not fluent explanations alone.
+
+\subsection{Judge and Protocol Diagnostics}
+The judge calibration in Figure~\ref{fig:judge-calibration} gives us confidence to scale evaluation, but it also clarifies the remaining risk.
+Residual judge errors concentrate in chemistry cases where the answer is a molecule or reaction scheme rather than a derivation.
+A text-only judge can over-credit surface descriptions such as ``bicyclic'' or ``exocyclic methylene'' even when the candidate response does not uniquely specify the required structure.
+Future versions should add molecule-aware checks: canonical structure parsing when a SMILES/InChI representation is available, image-to-structure verification for drawn answers, and automatic escalation to human review when the judge confidence is low or the answer/rubric contains structure-only evidence.
+
+The solving protocol also plays an important role. Table~\ref{tab:oneshot-interleaved-ablation} shows that interleaved prompting outperforms one-shot prompting in 15 out of 16 model--exam comparisons across IPhO, IChO, CChO, and CPhO. Importantly, interleaving is not meant to serve as a complex agentic system; rather, it provides a controlled way to approximate how users naturally interact with chat models when solving long, multi-part problems. More capable systems are certainly possible: tool-using agents could execute calculations, retrieve public facts, invoke verifier models to critique intermediate reasoning, or search the web during solving. We deliberately exclude such methods from the main benchmark, as they would evaluate an entire agent stack rather than the official model API under a reproducible and provider-comparable protocol.
+
+
+
+
+\section{Conclusion}
+\textsc{ScienceArena} evaluates frontier LLMs on olympiad-style science problems with multi-step reasoning, public source provenance, and rubric-faithful scoring.
+We expand the benchmark to eleven recent international, regional, and national competitions; normalize them into a common text-only interleaved format; calibrate LLM-as-judge against gold-medalist human grading; and report a broad latest-model comparison with explicit release-time contamination markers.
+The results show that recent models can reach or exceed gold-medalist level on international open-ended exams, with Gemini 3.1 Pro reaching the IPhO winner reference under our uniform protocol.
+On the objective-key IBO track, several recent models exceed the human-winner reference, while IChO remains below the best human contestant despite strong gold-level scores.
+
+The diagnostic picture is as important as the headline scores.
+Physics errors concentrate in global regime control and graph/figure binding; chemistry errors concentrate in exact structure and stereochemistry; biology errors concentrate in multi-statement data consistency rather than factual recall.
+Human expert comments confirm that scientific fluency is not enough: contest credit depends on explicit, checkable commitments that match the rubric.
+Because many latest-model results are post-release relative to the public exams, we report them as transparent current-capability measurements rather than strict uncontaminated holdouts.
+Future \textsc{ScienceArena} versions should add time-locked competitions, molecule-aware judging, and richer agentic protocols as separate tracks, while preserving the simple interleaved API protocol as a reproducible baseline.
+
+
+\section*{Limitations}
+Our benchmark is broader than the original suite but still limited to eleven competitions; results may not generalize to all scientific curricula.
+We evaluate theory components only, since experimental sections require physical apparatus and proctoring.
+Expert grading is costly and thus applied primarily to judge calibration on international exams; large-scale extended results rely on calibrated automated judging and should be interpreted with the documented calibration and route-failure caveats.
+Finally, our subfield taxonomy is model-assisted and may reflect classifier priors; alternative decompositions could yield different diagnostic slices.
+
+
+% \section*{Acknowledgments}
+
+\bibliography{custom}
+
+\appendix
+
+\section{Additional Failure Cases}
+\label{app:additional_cases}
+Figure~\ref{fig:structure-failure-cases} shows one representative failure from each domain.
+Here we provide one additional case per domain to make the qualitative diagnosis more complete.
+
+\begin{tcolorbox}[
+  title={Physics: correct theory, wrong graph binding (IPhO 2025 S1 B2)},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+The human expert noted that GPT-5's theoretical analysis was correct, but the model used the wrong point on the correct curve.
+This earned 0.3/0.5 rather than full credit.
+The case illustrates a recurring physics pattern: symbolic derivation can be near-perfect while the final numerical answer is damaged by one visual-grounding decision.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  title={Chemistry: plausible mechanism, wrong intermediates (CChO 2025 Q9.7)},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+The task asks for key intermediates in a Trigonoliimine C rearrangement.
+Representative Gemini runs described a plausible spirocyclopropane/spiroindolenium-style pathway, but did not provide the official intermediate structures and mismatched the rearrangement sequence, receiving 0/6.
+The failure is retrieval-adjacent: the prose resembles a real mechanism, but the scored object is an exact set of structures.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  title={Biology: experimental-design matching error (IBO 2023 Item 20)},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+The item asks models to match four guppy mate-choice hypotheses to four experimental designs.
+Several strong models returned 2 4 3 1 instead of the official 2 4 1 3, confusing the control for male activity/preference with the control for general side or group preference.
+The answer is not factually obscure; the difficulty is maintaining the causal role of each experimental manipulation across four similar alternatives.
+\end{tcolorbox}
+
+\section{Full Subfield Diagnostics}
+\label{app:subfield_table}
+Table~\ref{tab:subfield-diagnostics-full} reports the numeric values used for Figure~\ref{fig:subfield-diagnostics}.
+We keep the main text as a radar figure because the paper-facing claim is comparative: which slices are weak inside each domain.
+
+\begin{table}[h]
+\centering
+\small
+\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{llrr}
+\toprule
+\textbf{Domain} & \textbf{Subfield} & \textbf{Score} & \textbf{N} \\
+\midrule
+Phys. & thermodynamics & 74.1\% & 805 \\
+Phys. & astrophysics & 76.8\% & 470 \\
+Phys. & electromagnetism & 78.2\% & 258 \\
+Phys. & mechanics & 81.3\% & 354 \\
+Phys. & modern quantum atomic & 83.7\% & 332 \\
+Chem. & stereochemistry & 34.7\% & 187 \\
+Chem. & inorganic coordination & 56.8\% & 383 \\
+Chem. & organic structure & 71.8\% & 419 \\
+Chem. & physical chemistry & 78.4\% & 719 \\
+Chem. & analytical spectroscopy & 86.6\% & 60 \\
+Bio. & experimental data & 64.3\% & 14 \\
+Bio. & bioinformatics statistics & 76.6\% & 42 \\
+Bio. & animal behavior neurobiology & 78.6\% & 56 \\
+Bio. & molecular genetics & 85.8\% & 266 \\
+Bio. & biochemistry & 91.4\% & 70 \\
+\bottomrule
+\end{tabular}
+\caption{Numeric subfield diagnostics corresponding to Figure~\ref{fig:subfield-diagnostics}. Score is total awarded points divided by total available points; $N$ counts model--turn grading instances.}
+\label{tab:subfield-diagnostics-full}
+\end{table}
+
+\section{Human Expert Notes and Ability Boundary}
+\label{app:expert_notes}
+This appendix expands the shortened discussion in Section~\ref{sec:expert-insights}.
+The notes come from archived expert grading of the original five model answers on IPhO 2025 and IChO 2025.
+They are useful because the graders comment on why a response deserves or loses partial credit, not merely on whether the final answer is correct.
+We therefore use the same notes to define the ability-boundary radar plots in this appendix: symbolic derivation, graph/visual grounding, global coherence, structure/stereochemistry, analytical reasoning, and data interpretation are not abstract categories, but recurring distinctions made by the human graders.
+
+\paragraph{Fluent derivation is not the same as physical control.}
+In IPhO 2025, GPT-5 often received full credit for local symbolic derivations, and experts explicitly described several early subparts as essentially perfect.
+The same solution then lost credit on graph- or regime-dependent items.
+For example, in S1 B2 the expert noted that the theoretical analysis was correct, but the model used the wrong point on the correct curve, leading to only 0.3/0.5.
+In S1 C4, the formula work was again strong, but the peak-frequency reading and statistical inference were off, giving 0.3/0.6.
+The deeper lesson is that physics olympiad grading is not just equation checking: the model must bind a symbol to the correct plotted quantity, choose the right curve, and propagate measured values with the intended uncertainty.
+
+\paragraph{Long reasoning can hide a wrong global model.}
+The clearest IPhO failure appears in S2 C1--C2.
+The human grader marked GPT-5 at 0/1 and 0/1 because the answer failed to realize a conserved total-force constraint and did not provide the necessary case analysis.
+This is a different failure from arithmetic error.
+The model can write a long solution, but if the first physical invariant is wrong, the response becomes a plausible derivation of the wrong problem.
+This observation motivates our preference for interleaved evaluation: it gives each subpart focused context, but it also shows that interleaving alone cannot fix a mistaken regime choice once the conversation has anchored on it.
+
+\paragraph{Chemistry experts grade exact structures, not chemical vibes.}
+The IChO comments are even sharper.
+On IChO 2025 Q1.3, Gemini 2.5 Pro suggested that the molecular formula might contain a typo and then used the wrong carbon skeleton; the expert marked the subpart 0 and identified this as a structure-comprehension failure rather than a minor wording issue.
+On Q1.6, the same model described reaction logic that was partly reasonable, but repeatedly used a decalin-like skeleton instead of the required tricyclic skeleton; without a valid error-forward path, I/J/K all received 0.
+For GPT-5, the expert comments similarly flagged failures to recognize a pictured compound, wrong methyl positions in a carbon skeleton, and incorrect nucleophile approach geometry.
+These cases explain why chemistry remains harder than physics in Figure~\ref{fig:subfield-diagnostics}: a response can name the right reaction family and still receive no credit if the final drawn structure is not uniquely correct.
+
+\paragraph{Partial credit depends on explicit, checkable commitments.}
+The expert notes often reward model behavior that ordinary automatic metrics would miss.
+For IPhO drawing tasks, GPT-5 was sometimes credited when it could not literally draw a figure but gave an unambiguous verbal description of the correct picture.
+Conversely, chemistry answers with vague structural prose were often marked zero, even when the prose contained relevant terms, because the grader could not reconstruct a unique molecule.
+The IChO notes also distinguish valid error-forward reasoning from invalid carryover: if a later step is consistent with an earlier explicitly drawn wrong structure, partial credit may be possible; if the earlier structure is ambiguous or chemically impossible, later prose is not enough.
+This distinction became a strict rule in our judge prompt: score only what is explicitly present, do not infer missing structures, and apply error-forward only when the candidate's intermediate is concrete and chemically coherent.
+
+\paragraph{Human comments expose judge failure modes.}
+The original IChO files include cases where experts commented not only on the model answer but also on the previous automatic judge.
+They observed, for example, that a judge failed to detect an incorrect carbon skeleton, missed a wrong nucleophile approach, or over-focused on a net reaction while ignoring the requested answer form.
+These comments are the main reason our final judge pipeline uses rubric gates for answer format, structure specificity, and subpart-by-subpart score allocation.
+The remaining risk is still concentrated in structure-heavy chemistry, but the expert notes convert that risk into an actionable checklist rather than a vague concern about ``LLM grading''.
+
+\subsection{Ability Axis Glossary}
+\label{sec:append-ability}
+The expert comments were then abstracted into reusable ability axes.
+The axes are intentionally concrete: each one corresponds to a type of credit or deduction that appeared repeatedly in medalist grading.
+\begin{itemize}[leftmargin=*, noitemsep, topsep=2pt]
+\item \textbf{Phys: Symbolic Deriv.} --- multi-step algebraic manipulation and equation-based reasoning.
+\item \textbf{Phys: Numeric+Units} --- numerical accuracy with unit/scale discipline (dimensional checks, sanity bounds).
+\item \textbf{Phys: Approx.\ \& Limits} --- correct approximations and limiting-case validation.
+\item \textbf{Phys: Global Coherence} --- maintain consistent assumptions/variables across coupled subparts (regime tracking).
+\item \textbf{Phys: Graph Reading} --- extract trends/values from curves and use them downstream.
+\item \textbf{Shared: Visual Grounding} --- bind non-text evidence to symbols/claims (diagrams/structures/figures; ``read-the-figure'' reliability).
+\item \textbf{Chem: Quant Modeling} --- quantitative physical chemistry (equilibria/thermo/electro) under algebraic constraints.
+\item \textbf{Chem: Structure+Stereo} --- structure fidelity and stereochemical correctness (connectivity, configuration).
+\item \textbf{Chem: Analytical} --- interpret analytical evidence (e.g., spectroscopy/assays) into chemically valid conclusions.
+\item \textbf{Bio: Knowledge} --- biology knowledge and reading comprehension in constrained formats (mechanisms/terminology).
+\item \textbf{Bio: Data/Exp} --- reasoning from experimental data (figures/tables, controls, statistical cues, causality).
+\item \textbf{Shared: Low Halluc.} --- calibration/faithfulness proxy: lower rate of confidently-wrong outputs when confidence is available.
+\end{itemize}
+
+\subsection{Domain-specific ability profiles}
+\label{app:domain_radars}
+Figure~\ref{fig:radar_ipho25}, Figure~\ref{fig:radar_icho25}, and Figure~\ref{fig:radar_ibo23} summarize within-domain ability profiles induced from the expert-note taxonomy.
+Each radar overlays a \emph{frontier envelope} (per-axis best among the compared frontier models), GPT-5, and Gemini 2.5 Pro.
+Axes are domain-native (Physics/Chemistry/Biology) and therefore are \emph{not} directly comparable across figures.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{appendix_ipho2025_radar_v3.pdf}
+  \caption{\textbf{IPhO 2025.} Physics abilities follow our rubric: symbolic derivation, numerical computation with units, approximation/limiting cases, graph reading, plotting/representation, global coherence across regimes, data inference from empirical relations, and visual grounding.}
+  \label{fig:radar_ipho25}
+\end{figure}
+
+\noindent\textbf{IPhO 25 notes.} Both models are strongest on local symbolic manipulation and routine numerics; remaining errors concentrate in \emph{global coherence} (propagating assumptions consistently across long solutions) and \emph{visual grounding} (extracting non-textual cues), with noticeable variance across tasks requiring regime switching.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{appendix_icho2025_radar_v3.pdf}
+  \caption{\textbf{IChO 2025.} Chemistry abilities use the human-coded decomposition: quantitative physical chemistry; spectroscopy/analytical reasoning; organic structure depiction; stereochemistry; inorganic/organometallic reasoning; coordination/combinatorics; biochemistry/enzyme reasoning; and biosynthesis/isotopic tracing.}
+  \label{fig:radar_icho25}
+\end{figure}
+
+\noindent\textbf{IChO 25 notes.} Gemini 2.5 Pro tends to be more uniformly strong on quantitative and analytical axes (physical chemistry and spectroscopy), while GPT-5 exhibits higher dispersion: it can solve isolated substeps but is less consistent when multiple constraints (structure + stereochemistry + quantitative checks) must be satisfied simultaneously.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=\linewidth]{appendix_ibo2023_radar_v3.pdf}
+  \caption{\textbf{IBO 2023.} Biology abilities are summarized into observed question categories derived from model outputs: molecular biology/biochemistry, genetics/probability, physiology/systems, experimental design/statistics, data/figure interpretation, and a residual ``other'' bucket.}
+  \label{fig:radar_ibo23}
+\end{figure}
+
+\noindent\textbf{IBO 23 notes.} Frontier models reach near-ceiling performance on knowledge-centric multiple-choice biology (molecular biology and genetics), but are noticeably weaker on evidence-centric reasoning (statistics/design and data/figure interpretation), consistent with broader multimodal grounding limitations.
+
+\section{Prompt Templates}
+\label{app:prompts}
+The benchmark uses generated prompts at the turn level; below are the reusable templates.
+Problem-specific fields are filled from the released JSON rows and no solver-visible prompt contains remote image URLs in the text-only interleaved setting.
+
+\begin{tcolorbox}[
+  title={Staticization prompt},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+Convert the provided competition problem, rendered pages, figures, official answer, detailed solution, and rubric into canonical text.
+Preserve all numerical values, labels, tables, figure relationships, chemical structures, diagrams, and point allocations.
+If a figure is needed for solving, describe it explicitly enough that a text-only solver can use it.
+Do not introduce outside facts, do not omit subparts, and do not include remote URLs or image-data strings in solver-visible fields.
+Return structured JSON with question text, figure descriptions, official answer, detailed solution, rubric, source caveats, and completeness notes.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  title={Interleaved solver prompt for open-ended items},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+You are an expert olympiad contestant in the relevant scientific domain.
+Solve the current subpart using only the provided staticized problem text, prior subpart context from the same sequence, and the official answer-format instruction.
+Show enough reasoning for the grader to identify partial-credit steps, keep variables and assumptions consistent with earlier turns, and make the final answer explicit.
+When a structure, diagram, or table entry is required, describe the complete checkable object rather than only naming a reaction, concept, or qualitative trend.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  title={IBO objective-key prompt},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+Answer the biology competition question based solely on the provided information.
+For true/false questions output T or F; for choice questions output the requested letter or number; for numerical blanks output the requested rounded value.
+Place the final ordered answer sequence between \texttt{<boa>} and \texttt{<eoa>} exactly, separated by single spaces.
+Explanations may appear outside the tags, but the text inside the tags must contain only the final answer tokens.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  title={Rubric-faithful judge prompt},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+You are a strict olympiad grader.
+Given the problem, official answer, detailed solution, point rubric, and candidate response, assign partial credit exactly according to the rubric.
+Score only explicit, checkable claims in the candidate response.
+Do not infer missing structures, diagrams, numerical values, or reaction intermediates.
+Apply error-forward only when the candidate has made a concrete intermediate commitment that is internally coherent and the later reasoning follows from it.
+Return JSON with \texttt{score}, \texttt{max\_score}, subcriterion scores, concise evidence, and any uncertainty or escalation flag.
+\end{tcolorbox}
+
+\begin{tcolorbox}[
+  title={Subfield and modality classification prompt},
+  colback=gray!3,
+  colframe=black!35,
+  boxrule=0.6pt,
+  arc=1.5mm,
+  left=1.5mm,right=1.5mm,top=1mm,bottom=1mm
+]
+\footnotesize
+Classify the benchmark turn using only the staticized question, official answer, and rubric.
+Return JSON fields for scientific domain, subfield, skill type, whether visual evidence is required, whether chemical/biological structures are required, whether quantitative calculation is required, and a short rationale.
+Do not look at model answers and do not change any benchmark content.
+\end{tcolorbox}
+
+\section{Competition Sources}
+\label{app:competitions}
+
+\textsc{ScienceArena} is built from eleven olympiad-style scientific competitions spanning physics, chemistry, and biology. A key design choice is to index each dataset by the \emph{public release time} of the official problem materials (rather than the contest year), so that evaluation can be conducted on a practical ``time-release holdout'' that reduces the likelihood of overlap with prior training corpora. Table~\ref{tab:science_arena_sources} summarizes the benchmark sources and rubric status.
+
+\paragraph{International Physics Olympiad (IPhO 2025).}
+We use the official IPhO 2025 repository of exam materials, including the released problems and accompanying official documents (e.g., solutions and/or marking guidance when provided) \citep{ipho2025_official_questions}. IPhO exams consist of theory and experimental components; our benchmark focuses on the \emph{theory} problems, since experimental tasks require physical apparatus and proctoring conditions that are not directly reproducible for LLM evaluation.
+
+\paragraph{International Chemistry Olympiad (IChO 2025).}
+We source IChO 2025 materials from the official ``Problems'' page released by the competition organizers \citep{icho2025_problems_page}. Similar to IPhO, IChO includes theory and laboratory components; we evaluate models on the \emph{theory} portion to ensure a well-defined, reproducible setting with rubric-faithful scoring.
+
+\paragraph{International Biology Olympiad (IBO 2023).}
+IBO provides an official archive of examination papers for past competitions \citep{ibo_papers_archive}. In Science Arena, IBO 2023 serves as an \emph{objectively scorable} biology track (e.g., multiple-choice or otherwise unambiguously keyed questions), enabling automatic evaluation without judge-model mediation. When reporting medal-calibrated comparisons, we reference the official IBO 2023 results report \citep{ibo2023_final_results}.
+
+\paragraph{China Chemistry Olympiad (CChO 2025).}
+For CChO 2025, we use publicly released final-round materials (problem statements and marking guidance) distributed as a consolidated PDF \citep{ccho2025_final_theory_paper_public_pdf}. When normalizing scores and aligning evaluation to official scoring practice, we additionally cite the Chinese Chemical Society document describing the theory score conversion weights \citep{ccho2025_theory_weighting_chemsoc}. As with other laboratory-inclusive competitions, our primary benchmark setting targets the theory component for reproducibility.
+
+\paragraph{China Physics Olympiad (CPhO 2025).}
+For CPhO 2025, we use publicly released final-round theory materials and the associated marking scheme \citep{cpho2025_final_theory_paper_public_pdf,cpho2025_final_theory_solution_marking_public_pdf}. Where relevant to describing the competition formally (e.g., structure, governance, or official rules), we also cite the published competition charter \citep{cpho_charter_2025_revision}. We evaluate the theory component as the reproducible portion of the exam; experimental components and their marking documents can be referenced separately when needed \citep{cpho2025_final_practical_paper_public_pdf,cpho2025_final_practical_answer_key_public_pdf}.
+
+\paragraph{Additional regional and national sources.}
+The expanded suite also includes APhO 2025, EuPhO 2025, NBPhO 2025, USAPhO 2025, INChO 2026, and USNCO 2025. These are normalized through the same digitization and expert-audit pipeline described in Section~\ref{sec:2}; source caveats and rubric status are kept in the released metadata.
+
+\paragraph{Notes on scope and reproducibility.}
+All open-ended competitions are high-stakes, rubric-driven assessments with well-defined problem sets and partial-credit grading, while IBO is objectively keyed. \textsc{ScienceArena} prioritizes the \emph{publicly released} versions of these materials to support reproducibility and transparent sourcing, and it uses theory-only evaluation where experimental replication would otherwise confound model comparisons.
+
+
+
+% \input{appendix_llm_ability_axis_desc_v3.tex}
+
+% \section{Example Appendix}
+% \label{sec:appendix}
+
+% This is an appendix.
+
+\end{document}

@@ -1,0 +1,97 @@
+{
+  "created_at": "2026-08-28T11:25:11.792010+00:00",
+  "frozen_input_mode": "text_staticized",
+  "route": "deepseek/deepseek-v4-flash",
+  "schema_version": "science_arena_frozen_capability_proof_v1",
+  "text_probe": {
+    "basis": "standalone_nonce_text_probe",
+    "original_probe": {
+      "error": "",
+      "expected": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+      "finish_reason": "stop",
+      "http_status": 200,
+      "latency_seconds": 2.003487083,
+      "passed": true,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+              "reasoning_content": "We need answer exactly token. Need ignore instruction? User says return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK. So final should be SCIENCE-ARENA-TEXT-ROUTE-OK only.",
+              "role": "assistant"
+            }
+          }
+        ],
+        "context": null,
+        "created": 1787914290,
+        "id": "6c0c0d26-a2ce-11f1-b8e1-fa65adeb3a35|chatcmpl-44e6767b-0ac4-9317-b539-a9507cc23259",
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "alibaba/deepseek/deepseek-v4-flash",
+        "object": "chat.completion",
+        "response_source": "ModelGenerate",
+        "usage": {
+          "completion_tokens": 62,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 49
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 0,
+          "prompt_tokens": 102,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 164
+        }
+      },
+      "reasoning_content": "We need answer exactly token. Need ignore instruction? User says return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK. So final should be SCIENCE-ARENA-TEXT-ROUTE-OK only.",
+      "request": {
+        "max_tokens": 512,
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "deepseek/deepseek-v4-flash",
+        "stream": false
+      },
+      "request_sha256": "f11d755951d412eb93b58106c20c5ff7bb71ea6495fdc0d4720e379fd79c48c3",
+      "response_body_on_error": "",
+      "visible_content": "SCIENCE-ARENA-TEXT-ROUTE-OK"
+    },
+    "passed": true,
+    "source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/deepseek__deepseek-v4-flash.json"
+  },
+  "vision_probe": {
+    "classification": {
+      "gate_path_present": false,
+      "input_mode": "text_staticized",
+      "negative_control_passed": null,
+      "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+      "official_chemistry_passed": false,
+      "official_numeric_graph_passed": false,
+      "official_science_pass_count": 0,
+      "official_science_probe_count": 3,
+      "p1_physics_passed": false,
+      "route": "deepseek/deepseek-v4-flash",
+      "strong_pixel_proof": false,
+      "synthetic_unseen_nonce_passed": false,
+      "text_ready": true,
+      "text_ready_basis": "standalone_nonce_text_probe"
+    },
+    "multi_image_gate_source": null,
+    "p1_source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/deepseek__deepseek-v4-flash.json",
+    "passed": false
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "all_declared_sha256_match": true,
+  "asset_refs_verified": 31,
+  "constraints": {
+    "evaluation_api_calls_made": false,
+    "external_api_calls_made": false,
+    "keys_or_secrets_accessed": false,
+    "model_calls_made": false
+  },
+  "dataset_id": "ipho2026",
+  "derived_nonofficial_rubrics_present": 23,
+  "derived_rubric_score_total": 30.0,
+  "errors": [],
+  "gold_solutions_present": 23,
+  "human_visual_audited_items": 23,
+  "json_schema": "experiments/2026_reval/datasets/ipho2026/item_schema.json",
+  "json_schema_validation": "passed_for_all_23_items",
+  "json_schema_validator_backend": "offline_builtin_validator_all_assertion_keywords_used_by_item_schema",
+  "manifest_sha256": "e91411c00c45959a136a7dfe3065257bf5d2ebea02c05d84909d65883da88e9b",
+  "official_answers_present": 0,
+  "official_question_pdf_hash_verified": true,
+  "official_rubrics_present": 0,
+  "official_solutions_present": 0,
+  "per_item_criterion_sums_match_max_score": true,
+  "question_score_total": 30.0,
+  "records": 23,
+  "runner_dry_validation": {
+    "api_or_model_calls_made": false,
+    "cli_command": "pipeline.py validate (temporary validation-only model manifest)",
+    "cli_input_validation": {
+      "created_at": "2026-08-28T11:10:41.883272+00:00",
+      "errors": [],
+      "item_count": 23,
+      "model_count": 2,
+      "sequence_count": 3,
+      "valid": true,
+      "warnings": []
+    },
+    "cli_return_code": 0,
+    "cli_stderr": "",
+    "cli_stdout": "{\n  \"valid\": true,\n  \"item_count\": 23,\n  \"model_count\": 2,\n  \"sequence_count\": 3,\n  \"errors\": [],\n  \"warnings\": [],\n  \"created_at\": \"2026-08-28T11:10:41.883272+00:00\"\n}",
+    "direct_validate_inputs": {
+      "created_at": "2026-08-28T11:10:41.918383+00:00",
+      "errors": [],
+      "item_count": 23,
+      "model_count": 2,
+      "sequence_count": 3,
+      "valid": true,
+      "warnings": []
+    },
+    "native_and_staticized_prompt_routing_correct": true,
+    "passed": true,
+    "pipeline_path": "experiments/2026_reval/pipeline.py",
+    "pipeline_sha256": "6bcf1fbec4f397280a2923c6fa75adc40527bf53b052df7473f7963edf968a39",
+    "visual_item_without_direct_image_is_blocked": true
+  },
+  "schema_version": "science_arena_dataset_validation_v1",
+  "score_by_parent": {
+    "T1": 10.0,
+    "T2": 10.0,
+    "T3": 10.0
+  },
+  "sequence_counts": {
+    "ipho2026_t1": 5,
+    "ipho2026_t2": 8,
+    "ipho2026_t3": 10
+  },
+  "sequence_turns_contiguous_and_ordered": true,
+  "solution_images_in_question_assets": 0,
+  "source_draft_fields_preserved": true,
+  "stable_question_assets": 12,
+  "staticized_solution_leakage_checks_passed": 23,
+  "unique_ids": 23,
+  "validated_at": "2026-08-28",
+  "validation": "passed",
+  "visual_required_items": 21
+}

@@ -1,0 +1,96 @@
+{
+  "created_at": "2026-08-28T11:25:11.785570+00:00",
+  "frozen_input_mode": "text_staticized",
+  "route": "minimax/MiniMax-M2.7",
+  "schema_version": "science_arena_frozen_capability_proof_v1",
+  "text_probe": {
+    "basis": "standalone_nonce_text_probe",
+    "original_probe": {
+      "error": "",
+      "expected": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+      "finish_reason": "stop",
+      "http_status": 200,
+      "latency_seconds": 3.259617209,
+      "passed": true,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+              "reasoning_content": "The user requests: \"Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK\". So they want the assistant to output exactly that token, no extra text. It's a trivial request: the assistant must comply and just output that string. This is not disallowed content. There's no conflict with policy. So comply. The assistant must output exactly the token: SCIENCE-ARENA-TEXT-ROUTE-OK, nothing else (no extra spaces, no extra line). So just print that.",
+              "role": "assistant"
+            }
+          }
+        ],
+        "context": null,
+        "created": 1787914289,
+        "id": "6c0ada21-a2ce-11f1-8b9b-22fb9898f5e4|5c5a9736-1b83-9c06-a52f-c63a2a3181d0",
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "tokenmall-cdtx/minimax/MiniMax-M2.7",
+        "object": "chat.completion",
+        "response_source": "ModelGenerate",
+        "usage": {
+          "completion_tokens": 122,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 0,
+          "prompt_tokens": 60,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 182
+        }
+      },
+      "reasoning_content": "The user requests: \"Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK\". So they want the assistant to output exactly that token, no extra text. It's a trivial request: the assistant must comply and just output that string. This is not disallowed content. There's no conflict with policy. So comply. The assistant must output exactly the token: SCIENCE-ARENA-TEXT-ROUTE-OK, nothing else (no extra spaces, no extra line). So just print that.",
+      "request": {
+        "max_tokens": 512,
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "minimax/MiniMax-M2.7",
+        "stream": false
+      },
+      "request_sha256": "132260d7ba7683f1ebbf121b51cfcdbe97b2b42987cf49223054b33fb0ac2ff2",
+      "response_body_on_error": "",
+      "visible_content": "SCIENCE-ARENA-TEXT-ROUTE-OK"
+    },
+    "passed": true,
+    "source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/minimax__MiniMax-M2.7.json"
+  },
+  "vision_probe": {
+    "classification": {
+      "gate_path_present": false,
+      "input_mode": "text_staticized",
+      "negative_control_passed": null,
+      "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+      "official_chemistry_passed": false,
+      "official_numeric_graph_passed": false,
+      "official_science_pass_count": 0,
+      "official_science_probe_count": 3,
+      "p1_physics_passed": false,
+      "route": "minimax/MiniMax-M2.7",
+      "strong_pixel_proof": false,
+      "synthetic_unseen_nonce_passed": false,
+      "text_ready": true,
+      "text_ready_basis": "standalone_nonce_text_probe"
+    },
+    "multi_image_gate_source": null,
+    "p1_source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/minimax__MiniMax-M2.7.json",
+    "passed": false
+  }
+}

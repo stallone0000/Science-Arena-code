@@ -1,0 +1,124 @@
+{
+  "all_pages_text_and_visual_audited": true,
+  "method": "every page read through pdftotext -layout and 180-DPI PNG visual inspection",
+  "problem_pdf_pages": [
+    {
+      "notes": "Landscape four-column page: Problems 1-5 in full plus the beginning of Problem 6; diagrams for P1, P2, P4.",
+      "page": 1,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Landscape four-column page: completion of P6 and Problems 7-10; diagrams/plots for P6, P8, P9.",
+      "page": 2,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    }
+  ],
+  "problem_pdf_sha256": "d796b6610aec45c7b0d1b2823b9d19561d94fce424867673a1da481d1b02145e",
+  "schema_version": "nbpho2026_page_dual_audit_v1",
+  "solution_pdf_pages": [
+    {
+      "notes": "Duplicate of problem-paper page 1; not a gold solution page.",
+      "page": 1,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Duplicate of problem-paper page 2; not a gold solution page.",
+      "page": 2,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "Moderation note and Problem 1 solution/rubric.",
+      "page": 3,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End of P1, full P2 solution/rubric, start of P3.",
+      "page": 4,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "P3 solution/rubrics and start of P4.",
+      "page": 5,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "P4 parts i-iii solutions/rubrics.",
+      "page": 6,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End of P4 iii, P4 iv, and start of P5.",
+      "page": 7,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "P5 method, execution, calculation and official grading branches.",
+      "page": 8,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End of P5, full P6, and start of P7.",
+      "page": 9,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "P7 and start of P8 solutions/rubrics.",
+      "page": 10,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "P8 and P9(i) solutions/rubrics.",
+      "page": 11,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "P9(ii)-(iii), including start of accidental duplicate iv.",
+      "page": 12,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "End of duplicated P9(iii) and P10(i)-(ii).",
+      "page": 13,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    },
+    {
+      "notes": "P10(iii) experimental solution/rubric.",
+      "page": 14,
+      "rendered": true,
+      "text_extracted": true,
+      "visually_reviewed": true
+    }
+  ],
+  "solution_pdf_sha256": "6df4a2f9630e971034e2d6f4141b1e5bfa0816ee7b61c7b0e658996e1c26f457",
+  "status": "PASS"
+}

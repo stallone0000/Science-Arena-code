@@ -1,0 +1,95 @@
+{
+  "created_at": "2026-08-28T11:25:11.794589+00:00",
+  "frozen_input_mode": "vision",
+  "route": "google/gemini-3.5-flash",
+  "schema_version": "science_arena_frozen_capability_proof_v1",
+  "text_probe": {
+    "basis": "standalone_nonce_text_probe",
+    "original_probe": {
+      "error": "",
+      "expected": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+      "finish_reason": "stop",
+      "http_status": 200,
+      "latency_seconds": 2.611206875,
+      "passed": true,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+              "role": "assistant"
+            }
+          }
+        ],
+        "context": null,
+        "created": 1787914290,
+        "id": "6c0662af-a2ce-11f1-bd48-46e073b6fe5c|MGiRaqK3NsaIoLAPzYrbyQM",
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "cloudsway/google/gemini-3.5-flash",
+        "object": "chat.completion",
+        "response_source": "ModelGenerate",
+        "usage": {
+          "completion_tokens": 133,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 0,
+          "prompt_tokens": 18,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 151
+        }
+      },
+      "reasoning_content": "",
+      "request": {
+        "max_tokens": 512,
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "google/gemini-3.5-flash",
+        "stream": false
+      },
+      "request_sha256": "df93eab06ed9e567a0d30483a72c41c00a1635c05d37f181de1c1cdcbd5436e5",
+      "response_body_on_error": "",
+      "visible_content": "SCIENCE-ARENA-TEXT-ROUTE-OK"
+    },
+    "passed": true,
+    "source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/google__gemini-3.5-flash.json"
+  },
+  "vision_probe": {
+    "classification": {
+      "gate_path_present": true,
+      "input_mode": "vision",
+      "negative_control_passed": false,
+      "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+      "official_chemistry_passed": true,
+      "official_numeric_graph_passed": true,
+      "official_science_pass_count": 3,
+      "official_science_probe_count": 3,
+      "p1_physics_passed": true,
+      "route": "google/gemini-3.5-flash",
+      "strong_pixel_proof": true,
+      "synthetic_unseen_nonce_passed": true,
+      "text_ready": true,
+      "text_ready_basis": "standalone_nonce_text_probe"
+    },
+    "multi_image_gate_source": "experiments/2026_reval/runs/table6_visibility_gate_20260828/google__gemini-3.5-flash.json",
+    "p1_source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/google__gemini-3.5-flash.json",
+    "passed": true
+  }
+}

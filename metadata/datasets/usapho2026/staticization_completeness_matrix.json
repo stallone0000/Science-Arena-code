@@ -1,0 +1,771 @@
+{
+  "complete_item_count": 34,
+  "item_count": 34,
+  "items": [
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a1_a",
+      "printed_problem_pages": [
+        2
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        2
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Eye geometry s'=10.0 cm and d=5.00 mm; adjustable object-distance interval 1.00-10.0 m; thin-lens assumption; request for both f and P ranges.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A1:a",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a1_b",
+      "printed_problem_pages": [
+        2
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        2
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Eye focusing interval; stars at infinity; corrective lens placement and negligible separation; requested corrective optical-power range.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A1:b",
+      "status": "PASS",
+      "supplemental_context": "The robot is being adapted to observe stars, which are objects at infinity. The thin corrective lens is placed immediately in front of the eye lens, and their separation is neglected.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a1_c",
+      "printed_problem_pages": [
+        2
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        2
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Eye focusing interval; the two new functions (stars and reading at 25.0 cm); corrective-lens placement; single-lens feasibility request.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A1:c",
+      "status": "PASS",
+      "supplemental_context": "The two proposed functions are observing stars (objects at infinity) and reading printed material at 25.0 cm. A single thin corrective lens would be placed immediately in front of the eye lens, with their separation neglected.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a1_d",
+      "printed_problem_pages": [
+        2
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        2
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Pupil diameter 5.00 mm; viewing distance 25.0 cm; wavelength 550 nm; diffraction-limited resolution requested in dpi.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A1:d",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a1_e_i",
+      "printed_problem_pages": [
+        2,
+        3
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Stellar object; image focused on sensor; P0 is total optical power collected by pupil; diffraction makes a central Airy spot; intensity request.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A1:e_i",
+      "status": "PASS",
+      "supplemental_context": "For part (e), while viewing a stellar object, the eye lens is adjusted so that the image forms on the sensor. The total optical power collected by the pupil is P0. Diffraction at the pupil makes the image a central bright spot (Airy disk).",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a1_e_ii",
+      "printed_problem_pages": [
+        2,
+        3
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        2,
+        3
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Complete part-(e) stellar/Airy/P0 setup; same object; pupil changes from 5.0 mm to 2.0 mm; intensity-factor request.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A1:e_ii",
+      "status": "PASS",
+      "supplemental_context": "For part (e), while viewing a stellar object, the eye lens is adjusted so that the image forms on the sensor. The total optical power collected by the pupil is P0. Diffraction at the pupil makes the image a central bright spot (Airy disk). The object is unchanged when the pupil diameter is reduced.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a2_a",
+      "printed_problem_pages": [
+        4
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        4
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Infinite fixed frictionless cone; half-angle alpha; no gravity; only normal force; initial position r0 and transverse speed v; normal force requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A2:a",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a2_b",
+      "printed_problem_pages": [
+        4
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        4
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Complete cone and initial conditions; later point B at slant distance r1; angle between velocity and OB requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A2:b",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a2_c",
+      "printed_problem_pages": [
+        4
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        4
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Complete cone and initial conditions; later point B at slant distance r1; travel time requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A2:c",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a2_d",
+      "printed_problem_pages": [
+        4
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        4
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Complete cone and initial conditions; long-time total revolutions about cone axis requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A2:d",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a3_updraft_a",
+      "printed_problem_pages": [
+        5
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        5
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Ideal atmosphere, molar mass mu, CP=CV+R, gravity g; pressure-altitude gradient in terms of rho requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A3:updraft_a",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a3_updraft_b",
+      "printed_problem_pages": [
+        5
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        5
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Rapidly lofted parcel; no heat exchange; pressure equilibrium with environment; use part (a) and first law; Gamma_p definition.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A3:updraft_b",
+      "status": "PASS",
+      "supplemental_context": "A parcel of air is lofted rapidly upward in the storm's updraft and exchanges no heat with its surroundings. It remains in pressure equilibrium with the surrounding atmosphere as it rises. Use the pressure-altitude result requested in part (a) together with the first law of thermodynamics. Define the parcel lapse rate as Gamma_p=-dT_p/dz.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a3_updraft_c_i",
+      "printed_problem_pages": [
+        5
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        5
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Environmental T_env(z), Gamma_env definition, T_env(0)=T0, initial parcel equilibrium, upward displacement delta z, and Gamma_p definition; instability condition requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A3:updraft_c_i",
+      "status": "PASS",
+      "supplemental_context": "The environment has temperature profile T_env(z), lapse rate Gamma_env=-dT_env/dz, and surface temperature T_env(0)=T0. A parcel initially in equilibrium at z=0 is displaced upward by delta z. Part (b) defines the parcel lapse rate Gamma_p=-dT_p/dz.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a3_updraft_c_ii",
+      "printed_problem_pages": [
+        5
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        5
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Environmental T_env(z), Gamma_env definition, T0, initial equilibrium, displacement delta z, Gamma_p definition, and stable-regime frequency request.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A3:updraft_c_ii",
+      "status": "PASS",
+      "supplemental_context": "The environment has temperature profile T_env(z), lapse rate Gamma_env=-dT_env/dz, and surface temperature T_env(0)=T0. A parcel initially in equilibrium at z=0 is displaced upward by delta z. Part (b) defines the parcel lapse rate Gamma_p=-dT_p/dz.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a3_vortex_a",
+      "printed_problem_pages": [
+        5
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        5
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Isothermal uniform rho0; ambient P_infinity; both Rankine velocity branches; boundary P->P_infinity; small-parcel radial balance; Delta P definition.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A3:vortex_a",
+      "status": "PASS",
+      "supplemental_context": "For Part B, treat the atmosphere as isothermal with uniform density rho0 and ambient pressure P_infinity. The Rankine vortex has v=Omega r for r<R and v=Omega R^2/r for r>R, with P approaching P_infinity as r approaches infinity. Use radial force balance on a small parcel moving in a circular path, and define the central pressure deficit as Delta P=P_infinity-P(0).",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_a3_vortex_b",
+      "printed_problem_pages": [
+        5
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        1,
+        5
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Isothermal Rankine setup; displacement argument analogous to Updraft A(c); circulation gamma(r)=r v(r); stability and application requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "A3:vortex_b",
+      "status": "PASS",
+      "supplemental_context": "For Part B, treat the atmosphere as isothermal with uniform density rho0. Use a radial displacement argument analogous to the parcel-displacement argument requested in Updraft A(c). Define the circulation variable gamma(r)=r v(r), with v=Omega r for r<R and v=Omega R^2/r for r>R.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b1_a",
+      "printed_problem_pages": [
+        6
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        7
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Uniform hydrogen cloud, rho_H, central star rate Q_*, steady ionization-recombination balance, R=n_p n_e alpha, n=rho/m, full ionization; r_s requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B1:a",
+      "status": "PASS",
+      "supplemental_context": "A star at the center of a uniform hydrogen cloud of mass density rho_H emits ionizing photons at constant rate Q_* (photons/s). The ionized region is in steady state: total ionization rate equals total recombination rate. The recombination rate per unit volume is R=n_p n_e alpha, and number density is defined by n=rho/m. Assume the sphere is completely ionized and contains only hydrogen.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b1_b_i",
+      "printed_problem_pages": [
+        6
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        7
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Early ionization front; gas initially at rest; thin discontinuity; recombinations behind front neglected; s and J definitions; speed relation requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B1:b_i",
+      "status": "PASS",
+      "supplemental_context": "When the star first turns on, an ionization front sweeps outward. In this early stage the gas is initially at rest, the front is a thin discontinuity, and recombinations behind it are neglected. Let s be the front speed into neutral hydrogen of number density n_H, and let J be the ionizing-photon flux reaching the front in photons per unit area per unit time.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b1_b_ii",
+      "printed_problem_pages": [
+        6
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        7
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Early-front assumptions; star photon rate Q_*; s and J definitions from part (b); spherical radius r(t) with r(0)=0; no recombinations.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B1:b_ii",
+      "status": "PASS",
+      "supplemental_context": "When the star first turns on, a spherical ionization front sweeps outward through gas initially at rest. Treat the front as a thin discontinuity and neglect recombinations behind it. The star emits Q_* photons per second. In part (b), s denotes the front speed into neutral hydrogen of density n_H and J denotes the photon flux reaching the front.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b1_c_i",
+      "printed_problem_pages": [
+        6
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        7
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Tin about 10^4 K, Tout about 100 K, initially similar hydrogen number densities, ideal gas, fully ionized interior, maintained ionization balance; pressure ratio requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B1:c_i",
+      "status": "PASS",
+      "supplemental_context": "Inside the sphere Tin is approximately 10^4 K, while the neutral exterior has Tout approximately 100 K. Initially n_H,in is approximately n_H,out. Treat the gas as ideal; the expanding interior remains fully ionized, and ionization balance is maintained.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b1_c_ii",
+      "printed_problem_pages": [
+        6
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        7
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Complete bubble temperature/density/ideal-gas/full-ionization/ionization-balance setup; r_s meaning; final pressure-equilibrium radius requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B1:c_ii",
+      "status": "PASS",
+      "supplemental_context": "Inside the sphere Tin is approximately 10^4 K, while the neutral exterior has Tout approximately 100 K. Initially n_H,in is approximately n_H,out. Treat the gas as ideal; the expanding interior remains fully ionized, and ionization balance is maintained. The symbol r_s is the Stroemgren radius requested in part (a).",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b1_d_i",
+      "printed_problem_pages": [
+        6,
+        7
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        7,
+        8
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Cluster hot gas T about 10^7 K; hydrostatic equation dP/dr=-rho dPhi/dr; Phi per unit mass; ideal approximately isothermal gas; dPhi/dr=v_c^2/r; rho power law requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B1:d_i",
+      "status": "PASS",
+      "supplemental_context": "Galaxy clusters contain hot gas with T approximately 10^7 K in hydrostatic equilibrium, dP/dr=-rho dPhi/dr, where Phi is gravitational potential per unit mass. Treat the gas as ideal and approximately isothermal. For part (d), dPhi/dr=v_c^2/r with constant v_c.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b1_d_ii_i",
+      "printed_problem_pages": [
+        6,
+        7
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        7,
+        8
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Cluster hydrostatic/ideal/isothermal setup; n=rho/m definition; free-free volumetric rate Lambda proportional to n_e^2 sqrt(T); t_cool exponent request.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B1:d_ii_i",
+      "status": "PASS",
+      "supplemental_context": "For the hot, ideal, approximately isothermal cluster gas, number density is related to particle mass density by n=rho/m. The gas cools by free-free X-ray emission at volumetric rate Lambda proportional to n_e^2 sqrt(T).",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b1_d_ii_ii",
+      "printed_problem_pages": [
+        6,
+        7
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        7,
+        8
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Cluster ideal/isothermal setup; prior requested rho(r) proportional to r^-beta; free-free rate; preceding t_cool proportional to T^a rho_e^b ansatz; radial behavior request.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B1:d_ii_ii",
+      "status": "PASS",
+      "supplemental_context": "For the hot, ideal, approximately isothermal cluster gas, part (d)(i) asks one to show rho(r) is proportional to r^-beta. Free-free X-ray emissivity per volume obeys Lambda proportional to n_e^2 sqrt(T). Part (d)(ii)(i) defines the cooling-time scaling ansatz t_cool proportional to T^a rho_e^b.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b1_d_iii",
+      "printed_problem_pages": [
+        6,
+        7
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        7,
+        8
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Cluster hydrostatic/ideal/isothermal density model; rho(r) power-law request; free-free cooling model and radial cooling-time request; observed hot center; expectation/explanation requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B1:d_iii",
+      "status": "PASS",
+      "supplemental_context": "The cluster model assumes hot ideal approximately isothermal gas in hydrostatic equilibrium, dP/dr=-rho dPhi/dr, with dPhi/dr=v_c^2/r. Part (d)(i) asks for a power-law density rho(r) proportional to r^-beta. Part (d)(ii) gives free-free emissivity Lambda proportional to n_e^2 sqrt(T) and asks for the cooling time and its radial limits. Observations show luminous X-rays from hot gas at cluster centers.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b2_a",
+      "printed_problem_pages": [
+        8
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        9
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Fixed +1 C center; attractive conic equation; three equal-time positions and -1 C charge; maximum radius requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B2:a",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b2_b",
+      "printed_problem_pages": [
+        8
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        9
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Fixed +1 C center; repulsive conic equation; three equal-time positions and +2 C charge; large-time velocity direction from +x requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B2:b",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b2_c_i",
+      "printed_problem_pages": [
+        8
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        9
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Identical +2 C particles; common v_infinity; incoming lines parallel to part-(b) initial asymptote; one-at-a-time/no mutual interaction; B and physical velocity-deflection definitions; conic derivation requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B2:c_i",
+      "status": "PASS",
+      "supplemental_context": "For part (c), identical +2 C particles approach from infinity with common speed v_infinity along lines parallel to the initial asymptotic direction of the particle in part (b). They are injected one at a time and do not interact with one another. B is the perpendicular distance from the incoming straight-line path to the origin. The deflection angle alpha_s is the angle between incoming and outgoing asymptotic velocity directions.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b2_c_ii",
+      "printed_problem_pages": [
+        8
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        9
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Complete scattering-family/B/deflection definitions; reference trajectory's +2 C charge and three equal-time coordinates from part (b); expression in terms of its r0 requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B2:c_ii",
+      "status": "PASS",
+      "supplemental_context": "For part (c), identical +2 C particles approach from infinity with common speed v_infinity along parallel incoming asymptotes; they are injected one at a time and do not interact. B is the incoming-line distance to the origin, and alpha_s is the angle between incoming and outgoing velocity directions. The reference trajectory from part (b) is the +2 C particle whose three equal-time positions are (3 m,-4 m), (2 m,0), and (3 m,4 m); part (b) asks for its large-time velocity direction. Use only this question-side information and prior-turn work.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b3_a",
+      "printed_problem_pages": [
+        9
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        10
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Energy definition of Q; inductor L with resistance R; I(t)=I0 cos(omega t); expression for Q requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B3:a",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b3_b",
+      "printed_problem_pages": [
+        9
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        10
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Energy definition of Q; long superconducting solenoid L; tightly wound shell a,t<<a,sigma,ell; no end/skin effects; current; requested variables.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B3:b",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b3_c",
+      "printed_problem_pages": [
+        9
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        10
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Complete conducting-cylinder setup; cross-reference to part (a)'s ordinary lossy-inductor question; effective resistance requested without supplying the prior answer.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B3:c",
+      "status": "PASS",
+      "supplemental_context": "Part (a) considers an inductor of inductance L and resistance R carrying I(t)=I0 cos(omega t), and asks for Q from the energy definition. In the present conducting-cylinder setup, use that question-side comparison to determine an effective resistance. (The source labels this cross-reference as 'part (1)'; context identifies part (a).)",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b3_d",
+      "printed_problem_pages": [
+        9
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        10
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Complete conducting-cylinder setup; external series resistor R; total quality factor requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B3:d",
+      "status": "PASS",
+      "supplemental_context": "",
+      "supplemental_context_required": false,
+      "target_subpart_included": true
+    },
+    {
+      "curator_derived_score_cue_in_question_fields": false,
+      "item_id": "usapho2026_b3_e",
+      "printed_problem_pages": [
+        9
+      ],
+      "question_only": true,
+      "question_pdf_pages": [
+        6,
+        10
+      ],
+      "question_visual_transcription_included": true,
+      "reference_sheet_complete": true,
+      "requirements": "Frequency comparison between ideal L plus series R and same circuit with cylinder; physical explanation requested.",
+      "shared_statement_included": true,
+      "solution_or_rubric_content_included": false,
+      "source_key": "B3:e",
+      "status": "PASS",
+      "supplemental_context": "Compare (1) an RL circuit made of an ideal inductor L in series with a resistor R and (2) the same circuit with the conducting cylinder inserted. Explain physically why their frequency dependence differs.",
+      "supplemental_context_required": true,
+      "target_subpart_included": true
+    }
+  ],
+  "method": "All 34 atomic turns were checked against fresh text extraction and 180-DPI visual inspection of every page in the Problems PDF. Only question-paper content is permitted.",
+  "question_pdf_sha256": "95c2f0d278aa206d7386d868dca2a5af4f4135c12bae23a3dce6a55812cad982",
+  "schema_version": "usapho2026_question_only_staticization_completeness_v1",
+  "solution_content_used": false,
+  "status": "PASS"
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "science-arena"
+version = "1.0.0"
+description = "Reproducible evaluation and rubric-judging pipeline for ScienceArena"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "jsonschema>=4.21",
+  "Pillow>=10.2",
+]
+
+[project.optional-dependencies]
+api = ["openai>=1.30", "requests>=2.31"]
+analysis = ["matplotlib>=3.8", "numpy>=1.26", "zstandard>=0.22"]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+science-arena = "science_arena.pipeline:main"
+
+[tool.setuptools]
+packages = ["science_arena"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

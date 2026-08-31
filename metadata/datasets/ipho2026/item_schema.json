@@ -1,0 +1,309 @@
+{
+  "$id": "science-arena/ipho2026/canonical_item_schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": true,
+  "properties": {
+    "benchmark_id": {
+      "const": "ipho2026"
+    },
+    "global_order": {
+      "maximum": 23,
+      "minimum": 1,
+      "type": "integer"
+    },
+    "gold_solution": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "gold_solution_status": {
+      "const": "human_audited_summary_from_provided_solution_unconfirmed_official"
+    },
+    "grading_rubric": {
+      "properties": {
+        "criteria": {
+          "items": {
+            "properties": {
+              "description": {
+                "minLength": 1,
+                "type": "string"
+              },
+              "points": {
+                "exclusiveMinimum": 0,
+                "type": "number"
+              }
+            },
+            "required": [
+              "points",
+              "description"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "max_score": {
+          "exclusiveMinimum": 0,
+          "type": "number"
+        },
+        "status": {
+          "const": "derived_from_solution_not_official"
+        }
+      },
+      "required": [
+        "status",
+        "max_score",
+        "criteria",
+        "accepted_equivalents",
+        "numeric_tolerance",
+        "error_carry_forward",
+        "source_error_handling"
+      ],
+      "type": "object"
+    },
+    "input_tracks": {
+      "properties": {
+        "native_vision": {
+          "properties": {
+            "direct_official_question_images": {
+              "const": true
+            },
+            "missing_asset_policy": {
+              "const": "block_no_fallback"
+            },
+            "question_field": {
+              "const": "question_text_native"
+            }
+          },
+          "required": [
+            "question_field",
+            "direct_official_question_images",
+            "missing_asset_policy"
+          ],
+          "type": "object"
+        },
+        "text_staticized": {
+          "properties": {
+            "human_visual_audited": {
+              "const": true
+            },
+            "question_field": {
+              "const": "question_text_staticized"
+            },
+            "question_only": {
+              "const": true
+            },
+            "solution_leakage_check": {
+              "const": "passed"
+            }
+          },
+          "required": [
+            "question_field",
+            "question_only",
+            "human_visual_audited",
+            "solution_leakage_check"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "native_vision",
+        "text_staticized"
+      ],
+      "type": "object"
+    },
+    "item_id": {
+      "pattern": "^ipho2026_t[123]_[abc][1-5]$",
+      "type": "string"
+    },
+    "max_score": {
+      "exclusiveMinimum": 0,
+      "type": "number"
+    },
+    "official_answer": {
+      "type": "null"
+    },
+    "official_rubric": {
+      "type": "null"
+    },
+    "official_rubric_status": {
+      "pattern": "^missing",
+      "type": "string"
+    },
+    "official_solution": {
+      "type": "null"
+    },
+    "official_solution_image_paths": {
+      "maxItems": 0,
+      "type": "array"
+    },
+    "parent_question": {
+      "enum": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    "question_id": {
+      "pattern": "^T[123]-[ABC][1-5]$",
+      "type": "string"
+    },
+    "question_image_assets": {
+      "items": {
+        "properties": {
+          "contains_solution": {
+            "const": false
+          },
+          "source_pdf_sha256": {
+            "const": "25f555e5e2ff07b9720cb47347981f3d8951d8f9ce44e1e1e3bc04fd5842f729"
+          }
+        },
+        "required": [
+          "path",
+          "source_asset_path",
+          "source_pdf",
+          "source_pdf_sha256",
+          "source_page",
+          "sha256",
+          "contains_solution"
+        ],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "question_image_paths": {
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "question_source": {
+      "required": [
+        "source_pdf",
+        "source_pdf_sha256",
+        "pdf_pages",
+        "printed_pages",
+        "locator"
+      ],
+      "type": "object"
+    },
+    "question_text_native": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "question_text_staticized": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "reference_answer": {
+      "type": [
+        "string",
+        "object"
+      ]
+    },
+    "rubric_type": {
+      "const": "derived_from_solution_not_official"
+    },
+    "schema_version": {
+      "const": "science_arena_item_v1"
+    },
+    "sequence_id": {
+      "enum": [
+        "ipho2026_t1",
+        "ipho2026_t2",
+        "ipho2026_t3"
+      ]
+    },
+    "solution_source": {
+      "required": [
+        "source_pdf",
+        "source_pdf_sha256",
+        "pdf_pages",
+        "printed_pages",
+        "locator",
+        "provenance_status"
+      ],
+      "type": "object"
+    },
+    "turn_index": {
+      "minimum": 1,
+      "type": "integer"
+    },
+    "visual_dependency": {
+      "type": "boolean"
+    },
+    "visual_dependency_metadata": {
+      "properties": {
+        "assets": {
+          "items": {
+            "properties": {
+              "contains_solution": {
+                "const": false
+              },
+              "source_pdf_sha256": {
+                "const": "25f555e5e2ff07b9720cb47347981f3d8951d8f9ce44e1e1e3bc04fd5842f729"
+              }
+            },
+            "required": [
+              "path",
+              "source_asset_path",
+              "source_pdf",
+              "source_pdf_sha256",
+              "source_page",
+              "sha256",
+              "contains_solution"
+            ],
+            "type": "object"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "missing_asset_policy": {
+          "const": "block_no_fallback"
+        }
+      },
+      "required": [
+        "required",
+        "reason",
+        "multimodal_policy",
+        "text_only_policy",
+        "question_image_paths",
+        "assets",
+        "missing_asset_policy",
+        "validation"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "item_id",
+    "benchmark_id",
+    "sequence_id",
+    "turn_index",
+    "global_order",
+    "question_id",
+    "parent_question",
+    "max_score",
+    "question_text_native",
+    "question_text_staticized",
+    "reference_answer",
+    "gold_solution",
+    "grading_rubric",
+    "rubric_type",
+    "official_answer",
+    "official_solution",
+    "official_rubric",
+    "visual_dependency",
+    "question_image_paths",
+    "question_image_assets",
+    "official_solution_image_paths",
+    "question_source",
+    "solution_source",
+    "visual_dependency_metadata",
+    "input_tracks"
+  ],
+  "title": "Science Arena canonical IPhO 2026 item",
+  "type": "object"
+}

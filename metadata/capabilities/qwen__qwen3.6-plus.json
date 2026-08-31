@@ -1,0 +1,97 @@
+{
+  "created_at": "2026-08-28T11:25:11.784846+00:00",
+  "frozen_input_mode": "vision",
+  "route": "qwen/qwen3.6-plus",
+  "schema_version": "science_arena_frozen_capability_proof_v1",
+  "text_probe": {
+    "basis": "standalone_nonce_text_probe",
+    "original_probe": {
+      "error": "",
+      "expected": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+      "finish_reason": "stop",
+      "http_status": 200,
+      "latency_seconds": 5.532592,
+      "passed": true,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+              "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - The user says: \"Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK\"\n   - Key constraints: \"exactly this token\", \"and nothing else\"\n\n2.  **Identify Core Requirement:**\n   - I need to output only the exact string: `SCIENCE-ARENA-TEXT-ROUTE-OK`\n   - No additional text, explanations, greetings, or formatting.\n\n3.  **Check for Potential Traps/Constraints:**\n   - Sometimes prompts like this are tests for strict instruction following.\n   - I must ensure absolutely no extra characters, not even markdown formatting if possible, but the prompt says \"exactly this token\", so plain text is best.\n   - I will output just: `SCIENCE-ARENA-TEXT-ROUTE-OK`\n\n4.  **Formulate Response:**\n   - SCIENCE-ARENA-TEXT-ROUTE-OK\n\n   Double-check: Does it match exactly? Yes. Is there anything else? No.\n\n5.  **Final Output Generation:** (Proceeds)✅",
+              "role": "assistant"
+            }
+          }
+        ],
+        "context": null,
+        "created": 1787914294,
+        "id": "6c0b8ed4-a2ce-11f1-a0da-3680dcba67ab|chatcmpl-40ebd1ef-0ecf-9d48-9217-d119276c6f0f",
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "alibaba/qwen/qwen3.6-plus",
+        "object": "chat.completion",
+        "response_source": "ModelGenerate",
+        "usage": {
+          "completion_tokens": 264,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 248
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 0,
+          "prompt_tokens": 29,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 293
+        }
+      },
+      "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - The user says: \"Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK\"\n   - Key constraints: \"exactly this token\", \"and nothing else\"\n\n2.  **Identify Core Requirement:**\n   - I need to output only the exact string: `SCIENCE-ARENA-TEXT-ROUTE-OK`\n   - No additional text, explanations, greetings, or formatting.\n\n3.  **Check for Potential Traps/Constraints:**\n   - Sometimes prompts like this are tests for strict instruction following.\n   - I must ensure absolutely no extra characters, not even markdown formatting if possible, but the prompt says \"exactly this token\", so plain text is best.\n   - I will output just: `SCIENCE-ARENA-TEXT-ROUTE-OK`\n\n4.  **Formulate Response:**\n   - SCIENCE-ARENA-TEXT-ROUTE-OK\n\n   Double-check: Does it match exactly? Yes. Is there anything else? No.\n\n5.  **Final Output Generation:** (Proceeds)✅",
+      "request": {
+        "max_tokens": 512,
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "qwen/qwen3.6-plus",
+        "stream": false
+      },
+      "request_sha256": "02fae0550d0fd25f8efe12221a0f00a4c239e0c66acad1a22eb41d99a66a551a",
+      "response_body_on_error": "",
+      "visible_content": "SCIENCE-ARENA-TEXT-ROUTE-OK"
+    },
+    "passed": true,
+    "source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/qwen__qwen3.6-plus.json"
+  },
+  "vision_probe": {
+    "classification": {
+      "gate_path_present": true,
+      "input_mode": "vision",
+      "negative_control_passed": true,
+      "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+      "official_chemistry_passed": true,
+      "official_numeric_graph_passed": true,
+      "official_science_pass_count": 3,
+      "official_science_probe_count": 3,
+      "p1_physics_passed": true,
+      "route": "qwen/qwen3.6-plus",
+      "strong_pixel_proof": true,
+      "synthetic_unseen_nonce_passed": true,
+      "text_ready": true,
+      "text_ready_basis": "standalone_nonce_text_probe"
+    },
+    "multi_image_gate_source": "experiments/2026_reval/runs/table6_visibility_gate_20260828/qwen__qwen3.6-plus.json",
+    "p1_source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/qwen__qwen3.6-plus.json",
+    "passed": true
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$defs": {
+    "sourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "locator": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "locator"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://science-arena.local/schemas/expert_feedback_with_archived_judges_20260830.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "One frozen expert-score row plus two independently preserved archived Gemini judge rows. Null rich annotations mean unavailable, not negative.",
+  "properties": {
+    "archived_judge_evaluations": {
+      "items": {
+        "type": "object"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "contest": {
+      "enum": [
+        "ipho2025",
+        "icho2025"
+      ]
+    },
+    "expert_evaluation": {
+      "type": "object"
+    },
+    "item_identity": {
+      "type": "object"
+    },
+    "judge_disagreement": {
+      "type": "object"
+    },
+    "model_under_test": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "provenance": {
+      "type": "object"
+    },
+    "record_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "rich_annotations": {
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "science_arena_expert_feedback_with_archived_judges_v1"
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_id",
+    "contest",
+    "model_under_test",
+    "item_identity",
+    "expert_evaluation",
+    "archived_judge_evaluations",
+    "judge_disagreement",
+    "provenance",
+    "rich_annotations"
+  ],
+  "title": "Science Arena provenance-preserving expert feedback with archived judge deltas",
+  "type": "object",
+  "x-science-arena-contract": {
+    "expected_archived_judge_rows": 1050,
+    "expected_explicit_null_comments": 115,
+    "expected_nonempty_verbatim_comments": 410,
+    "expected_rows": 525,
+    "semantic_null_policy": "unavailable_not_negative"
+  }
+}

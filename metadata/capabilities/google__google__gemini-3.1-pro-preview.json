@@ -1,0 +1,56 @@
+{
+  "created_at": "2026-08-28T11:25:11.779537+00:00",
+  "frozen_input_mode": "vision",
+  "route": "google/google/gemini-3.1-pro-preview",
+  "schema_version": "science_arena_frozen_capability_proof_v1",
+  "text_probe": {
+    "basis": "correct_unseen_image_nonce_response_also_proves_instruction_text_processing",
+    "original_probe": {
+      "error": "timeout: The read operation timed out",
+      "expected": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+      "finish_reason": "",
+      "http_status": null,
+      "latency_seconds": 600.173299959,
+      "passed": false,
+      "raw_response": null,
+      "reasoning_content": "",
+      "request": {
+        "max_tokens": 512,
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "google/google/gemini-3.1-pro-preview",
+        "stream": false
+      },
+      "request_sha256": "046d3322ec56c7739d7a0e5589b8c8bc57813cdb0bb68ff753642e09bf8f7855",
+      "response_body_on_error": "",
+      "visible_content": ""
+    },
+    "passed": true,
+    "source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/google__google__gemini-3.1-pro-preview.json"
+  },
+  "vision_probe": {
+    "classification": {
+      "gate_path_present": true,
+      "input_mode": "vision",
+      "negative_control_passed": true,
+      "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+      "official_chemistry_passed": true,
+      "official_numeric_graph_passed": true,
+      "official_science_pass_count": 3,
+      "official_science_probe_count": 3,
+      "p1_physics_passed": true,
+      "route": "google/google/gemini-3.1-pro-preview",
+      "strong_pixel_proof": true,
+      "synthetic_unseen_nonce_passed": true,
+      "text_ready": true,
+      "text_ready_basis": "correct_unseen_image_nonce_response_also_proves_instruction_text_processing"
+    },
+    "multi_image_gate_source": "experiments/2026_reval/runs/table6_visibility_gate_20260828/google__google__gemini-3.1-pro-preview.json",
+    "p1_source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/google__google__gemini-3.1-pro-preview.json",
+    "passed": true
+  }
+}

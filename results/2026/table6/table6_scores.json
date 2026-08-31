@@ -1,0 +1,627 @@
+{
+  "competition_order": [
+    "ipho2026",
+    "icho2026",
+    "nbpho2026",
+    "usapho2026"
+  ],
+  "deep_protocol_audit_complete": true,
+  "explicit_raw_maxima": {
+    "icho2026": 60.0,
+    "ipho2026": 30.0,
+    "nbpho2026": 72.0,
+    "usapho2026": 150.0
+  },
+  "macro_mean": "unweighted arithmetic mean of all four normalized percentages",
+  "missingness_policy": "no imputation; macro is missing unless all four competition rows are complete",
+  "model_count": 14,
+  "normalization": "score / explicit competition raw maximum * 100",
+  "numerically_complete": true,
+  "publication_eligible": true,
+  "rows": [
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 83.92278377215105,
+          "raw_max": 60.0,
+          "score": 50.353670263290624
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 93.33333333333333,
+          "raw_max": 30.0,
+          "score": 28.0
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 64.99999999999999,
+          "raw_max": 72.0,
+          "score": 46.79999999999999
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 100.0,
+          "raw_max": 150.0,
+          "score": 150.0
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "Gemini 3 Flash",
+      "input_mode": "vision",
+      "macro_mean_percent": 85.56402927637109,
+      "missing_competitions": [],
+      "route": "cloudsway/gemini-3-flash-preview",
+      "table6_order": 1
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 67.5079227206775,
+          "raw_max": 60.0,
+          "score": 40.504753632406505
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 69.16666666666667,
+          "raw_max": 30.0,
+          "score": 20.75
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 49.44444444444444,
+          "raw_max": 72.0,
+          "score": 35.6
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 98.0,
+          "raw_max": 150.0,
+          "score": 147.0
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "Doubao Seed 2.0 Pro",
+      "input_mode": "vision",
+      "macro_mean_percent": 71.02975845794715,
+      "missing_competitions": [],
+      "route": "bytedance/doubao-seed-2-0-pro",
+      "table6_order": 2
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 90.30487947597517,
+          "raw_max": 60.0,
+          "score": 54.182927685585106
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 99.16666666666667,
+          "raw_max": 30.0,
+          "score": 29.75
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 67.08333333333333,
+          "raw_max": 72.0,
+          "score": 48.3
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 97.33333333333334,
+          "raw_max": 150.0,
+          "score": 146.0
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "Gemini 3.1 Pro",
+      "input_mode": "vision",
+      "macro_mean_percent": 88.47205320232712,
+      "missing_competitions": [],
+      "route": "google/google/gemini-3.1-pro-preview",
+      "table6_order": 3
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 53.12028015589999,
+          "raw_max": 60.0,
+          "score": 31.872168093539994
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 73.16666666666666,
+          "raw_max": 30.0,
+          "score": 21.949999999999996
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 52.22222222222223,
+          "raw_max": 72.0,
+          "score": 37.6
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 96.66666666666667,
+          "raw_max": 150.0,
+          "score": 145.0
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "GPT-5.4",
+      "input_mode": "vision",
+      "macro_mean_percent": 68.79395892786388,
+      "missing_competitions": [],
+      "route": "qiniu/openai/gpt-5.4",
+      "table6_order": 4
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 80.89418975693128,
+          "raw_max": 60.0,
+          "score": 48.53651385415878
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 99.16666666666667,
+          "raw_max": 30.0,
+          "score": 29.75
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 67.5,
+          "raw_max": 72.0,
+          "score": 48.599999999999994
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 100.0,
+          "raw_max": 150.0,
+          "score": 150.0
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "GLM-5.1",
+      "input_mode": "text_staticized",
+      "macro_mean_percent": 86.89021410589949,
+      "missing_competitions": [],
+      "route": "z-ai/glm-5.1",
+      "table6_order": 5
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 75.19276235875463,
+          "raw_max": 60.0,
+          "score": 45.115657415252784
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 90.83333333333333,
+          "raw_max": 30.0,
+          "score": 27.25
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 64.99999999999999,
+          "raw_max": 72.0,
+          "score": 46.8
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 99.5,
+          "raw_max": 150.0,
+          "score": 149.25
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "Qwen3.6-Plus",
+      "input_mode": "vision",
+      "macro_mean_percent": 82.63152392302199,
+      "missing_competitions": [],
+      "route": "qwen/qwen3.6-plus",
+      "table6_order": 6
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 45.845527816293895,
+          "raw_max": 60.0,
+          "score": 27.50731668977634
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 90.0,
+          "raw_max": 30.0,
+          "score": 27.0
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 49.58333333333333,
+          "raw_max": 72.0,
+          "score": 35.699999999999996
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 93.0,
+          "raw_max": 150.0,
+          "score": 139.5
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "MiniMax M2.7",
+      "input_mode": "text_staticized",
+      "macro_mean_percent": 69.6072152874068,
+      "missing_competitions": [],
+      "route": "minimax/MiniMax-M2.7",
+      "table6_order": 7
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 76.64873334262022,
+          "raw_max": 60.0,
+          "score": 45.98924000557213
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 86.83333333333334,
+          "raw_max": 30.0,
+          "score": 26.05
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 67.63888888888889,
+          "raw_max": 72.0,
+          "score": 48.699999999999996
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 88.33333333333333,
+          "raw_max": 150.0,
+          "score": 132.5
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "Claude Opus 4.7",
+      "input_mode": "vision",
+      "macro_mean_percent": 79.86357222454394,
+      "missing_competitions": [],
+      "route": "anthropic/claude-opus-4.7",
+      "table6_order": 8
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 49.71177538345455,
+          "raw_max": 60.0,
+          "score": 29.82706523007273
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 75.99999999999999,
+          "raw_max": 30.0,
+          "score": 22.799999999999997
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 36.52777777777778,
+          "raw_max": 72.0,
+          "score": 26.299999999999997
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 93.0,
+          "raw_max": 150.0,
+          "score": 139.5
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "MiMo v2.5 Pro",
+      "input_mode": "text_staticized",
+      "macro_mean_percent": 63.80988829030808,
+      "missing_competitions": [],
+      "route": "xiaomi/mimo-v2.5-pro",
+      "table6_order": 9
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 91.86350573502956,
+          "raw_max": 60.0,
+          "score": 55.11810344101774
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 99.16666666666667,
+          "raw_max": 30.0,
+          "score": 29.75
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 82.22222222222221,
+          "raw_max": 72.0,
+          "score": 59.199999999999996
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 100.0,
+          "raw_max": 150.0,
+          "score": 150.0
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "GPT-5.5",
+      "input_mode": "vision",
+      "macro_mean_percent": 93.31309865597962,
+      "missing_competitions": [],
+      "route": "openai/gpt-5.5",
+      "table6_order": 10
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 81.63573118469685,
+          "raw_max": 60.0,
+          "score": 48.98143871081812
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 99.16666666666667,
+          "raw_max": 30.0,
+          "score": 29.75
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 71.38888888888889,
+          "raw_max": 72.0,
+          "score": 51.39999999999999
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 98.83333333333333,
+          "raw_max": 150.0,
+          "score": 148.25
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "DeepSeek V4 Pro",
+      "input_mode": "text_staticized",
+      "macro_mean_percent": 87.75615501839644,
+      "missing_competitions": [],
+      "route": "deepseek/deepseek-v4-pro",
+      "table6_order": 11
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 82.44074719563088,
+          "raw_max": 60.0,
+          "score": 49.464448317378526
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 92.5,
+          "raw_max": 30.0,
+          "score": 27.75
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 71.52777777777777,
+          "raw_max": 72.0,
+          "score": 51.49999999999999
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 100.0,
+          "raw_max": 150.0,
+          "score": 150.0
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "DeepSeek V4 Flash",
+      "input_mode": "text_staticized",
+      "macro_mean_percent": 86.61713124335216,
+      "missing_competitions": [],
+      "route": "deepseek/deepseek-v4-flash",
+      "table6_order": 12
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 91.52493493445225,
+          "raw_max": 60.0,
+          "score": 54.91496096067135
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 99.16666666666667,
+          "raw_max": 30.0,
+          "score": 29.75
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 68.47222222222223,
+          "raw_max": 72.0,
+          "score": 49.300000000000004
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 99.0,
+          "raw_max": 150.0,
+          "score": 148.5
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "Gemini 3.5 Flash",
+      "input_mode": "vision",
+      "macro_mean_percent": 89.54095595583529,
+      "missing_competitions": [],
+      "route": "google/gemini-3.5-flash",
+      "table6_order": 13
+    },
+    {
+      "competitions": {
+        "icho2026": {
+          "complete": true,
+          "display_name": "IChO 2026",
+          "missing": false,
+          "normalized_percent": 77.7953276418041,
+          "raw_max": 60.0,
+          "score": 46.67719658508247
+        },
+        "ipho2026": {
+          "complete": true,
+          "display_name": "IPhO 2026",
+          "missing": false,
+          "normalized_percent": 99.16666666666667,
+          "raw_max": 30.0,
+          "score": 29.75
+        },
+        "nbpho2026": {
+          "complete": true,
+          "display_name": "NBPhO 2026",
+          "missing": false,
+          "normalized_percent": 64.99999999999999,
+          "raw_max": 72.0,
+          "score": 46.79999999999999
+        },
+        "usapho2026": {
+          "complete": true,
+          "display_name": "USAPhO 2026",
+          "missing": false,
+          "normalized_percent": 98.66666666666667,
+          "raw_max": 150.0,
+          "score": 148.0
+        }
+      },
+      "complete_competition_count": 4,
+      "display_name": "Qwen3.7-Max",
+      "input_mode": "text_staticized",
+      "macro_mean_percent": 85.15716524378436,
+      "missing_competitions": [],
+      "route": "qwen/qwen3.7-max",
+      "table6_order": 14
+    }
+  ],
+  "schema_version": "science_arena_table6_four_competition_analysis_v1",
+  "status": "complete_four_competition_table"
+}

@@ -1,0 +1,15 @@
+table6_order,display_name,route,input_mode,competition_count,point_macro_mean_percent,bootstrap_mean_percent,ci95_lower_percent,ci95_upper_percent
+1,Gemini 3 Flash,cloudsway/gemini-3-flash-preview,vision,4,85.5640292764,85.6524631447,79.2393054112,91.6561781652
+2,Doubao Seed 2.0 Pro,bytedance/doubao-seed-2-0-pro,vision,4,71.0297584579,71.1655134712,63.670380963,78.8486498887
+3,Gemini 3.1 Pro,google/google/gemini-3.1-pro-preview,vision,4,88.4720532023,88.5449899462,83.8038889747,93.1823891981
+4,GPT-5.4,qiniu/openai/gpt-5.4,vision,4,68.7939589279,68.9061947097,61.8560174294,75.7832753686
+5,GLM-5.1,z-ai/glm-5.1,text_staticized,4,86.8902141059,86.9621399667,81.1275522703,92.0515727633
+6,Qwen3.6-Plus,qwen/qwen3.6-plus,vision,4,82.631523923,82.7331984125,75.549791834,89.7415797911
+7,MiniMax M2.7,minimax/MiniMax-M2.7,text_staticized,4,69.6072152874,69.7418380038,62.0135894373,77.4807099999
+8,Claude Opus 4.7,anthropic/claude-opus-4.7,vision,4,79.8635722245,79.9654477619,73.1906361627,86.3712639728
+9,MiMo v2.5 Pro,xiaomi/mimo-v2.5-pro,text_staticized,4,63.8098882903,63.8549782855,54.4613992415,72.6580742814
+10,GPT-5.5,openai/gpt-5.5,vision,4,93.313098656,93.3723260055,90.9459709276,95.8768577328
+11,DeepSeek V4 Pro,deepseek/deepseek-v4-pro,text_staticized,4,87.7561550184,87.8730452033,82.8601801951,92.4297526866
+12,DeepSeek V4 Flash,deepseek/deepseek-v4-flash,text_staticized,4,86.6171312434,86.7079839904,80.9677420077,91.9888646109
+13,Gemini 3.5 Flash,google/gemini-3.5-flash,vision,4,89.5409559558,89.5985892722,86.1167232856,93.1928736809
+14,Qwen3.7-Max,qwen/qwen3.7-max,text_staticized,4,85.1571652438,85.2433721177,79.8218611523,90.5430807569

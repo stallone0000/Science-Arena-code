@@ -1,0 +1,76 @@
+{
+  "benchmark_id": "nbpho2026",
+  "builder": "experiments/2026_reval/build_nbpho2026_canonical.py",
+  "builder_sha256": "3e0a6de501aea4fdd6ff0118a9f8ce06061404f5ddfbae3c1d4f4d1f201be0be",
+  "competition": "Nordic-Baltic Physics Olympiad 2026",
+  "item_count": 28,
+  "items_sha256": "2b9138f4fc2b2a64e78f9929948c8cc1625fba231d0c81267b5b1847dbc751fd",
+  "problem_count": 10,
+  "problem_score_totals": {
+    "P1": 6.0,
+    "P10": 10.0,
+    "P2": 6.0,
+    "P3": 8.0,
+    "P4": 8.0,
+    "P5": 8.0,
+    "P6": 5.0,
+    "P7": 5.0,
+    "P8": 8.0,
+    "P9": 8.0
+  },
+  "question_image_count": 2,
+  "question_image_policy": "mechanical 180-DPI PNG renders of official problem PDF pages; direct API image payload for vision models",
+  "question_manifest_sha256": "c54e00f60bc8a94bf61cbc2fb9ee1525bbd27c922bd33717c2afcc1d1dd20432",
+  "raw_score_total": 72.0,
+  "rubric_provenance": "explicit Grading sections in provided organizer solution PDF; external authenticity unconfirmed",
+  "schema_version": "nbpho2026_benchmark_manifest_v1",
+  "sequence_count": 10,
+  "solution_image_count": 14,
+  "solution_image_policy": "separate gold-only mechanical renders; never solver input",
+  "solution_manifest_sha256": "c850203a403c15a9edf64f0b3e7f37133ec52d358083147d1054dacb7f27bd4d",
+  "source_data": "experiments/2026_reval/nbpho2026_source.py",
+  "source_data_sha256": "0429f2abeca02eecb41be26dc4be07603dd356baca3e0f52debc21441f34573e",
+  "source_defects": [
+    {
+      "description": "Prose says phase arcs are lens-shaped/pendulum-like and not ellipses, while a grading bullet calls early arcs elliptical. Adjudication accepts the intended qualitative pendulum-like shape.",
+      "id": "nbpho2026_p3_ii_arc_wording",
+      "location": "solutions PDF page 5",
+      "severity": "minor_ambiguity"
+    },
+    {
+      "description": "Invigilator fields T_room and p_air are blank in the supplied PDF. No hidden session values are inferred; stated plausible assumptions and official factor bands are used.",
+      "id": "nbpho2026_p5_missing_session_values",
+      "location": "problems PDF page 1",
+      "severity": "evaluation_limitation"
+    },
+    {
+      "description": "Problem 9(iii) is duplicated verbatim as 'iv) (? points)'. It is not an additional subproblem and receives no extra score.",
+      "id": "nbpho2026_p9_duplicate_iv",
+      "location": "solutions PDF pages 12-13",
+      "severity": "editorial"
+    },
+    {
+      "description": "The full-credit range is printed '[11.9 degrees, 14.5 mm]' for theta_c. The second unit is interpreted as degrees; solution example theta_c is angular.",
+      "id": "nbpho2026_p10_iii_mixed_unit",
+      "location": "solutions PDF page 14",
+      "severity": "source_typo"
+    }
+  ],
+  "source_pdfs": [
+    {
+      "pages": 2,
+      "path": "new-test/NBPhO 2026/NBPhO_2026_problems.pdf",
+      "role": "solver_question_only",
+      "sha256": "d796b6610aec45c7b0d1b2823b9d19561d94fce424867673a1da481d1b02145e"
+    },
+    {
+      "pages": 14,
+      "path": "new-test/NBPhO 2026/NBPhO_2026_solutions.pdf",
+      "role": "judge_gold_only",
+      "sha256": "6df4a2f9630e971034e2d6f4141b1e5bfa0816ee7b61c7b0e658996e1c26f457"
+    }
+  ],
+  "source_policy": "only the two provided local PDFs",
+  "text_only_policy": "question-only human-audited staticization; no images and no solution-derived content",
+  "visual_dependency_item_count": 13
+}

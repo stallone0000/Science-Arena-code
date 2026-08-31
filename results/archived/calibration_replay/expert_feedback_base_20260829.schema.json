@@ -1,0 +1,151 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://science-arena.local/schemas/expert_feedback_base_20260829.schema.json",
+  "title": "Science Arena archived expert-feedback base record",
+  "description": "One provenance-addressed expert score row. Null semantic fields mean that the archived source did not supply a reviewed annotation; they must not be inferred.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_id",
+    "exam",
+    "model_under_test",
+    "case_id",
+    "question_id",
+    "sub_question_id",
+    "section",
+    "item_index",
+    "label",
+    "human_score",
+    "max_score",
+    "human_comment",
+    "comment_status",
+    "provenance",
+    "semantic_annotations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "science_arena_expert_feedback_base_v1"
+    },
+    "record_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "exam": {
+      "enum": ["ipho2025", "icho2025"]
+    },
+    "model_under_test": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "question_id": {
+      "type": ["string", "null"]
+    },
+    "sub_question_id": {
+      "type": ["string", "null"]
+    },
+    "section": {
+      "type": ["string", "null"]
+    },
+    "item_index": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "label": {
+      "type": ["string", "null"]
+    },
+    "human_score": {
+      "type": "number",
+      "minimum": 0
+    },
+    "max_score": {
+      "description": "Per-row maximum when the frozen expert ground truth supplies one. IChO rows are null because that canonical file stores only problem-level maxima, not a reliable per-sub-question maximum.",
+      "oneOf": [
+        {"type": "number", "exclusiveMinimum": 0},
+        {"type": "null"}
+      ]
+    },
+    "human_comment": {
+      "type": ["string", "null"]
+    },
+    "comment_status": {
+      "enum": ["available_nonempty", "unavailable_in_source"]
+    },
+    "provenance": {
+      "$ref": "#/$defs/provenance"
+    },
+    "semantic_annotations": {
+      "$ref": "#/$defs/semanticAnnotations"
+    }
+  },
+  "$defs": {
+    "sourceReference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "sha256", "locator"],
+      "properties": {
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["canonical_ground_truth", "score_source", "comment_source"],
+      "properties": {
+        "canonical_ground_truth": {
+          "$ref": "#/$defs/sourceReference"
+        },
+        "score_source": {
+          "$ref": "#/$defs/sourceReference"
+        },
+        "comment_source": {
+          "oneOf": [
+            {"$ref": "#/$defs/sourceReference"},
+            {"type": "null"}
+          ]
+        }
+      }
+    },
+    "semanticAnnotations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "annotation_status",
+        "credit_status",
+        "normalized_error_tags",
+        "normalized_ability_tags",
+        "evidence",
+        "uncertainty",
+        "discrepancy",
+        "conflict"
+      ],
+      "properties": {
+        "annotation_status": {
+          "const": "not_provided_in_archived_source"
+        },
+        "credit_status": {"type": "null"},
+        "normalized_error_tags": {"type": "null"},
+        "normalized_ability_tags": {"type": "null"},
+        "evidence": {"type": "null"},
+        "uncertainty": {"type": "null"},
+        "discrepancy": {"type": "null"},
+        "conflict": {"type": "null"}
+      }
+    }
+  }
+}

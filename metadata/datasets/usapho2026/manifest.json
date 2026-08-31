@@ -1,0 +1,118 @@
+{
+  "adjudications": [
+    {
+      "adjudication_id": "usapho2026_b2c_scattering_20260828",
+      "affected_item_ids": [
+        "usapho2026_b2_c_i",
+        "usapho2026_b2_c_ii"
+      ],
+      "dataset_copy": "experiments/2026_reval/datasets/usapho2026/adjudications/usapho2026_b2c_scattering_20260828.json",
+      "dataset_copy_sha256": "4eca78981e6f9dca54b607de9731c34cdb0b446ff0dbf238fa4c0f23fb0f252b",
+      "path": "experiments/2026_reval/adjudications/usapho2026_b2c_scattering_20260828.json",
+      "sha256": "4eca78981e6f9dca54b607de9731c34cdb0b446ff0dbf238fa4c0f23fb0f252b",
+      "status": "frozen_curator_scientific_correction"
+    }
+  ],
+  "answer_policy": "provided-solution answers are retained in official_answer/provided_solution_answer_normalized; reference_answer may differ only through an explicit, linked scientific adjudication",
+  "benchmark_id": "usapho2026",
+  "builder": "experiments/2026_reval/build_usapho2026_canonical.py",
+  "builder_sha256": "e49857888073516dc018917ea23172e5f51072a3ed33723f003535d8ca74176f",
+  "competition": "2026 USA Physics Olympiad (USAPhO)",
+  "direct_question_page_pixel_required_item_count": 34,
+  "external_authenticity_status": "not_independently_verified",
+  "intrinsic_visual_dependency_item_count": 0,
+  "item_count": 34,
+  "items_sha256": "611096bce2bc6a0bb8731050e3bcf600cbd2d0aa2f4388400ae1fd51d164e73b",
+  "official_question_figure_item_count": 6,
+  "page_audit_sha256": "ce07e24d3f462d3d3856ca0b5cab11f4bbc2f6ec82f5705057831d51afc0d66f",
+  "problem_count": 6,
+  "problem_score_totals": {
+    "A1": 25.0,
+    "A2": 25.0,
+    "A3": 25.0,
+    "B1": 25.0,
+    "B2": 25.0,
+    "B3": 25.0
+  },
+  "problem_text_sha256": "b083acc2acec4a0072d78d6d3f1e8dca36db5f3dff8690e1c402045f34092c52",
+  "question_field_score_cue_policy": "question_text_native and question_text_staticized omit curator-derived score maxima; scoring metadata remains available only for internal evaluation",
+  "question_image_count": 10,
+  "question_image_policy": "exact fresh 180-DPI PNG renders of official Problems PDF pages; direct API image payload for every native-vision item",
+  "question_manifest_sha256": "e9abbbfa792c5769962e02383e029dfa5cf301b0fbbc3656a0f29cfa1c95f3e7",
+  "raw_score_total": 150.0,
+  "rubric_provenance": "derived from human-audited worked solutions; no official grading rubric in the provided PDFs",
+  "schema_version": "usapho2026_benchmark_manifest_v1",
+  "score_policy": "curator benchmark normalization: 25 points per problem, 150 total; not official because PDFs print no points/rubric",
+  "sequence_count": 6,
+  "solution_image_count": 22,
+  "solution_image_policy": "separate gold-only exact renders; never solver input",
+  "solution_manifest_sha256": "505439cf5c3ad954b4b21645557f22aa17efb32cc97a8322fb5c98fe15c2e271",
+  "solution_text_sha256": "8097c49bbb40b23edee076aaf2a3704a5468b58cc749dfe42abed9ec2334f3ee",
+  "source_data": "experiments/2026_reval/usapho2026_source.py",
+  "source_data_sha256": "2c22f391c260a37bcfc479355fa0cdb7d470f43208e1f6e75fbb0c75067ce225",
+  "source_defects": [
+    {
+      "description": "No point allocations, grading rubric, score, or credit instructions are printed. The benchmark uses an explicit curator normalization of 25 points per full problem and derived criterion weights.",
+      "id": "usapho2026_no_official_points_or_rubric",
+      "location": "both provided PDFs, complete inspection",
+      "severity": "evaluation_limitation"
+    },
+    {
+      "description": "The intermediate component statement writes N/cos(alpha)=m v^2/(r0 sin(alpha)) while describing a horizontal component; that wording/equation is inconsistent. The final N=(m v^2/r0)cot(alpha) is correct from the cone-normal acceleration.",
+      "id": "usapho2026_a2a_component_wording",
+      "location": "solutions PDF page 6",
+      "severity": "source_derivation_inconsistency"
+    },
+    {
+      "description": "The finite-difference radial balance as printed has a sign inconsistent with its following correct result dP/dr=rho0 v^2/r. The final pressure deficit is correct.",
+      "id": "usapho2026_a3_vortex_force_balance_sign",
+      "location": "solutions PDF page 10",
+      "severity": "source_derivation_inconsistency"
+    },
+    {
+      "description": "B1(d)(ii)(ii) asks for behavior 'as as r -> 0'; the duplicated word has no mathematical effect.",
+      "id": "usapho2026_b1_duplicate_as",
+      "location": "problems PDF page 8 (printed page 7) and solutions PDF page 14",
+      "severity": "editorial"
+    },
+    {
+      "description": "B2(c)(ii) says 'part (2)' although the problem is lettered; context indicates the reference trajectory from part (b).",
+      "id": "usapho2026_b2c_cross_reference",
+      "location": "problems PDF page 9 (printed page 8) and solutions PDF page 17",
+      "severity": "editorial_ambiguity"
+    },
+    {
+      "description": "The solution equates the physical velocity deflection with 2 arccos(1/e), its supplement, and treats the orbit-dependent semilatus rectum r0 as common across a fixed-energy impact-parameter family. Correctly, B=a_C cot(alpha_s/2), and part (b)'s e=3 gives a_C=r0/8, hence B=(r0/8)cot(alpha_s/2).",
+      "id": "usapho2026_b2c_scattering_solution",
+      "location": "solutions PDF pages 17-18",
+      "severity": "major_scientific_error"
+    },
+    {
+      "description": "B3(c) says 'part (1)' although the problem is lettered; it refers to the Q=omega L/R result in part (a).",
+      "id": "usapho2026_b3c_cross_reference",
+      "location": "problems PDF page 10 (printed page 9) and solutions PDF page 20",
+      "severity": "editorial"
+    }
+  ],
+  "source_pdfs": [
+    {
+      "pages": 10,
+      "path": "new-test/USAPhO 2026/2026-USAPhO-Problems.pdf",
+      "role": "solver_question_only",
+      "sha256": "95c2f0d278aa206d7386d868dca2a5af4f4135c12bae23a3dce6a55812cad982"
+    },
+    {
+      "pages": 22,
+      "path": "new-test/USAPhO 2026/2026-USAPhO-Solutions.pdf",
+      "role": "judge_gold_only",
+      "sha256": "da401e05d009e1dbd14c231484142de03a7cbec9b1a04e7e8b131cc3d3854d64"
+    }
+  ],
+  "source_policy": "only the two provided local PDFs",
+  "staticization_completeness_item_count": 34,
+  "staticization_completeness_matrix": "experiments/2026_reval/datasets/usapho2026/staticization_completeness_matrix.json",
+  "staticization_completeness_matrix_sha256": "dd825cbe3d0a39e90ed7b6be9693c46e1756f2f006ad4e2e2c7808ac96e928e2",
+  "staticization_completeness_status": "PASS",
+  "text_only_policy": "question-only human-audited staticization with complete per-turn definitions and cross-part context; no image payload and no solution-derived content",
+  "year_identity_evidence": "Problem headers say '2026 USAPhO'; cover/reference sheet says USA Physics Olympiad Exam, AAPT/AIP United States Physics Team 2026; problem pages carry AAPT Copyright 2026."
+}

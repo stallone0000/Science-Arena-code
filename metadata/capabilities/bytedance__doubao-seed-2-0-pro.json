@@ -1,0 +1,97 @@
+{
+  "created_at": "2026-08-28T11:25:11.777149+00:00",
+  "frozen_input_mode": "vision",
+  "route": "bytedance/doubao-seed-2-0-pro",
+  "schema_version": "science_arena_frozen_capability_proof_v1",
+  "text_probe": {
+    "basis": "standalone_nonce_text_probe",
+    "original_probe": {
+      "error": "",
+      "expected": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+      "finish_reason": "stop",
+      "http_status": 200,
+      "latency_seconds": 2.9646645,
+      "passed": true,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "logprobs": null,
+            "message": {
+              "content": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+              "reasoning_content": "\nGot it, the user wants me to return exactly that token, nothing else. Let me just output SCIENCE-ARENA-TEXT-ROUTE-OK directly. Yep, that's all.",
+              "role": "assistant"
+            }
+          }
+        ],
+        "context": null,
+        "created": 1787914291,
+        "id": "6c0b011e-a2ce-11f1-aac3-a25ba58f4d11|02178791428882815b00b15f7b15a122bee0bef9a710758370410",
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "nc/bytedance/doubao-seed-2-0-pro-260215",
+        "object": "chat.completion",
+        "response_source": "ModelGenerate",
+        "usage": {
+          "completion_tokens": 54,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 42
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 0,
+          "prompt_tokens": 69,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 123
+        }
+      },
+      "reasoning_content": "Got it, the user wants me to return exactly that token, nothing else. Let me just output SCIENCE-ARENA-TEXT-ROUTE-OK directly. Yep, that's all.",
+      "request": {
+        "max_tokens": 512,
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "bytedance/doubao-seed-2-0-pro",
+        "stream": false
+      },
+      "request_sha256": "722c4a04b466a0b8a29312f6250e03bc9b27e089df6fa22448d68acf02907ee5",
+      "response_body_on_error": "",
+      "visible_content": "SCIENCE-ARENA-TEXT-ROUTE-OK"
+    },
+    "passed": true,
+    "source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/bytedance__doubao-seed-2-0-pro.json"
+  },
+  "vision_probe": {
+    "classification": {
+      "gate_path_present": true,
+      "input_mode": "vision",
+      "negative_control_passed": true,
+      "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+      "official_chemistry_passed": false,
+      "official_numeric_graph_passed": true,
+      "official_science_pass_count": 2,
+      "official_science_probe_count": 3,
+      "p1_physics_passed": true,
+      "route": "bytedance/doubao-seed-2-0-pro",
+      "strong_pixel_proof": true,
+      "synthetic_unseen_nonce_passed": true,
+      "text_ready": true,
+      "text_ready_basis": "standalone_nonce_text_probe"
+    },
+    "multi_image_gate_source": "experiments/2026_reval/runs/table6_visibility_gate_20260828/bytedance__doubao-seed-2-0-pro.json",
+    "p1_source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/bytedance__doubao-seed-2-0-pro.json",
+    "passed": true
+  }
+}

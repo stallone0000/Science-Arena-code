@@ -1,0 +1,12 @@
+{
+  "schema_version": "science_arena_rebuttal_crossjudge_one_solver_all_items_v1",
+  "panel_label": "gemini35_solver_all_91_ipho_icho_items",
+  "solver_route": "google/gemini-3.5-flash",
+  "selection_mode": "all_frozen_items_for_exact_solver_route",
+  "competitions": [
+    {"competition_key":"ipho2026","item_count":23,"items_sha256":"3d9256334674a913be301e809d5baa04ae9228fda6767ce3e2cc4fed54c4a205"},
+    {"competition_key":"icho2026","item_count":68,"items_sha256":"a0f0ef68489395e0ead74636d79f60b913d3c1ff3d9b015680d93493078f0837"}
+  ],
+  "total_item_answers": 91,
+  "scope_claim": "same frozen strong-solver answer corpus across judges; full item coverage for IPhO/IChO, not cross-candidate robustness"
+}

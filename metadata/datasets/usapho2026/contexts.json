@@ -1,0 +1,186 @@
+{
+  "problems": {
+    "A1": {
+      "has_figure": true,
+      "part": "A",
+      "stem": "A robot eye has an adjustable thin internal lens, a flat sensor s'=10.0 cm behind it, and a circular pupil of diameter d=5.00 mm. The internal lens focuses sharply for object distances 1.00 m <= s <= 10.0 m. A thin corrective lens can be placed immediately in front of the eye lens, with their separation neglected. Treat all lenses as thin.",
+      "title": "404 Vision Not Found",
+      "visual": "The question page contains a schematic eye: incoming parallel rays travel from right to left through a corrective lens immediately adjacent to the internal lens, then 10.0 cm to the sensor. All geometry needed for calculation is also stated in the text; the drawing contains no extra scale data."
+    },
+    "A2": {
+      "has_figure": false,
+      "part": "A",
+      "stem": "A point mass m is constrained to the surface of an infinite fixed frictionless cone of half-angle alpha. Ignore gravity; the only force is the cone's normal force. At t=0 the mass is at A, slant distance r0 from vertex O, with speed v perpendicular to OA. Later it is at B, distance r1 from O.",
+      "title": "Straight on a Cone",
+      "visual": "No problem-specific diagram is printed; the official page contains only text and equations."
+    },
+    "A3": {
+      "has_figure": false,
+      "part": "A",
+      "stem": "Neglect moisture and model the atmosphere as an ideal gas of molar mass mu, with molar heat capacities C_P=C_V+R and gravitational acceleration g. The problem first treats an adiabatically displaced parcel in a vertically stratified atmosphere, then an isothermal uniform-density Rankine vortex with v=Omega r for r<R and v=Omega R^2/r for r>R.",
+      "title": "Storm Chaser",
+      "visual": "No problem-specific diagram is printed; the official page contains only text and equations."
+    },
+    "B1": {
+      "has_figure": false,
+      "part": "B",
+      "stem": "A star in uniform hydrogen emits ionizing photons at rate Q_* and makes a fully ionized Stromgren sphere. The recombination rate density is R=n_p n_e alpha. Later parts treat an early ionization front, pressure-driven expansion between T_in about 10^4 K and T_out about 100 K, and isothermal hot gas in a galaxy-cluster potential with dPhi/dr=v_c^2/r and free-free emissivity proportional to n_e^2 sqrt(T).",
+      "title": "Radiant Bubbles",
+      "visual": "No problem-specific diagram is printed; the official pages contain only text and equations."
+    },
+    "B2": {
+      "has_figure": false,
+      "part": "B",
+      "stem": "A fixed +1 C charge alpha is at the origin. Attractive orbits use r=r0/(1+e cos phi), e<1; repulsive orbits use r=r0/(e cos phi-1), e>1. Three positions are photographed at equal time intervals. In the scattering family of part (c), identical +2 C particles have common speed v_inf and parallel incoming asymptotic velocity directions; impact parameter B is the incoming-line distance to the origin, and alpha_s is the angle between incoming and outgoing velocity directions.",
+      "title": "Say Cheese... It's a Conic",
+      "visual": "No graph or orbit drawing is printed; coordinates and conic equations are supplied as text."
+    },
+    "B3": {
+      "has_figure": false,
+      "part": "B",
+      "stem": "The quality factor is Q=2 pi times maximum stored energy divided by energy lost per cycle. A long superconducting solenoid of inductance L is tightly wound around a thin conducting cylindrical shell of radius a, thickness t<<a, conductivity sigma, and length ell. End and skin effects are ignored, and the solenoid current is I(t)=I0 cos(omega t).",
+      "title": "The Trojan Cylinder",
+      "visual": "No circuit or apparatus diagram is printed; all geometry and definitions are in text."
+    }
+  },
+  "question_only_staticization_specs": {
+    "A1:a": {
+      "requirements": "Eye geometry s'=10.0 cm and d=5.00 mm; adjustable object-distance interval 1.00-10.0 m; thin-lens assumption; request for both f and P ranges.",
+      "supplemental_context": ""
+    },
+    "A1:b": {
+      "requirements": "Eye focusing interval; stars at infinity; corrective lens placement and negligible separation; requested corrective optical-power range.",
+      "supplemental_context": "The robot is being adapted to observe stars, which are objects at infinity. The thin corrective lens is placed immediately in front of the eye lens, and their separation is neglected."
+    },
+    "A1:c": {
+      "requirements": "Eye focusing interval; the two new functions (stars and reading at 25.0 cm); corrective-lens placement; single-lens feasibility request.",
+      "supplemental_context": "The two proposed functions are observing stars (objects at infinity) and reading printed material at 25.0 cm. A single thin corrective lens would be placed immediately in front of the eye lens, with their separation neglected."
+    },
+    "A1:d": {
+      "requirements": "Pupil diameter 5.00 mm; viewing distance 25.0 cm; wavelength 550 nm; diffraction-limited resolution requested in dpi.",
+      "supplemental_context": ""
+    },
+    "A1:e_i": {
+      "requirements": "Stellar object; image focused on sensor; P0 is total optical power collected by pupil; diffraction makes a central Airy spot; intensity request.",
+      "supplemental_context": "For part (e), while viewing a stellar object, the eye lens is adjusted so that the image forms on the sensor. The total optical power collected by the pupil is P0. Diffraction at the pupil makes the image a central bright spot (Airy disk)."
+    },
+    "A1:e_ii": {
+      "requirements": "Complete part-(e) stellar/Airy/P0 setup; same object; pupil changes from 5.0 mm to 2.0 mm; intensity-factor request.",
+      "supplemental_context": "For part (e), while viewing a stellar object, the eye lens is adjusted so that the image forms on the sensor. The total optical power collected by the pupil is P0. Diffraction at the pupil makes the image a central bright spot (Airy disk). The object is unchanged when the pupil diameter is reduced."
+    },
+    "A2:a": {
+      "requirements": "Infinite fixed frictionless cone; half-angle alpha; no gravity; only normal force; initial position r0 and transverse speed v; normal force requested.",
+      "supplemental_context": ""
+    },
+    "A2:b": {
+      "requirements": "Complete cone and initial conditions; later point B at slant distance r1; angle between velocity and OB requested.",
+      "supplemental_context": ""
+    },
+    "A2:c": {
+      "requirements": "Complete cone and initial conditions; later point B at slant distance r1; travel time requested.",
+      "supplemental_context": ""
+    },
+    "A2:d": {
+      "requirements": "Complete cone and initial conditions; long-time total revolutions about cone axis requested.",
+      "supplemental_context": ""
+    },
+    "A3:updraft_a": {
+      "requirements": "Ideal atmosphere, molar mass mu, CP=CV+R, gravity g; pressure-altitude gradient in terms of rho requested.",
+      "supplemental_context": ""
+    },
+    "A3:updraft_b": {
+      "requirements": "Rapidly lofted parcel; no heat exchange; pressure equilibrium with environment; use part (a) and first law; Gamma_p definition.",
+      "supplemental_context": "A parcel of air is lofted rapidly upward in the storm's updraft and exchanges no heat with its surroundings. It remains in pressure equilibrium with the surrounding atmosphere as it rises. Use the pressure-altitude result requested in part (a) together with the first law of thermodynamics. Define the parcel lapse rate as Gamma_p=-dT_p/dz."
+    },
+    "A3:updraft_c_i": {
+      "requirements": "Environmental T_env(z), Gamma_env definition, T_env(0)=T0, initial parcel equilibrium, upward displacement delta z, and Gamma_p definition; instability condition requested.",
+      "supplemental_context": "The environment has temperature profile T_env(z), lapse rate Gamma_env=-dT_env/dz, and surface temperature T_env(0)=T0. A parcel initially in equilibrium at z=0 is displaced upward by delta z. Part (b) defines the parcel lapse rate Gamma_p=-dT_p/dz."
+    },
+    "A3:updraft_c_ii": {
+      "requirements": "Environmental T_env(z), Gamma_env definition, T0, initial equilibrium, displacement delta z, Gamma_p definition, and stable-regime frequency request.",
+      "supplemental_context": "The environment has temperature profile T_env(z), lapse rate Gamma_env=-dT_env/dz, and surface temperature T_env(0)=T0. A parcel initially in equilibrium at z=0 is displaced upward by delta z. Part (b) defines the parcel lapse rate Gamma_p=-dT_p/dz."
+    },
+    "A3:vortex_a": {
+      "requirements": "Isothermal uniform rho0; ambient P_infinity; both Rankine velocity branches; boundary P->P_infinity; small-parcel radial balance; Delta P definition.",
+      "supplemental_context": "For Part B, treat the atmosphere as isothermal with uniform density rho0 and ambient pressure P_infinity. The Rankine vortex has v=Omega r for r<R and v=Omega R^2/r for r>R, with P approaching P_infinity as r approaches infinity. Use radial force balance on a small parcel moving in a circular path, and define the central pressure deficit as Delta P=P_infinity-P(0)."
+    },
+    "A3:vortex_b": {
+      "requirements": "Isothermal Rankine setup; displacement argument analogous to Updraft A(c); circulation gamma(r)=r v(r); stability and application requested.",
+      "supplemental_context": "For Part B, treat the atmosphere as isothermal with uniform density rho0. Use a radial displacement argument analogous to the parcel-displacement argument requested in Updraft A(c). Define the circulation variable gamma(r)=r v(r), with v=Omega r for r<R and v=Omega R^2/r for r>R."
+    },
+    "B1:a": {
+      "requirements": "Uniform hydrogen cloud, rho_H, central star rate Q_*, steady ionization-recombination balance, R=n_p n_e alpha, n=rho/m, full ionization; r_s requested.",
+      "supplemental_context": "A star at the center of a uniform hydrogen cloud of mass density rho_H emits ionizing photons at constant rate Q_* (photons/s). The ionized region is in steady state: total ionization rate equals total recombination rate. The recombination rate per unit volume is R=n_p n_e alpha, and number density is defined by n=rho/m. Assume the sphere is completely ionized and contains only hydrogen."
+    },
+    "B1:b_i": {
+      "requirements": "Early ionization front; gas initially at rest; thin discontinuity; recombinations behind front neglected; s and J definitions; speed relation requested.",
+      "supplemental_context": "When the star first turns on, an ionization front sweeps outward. In this early stage the gas is initially at rest, the front is a thin discontinuity, and recombinations behind it are neglected. Let s be the front speed into neutral hydrogen of number density n_H, and let J be the ionizing-photon flux reaching the front in photons per unit area per unit time."
+    },
+    "B1:b_ii": {
+      "requirements": "Early-front assumptions; star photon rate Q_*; s and J definitions from part (b); spherical radius r(t) with r(0)=0; no recombinations.",
+      "supplemental_context": "When the star first turns on, a spherical ionization front sweeps outward through gas initially at rest. Treat the front as a thin discontinuity and neglect recombinations behind it. The star emits Q_* photons per second. In part (b), s denotes the front speed into neutral hydrogen of density n_H and J denotes the photon flux reaching the front."
+    },
+    "B1:c_i": {
+      "requirements": "Tin about 10^4 K, Tout about 100 K, initially similar hydrogen number densities, ideal gas, fully ionized interior, maintained ionization balance; pressure ratio requested.",
+      "supplemental_context": "Inside the sphere Tin is approximately 10^4 K, while the neutral exterior has Tout approximately 100 K. Initially n_H,in is approximately n_H,out. Treat the gas as ideal; the expanding interior remains fully ionized, and ionization balance is maintained."
+    },
+    "B1:c_ii": {
+      "requirements": "Complete bubble temperature/density/ideal-gas/full-ionization/ionization-balance setup; r_s meaning; final pressure-equilibrium radius requested.",
+      "supplemental_context": "Inside the sphere Tin is approximately 10^4 K, while the neutral exterior has Tout approximately 100 K. Initially n_H,in is approximately n_H,out. Treat the gas as ideal; the expanding interior remains fully ionized, and ionization balance is maintained. The symbol r_s is the Stroemgren radius requested in part (a)."
+    },
+    "B1:d_i": {
+      "requirements": "Cluster hot gas T about 10^7 K; hydrostatic equation dP/dr=-rho dPhi/dr; Phi per unit mass; ideal approximately isothermal gas; dPhi/dr=v_c^2/r; rho power law requested.",
+      "supplemental_context": "Galaxy clusters contain hot gas with T approximately 10^7 K in hydrostatic equilibrium, dP/dr=-rho dPhi/dr, where Phi is gravitational potential per unit mass. Treat the gas as ideal and approximately isothermal. For part (d), dPhi/dr=v_c^2/r with constant v_c."
+    },
+    "B1:d_ii_i": {
+      "requirements": "Cluster hydrostatic/ideal/isothermal setup; n=rho/m definition; free-free volumetric rate Lambda proportional to n_e^2 sqrt(T); t_cool exponent request.",
+      "supplemental_context": "For the hot, ideal, approximately isothermal cluster gas, number density is related to particle mass density by n=rho/m. The gas cools by free-free X-ray emission at volumetric rate Lambda proportional to n_e^2 sqrt(T)."
+    },
+    "B1:d_ii_ii": {
+      "requirements": "Cluster ideal/isothermal setup; prior requested rho(r) proportional to r^-beta; free-free rate; preceding t_cool proportional to T^a rho_e^b ansatz; radial behavior request.",
+      "supplemental_context": "For the hot, ideal, approximately isothermal cluster gas, part (d)(i) asks one to show rho(r) is proportional to r^-beta. Free-free X-ray emissivity per volume obeys Lambda proportional to n_e^2 sqrt(T). Part (d)(ii)(i) defines the cooling-time scaling ansatz t_cool proportional to T^a rho_e^b."
+    },
+    "B1:d_iii": {
+      "requirements": "Cluster hydrostatic/ideal/isothermal density model; rho(r) power-law request; free-free cooling model and radial cooling-time request; observed hot center; expectation/explanation requested.",
+      "supplemental_context": "The cluster model assumes hot ideal approximately isothermal gas in hydrostatic equilibrium, dP/dr=-rho dPhi/dr, with dPhi/dr=v_c^2/r. Part (d)(i) asks for a power-law density rho(r) proportional to r^-beta. Part (d)(ii) gives free-free emissivity Lambda proportional to n_e^2 sqrt(T) and asks for the cooling time and its radial limits. Observations show luminous X-rays from hot gas at cluster centers."
+    },
+    "B2:a": {
+      "requirements": "Fixed +1 C center; attractive conic equation; three equal-time positions and -1 C charge; maximum radius requested.",
+      "supplemental_context": ""
+    },
+    "B2:b": {
+      "requirements": "Fixed +1 C center; repulsive conic equation; three equal-time positions and +2 C charge; large-time velocity direction from +x requested.",
+      "supplemental_context": ""
+    },
+    "B2:c_i": {
+      "requirements": "Identical +2 C particles; common v_infinity; incoming lines parallel to part-(b) initial asymptote; one-at-a-time/no mutual interaction; B and physical velocity-deflection definitions; conic derivation requested.",
+      "supplemental_context": "For part (c), identical +2 C particles approach from infinity with common speed v_infinity along lines parallel to the initial asymptotic direction of the particle in part (b). They are injected one at a time and do not interact with one another. B is the perpendicular distance from the incoming straight-line path to the origin. The deflection angle alpha_s is the angle between incoming and outgoing asymptotic velocity directions."
+    },
+    "B2:c_ii": {
+      "requirements": "Complete scattering-family/B/deflection definitions; reference trajectory's +2 C charge and three equal-time coordinates from part (b); expression in terms of its r0 requested.",
+      "supplemental_context": "For part (c), identical +2 C particles approach from infinity with common speed v_infinity along parallel incoming asymptotes; they are injected one at a time and do not interact. B is the incoming-line distance to the origin, and alpha_s is the angle between incoming and outgoing velocity directions. The reference trajectory from part (b) is the +2 C particle whose three equal-time positions are (3 m,-4 m), (2 m,0), and (3 m,4 m); part (b) asks for its large-time velocity direction. Use only this question-side information and prior-turn work."
+    },
+    "B3:a": {
+      "requirements": "Energy definition of Q; inductor L with resistance R; I(t)=I0 cos(omega t); expression for Q requested.",
+      "supplemental_context": ""
+    },
+    "B3:b": {
+      "requirements": "Energy definition of Q; long superconducting solenoid L; tightly wound shell a,t<<a,sigma,ell; no end/skin effects; current; requested variables.",
+      "supplemental_context": ""
+    },
+    "B3:c": {
+      "requirements": "Complete conducting-cylinder setup; cross-reference to part (a)'s ordinary lossy-inductor question; effective resistance requested without supplying the prior answer.",
+      "supplemental_context": "Part (a) considers an inductor of inductance L and resistance R carrying I(t)=I0 cos(omega t), and asks for Q from the energy definition. In the present conducting-cylinder setup, use that question-side comparison to determine an effective resistance. (The source labels this cross-reference as 'part (1)'; context identifies part (a).)"
+    },
+    "B3:d": {
+      "requirements": "Complete conducting-cylinder setup; external series resistor R; total quality factor requested.",
+      "supplemental_context": ""
+    },
+    "B3:e": {
+      "requirements": "Frequency comparison between ideal L plus series R and same circuit with cylinder; physical explanation requested.",
+      "supplemental_context": "Compare (1) an RL circuit made of an ideal inductor L in series with a resistor R and (2) the same circuit with the conducting cylinder inserted. Explain physically why their frequency dependence differs."
+    }
+  },
+  "reference_sheet": "The official reference sheet supplies g=9.8 N/kg, G=6.67e-11 N m^2/kg^2, k=1/(4 pi epsilon_0)=8.99e9 N m^2/C^2, mu_0/(4 pi)=1e-7 T m/A, c=3.00e8 m/s, k_B=1.38e-23 J/K, N_A=6.02e23 mol^-1, R=N_A k_B=8.31 J/(mol K), sigma_SB=5.67e-8 J/(s m^2 K^4), e=1.602e-19 C, 1 eV=1.602e-19 J, h=6.63e-34 J s=4.14e-15 eV s, and m_e=9.109e-31 kg=0.511 MeV/c^2. It also supplies the approximations (1+x)^n approximately 1+nx+n(n-1)x^2/2 for |nx|<<1, exp(x) approximately 1+x+x^2/2+x^3/6 for |x|<<1, sin(theta) approximately theta-theta^3/6 for |theta|<<1, and cos(theta) approximately 1-theta^2/2 for |theta|<<1.",
+  "schema_version": "usapho2026_contexts_v1"
+}

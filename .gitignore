@@ -1,0 +1,23 @@
+.DS_Store
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+reproduced/
+runs/
+artifacts/
+*.log
+*.tmp
+
+# Credentials must never be committed.
+API_KEY.sh
+*api_key*
+*secret*
+*.pem
+*.key

@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use ScienceArena, please cite the paper."
+title: "ScienceArena: Benchmarking LLMs on Latest Scientific Olympiad Competitions"
+type: software
+version: 1.0.0
+date-released: 2026-08-31
+url: "https://github.com/stallone0000/Science-Arena-code"
+authors:
+  - family-names: Zhao
+    given-names: Guangxiang
+  - family-names: Shi
+    given-names: Qilong
+  - family-names: Xiao
+    given-names: Xusen
+  - family-names: Liu
+    given-names: Wenpu
+  - family-names: Li
+    given-names: Yaoming
+  - family-names: Hao
+    given-names: Linfeng
+  - family-names: Hou
+    given-names: Shuyang
+  - family-names: Guo
+    given-names: Zijian
+  - family-names: Zhang
+    given-names: Xinrui
+  - family-names: Zhao
+    given-names: Yuntian
+  - family-names: Wang
+    given-names: Zhengyang
+  - family-names: Liu
+    given-names: Wenrui
+  - family-names: Wu
+    given-names: Yuhan
+  - family-names: Yang
+    given-names: Tong
+  - family-names: Sun
+    given-names: Lin
+  - family-names: Zhang
+    given-names: Xiangzheng

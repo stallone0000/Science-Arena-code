@@ -1,0 +1,95 @@
+{
+  "created_at": "2026-08-28T11:25:11.787846+00:00",
+  "frozen_input_mode": "vision",
+  "route": "anthropic/claude-opus-4.7",
+  "schema_version": "science_arena_frozen_capability_proof_v1",
+  "text_probe": {
+    "basis": "standalone_nonce_text_probe",
+    "original_probe": {
+      "error": "",
+      "expected": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+      "finish_reason": "stop",
+      "http_status": 200,
+      "latency_seconds": 2.689766375,
+      "passed": true,
+      "raw_response": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+              "role": "assistant"
+            }
+          }
+        ],
+        "context": null,
+        "created": 1787914288,
+        "id": "6c0b7865-a2ce-11f1-8451-e23004a63e34|chatcmpl-76858c000b264afdb6795a692e77c6fc",
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "qiniu/anthropic/claude-opus-4.7",
+        "object": "chat.completion",
+        "response_source": "ModelGenerate",
+        "usage": {
+          "completion_tokens": 29,
+          "completion_tokens_details": {
+            "accepted_prediction_tokens": 0,
+            "audio_tokens": 0,
+            "reasoning_tokens": 0
+          },
+          "prompt_cache_hit_tokens": 0,
+          "prompt_cache_miss_tokens": 0,
+          "prompt_tokens": 49,
+          "prompt_tokens_details": {
+            "audio_tokens": 0,
+            "cached_tokens": 0
+          },
+          "total_tokens": 78
+        }
+      },
+      "reasoning_content": "",
+      "request": {
+        "max_tokens": 512,
+        "messages": [
+          {
+            "content": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+            "role": "user"
+          }
+        ],
+        "model": "anthropic/claude-opus-4.7",
+        "stream": false
+      },
+      "request_sha256": "c437c664ab5e498188017fb284ec025cc2e41a7a4e9208f7e944e8196dbbdaae",
+      "response_body_on_error": "",
+      "visible_content": "SCIENCE-ARENA-TEXT-ROUTE-OK"
+    },
+    "passed": true,
+    "source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/anthropic__claude-opus-4.7.json"
+  },
+  "vision_probe": {
+    "classification": {
+      "gate_path_present": true,
+      "input_mode": "vision",
+      "negative_control_passed": true,
+      "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+      "official_chemistry_passed": true,
+      "official_numeric_graph_passed": true,
+      "official_science_pass_count": 3,
+      "official_science_probe_count": 3,
+      "p1_physics_passed": true,
+      "route": "anthropic/claude-opus-4.7",
+      "strong_pixel_proof": true,
+      "synthetic_unseen_nonce_passed": true,
+      "text_ready": true,
+      "text_ready_basis": "standalone_nonce_text_probe"
+    },
+    "multi_image_gate_source": "experiments/2026_reval/runs/table6_visibility_gate_20260828/anthropic__claude-opus-4.7.json",
+    "p1_source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/anthropic__claude-opus-4.7.json",
+    "passed": true
+  }
+}

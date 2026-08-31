@@ -1,0 +1,185 @@
+{
+  "across_competition_estimator": "unweighted arithmetic macro mean of competition-normalized percentages",
+  "competition_cluster_counts": {
+    "icho2026": 9,
+    "ipho2026": 3,
+    "nbpho2026": 10,
+    "usapho2026": 6
+  },
+  "competition_keys": [
+    "ipho2026",
+    "icho2026",
+    "nbpho2026",
+    "usapho2026"
+  ],
+  "deep_protocol_audit_complete": true,
+  "interval": "two-sided 95% empirical percentile interval; Hyndman-Fan type 7",
+  "numerical_core_sha256": "d48b3103bea931474b0b5b1b7f0f33ec3b90bc01db53fb0c2e1181beffcc1be5",
+  "numerical_reuse_validation": "all 14 point macros recomputed from the four current sealed aggregates; CI rows retained from the immediately preceding tables-only build",
+  "paired_across_models": true,
+  "prng": "SplitMix64 with rejection-sampled randbelow",
+  "publication_eligible": true,
+  "resamples": 10000,
+  "resampling_unit": "whole question/problem sequence cluster within each competition; all item scores in a selected sequence move together",
+  "rows": [
+    {
+      "bootstrap_mean_percent": 85.65246314472157,
+      "ci95_lower_percent": 79.23930541118351,
+      "ci95_upper_percent": 91.65617816524855,
+      "competition_count": 4,
+      "display_name": "Gemini 3 Flash",
+      "input_mode": "vision",
+      "point_macro_mean_percent": 85.56402927637109,
+      "route": "cloudsway/gemini-3-flash-preview",
+      "table6_order": 1
+    },
+    {
+      "bootstrap_mean_percent": 71.16551347116172,
+      "ci95_lower_percent": 63.67038096301286,
+      "ci95_upper_percent": 78.84864988866796,
+      "competition_count": 4,
+      "display_name": "Doubao Seed 2.0 Pro",
+      "input_mode": "vision",
+      "point_macro_mean_percent": 71.02975845794715,
+      "route": "bytedance/doubao-seed-2-0-pro",
+      "table6_order": 2
+    },
+    {
+      "bootstrap_mean_percent": 88.54498994617227,
+      "ci95_lower_percent": 83.8038889747314,
+      "ci95_upper_percent": 93.18238919808209,
+      "competition_count": 4,
+      "display_name": "Gemini 3.1 Pro",
+      "input_mode": "vision",
+      "point_macro_mean_percent": 88.47205320232715,
+      "route": "google/google/gemini-3.1-pro-preview",
+      "table6_order": 3
+    },
+    {
+      "bootstrap_mean_percent": 68.90619470967887,
+      "ci95_lower_percent": 61.85601742941239,
+      "ci95_upper_percent": 75.78327536860495,
+      "competition_count": 4,
+      "display_name": "GPT-5.4",
+      "input_mode": "vision",
+      "point_macro_mean_percent": 68.7939589278639,
+      "route": "qiniu/openai/gpt-5.4",
+      "table6_order": 4
+    },
+    {
+      "bootstrap_mean_percent": 86.96213996673693,
+      "ci95_lower_percent": 81.12755227030524,
+      "ci95_upper_percent": 92.05157276326096,
+      "competition_count": 4,
+      "display_name": "GLM-5.1",
+      "input_mode": "text_staticized",
+      "point_macro_mean_percent": 86.89021410589949,
+      "route": "z-ai/glm-5.1",
+      "table6_order": 5
+    },
+    {
+      "bootstrap_mean_percent": 82.73319841251129,
+      "ci95_lower_percent": 75.54979183397616,
+      "ci95_upper_percent": 89.7415797910638,
+      "competition_count": 4,
+      "display_name": "Qwen3.6-Plus",
+      "input_mode": "vision",
+      "point_macro_mean_percent": 82.63152392302199,
+      "route": "qwen/qwen3.6-plus",
+      "table6_order": 6
+    },
+    {
+      "bootstrap_mean_percent": 69.74183800383005,
+      "ci95_lower_percent": 62.0135894373122,
+      "ci95_upper_percent": 77.48070999986568,
+      "competition_count": 4,
+      "display_name": "MiniMax M2.7",
+      "input_mode": "text_staticized",
+      "point_macro_mean_percent": 69.6072152874068,
+      "route": "minimax/MiniMax-M2.7",
+      "table6_order": 7
+    },
+    {
+      "bootstrap_mean_percent": 79.96544776193625,
+      "ci95_lower_percent": 73.19063616267155,
+      "ci95_upper_percent": 86.37126397281865,
+      "competition_count": 4,
+      "display_name": "Claude Opus 4.7",
+      "input_mode": "vision",
+      "point_macro_mean_percent": 79.86357222454394,
+      "route": "anthropic/claude-opus-4.7",
+      "table6_order": 8
+    },
+    {
+      "bootstrap_mean_percent": 63.85497828552109,
+      "ci95_lower_percent": 54.46139924151733,
+      "ci95_upper_percent": 72.65807428140594,
+      "competition_count": 4,
+      "display_name": "MiMo v2.5 Pro",
+      "input_mode": "text_staticized",
+      "point_macro_mean_percent": 63.80988829030808,
+      "route": "xiaomi/mimo-v2.5-pro",
+      "table6_order": 9
+    },
+    {
+      "bootstrap_mean_percent": 93.3723260055389,
+      "ci95_lower_percent": 90.94597092762294,
+      "ci95_upper_percent": 95.87685773276088,
+      "competition_count": 4,
+      "display_name": "GPT-5.5",
+      "input_mode": "vision",
+      "point_macro_mean_percent": 93.31309865597962,
+      "route": "openai/gpt-5.5",
+      "table6_order": 10
+    },
+    {
+      "bootstrap_mean_percent": 87.87304520332134,
+      "ci95_lower_percent": 82.8601801951094,
+      "ci95_upper_percent": 92.42975268664514,
+      "competition_count": 4,
+      "display_name": "DeepSeek V4 Pro",
+      "input_mode": "text_staticized",
+      "point_macro_mean_percent": 87.75615501839644,
+      "route": "deepseek/deepseek-v4-pro",
+      "table6_order": 11
+    },
+    {
+      "bootstrap_mean_percent": 86.70798399044067,
+      "ci95_lower_percent": 80.96774200770662,
+      "ci95_upper_percent": 91.98886461094985,
+      "competition_count": 4,
+      "display_name": "DeepSeek V4 Flash",
+      "input_mode": "text_staticized",
+      "point_macro_mean_percent": 86.61713124335216,
+      "route": "deepseek/deepseek-v4-flash",
+      "table6_order": 12
+    },
+    {
+      "bootstrap_mean_percent": 89.59858927221742,
+      "ci95_lower_percent": 86.11672328561303,
+      "ci95_upper_percent": 93.1928736808689,
+      "competition_count": 4,
+      "display_name": "Gemini 3.5 Flash",
+      "input_mode": "vision",
+      "point_macro_mean_percent": 89.54095595583529,
+      "route": "google/gemini-3.5-flash",
+      "table6_order": 13
+    },
+    {
+      "bootstrap_mean_percent": 85.24337211768996,
+      "ci95_lower_percent": 79.8218611522937,
+      "ci95_upper_percent": 90.54308075694358,
+      "competition_count": 4,
+      "display_name": "Qwen3.7-Max",
+      "input_mode": "text_staticized",
+      "point_macro_mean_percent": 85.15716524378436,
+      "route": "qwen/qwen3.7-max",
+      "table6_order": 14
+    }
+  ],
+  "schema_version": "science_arena_table6_sequence_cluster_bootstrap_v1",
+  "seed": 20260829,
+  "status": "complete_four_competition_target",
+  "uncertainty_scope": "item/question-sequence sampling only; it does not estimate generation variance or judge variance because each model-item generation and judgment is a single frozen realization",
+  "within_competition_estimator": "sum of resampled cluster competition-score contributions divided by sum of their resampled competition-scale denominators"
+}

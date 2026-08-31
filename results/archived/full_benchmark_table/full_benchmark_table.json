@@ -1,0 +1,1220 @@
+{
+  "created_at": "2026-05-24",
+  "models": [
+    "google/gemini-3.5-flash",
+    "google/google/gemini-3.1-pro-preview",
+    "cloudsway/gemini-3-flash-preview",
+    "qiniu/openai/gpt-5.4",
+    "openai/gpt-5.5",
+    "anthropic/claude-opus-4.7",
+    "bytedance/doubao-seed-2-0-pro",
+    "qwen/qwen3.7-max",
+    "qwen/qwen3.6-plus",
+    "deepseek/deepseek-v4-pro",
+    "deepseek/deepseek-v4-flash",
+    "minimax/MiniMax-M2.7",
+    "z-ai/glm-5.1",
+    "xiaomi/mimo-v2.5-pro"
+  ],
+  "benchmarks": [
+    {
+      "benchmark_id": "ipho2025",
+      "name": "IPhO 2025",
+      "max_score": 30,
+      "status": "paper_original; interleaved; HF rows fixed to /30"
+    },
+    {
+      "benchmark_id": "icho2025",
+      "name": "IChO 2025",
+      "max_score": 60,
+      "status": "paper_original; interleaved; image-only answer refs preserved"
+    },
+    {
+      "benchmark_id": "ccho2025",
+      "name": "CChO 2025",
+      "max_score": 100,
+      "status": "paper_original; CChO Q7 missing question-side structure image"
+    },
+    {
+      "benchmark_id": "cpho2025",
+      "name": "CPhO 2025",
+      "max_score": 320,
+      "status": "paper_original; interleaved"
+    },
+    {
+      "benchmark_id": "ibo2023",
+      "name": "IBO 2023",
+      "max_score": 453,
+      "status": "paper_original; objective key scored, not LLM-judge"
+    },
+    {
+      "benchmark_id": "eupho2025",
+      "name": "EuPhO 2025 Theory",
+      "max_score": 30,
+      "status": "new official PDF; image-enabled static benchmark"
+    },
+    {
+      "benchmark_id": "apho2025",
+      "name": "APhO 2025 Theory",
+      "max_score": 30,
+      "status": "new official PDF; draft/human-review page-range + item-level data"
+    },
+    {
+      "benchmark_id": "incho2026",
+      "name": "INChO 2026",
+      "max_score": 106,
+      "status": "new official PDF; official rubric page-range candidate"
+    },
+    {
+      "benchmark_id": "usapho2025",
+      "name": "USAPhO 2025",
+      "max_score": 150,
+      "status": "new official PDF; derived-rubric auxiliary benchmark"
+    },
+    {
+      "benchmark_id": "nbpho2025",
+      "name": "NBPhO 2025",
+      "max_score": 72,
+      "status": "new official PDF; item-level draft, experimental/staticization caveats"
+    }
+  ],
+  "matrix": {
+    "google/gemini-3.5-flash": {
+      "ipho2025": {
+        "score": 25.67,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 48.43,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 57.12,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 275.0,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 430.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 17.2,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 3,
+        "cost_cny": 3.7739969400000004
+      },
+      "apho2025": {
+        "score": 28.15,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 45,
+        "cost_cny": 2.87911218
+      },
+      "incho2026": {
+        "score": 91.6,
+        "max_score": 106,
+        "status": "valid",
+        "note": "standalone smoke"
+      },
+      "usapho2025": {
+        "score": 150,
+        "max_score": 150,
+        "status": "valid",
+        "note": "standalone/all-model smoke"
+      },
+      "nbpho2025": {
+        "score": 35.5,
+        "max_score": 72,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_google__gemini-3.5-flash_mm/summary.json",
+        "images_sent": 2,
+        "cost_cny": 3.14886138
+      }
+    },
+    "google/google/gemini-3.1-pro-preview": {
+      "ipho2025": {
+        "score": 27.3,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 46.45,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 57.44,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 302.1,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 431.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 14.5,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 3,
+        "cost_cny": 3.4039772200000002
+      },
+      "apho2025": {
+        "score": 29.8,
+        "max_score": 30,
+        "status": "valid",
+        "note": "score from summary.reparsed.json",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 45,
+        "cost_cny": 3.4047201999999994
+      },
+      "incho2026": {
+        "score": 93.5,
+        "max_score": 106,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 14,
+        "cost_cny": 3.28289808
+      },
+      "usapho2025": {
+        "score": 150,
+        "max_score": 150,
+        "status": "valid",
+        "note": "six problem-level repaired sum; full-row judge focus ignored"
+      },
+      "nbpho2025": {
+        "score": 6,
+        "max_score": 72,
+        "status": "valid",
+        "note": "rejudged full exam",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_google__google__gemini-3.1-pro-preview_mm/summary.rejudged_full_exam.json",
+        "images_sent": 2,
+        "cost_cny": 3.03817906
+      }
+    },
+    "cloudsway/gemini-3-flash-preview": {
+      "ipho2025": {
+        "score": 24.3,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 44.4,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 52.53,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 270.0,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 428.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 19.3,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 3,
+        "cost_cny": 1.46220606
+      },
+      "apho2025": {
+        "score": 20.7,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 45,
+        "cost_cny": 1.3084869000000001
+      },
+      "incho2026": {
+        "score": 83.35,
+        "max_score": 106.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 14,
+        "cost_cny": 1.23009264
+      },
+      "usapho2025": {
+        "score": 150,
+        "max_score": 150,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 10,
+        "cost_cny": 0.7693539
+      },
+      "nbpho2025": {
+        "score": 22.3,
+        "max_score": 72,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_cloudsway__gemini-3-flash-preview_mm/summary.json",
+        "images_sent": 2,
+        "cost_cny": 1.30398954
+      }
+    },
+    "qiniu/openai/gpt-5.4": {
+      "ipho2025": {
+        "score": 19.45,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 30.79,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 41.16,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 211.6,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 358.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 13.0,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 3,
+        "cost_cny": 1.4498028
+      },
+      "apho2025": {
+        "score": 24.8,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 45,
+        "cost_cny": 3.77936104
+      },
+      "incho2026": {
+        "score": 92.375,
+        "max_score": 106,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 14,
+        "cost_cny": 2.78216212
+      },
+      "usapho2025": {
+        "score": 130.0,
+        "max_score": 150,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 10,
+        "cost_cny": 2.09023557
+      },
+      "nbpho2025": {
+        "score": 32.9,
+        "max_score": 72.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_qiniu__openai__gpt-5.4_mm/summary.json",
+        "images_sent": 2,
+        "cost_cny": 2.52356733
+      }
+    },
+    "openai/gpt-5.5": {
+      "ipho2025": {
+        "score": 25.63,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 33.98,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 46.59,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 289.5,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 415.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 0.0,
+        "max_score": 30.0,
+        "status": "invalid",
+        "note": "content_filter; not a capability score",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 3,
+        "cost_cny": 0.13150452
+      },
+      "apho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "page-render-only retry returned HTTP 500",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 15,
+        "cost_cny": 0.0
+      },
+      "incho2026": {
+        "score": 74.875,
+        "max_score": 106,
+        "status": "caveated",
+        "note": "problem-level recovery; P2 content-filter/truncated"
+      },
+      "usapho2025": {
+        "score": 150,
+        "max_score": 150,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 10,
+        "cost_cny": 7.465207680000001
+      },
+      "nbpho2025": {
+        "score": 0.0,
+        "max_score": 72.0,
+        "status": "invalid",
+        "note": "content_filter",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_openai__gpt-5.5_mm/summary.json",
+        "images_sent": 2,
+        "cost_cny": 0.24740099999999998
+      }
+    },
+    "anthropic/claude-opus-4.7": {
+      "ipho2025": {
+        "score": 22.73,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 41.68,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 49.61,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 273.0,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 407.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 8.6,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 3,
+        "cost_cny": 10.101493779999998
+      },
+      "apho2025": {
+        "score": 29.0,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "page-render-only retry after 45-image size error",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 15,
+        "cost_cny": 6.8548326
+      },
+      "incho2026": {
+        "score": 51.1,
+        "max_score": 106,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 14,
+        "cost_cny": 2.78148346
+      },
+      "usapho2025": {
+        "score": 145,
+        "max_score": 150,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 10,
+        "cost_cny": 4.1580270200000005
+      },
+      "nbpho2025": {
+        "score": 46.9,
+        "max_score": 72,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_anthropic__claude-opus-4.7_mm/summary.json",
+        "images_sent": 2,
+        "cost_cny": 4.53743514
+      }
+    },
+    "bytedance/doubao-seed-2-0-pro": {
+      "ipho2025": {
+        "score": 18.02,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 38.32,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 45.21,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 227.8,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 415.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 7.0,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 3,
+        "cost_cny": 0.55477782
+      },
+      "apho2025": {
+        "score": 16.1,
+        "max_score": 30,
+        "status": "valid",
+        "note": "page-render-only retry after embedded-image size error",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 15,
+        "cost_cny": 1.20471758
+      },
+      "incho2026": {
+        "score": 71.65,
+        "max_score": 106.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 14,
+        "cost_cny": 1.3583005
+      },
+      "usapho2025": {
+        "score": 63,
+        "max_score": 150,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 10,
+        "cost_cny": 0.77244972
+      },
+      "nbpho2025": {
+        "score": 11.7,
+        "max_score": 72,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_bytedance__doubao-seed-2-0-pro_mm/summary.json",
+        "images_sent": 2,
+        "cost_cny": 1.0169179600000002
+      }
+    },
+    "qwen/qwen3.7-max": {
+      "ipho2025": {
+        "score": 23.89,
+        "max_score": 30,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 28.86,
+        "max_score": 60,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 45.36,
+        "max_score": 100,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 286.6,
+        "max_score": 320,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 349.0,
+        "max_score": 453,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 5.9,
+        "max_score": 30.0,
+        "status": "caveated",
+        "note": "text-only fallback; text-only",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 0,
+        "cost_cny": 1.33154664
+      },
+      "apho2025": {
+        "score": 28.0,
+        "max_score": 30,
+        "status": "caveated",
+        "note": "text-only fallback; text-only",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 0,
+        "cost_cny": 2.56322034
+      },
+      "incho2026": {
+        "score": 77.6,
+        "max_score": 106,
+        "status": "caveated",
+        "note": "text-only",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 2.02233648
+      },
+      "usapho2025": {
+        "score": 142,
+        "max_score": 150,
+        "status": "caveated",
+        "note": "text-only",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 1.6029139799999998
+      },
+      "nbpho2025": {
+        "score": 29.5,
+        "max_score": 72,
+        "status": "caveated",
+        "note": "text-only",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 1.94450046
+      }
+    },
+    "qwen/qwen3.6-plus": {
+      "ipho2025": {
+        "score": 22.45,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 41.79,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 46.9,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 271.0,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 413.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 7.0,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 3,
+        "cost_cny": 1.1442672600000001
+      },
+      "apho2025": {
+        "score": 24.8,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 45,
+        "cost_cny": 1.51134114
+      },
+      "incho2026": {
+        "score": 87.375,
+        "max_score": 106,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 14,
+        "cost_cny": 1.2518049
+      },
+      "usapho2025": {
+        "score": 54,
+        "max_score": 150,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 10,
+        "cost_cny": 0.8032763999999999
+      },
+      "nbpho2025": {
+        "score": 5.1,
+        "max_score": 72,
+        "status": "valid",
+        "note": "rejudged full exam",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_qwen__qwen3.6-plus_mm/summary.rejudged_full_exam.json",
+        "images_sent": 2,
+        "cost_cny": 1.46842104
+      }
+    },
+    "deepseek/deepseek-v4-pro": {
+      "ipho2025": {
+        "score": 21.6,
+        "max_score": 30,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 33.46,
+        "max_score": 60,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 46.59,
+        "max_score": 100,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 250.7,
+        "max_score": 320,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 327.0,
+        "max_score": 453,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 0,
+        "cost_cny": 0
+      },
+      "apho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 0,
+        "cost_cny": 0
+      },
+      "incho2026": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only; manual_timeout_after_diagnostic: terminated after >36 min with no output; route already diagnosed as long-tail timeout",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 0.0
+      },
+      "usapho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only; manual_timeout_after_diagnostic: terminated after >36 min with no output; route already diagnosed as long-tail timeout",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 0.0
+      },
+      "nbpho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only; manual_timeout_after_diagnostic: terminated after >36 min with no output; route already diagnosed as long-tail timeout o",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 0
+      }
+    },
+    "deepseek/deepseek-v4-flash": {
+      "ipho2025": {
+        "score": 23.2,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 29.65,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 39.51,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 224.0,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 324.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 9.2,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 3,
+        "cost_cny": 0.94414894
+      },
+      "apho2025": {
+        "score": 25.8,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 45,
+        "cost_cny": 1.24086062
+      },
+      "incho2026": {
+        "score": 83.95,
+        "max_score": 106.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 14,
+        "cost_cny": 1.05540842
+      },
+      "usapho2025": {
+        "score": 138,
+        "max_score": 150,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 10,
+        "cost_cny": 0.6837543600000001
+      },
+      "nbpho2025": {
+        "score": 12.1,
+        "max_score": 72,
+        "status": "caveated",
+        "note": "generation length stop",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_deepseek__deepseek-v4-flash_mm/summary.json",
+        "images_sent": 2,
+        "cost_cny": 1.32409322
+      }
+    },
+    "minimax/MiniMax-M2.7": {
+      "ipho2025": {
+        "score": 17.7,
+        "max_score": 30,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 19.94,
+        "max_score": 60,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 36.39,
+        "max_score": 100,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 211.2,
+        "max_score": 320,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 337.0,
+        "max_score": 453,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 1.2,
+        "max_score": 30.0,
+        "status": "caveated",
+        "note": "text-only fallback; text-only",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 0,
+        "cost_cny": 0.89970678
+      },
+      "apho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 0,
+        "cost_cny": 0
+      },
+      "incho2026": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only; manual_timeout_after_diagnostic: terminated after >36 min with no output; route already diagnosed as long-tail timeout",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 0.0
+      },
+      "usapho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only; manual_timeout_after_diagnostic: terminated after >36 min with no output; route already diagnosed as long-tail timeout",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 0.0
+      },
+      "nbpho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only; manual_timeout_after_diagnostic: terminated after >36 min with no output; route already diagnosed as long-tail timeout o",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 0
+      }
+    },
+    "z-ai/glm-5.1": {
+      "ipho2025": {
+        "score": 22.26,
+        "max_score": 30,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 31.23,
+        "max_score": 60,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 43.81,
+        "max_score": 100,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 262.4,
+        "max_score": 320,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 349.0,
+        "max_score": 453,
+        "status": "valid",
+        "note": "",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": null,
+        "cost_cny": 0
+      },
+      "apho2025": {
+        "score": 26.9,
+        "max_score": 30.0,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 45,
+        "cost_cny": 2.17205796
+      },
+      "incho2026": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "HTTP 400: {\"error\":{\"code\":\"10137\",\"message\":\"{\\\"request_id\\\":\\\"3bfc9e14-575a-11f1-94b2-1a845303fadf\\\",\\\"original_error\\",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 14,
+        "cost_cny": 0.0
+      },
+      "usapho2025": {
+        "score": 144,
+        "max_score": 150,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v1_mm_summary.json",
+        "images_sent": 10,
+        "cost_cny": 1.7366898
+      },
+      "nbpho2025": {
+        "score": 30.6,
+        "max_score": 72,
+        "status": "valid",
+        "note": "",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v1_mm_z-ai__glm-5.1_mm/summary.json",
+        "images_sent": 2,
+        "cost_cny": 2.74783788
+      }
+    },
+    "xiaomi/mimo-v2.5-pro": {
+      "ipho2025": {
+        "score": 22.35,
+        "max_score": 30,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "icho2025": {
+        "score": 29.1,
+        "max_score": 60,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ccho2025": {
+        "score": 35.21,
+        "max_score": 100,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "cpho2025": {
+        "score": 219.0,
+        "max_score": 320,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "ibo2023": {
+        "score": 317.0,
+        "max_score": 453,
+        "status": "caveated",
+        "note": "text-only/image-caveated",
+        "source": "docs/latest_model_checkpoint_20260524_zh.md"
+      },
+      "eupho2025": {
+        "score": 1.0,
+        "max_score": 30.0,
+        "status": "caveated",
+        "note": "text-only fallback; text-only",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 0,
+        "cost_cny": 1.17189086
+      },
+      "apho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only route HTTP 400; text-only",
+        "source": "artifacts/runs/candidate_benchmarks/new_benchmark_results_20260524_collected.json",
+        "images_sent": 0,
+        "cost_cny": 0.0
+      },
+      "incho2026": {
+        "score": 74.1,
+        "max_score": 106,
+        "status": "caveated",
+        "note": "text-only",
+        "source": "artifacts/runs/candidate_benchmarks/incho2026_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 1.8499514600000002
+      },
+      "usapho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only; HTTP 400: {\"error\":{\"code\":\"10137\",\"message\":\"{\\\"request_id\\\":\\\"69ccec4f-5759-11f1-af2b-82348ca91c0d\\\",\\\"original_error\\",
+        "source": "artifacts/runs/candidate_benchmarks/usapho2025_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 0.0
+      },
+      "nbpho2025": {
+        "score": null,
+        "max_score": null,
+        "status": "invalid",
+        "note": "text-only; HTTP 400: {\"error\":{\"code\":\"10137\",\"message\":\"{\\\"request_id\\\":\\\"5b51b0fc-5765-11f1-9114-f67143c3f1c0\\\",\\\"original_error\\",
+        "source": "artifacts/runs/candidate_benchmarks/nbpho2025_full_allmodels_20260524_v2_textonly_summary.json",
+        "images_sent": 0,
+        "cost_cny": 0.0
+      }
+    }
+  },
+  "cell_note": "A trailing * means caveated. invalid means generation/API/judge focus failed and is not a capability score."
+}

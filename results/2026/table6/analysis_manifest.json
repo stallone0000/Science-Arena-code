@@ -1,0 +1,109 @@
+{
+  "api_calls": 0,
+  "bootstrap": {
+    "resamples": 10000,
+    "scope": "item/question-sequence sampling only; it does not estimate generation variance or judge variance because each model-item generation and judgment is a single frozen realization",
+    "seed": 20260829
+  },
+  "build_status": "complete_four_competition",
+  "deep_protocol_audit_complete": true,
+  "formal_run_writes": 0,
+  "frozen_model_manifest": {
+    "path": "experiments/2026_reval/manifests/table6_models_frozen_20260828.json",
+    "sha256": "d761e8d508c6677ee3c6452123e4a3c3e8327f8dad8afde616b0277e19c54d4c"
+  },
+  "generated_artifacts_excluding_manifest_and_SHA256SUMS": [
+    {
+      "bytes": 18188,
+      "path": "table6_scores.json",
+      "sha256": "3c12243f546e91c774724f8aea3e1a8c1b25f343511b5025e39abcd4b599dcf7"
+    },
+    {
+      "bytes": 3097,
+      "path": "table6_scores.csv",
+      "sha256": "fd5271b3c965eb11876f6f2cc5a03c31d7892187866773256d4bcf0eaad06384"
+    },
+    {
+      "bytes": 1831,
+      "path": "table6_scores.md",
+      "sha256": "7c57a32762ba675bf1e0593a815f233f775b5d7626ae392789ff38b776872200"
+    },
+    {
+      "bytes": 6820,
+      "path": "table6_bootstrap_macro_ci.json",
+      "sha256": "6f78c3056abd6af0f35096a2ab78e56a69e3ee57b6163b7a3875c7b8217cb30e"
+    },
+    {
+      "bytes": 1676,
+      "path": "table6_bootstrap_macro_ci.csv",
+      "sha256": "ad270be650499464f50235671d877f34a733d4e59052597c7fd328f927edd167"
+    },
+    {
+      "bytes": 1785,
+      "path": "table6_bootstrap_macro_ci.md",
+      "sha256": "9ee87e1d1cc41fe50adf44c889ef8ec3f9d0f1f6f9a12090d11961fce7eb015f"
+    },
+    {
+      "bytes": 67155,
+      "path": "protocol_compatibility_audit.json",
+      "sha256": "5f1bcbcd0971e2199eec223dadfce1e9abac90be7e66a3050644a542eacd3001"
+    },
+    {
+      "bytes": 13533,
+      "path": "protocol_route_evidence.csv",
+      "sha256": "482db43572aa996aa30737fb9a4e74ab77ff5fe9a2209cb9617cc5d30f85eb2f"
+    },
+    {
+      "bytes": 2701,
+      "path": "protocol_compatibility_audit.md",
+      "sha256": "39a182e56f7a055aa17360649a8de4d5b2ffc1ff10b73533df4ba681a30d159c"
+    }
+  ],
+  "offline_only": true,
+  "publication_eligible": true,
+  "schema_version": "science_arena_table6_four_competition_analysis_v1",
+  "script_path": "experiments/2026_reval/analysis/table6_four_competition_20260829/build_table6_analysis.py",
+  "script_sha256": "47ef77007109d6b19f72d69cc9cf1e6501fd711d5466c1dbdf6f72449cb8e368",
+  "sources": [
+    {
+      "aggregate_complete": true,
+      "aggregate_path": "experiments/2026_reval/runs/ipho2026_table6_qonly_gemini31_frozen_formal_20260829/aggregate.json",
+      "aggregate_sha256": "b00415adaeffc70e441221d83346303e5b4be3f3759ec197de39ef57b489e485",
+      "competition_key": "ipho2026",
+      "items_path": "experiments/2026_reval/staticizations/qonly_gemini31_reviewed_frozen_final_v2_20260829/datasets/ipho2026/items.jsonl",
+      "items_sha256": "3d9256334674a913be301e809d5baa04ae9228fda6767ce3e2cc4fed54c4a205",
+      "run_manifest_sha256": "5097f6e7d086594b88bb42f6fd668396fdc873b62e652933e9f28c6d7e867f43",
+      "run_root": "experiments/2026_reval/runs/ipho2026_table6_qonly_gemini31_frozen_formal_20260829"
+    },
+    {
+      "aggregate_complete": true,
+      "aggregate_path": "experiments/2026_reval/runs/icho2026_table6_qonly_gemini31_frozen_v2_formal_20260829/aggregate.json",
+      "aggregate_sha256": "4aa5ffbb4706e7d3dba1ede0986bec8650b7c3e4fbad2a839e04eddf0c18cbfa",
+      "competition_key": "icho2026",
+      "items_path": "experiments/2026_reval/staticizations/qonly_gemini31_reviewed_frozen_final_v2_20260829/datasets/icho2026_theory/items.jsonl",
+      "items_sha256": "a0f0ef68489395e0ead74636d79f60b913d3c1ff3d9b015680d93493078f0837",
+      "run_manifest_sha256": "b94c71307f568cd44ff0d89b18d24b5d6ace7f1cd3c59b91766fbd67bd689baa",
+      "run_root": "experiments/2026_reval/runs/icho2026_table6_qonly_gemini31_frozen_v2_formal_20260829"
+    },
+    {
+      "aggregate_complete": true,
+      "aggregate_path": "experiments/2026_reval/runs/nbpho2026_table6_qonly_gemini31_frozen_v2_judge_v8_materialized_full_fresh_20260829/aggregate.json",
+      "aggregate_sha256": "f0563636088c9dfc4bbf4d71cd48eec840e27b887520148d25b7f7975168e091",
+      "competition_key": "nbpho2026",
+      "items_path": "experiments/2026_reval/staticizations/qonly_gemini31_reviewed_frozen_final_v2_20260829/datasets/nbpho2026/items.jsonl",
+      "items_sha256": "b326443c0a3630f0139392b076f700808be1a9809d077594837b28edaeecb6d5",
+      "run_manifest_sha256": "fcd312d13165815129f4a08f6e942aa15753b1fb42842773a7afbad3b8fcae5d",
+      "run_root": "experiments/2026_reval/runs/nbpho2026_table6_qonly_gemini31_frozen_v2_judge_v8_materialized_full_fresh_20260829"
+    },
+    {
+      "aggregate_complete": true,
+      "aggregate_path": "experiments/2026_reval/runs/usapho2026_table6_qonly_gemini31_frozen_v2_judge_v5_full_fresh_20260829/aggregate.json",
+      "aggregate_sha256": "354f87646071a9df1314e69c8ade5388aeec9175dbd32ecec26e824eef2907ce",
+      "competition_key": "usapho2026",
+      "items_path": "experiments/2026_reval/staticizations/qonly_gemini31_reviewed_frozen_final_v2_20260829/datasets/usapho2026/items.jsonl",
+      "items_sha256": "e706662298b2d77063d697b5ef1e0a9521425730b371a61d0e57a85b6cc53b22",
+      "run_manifest_sha256": "59927bd20cd1564e7541c514e7819bf168a31cb4bd4f5bbeb4dcb3ffc213affc",
+      "run_root": "experiments/2026_reval/runs/usapho2026_table6_qonly_gemini31_frozen_v2_judge_v5_full_fresh_20260829"
+    }
+  ]
+}

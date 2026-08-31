@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "fresh_rerender_compared": true,
+    "item_count": 28,
+    "items_sha256": "2b9138f4fc2b2a64e78f9929948c8cc1625fba231d0c81267b5b1847dbc751fd",
+    "problem_count": 10,
+    "question_image_count": 2,
+    "question_manifest_sha256": "c54e00f60bc8a94bf61cbc2fb9ee1525bbd27c922bd33717c2afcc1d1dd20432",
+    "question_pdf_sha256": "d796b6610aec45c7b0d1b2823b9d19561d94fce424867673a1da481d1b02145e",
+    "raw_score_total": 72.0,
+    "solution_image_count": 14,
+    "solution_manifest_sha256": "c850203a403c15a9edf64f0b3e7f37133ec52d358083147d1054dacb7f27bd4d",
+    "solution_pdf_sha256": "6df4a2f9630e971034e2d6f4141b1e5bfa0816ee7b61c7b0e658996e1c26f457",
+    "staticized_verified_count": 28,
+    "visual_dependency_item_count": 13
+  },
+  "errors": [],
+  "schema_version": "nbpho2026_canonical_validation_v1",
+  "status": "PASS",
+  "warnings": []
+}

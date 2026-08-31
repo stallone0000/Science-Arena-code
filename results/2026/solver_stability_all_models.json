@@ -1,0 +1,98 @@
+{
+  "schema_version": "science_arena_compact_repeat_responses_scores_v1",
+  "created_date": "2026-08-31",
+  "storage_policy": {
+    "hidden_reasoning_retained": false,
+    "provider_payloads_retained": false,
+    "wire_attempt_sidecars_retained": false,
+    "visible_candidate_responses_retained": true,
+    "rubric_scores_retained": true,
+    "description": "Compact replacement for repeat-run directories and the prior archive; retains visible solver responses and judge scores only."
+  },
+  "table8_stability": [
+    {
+      "route": "google/gemini-3.5-flash",
+      "display_name": "Gemini 3.5 Flash",
+      "contests": {
+        "ipho2026": {
+          "report_scale": 30.0,
+          "replicate_scores": {
+            "A": 29.75,
+            "B": 27.75,
+            "C": 28.75
+          },
+          "mean": 28.75,
+          "sample_sd": 1.0,
+          "range": 2.0
+        },
+        "icho2026": {
+          "report_scale": 60.0,
+          "replicate_scores": {
+            "A": 54.762521601557744,
+            "B": 52.98953309713028,
+            "C": 53.45063253586099
+          },
+          "mean": 53.734229078183006,
+          "sample_sd": 0.9198871171620665,
+          "range": 1.7729885044274667
+        }
+      }
+    },
+    {
+      "route": "openai/gpt-5.5",
+      "display_name": "GPT-5.5",
+      "contests": {
+        "ipho2026": {
+          "report_scale": 30.0,
+          "replicate_scores": {
+            "A": 29.75,
+            "B": 29.75,
+            "C": 29.75
+          },
+          "mean": 29.75,
+          "sample_sd": 0.0,
+          "range": 0.0
+        },
+        "icho2026": {
+          "report_scale": 60.0,
+          "replicate_scores": {
+            "A": 54.25171596238203,
+            "B": 55.75180015660125,
+            "C": 54.509223981881405
+          },
+          "mean": 54.83758003362156,
+          "sample_sd": 0.802138653832596,
+          "range": 1.5000841942192196
+        }
+      }
+    },
+    {
+      "route": "anthropic/claude-opus-4.7",
+      "display_name": "Claude Opus 4.7",
+      "contests": {
+        "ipho2026": {
+          "report_scale": 30.0,
+          "replicate_scores": {
+            "A": 25.25,
+            "B": 27.25,
+            "C": 27.75
+          },
+          "mean": 26.75,
+          "sample_sd": 1.3228756555322954,
+          "range": 2.5
+        },
+        "icho2026": {
+          "report_scale": 60.0,
+          "replicate_scores": {
+            "A": 53.45974758573076,
+            "B": 49.39131363429158,
+            "C": 48.50621149303577
+          },
+          "mean": 50.45242423768604,
+          "sample_sd": 2.6417506960129864,
+          "range": 4.953536092694989
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "created_at": "2026-08-28T11:25:11.789581+00:00",
+  "frozen_input_mode": "vision",
+  "route": "openai/gpt-5.5",
+  "schema_version": "science_arena_frozen_capability_proof_v1",
+  "text_probe": {
+    "basis": "standalone_nonce_text_probe",
+    "original_probe": {
+      "error": "",
+      "expected": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+      "finish_reason": "completed",
+      "http_status": 200,
+      "latency_seconds": 2.124333291,
+      "passed": true,
+      "raw_response": {
+        "background": false,
+        "completed_at": 1787914290,
+        "content_filters": [
+          {
+            "blocked": false,
+            "content_filter_offsets": {
+              "check_offset": 0,
+              "end_offset": 905,
+              "start_offset": 0
+            },
+            "content_filter_raw": [],
+            "content_filter_results": {
+              "hate": {
+                "filtered": false,
+                "severity": "safe"
+              },
+              "indirect_attack": {
+                "detected": false,
+                "filtered": false
+              },
+              "jailbreak": {
+                "detected": false,
+                "filtered": false
+              },
+              "self_harm": {
+                "filtered": false,
+                "severity": "safe"
+              },
+              "sexual": {
+                "filtered": false,
+                "severity": "safe"
+              },
+              "violence": {
+                "filtered": false,
+                "severity": "safe"
+              }
+            },
+            "source_type": "prompt"
+          },
+          {
+            "blocked": false,
+            "content_filter_offsets": {
+              "check_offset": 0,
+              "end_offset": 67,
+              "start_offset": 0
+            },
+            "content_filter_raw": [],
+            "content_filter_results": {
+              "hate": {
+                "filtered": false,
+                "severity": "safe"
+              },
+              "protected_material_code": {
+                "detected": false,
+                "filtered": false
+              },
+              "protected_material_text": {
+                "detected": false,
+                "filtered": false
+              },
+              "self_harm": {
+                "filtered": false,
+                "severity": "safe"
+              },
+              "sexual": {
+                "filtered": false,
+                "severity": "safe"
+              },
+              "violence": {
+                "filtered": false,
+                "severity": "safe"
+              }
+            },
+            "source_type": "completion"
+          }
+        ],
+        "created_at": 1787914289,
+        "error": null,
+        "frequency_penalty": 0.0,
+        "id": "resp_0d8d1496c683cc24006a916831276481908724d9077555c83e__379",
+        "incomplete_details": null,
+        "instructions": null,
+        "max_output_tokens": 512,
+        "max_tool_calls": null,
+        "metadata": {},
+        "model": "gpt-5.5",
+        "moderation": null,
+        "object": "response",
+        "output": [
+          {
+            "content": [],
+            "encrypted_content": "gAAAAABqkWgyietfOZNJ4ZxISEcKL1axVqOWy0T3DziR8KjH-mUU2IcWKmpgF1lo26uCWRENgiao57gm4Pef0YK2xVg8LlHYF7t2ojfRwEGcnxg2G9r924MMQmyHgp7p0rNXDRg59KLn60bmu7h7tiBCYsSTzDPXIjwCMVM4msE86uyClq7XILsyw6zQiHajtaRHB9sqWkvfWlzDhKzbeWLiPvomrHmQESbNwfQw5JuAq4-FxRHDtphKAOTVKrPlq5TP3AbVT6wXRi3MEUXSdGDsluf9hMHeg2KSglXR3e1_lydm5em6XzapjVCSxHqZJrLP7aabEiebH0fifD4AEXccwFJUH0ktvpx_6F6WT-9NT5dqiyGjIGEQllnD-R4RqvqKcKjI_h-UKqrtoWDlNVQY2zzsl3TicqZPZ2WuZ6hlkFtefD19bGIprCnsNSPEyM46uWE0RXuvMbKAJI0Eordjog3vAa29EAkIhLHl73TgaoX77QDB18xPVsE2bvjF3JzUEF9TKcAoDpyVAuk60cFwIRS7Mwb1C9w-lzcSlb3ELMkV1ZLU4LI8a4mHAYMaVOhNgir04KoS-ITLq__ojFL6OzMk5K1aHyaaA28KM68f1f9U5n85ro4RO_yrVw0Rpro4OVXuMv2OBt3NKGB5UbftVJuDPaURMiLbJIwl1cgmX7xElPEzNa_l8BsokFG7Z7HCKsz9N1rgj34PUdN2peJssdULHlNSYg68EAoE2n0fsV-_Fot-m1XmVCWpp1seGFj3qcVSm0bLODTsyHj7HwECEQi4A-EBOFCDBEbnX4oGoXFcZZbZS9t4V2dX-L4bhQj51yFB39gQ091yLakRw5f8ZVO09DrGFDdfbA0A7kmFV5w3JpN0C8XOzzfUZzzzzSfR9m0Db5I4o0v2GvHdbOBlFcO9BxCsn9ALQg3Lo2leh3KZyCHjjjG5JffAMYunfHcbgCwA2k1Y",
+            "id": "rs_0d8d1496c683cc24006a916831ae988190aa9e03444f809792",
+            "summary": [],
+            "type": "reasoning"
+          },
+          {
+            "content": [
+              {
+                "annotations": [],
+                "logprobs": [],
+                "text": "SCIENCE-ARENA-TEXT-ROUTE-OK",
+                "type": "output_text"
+              }
+            ],
+            "id": "msg_0d8d1496c683cc24006a916831dd048190a22fa8ff2aa8749b",
+            "phase": "final_answer",
+            "role": "assistant",
+            "status": "completed",
+            "type": "message"
+          }
+        ],
+        "parallel_tool_calls": true,
+        "presence_penalty": 0.0,
+        "previous_response_id": null,
+        "prompt_cache_key": null,
+        "prompt_cache_retention": "24h",
+        "reasoning": {
+          "context": "current_turn",
+          "effort": "high",
+          "mode": "standard",
+          "summary": null
+        },
+        "safety_identifier": null,
+        "service_tier": "default",
+        "status": "completed",
+        "store": true,
+        "temperature": 1.0,
+        "text": {
+          "format": {
+            "type": "text"
+          },
+          "verbosity": "medium"
+        },
+        "tool_choice": "auto",
+        "tool_usage": {
+          "image_gen": {
+            "input_tokens": 0,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "output_tokens": 0,
+            "output_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 0
+            },
+            "total_tokens": 0
+          },
+          "web_search": {
+            "num_requests": 0
+          }
+        },
+        "tools": [],
+        "top_logprobs": 0,
+        "top_p": 0.98,
+        "truncation": "disabled",
+        "usage": {
+          "input_tokens": 26,
+          "input_tokens_details": {
+            "cache_write_tokens": 0,
+            "cached_tokens": 0
+          },
+          "output_tokens": 30,
+          "output_tokens_details": {
+            "reasoning_tokens": 12
+          },
+          "total_tokens": 56
+        },
+        "user": null
+      },
+      "reasoning_content": "{\"id\": \"rs_0d8d1496c683cc24006a916831ae988190aa9e03444f809792\", \"type\": \"reasoning\", \"content\": [], \"encrypted_content\": \"gAAAAABqkWgyietfOZNJ4ZxISEcKL1axVqOWy0T3DziR8KjH-mUU2IcWKmpgF1lo26uCWRENgiao57gm4Pef0YK2xVg8LlHYF7t2ojfRwEGcnxg2G9r924MMQmyHgp7p0rNXDRg59KLn60bmu7h7tiBCYsSTzDPXIjwCMVM4msE86uyClq7XILsyw6zQiHajtaRHB9sqWkvfWlzDhKzbeWLiPvomrHmQESbNwfQw5JuAq4-FxRHDtphKAOTVKrPlq5TP3AbVT6wXRi3MEUXSdGDsluf9hMHeg2KSglXR3e1_lydm5em6XzapjVCSxHqZJrLP7aabEiebH0fifD4AEXccwFJUH0ktvpx_6F6WT-9NT5dqiyGjIGEQllnD-R4RqvqKcKjI_h-UKqrtoWDlNVQY2zzsl3TicqZPZ2WuZ6hlkFtefD19bGIprCnsNSPEyM46uWE0RXuvMbKAJI0Eordjog3vAa29EAkIhLHl73TgaoX77QDB18xPVsE2bvjF3JzUEF9TKcAoDpyVAuk60cFwIRS7Mwb1C9w-lzcSlb3ELMkV1ZLU4LI8a4mHAYMaVOhNgir04KoS-ITLq__ojFL6OzMk5K1aHyaaA28KM68f1f9U5n85ro4RO_yrVw0Rpro4OVXuMv2OBt3NKGB5UbftVJuDPaURMiLbJIwl1cgmX7xElPEzNa_l8BsokFG7Z7HCKsz9N1rgj34PUdN2peJssdULHlNSYg68EAoE2n0fsV-_Fot-m1XmVCWpp1seGFj3qcVSm0bLODTsyHj7HwECEQi4A-EBOFCDBEbnX4oGoXFcZZbZS9t4V2dX-L4bhQj51yFB39gQ091yLakRw5f8ZVO09DrGFDdfbA0A7kmFV5w3JpN0C8XOzzfUZzzzzSfR9m0Db5I4o0v2GvHdbOBlFcO9BxCsn9ALQg3Lo2leh3KZyCHjjjG5JffAMYunfHcbgCwA2k1Y\", \"summary\": []}",
+      "request": {
+        "input": [
+          {
+            "content": [
+              {
+                "text": "Return exactly this token and nothing else: SCIENCE-ARENA-TEXT-ROUTE-OK",
+                "type": "input_text"
+              }
+            ],
+            "role": "user"
+          }
+        ],
+        "max_output_tokens": 512,
+        "model": "openai/gpt-5.5",
+        "reasoning": {
+          "effort": "high"
+        },
+        "stream": false
+      },
+      "request_sha256": "b578b078707df7416e8bf18415c8a640bcf6e96fc8d142151137d1ced43bf982",
+      "response_body_on_error": "",
+      "visible_content": "SCIENCE-ARENA-TEXT-ROUTE-OK"
+    },
+    "passed": true,
+    "source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/openai__gpt-5.5.json"
+  },
+  "vision_probe": {
+    "classification": {
+      "gate_path_present": true,
+      "input_mode": "vision",
+      "negative_control_passed": true,
+      "negative_control_policy": "diagnostic_not_modality_veto_after_unseen_nonce_pixel_proof",
+      "official_chemistry_passed": true,
+      "official_numeric_graph_passed": true,
+      "official_science_pass_count": 3,
+      "official_science_probe_count": 3,
+      "p1_physics_passed": true,
+      "route": "openai/gpt-5.5",
+      "strong_pixel_proof": true,
+      "synthetic_unseen_nonce_passed": true,
+      "text_ready": true,
+      "text_ready_basis": "standalone_nonce_text_probe"
+    },
+    "multi_image_gate_source": "experiments/2026_reval/runs/table6_visibility_gate_20260828/openai__gpt-5.5.json",
+    "p1_source": "experiments/2026_reval/runs/table6_route_probe_20260828/capabilities/openai__gpt-5.5.json",
+    "passed": true
+  }
+}

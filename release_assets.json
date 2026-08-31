@@ -1,0 +1,56 @@
+{
+  "schema_version": "science_arena_release_assets_v1",
+  "repository": "stallone0000/Science-Arena-code",
+  "tag": "cr-final-2026-08-31",
+  "storage_policy": "Raw model artifacts omit hidden chain-of-thought and credentials.",
+  "assets": [
+    {
+      "name": "inputs-2026",
+      "filename": "science-arena-inputs-2026.tar.zst",
+      "bytes": 104018061,
+      "sha256": "f0d56dc8b919f1a1f571a4ab47a2a6c2c1bbbbbac162112966bbf21e9a7ecafb",
+      "extract_to": "inputs-2026",
+      "purpose": "Official 2026 sources, canonical datasets, frozen PNGs/staticizations, manifests, capability proofs, and pipeline snapshots"
+    },
+    {
+      "name": "runs-table6-ipho-icho",
+      "filename": "table6_ipho_icho_raw_no_cot_20260828_29.tar.zst",
+      "bytes": 552710458,
+      "sha256": "156310fd80e7028b407b35951854af0fd074ae741876415d346cb1289f70c22f",
+      "extract_to": "runs-table6-ipho-icho",
+      "purpose": "Raw visible-response and rubric-judge ledgers for IPhO/IChO 2026 Table 6 cells; no hidden reasoning"
+    },
+    {
+      "name": "runs-table6-nbpho-usapho",
+      "filename": "table6_nbpho_usapho_raw_no_cot_20260829.tar.zst",
+      "bytes": 2143965,
+      "sha256": "a5fface4951f471ef18e5c92590154e9d6c605d610d820c7fbdf0f46298797ea",
+      "extract_to": "runs-table6-nbpho-usapho",
+      "purpose": "Raw visible-response and rubric-judge ledgers for NBPhO/USAPhO 2026 Table 6 cells; no hidden reasoning"
+    },
+    {
+      "name": "runs-solver-repeats",
+      "filename": "ipho_icho_repeat_responses_scores_no_cot_20260831.json.zst",
+      "bytes": 2014019,
+      "sha256": "39f753d62dd487036bcf389c57eceb9c64a30f9385e1049237be49db26d24a45",
+      "extract_to": "runs-solver-repeats",
+      "purpose": "Compact visible responses and rubric scores for three routes x three IPhO/IChO repeats; no payload duplication or hidden reasoning"
+    },
+    {
+      "name": "runs-cross-judges",
+      "filename": "crossjudge_ipho_icho_raw_no_cot_20260830.tar.zst",
+      "bytes": 1785715,
+      "sha256": "1e6fd3de6f448436d05ceec9300fb2c28cc1facab477f44698f206b29e94e9f1",
+      "extract_to": "runs-cross-judges",
+      "purpose": "Six judges x three repeats over frozen Gemini 3.5 Flash answers, analysis, and audit ledgers; no hidden reasoning"
+    },
+    {
+      "name": "archived-2025-reproduction",
+      "filename": "science_arena_repro_package_20260530_lite.zip",
+      "bytes": 117026848,
+      "sha256": "e329feb1b88cb6945e64cd8fe9bc686853d4824b4a357cd1118f0c380220b125",
+      "extract_to": "archived-2025",
+      "purpose": "Most complete archived data/code/result package for the earlier nine benchmark columns and IBO objective scoring"
+    }
+  ]
+}
