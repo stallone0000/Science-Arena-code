@@ -51,6 +51,14 @@
       "sha256": "e329feb1b88cb6945e64cd8fe9bc686853d4824b4a357cd1118f0c380220b125",
       "extract_to": "archived-2025",
       "purpose": "Most complete archived data/code/result package for the earlier nine benchmark columns and IBO objective scoring"
+    },
+    {
+      "name": "legacy-data",
+      "filename": "science-arena-legacy-data.tar.zst",
+      "bytes": 263890329,
+      "sha256": "c77c6af50110ee4d7e0a0888bb7f403deb27cac44ef83746ba2721e4bb5ca943",
+      "extract_to": "legacy-data",
+      "purpose": "Consolidated legacy benchmark images, source material, and scoring details retained before local workspace cleanup"
     }
   ]
 }
