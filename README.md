@@ -5,7 +5,7 @@ LLMs on Latest Scientific Olympiad Competitions**. It contains the solver,
 rubric-judge, modality-routing, dataset-validation, repeated-call, cross-family
 judge, aggregation, and paper-analysis code used by the camera-ready study.
 
-The interactive demo is available at <https://science-arena.onrender.com/>.
+The interactive demo is available at <https://science-arena-review.onrender.com/>.
 
 ## What is reproducible
 
